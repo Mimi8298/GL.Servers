@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{938A07C3-653A-4012-9C60-02E4CE5B7020}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GL.Editor</RootNamespace>
+    <AssemblyName>GL - Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Builds\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>default</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <FileAlignment>1024</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Builds\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>default</LangVersion>
+    <FileAlignment>1024</FileAlignment>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GL.Editor.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Resources.cs" />
+    <Compile Include="Extensions\Binary\Reader.cs" />
+    <Compile Include="Extensions\Binary\Writer.cs" />
+    <Compile Include="Extensions\List\ReaderList.cs" />
+    <Compile Include="Extensions\List\WriterList.cs" />
+    <Compile Include="Interface\AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Interface.Designer.cs">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\Enums\Format.cs" />
+    <Compile Include="Logic\Enums\Type.cs" />
+    <Compile Include="Logic\Files.cs" />
+    <Compile Include="Logic\Slots\Items\Font.cs" />
+    <Compile Include="Logic\Slots\Fonts.cs" />
+    <Compile Include="Logic\Slots\Spirites.cs" />
+    <Compile Include="Logic\Slots\Chunks.cs" />
+    <Compile Include="Logic\Slots\Items\Spirite.cs" />
+    <Compile Include="Logic\Slots\Items\Chunk.cs" />
+    <Compile Include="Logic\Slots\Temporary.cs" />
+    <Compile Include="Logic\Slots\Items\Shape.cs" />
+    <Compile Include="Logic\Slots\Items\Export.cs" />
+    <Compile Include="Logic\Slots\Shapes.cs" />
+    <Compile Include="Logic\Slots\Items\SCTexture.cs" />
+    <Compile Include="Logic\Slots\Exports.cs" />
+    <Compile Include="Logic\Slots\Items\SCInfo.cs" />
+    <Compile Include="Logic\Slots\Items\SCFile.cs" />
+    <Compile Include="Logic\Structures\Vector.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <None Include="app.config" />
+    <None Include="Images\SHAPES">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Interface\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Interface.en.resx">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Interface.fr.resx">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Interface.resx">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GL.Servers\GL.Servers\GL.Servers.csproj">
+      <Project>{5d12a2da-f22e-4813-9394-6409e5c1cb3a}</Project>
+      <Name>GL.Servers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Gamefiles\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>IF EXIST "$(TargetDir)Library\" RMDIR /S /Q "$(TargetDir)Library\"
+
+MKDIR "$(TargetDir)Library\"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+del /F /Q *.xml
+del /F /Q *.pdb
+move /Y *.dll "Library\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

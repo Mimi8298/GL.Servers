@@ -1,0 +1,1058 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0" DefaultTargets="Build">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54C7B7CA-E547-4926-A359-4912C97F6BA3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GL.Servers.SP</RootNamespace>
+    <AssemblyName>GL - Spooky Server</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <NuGetPackageImportStamp />
+    <PublishUrl>ftp://ns3028394.ip-149-202-90.eu/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://dashboard.gobelinland.fr/releases/</InstallUrl>
+    <SupportUrl>https://www.gobelinland.fr/</SupportUrl>
+    <ErrorReportUrl>https://www.gobelinland.fr/</ErrorReportUrl>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>GL Royale Server</ProductName>
+    <PublisherName>GobelinLand</PublisherName>
+    <SuiteName>GL Servers</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.html</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Builds\Debug\</OutputPath>
+    <DefineConstants>DEBUG;USER_MIKE;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>default</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <FileAlignment>1024</FileAlignment>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <DocumentationFile />
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GL.Servers.SP.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>http://tsa.startssl.com/timestamp</ManifestTimestampUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4FD39E2DECBB936853CE1DC994BB73BCFF045994</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Internet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>Builds\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <LangVersion>default</LangVersion>
+    <FileAlignment>1024</FileAlignment>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>0</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.29.2.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.1.29.2\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.29.2.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Auth.1.29.2\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.29.2.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Auth.1.29.2\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.29.2.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Core.1.29.2\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Games.v1, Version=1.29.2.1001, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Games.v1.1.29.2.1001\lib\net45\Google.Apis.Games.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.29.2.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.1.29.2\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MongoDB.Bson, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Bson.2.4.4\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.2.4.4\lib\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.Core.2.4.4\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis.StrongName, Version=1.2.6.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\StackExchange.Redis.StrongName.1.2.6\lib\net46\StackExchange.Redis.StrongName.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Net.Http.4.3.3\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.X509Certificates.4.3.1\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Consoles\Parser.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Database\Models\GBS.Context.cs" />
+    <Compile Include="Core\Database\Models\GBS.Context1.cs">
+      <DependentUpon>GBS.Context.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Database\Models\GBS.cs">
+      <DependentUpon>GBS.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Database\Models\GBS.Designer.cs">
+      <DependentUpon>GBS.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Database\Models\Mongo\Clans.cs" />
+    <Compile Include="Core\Database\Models\Mongo\Players.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Battles.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Clans.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Players.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Tournaments.cs" />
+    <Compile Include="Core\Database\Mongo.cs" />
+    <Compile Include="Core\Database\MySQL.cs" />
+    <Compile Include="Core\Database\Redis.cs" />
+    <Compile Include="Core\Events\EventHandler.cs" />
+    <Compile Include="Core\Logging.cs" />
+    <Compile Include="Core\Network\Processor.cs" />
+    <Compile Include="Core\Network\SocketEventArgsPool.cs" />
+    <Compile Include="Core\Network\TCPServer.cs" />
+    <Compile Include="Core\Network\Token.cs" />
+    <Compile Include="Core\Network\UDPServer.cs" />
+    <Compile Include="Core\Resources.cs" />
+    <Compile Include="Extensions\Extension.cs" />
+    <Compile Include="Extensions\Game\GamePlayUtil.cs" />
+    <Compile Include="Extensions\Game\Globals.cs" />
+    <Compile Include="Extensions\Helper\JsonHelper.cs" />
+    <Compile Include="Extensions\Helper\ByteStreamHelper.cs" />
+    <Compile Include="Extensions\Helper\ListHelper.cs" />
+    <Compile Include="Extensions\Stream\Reader.cs" />
+    <Compile Include="Extensions\Utils\TimeUtil.cs" />
+    <Compile Include="Files\CSV.cs" />
+    <Compile Include="Files\CSV_Helpers\Data.cs" />
+    <Compile Include="Files\CSV_Helpers\DataTable.cs" />
+    <Compile Include="Files\CSV_Helpers\GlobalID.cs" />
+    <Compile Include="Files\CSV_Logic\AchievementData.cs" />
+    <Compile Include="Files\CSV_Logic\AttackTypeData.cs" />
+    <Compile Include="Files\CSV_Logic\BillingPackageData.cs" />
+    <Compile Include="Files\CSV_Logic\BlockData.cs" />
+    <Compile Include="Files\CSV_Logic\BoostData.cs" />
+    <Compile Include="Files\CSV_Logic\CreditData.cs" />
+    <Compile Include="Files\CSV_Logic\EffectData.cs" />
+    <Compile Include="Files\CSV_Logic\FacebookErrorData.cs" />
+    <Compile Include="Files\CSV_Logic\FontData.cs" />
+    <Compile Include="Files\CSV_Logic\GateData.cs" />
+    <Compile Include="Files\CSV_Logic\GlobalData.cs" />
+    <Compile Include="Files\CSV_Logic\HeroData.cs" />
+    <Compile Include="Files\CSV_Logic\LevelData.cs" />
+    <Compile Include="Files\CSV_Logic\LocaleData.cs" />
+    <Compile Include="Files\CSV_Logic\MatchPatternData.cs" />
+    <Compile Include="Files\CSV_Logic\MonsterData.cs" />
+    <Compile Include="Files\CSV_Logic\ParticleEmitterData.cs" />
+    <Compile Include="Files\CSV_Logic\PlaylistData.cs" />
+    <Compile Include="Files\CSV_Logic\ProjectileData.cs" />
+    <Compile Include="Files\CSV_Logic\PuzzleData.cs" />
+    <Compile Include="Files\CSV_Logic\ResourceData.cs" />
+    <Compile Include="Files\CSV_Logic\SoundData.cs" />
+    <Compile Include="Files\CSV_Logic\SpecialMoveData.cs" />
+    <Compile Include="Files\CSV_Logic\TextData.cs" />
+    <Compile Include="Files\CSV_Logic\TutorialData.cs" />
+    <Compile Include="Files\CSV_Reader\Gamefiles.cs" />
+    <Compile Include="Files\LevelFile.cs" />
+    <Compile Include="Logic\Home\Home.cs" />
+    <Compile Include="Logic\Level\Level.cs" />
+    <Compile Include="Logic\Mode\GameMode.cs" />
+    <Compile Include="Logic\CityMap.cs" />
+    <Compile Include="Logic\Player\EnergyTimer.cs" />
+    <Compile Include="Logic\Puzzle.cs" />
+    <Compile Include="Logic\Office.cs" />
+    <Compile Include="Logic\Player\Items\DataSlot.cs" />
+    <Compile Include="Logic\Player\Player.cs" />
+    <Compile Include="Logic\Player\Slots\DataSlots.cs" />
+    <Compile Include="Logic\Player\Slots\ResourceSlots.cs" />
+    <Compile Include="Logic\Device.cs" />
+    <Compile Include="Logic\Enums\Database.cs" />
+    <Compile Include="Logic\Enums\Gamefile.cs" />
+    <Compile Include="Logic\Mode\Enums\State.cs" />
+    <Compile Include="Logic\Manager\CommandManager.cs" />
+    <Compile Include="Logic\Math\Math.cs" />
+    <Compile Include="Logic\Random.cs" />
+    <Compile Include="Logic\Slots\Battles.cs" />
+    <Compile Include="Logic\Slots\Chats.cs" />
+    <Compile Include="Logic\Slots\Clans.cs" />
+    <Compile Include="Logic\Slots\Items\Chat.cs" />
+    <Compile Include="Logic\Slots\Items\Facebook.cs" />
+    <Compile Include="Logic\Slots\Items\Gamecenter.cs" />
+    <Compile Include="Logic\Slots\Items\Google.cs" />
+    <Compile Include="Logic\Slots\Players.cs" />
+    <Compile Include="Logic\Time.cs" />
+    <Compile Include="Logic\Timer.cs" />
+    <Compile Include="Logic\Version.cs" />
+    <Compile Include="Packets\Command.cs" />
+    <Compile Include="Packets\Commands\Debug\Debug_Command.cs" />
+    <Compile Include="Packets\Debug.cs" />
+    <Compile Include="Packets\Enums\AddFriendErrorReason.cs" />
+    <Compile Include="Packets\Enums\AttackHomeFailedReason.cs" />
+    <Compile Include="Packets\Enums\AvatarNameChangeFailedReason.cs" />
+    <Compile Include="Packets\Enums\HomeBattleLiveFailedReason.cs" />
+    <Compile Include="Packets\Enums\ServiceNode.cs" />
+    <Compile Include="Packets\Factory.cs" />
+    <Compile Include="Packets\Message.cs" />
+    <Compile Include="Packets\Messages\Client\Account\Authentification_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Account\Keep_Alive_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Account\Set_Device_Token_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Home\End_Client_Turn_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Account\Authentification_Failed_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Account\Keep_Alive_Server_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Account\Authentification_Ok_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Home\Server_Error_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Home\Out_Of_Sync_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Home\Own_Home_Data_Message.cs" />
+    <Compile Include="Packets\ServerCommand.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Core\Database\Models\GBS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GBS.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Core\Database\Models\GBS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GBS.cs</LastGenOutput>
+    </Content>
+    <Content Include="Gamefiles\font\debug.png" />
+    <Content Include="Gamefiles\music\ghost_map_02.mp3" />
+    <Content Include="Gamefiles\music\ghost_tutorial_01.mp3" />
+    <Content Include="Gamefiles\music\ghost_win_loop_01.mp3" />
+    <Content Include="Gamefiles\music\ingame_music_01.mp3" />
+    <Content Include="Gamefiles\music\ingame_music_02.mp3" />
+    <Content Include="Gamefiles\music\ingame_music_03.mp3" />
+    <Content Include="Gamefiles\music\ingame_music_04.mp3" />
+    <Content Include="Gamefiles\music\ingame_music_05.mp3" />
+    <Content Include="Gamefiles\music\ingame_music_06.mp3" />
+    <Content Include="Gamefiles\music\ingame_music_07.mp3" />
+    <Content Include="Gamefiles\shader\blur.vsh" />
+    <Content Include="Gamefiles\shader\vertextexcolor.vsh" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Core\Database\Models\GBS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GBS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Core\Database\Models\GBS.edmx.diagram">
+      <DependentUpon>GBS.edmx</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gamefiles\csv\achievements.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\attack_types.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\billing_packages.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\blocks.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\boosts.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\credits.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\effects.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\facebook_errors.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\fonts.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\gates.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\globals.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\heroes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\levels.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\locales.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\match_patterns.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\monsters.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\particle_emitters.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\playlists.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\projectiles.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\puzzles.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\resource.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\sounds.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\special_moves.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\texts.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\tutorials.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\fingerprint.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\font\AstounderRoundBB-bld.otf" />
+    <None Include="Gamefiles\font\AstounderRoundBB-bldital.otf" />
+    <None Include="Gamefiles\font\AstounderRoundBB_ital.otf" />
+    <None Include="Gamefiles\font\AstounderRoundBB_reg.otf" />
+    <None Include="Gamefiles\font\CREABBB.ttf" />
+    <None Include="Gamefiles\font\debug.fnt" />
+    <None Include="Gamefiles\font\huggable.ttf" />
+    <None Include="Gamefiles\font\sc_secorigbb.ttf" />
+    <None Include="Gamefiles\font\VTCSuperMarketSaleRegular.ttf" />
+    <None Include="Gamefiles\level\Level1.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level10.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level100.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level11.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level12.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level13.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level14.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level15.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level16.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level17.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level18.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level19.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level2.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level20.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level21.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level22.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level23.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level24.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level25.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level26.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level27.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level28.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level29.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level3.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level30.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level31.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level32.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level33.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level34.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level35.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level36.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level37.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level38.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level39.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level4.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level40.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level41.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level42.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level43.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level44.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level45.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level46.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level47.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level48.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level49.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level5.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level50.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level51.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level52.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level53.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level54.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level55.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level56.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level57.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level58.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level59.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level6.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level60.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level61.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level62.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level63.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level64.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level65.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level66.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level67.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level68.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level69.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level7.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level70.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level71.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level72.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level73.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level74.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level75.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level76.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level77.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level78.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level79.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level8.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level80.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level81.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level82.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level83.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level84.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level85.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level86.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level87.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level88.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level89.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level9.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level90.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level91.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level92.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level93.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level94.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level95.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level96.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level97.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level98.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\Level99.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\starting_home.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\blocks.sc" />
+    <None Include="Gamefiles\sc\blocks_lowres.sc" />
+    <None Include="Gamefiles\sc\debug.sc" />
+    <None Include="Gamefiles\sc\effects.sc" />
+    <None Include="Gamefiles\sc\effects_lowres.sc" />
+    <None Include="Gamefiles\sc\heroes.sc" />
+    <None Include="Gamefiles\sc\heroes_lowres.sc" />
+    <None Include="Gamefiles\sc\levels.sc" />
+    <None Include="Gamefiles\sc\levels_lowres.sc" />
+    <None Include="Gamefiles\sc\loading.sc" />
+    <None Include="Gamefiles\sc\map.sc" />
+    <None Include="Gamefiles\sc\map_lowres.sc" />
+    <None Include="Gamefiles\sc\monsters.sc" />
+    <None Include="Gamefiles\sc\monsters_lowres.sc" />
+    <None Include="Gamefiles\sc\tutorial.sc" />
+    <None Include="Gamefiles\sc\ui.sc" />
+    <None Include="Gamefiles\sc\ui_lowres.sc" />
+    <None Include="Gamefiles\sfx\caf\aliss_hurt_01.caf" />
+    <None Include="Gamefiles\sfx\caf\aliss_hurt_02.caf" />
+    <None Include="Gamefiles\sfx\caf\aliss_hurt_03.caf" />
+    <None Include="Gamefiles\sfx\caf\barrel_explosion_01.caf" />
+    <None Include="Gamefiles\sfx\caf\barrel_explosion_02.caf" />
+    <None Include="Gamefiles\sfx\caf\beam_01_loop_v5.caf" />
+    <None Include="Gamefiles\sfx\caf\beam_02_loop_v5.caf" />
+    <None Include="Gamefiles\sfx\caf\beam_03_loop_v5.caf" />
+    <None Include="Gamefiles\sfx\caf\beam_04_loop_v5.caf" />
+    <None Include="Gamefiles\sfx\caf\beam_05_loop_v5.caf" />
+    <None Include="Gamefiles\sfx\caf\beam_1_fire_01.caf" />
+    <None Include="Gamefiles\sfx\caf\beam_2_fire_01.caf" />
+    <None Include="Gamefiles\sfx\caf\beam_3_fire_01.caf" />
+    <None Include="Gamefiles\sfx\caf\beam_4_fire_01.caf" />
+    <None Include="Gamefiles\sfx\caf\beam_5_fire_01.caf" />
+    <None Include="Gamefiles\sfx\caf\blocks_fall_01.caf" />
+    <None Include="Gamefiles\sfx\caf\blocks_land_01.caf" />
+    <None Include="Gamefiles\sfx\caf\bomb_explo_01.caf" />
+    <None Include="Gamefiles\sfx\caf\box_disappear_08.caf" />
+    <None Include="Gamefiles\sfx\caf\Button_click_06.caf" />
+    <None Include="Gamefiles\sfx\caf\Button_click_12.caf" />
+    <None Include="Gamefiles\sfx\caf\Button_click_13.caf" />
+    <None Include="Gamefiles\sfx\caf\cat_01.caf" />
+    <None Include="Gamefiles\sfx\caf\coins_fly_01.caf" />
+    <None Include="Gamefiles\sfx\caf\coin_appear_01.caf" />
+    <None Include="Gamefiles\sfx\caf\coin_appear_02.caf" />
+    <None Include="Gamefiles\sfx\caf\coin_appear_02v2.caf" />
+    <None Include="Gamefiles\sfx\caf\coin_appear_03.caf" />
+    <None Include="Gamefiles\sfx\caf\coin_count_01.caf" />
+    <None Include="Gamefiles\sfx\caf\connect_01v2.caf" />
+    <None Include="Gamefiles\sfx\caf\connect_02v2.caf" />
+    <None Include="Gamefiles\sfx\caf\connect_03v2.caf" />
+    <None Include="Gamefiles\sfx\caf\connect_04v2.caf" />
+    <None Include="Gamefiles\sfx\caf\connect_05v2.caf" />
+    <None Include="Gamefiles\sfx\caf\connect_06v2.caf" />
+    <None Include="Gamefiles\sfx\caf\connect_07v2.caf" />
+    <None Include="Gamefiles\sfx\caf\connect_08v2.caf" />
+    <None Include="Gamefiles\sfx\caf\connect_09v2.caf" />
+    <None Include="Gamefiles\sfx\caf\connect_10v2.caf" />
+    <None Include="Gamefiles\sfx\caf\counter_01.caf" />
+    <None Include="Gamefiles\sfx\caf\cp03v3_rev.caf" />
+    <None Include="Gamefiles\sfx\caf\dog_01.caf" />
+    <None Include="Gamefiles\sfx\caf\dog_02.caf" />
+    <None Include="Gamefiles\sfx\caf\dog_03.caf" />
+    <None Include="Gamefiles\sfx\caf\dog_04.caf" />
+    <None Include="Gamefiles\sfx\caf\dog_05.caf" />
+    <None Include="Gamefiles\sfx\caf\dummy_01.caf" />
+    <None Include="Gamefiles\sfx\caf\epic_noob_fail_01.caf" />
+    <None Include="Gamefiles\sfx\caf\fan_01.caf" />
+    <None Include="Gamefiles\sfx\caf\fireman_hurt_01.caf" />
+    <None Include="Gamefiles\sfx\caf\fireman_hurt_02.caf" />
+    <None Include="Gamefiles\sfx\caf\fireman_hurt_03.caf" />
+    <None Include="Gamefiles\sfx\caf\freeze_01.caf" />
+    <None Include="Gamefiles\sfx\caf\get_energy_01.caf" />
+    <None Include="Gamefiles\sfx\caf\get_energy_01v2.caf" />
+    <None Include="Gamefiles\sfx\caf\get_powerup_01.caf" />
+    <None Include="Gamefiles\sfx\caf\get_powerup_02.caf" />
+    <None Include="Gamefiles\sfx\caf\get_powerup_03.caf" />
+    <None Include="Gamefiles\sfx\caf\get_powerup_04.caf" />
+    <None Include="Gamefiles\sfx\caf\get_powerup_05.caf" />
+    <None Include="Gamefiles\sfx\caf\get_special_freeze_01.caf" />
+    <None Include="Gamefiles\sfx\caf\get_special_heal_01.caf" />
+    <None Include="Gamefiles\sfx\caf\get_special_multiplier_01.caf" />
+    <None Include="Gamefiles\sfx\caf\get_special_rainbow_01.caf" />
+    <None Include="Gamefiles\sfx\caf\get_special_rainbow_02.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_appear_01.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_appear_02.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_attack_05.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_cage_01.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_cage_02.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_cage_03.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_cage_04.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_die_splat_01.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_die_splat_05.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_die_splat_06.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_die_splat_07.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_pop_01v93.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_pop_01v94.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_shoot_01.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_shoot_02.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_spawn_01.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_split_01.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_star_01.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_star_02.caf" />
+    <None Include="Gamefiles\sfx\caf\ghost_swirl_01.caf" />
+    <None Include="Gamefiles\sfx\caf\girl_speech_01.caf" />
+    <None Include="Gamefiles\sfx\caf\girl_speech_02.caf" />
+    <None Include="Gamefiles\sfx\caf\girl_speech_03.caf" />
+    <None Include="Gamefiles\sfx\caf\heal_01.caf" />
+    <None Include="Gamefiles\sfx\caf\heal_01v2.caf" />
+    <None Include="Gamefiles\sfx\caf\hit_ghost_01v2.caf" />
+    <None Include="Gamefiles\sfx\caf\hit_ghost_01v3.caf" />
+    <None Include="Gamefiles\sfx\caf\hit_ghost_01v4.caf" />
+    <None Include="Gamefiles\sfx\caf\hit_ghost_01v5.caf" />
+    <None Include="Gamefiles\sfx\caf\hit_ghost_01v6.caf" />
+    <None Include="Gamefiles\sfx\caf\hit_ghost_01v7.caf" />
+    <None Include="Gamefiles\sfx\caf\hugo_hurt_01.caf" />
+    <None Include="Gamefiles\sfx\caf\hugo_hurt_02.caf" />
+    <None Include="Gamefiles\sfx\caf\hugo_hurt_03.caf" />
+    <None Include="Gamefiles\sfx\caf\jock_01.caf" />
+    <None Include="Gamefiles\sfx\caf\jock_02.caf" />
+    <None Include="Gamefiles\sfx\caf\jock_03.caf" />
+    <None Include="Gamefiles\sfx\caf\jump3.caf" />
+    <None Include="Gamefiles\sfx\caf\kevin_hurt_01.caf" />
+    <None Include="Gamefiles\sfx\caf\kevin_hurt_02.caf" />
+    <None Include="Gamefiles\sfx\caf\kevin_hurt_03.caf" />
+    <None Include="Gamefiles\sfx\caf\level_complete_02.caf" />
+    <None Include="Gamefiles\sfx\caf\level_start_01.caf" />
+    <None Include="Gamefiles\sfx\caf\loading_screen_jingle.caf" />
+    <None Include="Gamefiles\sfx\caf\low_health_loop_01.caf" />
+    <None Include="Gamefiles\sfx\caf\map_star_01.caf" />
+    <None Include="Gamefiles\sfx\caf\map_star_02.caf" />
+    <None Include="Gamefiles\sfx\caf\map_star_03.caf" />
+    <None Include="Gamefiles\sfx\caf\micheal_hurt_01.caf" />
+    <None Include="Gamefiles\sfx\caf\micheal_hurt_02.caf" />
+    <None Include="Gamefiles\sfx\caf\micheal_hurt_03.caf" />
+    <None Include="Gamefiles\sfx\caf\mirror_01.caf" />
+    <None Include="Gamefiles\sfx\caf\move_piece_01v3.caf" />
+    <None Include="Gamefiles\sfx\caf\move_piece_01v4.caf" />
+    <None Include="Gamefiles\sfx\caf\move_piece_01v5.caf" />
+    <None Include="Gamefiles\sfx\caf\newlevel_01.caf" />
+    <None Include="Gamefiles\sfx\caf\phoenix_loading_01.caf" />
+    <None Include="Gamefiles\sfx\caf\prof_speech_01.caf" />
+    <None Include="Gamefiles\sfx\caf\prof_speech_02.caf" />
+    <None Include="Gamefiles\sfx\caf\prof_speech_03.caf" />
+    <None Include="Gamefiles\sfx\caf\prof_speech_04.caf" />
+    <None Include="Gamefiles\sfx\caf\prof_speech_05.caf" />
+    <None Include="Gamefiles\sfx\caf\prof_speech_06.caf" />
+    <None Include="Gamefiles\sfx\caf\prof_speech_07.caf" />
+    <None Include="Gamefiles\sfx\caf\prof_speech_08.caf" />
+    <None Include="Gamefiles\sfx\caf\purple_get_special_01.caf" />
+    <None Include="Gamefiles\sfx\caf\purple_get_special_02.caf" />
+    <None Include="Gamefiles\sfx\caf\purple_get_special_03.caf" />
+    <None Include="Gamefiles\sfx\caf\score_fly_out_01.caf" />
+    <None Include="Gamefiles\sfx\caf\score_hit_01.caf" />
+    <None Include="Gamefiles\sfx\caf\score_hit_02.caf" />
+    <None Include="Gamefiles\sfx\caf\score_hit_03.caf" />
+    <None Include="Gamefiles\sfx\caf\scratch_01.caf" />
+    <None Include="Gamefiles\sfx\caf\security_lady_01.caf" />
+    <None Include="Gamefiles\sfx\caf\security_lady_02.caf" />
+    <None Include="Gamefiles\sfx\caf\security_lady_03.caf" />
+    <None Include="Gamefiles\sfx\caf\security_lady_04.caf" />
+    <None Include="Gamefiles\sfx\caf\security_lady_05.caf" />
+    <None Include="Gamefiles\sfx\caf\select_piece_03.caf" />
+    <None Include="Gamefiles\sfx\caf\shoot_ghost_02.caf" />
+    <None Include="Gamefiles\sfx\caf\spooky_voc_01.caf" />
+    <None Include="Gamefiles\sfx\caf\suitcase_appear_01.caf" />
+    <None Include="Gamefiles\sfx\caf\suitcase_appear_02.caf" />
+    <None Include="Gamefiles\sfx\caf\suitcase_appear_03.caf" />
+    <None Include="Gamefiles\sfx\caf\supercell_jingle.caf" />
+    <None Include="Gamefiles\sfx\caf\synth_hurt_01.caf" />
+    <None Include="Gamefiles\sfx\caf\timer_05v5.caf" />
+    <None Include="Gamefiles\sfx\caf\timer_short_03v4long.caf" />
+    <None Include="Gamefiles\sfx\caf\use_item_01.caf" />
+    <None Include="Gamefiles\sfx\caf\use_special_bomb_01.caf" />
+    <None Include="Gamefiles\sfx\caf\use_special_bomb_01v2.caf" />
+    <None Include="Gamefiles\sfx\caf\use_special_heal_01.caf" />
+    <None Include="Gamefiles\sfx\caf\use_special_heal_02.caf" />
+    <None Include="Gamefiles\sfx\caf\use_special_multiplier_01.caf" />
+    <None Include="Gamefiles\sfx\caf\use_special_multiplier_02.caf" />
+    <None Include="Gamefiles\sfx\caf\voc_booyah_02.caf" />
+    <None Include="Gamefiles\sfx\caf\voc_monstrous_01.caf" />
+    <None Include="Gamefiles\sfx\caf\voc_spooky_02.caf" />
+    <None Include="Gamefiles\sfx\caf\voc_unreal_02.caf" />
+    <None Include="Gamefiles\sfx\caf\voc_yikes_02.caf" />
+    <None Include="Gamefiles\sfx\caf\whooshv4.caf" />
+    <None Include="Gamefiles\sfx\caf\whooshv5.caf" />
+    <None Include="Gamefiles\sfx\caf\whooshv6.caf" />
+    <None Include="Gamefiles\sfx\caf\whooshv7.caf" />
+    <None Include="Gamefiles\sfx\caf\zed_hurt_01.caf" />
+    <None Include="Gamefiles\sfx\caf\zed_hurt_02.caf" />
+    <None Include="Gamefiles\sfx\caf\zed_hurt_03.caf" />
+    <None Include="Gamefiles\shader\blur.fsh" />
+    <None Include="Gamefiles\shader\vertextexcolor.fsh" />
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GL.Patcher\GL.Patcher.csproj">
+      <Project>{15a935b7-d610-435e-9ade-5eb8fcd004ea}</Project>
+      <Name>GL.Patcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GL.Servers\GL.Servers.csproj">
+      <Project>{5d12a2da-f22e-4813-9394-6409e5c1cb3a}</Project>
+      <Name>GL.Servers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\Json\" />
+    <Folder Include="Logic\Action\" />
+    <Folder Include="Logic\Attack\" />
+    <Folder Include="Logic\Chat\" />
+    <Folder Include="Logic\Player\Manager\" />
+    <Folder Include="Logic\Utils\" />
+    <Folder Include="Packets\Commands\Client\" />
+    <Folder Include="Packets\Commands\Server\" />
+    <Folder Include="Packets\Debugs\" />
+    <Folder Include="Packets\Messages\Client\Avatar\" />
+    <Folder Include="Packets\Messages\Client\Facebook\" />
+    <Folder Include="Packets\Messages\Client\Friend\" />
+    <Folder Include="Packets\Messages\Client\GameCenter\" />
+    <Folder Include="Packets\Messages\Client\Game\" />
+    <Folder Include="Packets\Messages\Client\GlobalChat\" />
+    <Folder Include="Packets\Messages\Client\Mail\" />
+    <Folder Include="Packets\Messages\Client\Notification\" />
+    <Folder Include="Packets\Messages\Client\Scoring\" />
+    <Folder Include="Packets\Messages\Server\Avatar\" />
+    <Folder Include="Packets\Messages\Server\Facebook\" />
+    <Folder Include="Packets\Messages\Server\Friend\" />
+    <Folder Include="Packets\Messages\Server\GameCenter\" />
+    <Folder Include="Packets\Messages\Server\Game\" />
+    <Folder Include="Packets\Messages\Server\GlobalChat\" />
+    <Folder Include="Packets\Messages\Server\Mail\" />
+    <Folder Include="Packets\Messages\Server\Notification\" />
+    <Folder Include="Packets\Messages\Server\Scoring\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>RMDIR "$(TargetDir)Library\" /S /Q
+RMDIR "$(TargetDir)Patch\" /S /Q
+RMDIR "$(TargetDir)Tools\" /S /Q
+RMDIR "$(TargetDir)Gamefiles\" /S /Q
+RMDIR "$(TargetDir)Logs\" /S /Q
+
+mkdir "$(TargetDir)Logs\"
+mkdir "$(TargetDir)Tools\"
+mkdir "$(TargetDir)Patch\"
+mkdir "$(TargetDir)Gamefiles\"
+mkdir "$(TargetDir)Library\"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+move *.dll "Library\"
+del *.xml
+del *.pdb</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>IF EXIST "$(TargetDir)Library\" RMDIR /S /Q "$(TargetDir)Library\"
+IF EXIST "$(TargetDir)Utilities\" RMDIR /S /Q "$(TargetDir)Utilities\"
+IF EXIST "$(TargetDir)Logs\" RMDIR /S /Q "$(TargetDir)Tools\"
+
+MKDIR "$(TargetDir)Library\"
+MKDIR "$(TargetDir)Logs\"
+MKDIR "$(TargetDir)Tools\"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+del /F /Q *.xml
+del /F /Q *.pdb
+move /Y *.dll "Library\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

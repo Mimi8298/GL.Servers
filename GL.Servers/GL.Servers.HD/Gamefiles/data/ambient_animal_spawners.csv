@@ -1,0 +1,6 @@
+"Name","UnlockLevel","EdgeSpawnTileX","EdgeSpawnTileY","BirdExtraTiles"
+"String","int","int","int","int"
+"AmbientAnimalSpawner",1,-15,16,10
+,,63,16,
+,,24,-15,
+,,24,37,

@@ -1,0 +1,17 @@
+Name,StartDate,StartHour,EndDate,EndHour,EventType,EventIcon,GoalType,GoalThresholds,ThresholdRewardSets,LeaderboardReward1,LeaderboardReward1Amount,LeaderboardReward2,LeaderboardReward2Amount,LeaderboardReward3,LeaderboardReward3Amount,Title,Text,FileName,ExportName
+String,String,int,String,int,String,String,String,int,String,String,int,String,int,String,int,String,String,String,String
+Event_01_Circus_train,2014-12-15,,2014-12-30,,CircusTrain,event_icon_christmas,CompleteTrain,1,RewardSetChristmas1,ChristmasSledge,1,Voucher1,1,Dynamite,2,TID_ADVANCED_EVENT_TITLE_CHRISTMAS,TID_ADVANCED_EVENT_TEXT_CHRISTMAS,sc/hud.sc,advanced_event_poster_christmas
+,,,,,,,,2,RewardSetChristmas2,,,Voucher2,2,Axe,3,,,,
+,,,,,,,,5,RewardSetChristmas3,,,Voucher3,3,Nail,1,,,,
+,,,,,,,,7,RewardSetChristmas4,,,Voucher4,4,Marker Stake,3,,,,
+,,,,,,,,9,RewardSetChristmas5,,,,,Map Piece,4,,,,
+Event_02_Circus_train,2015-01-01,,2015-01-2,,CircusTrain,event_icon_christmas,CompleteTrain,1,RewardSetChristmas1,ChristmasSledge,1,Voucher1,1,Dynamite,2,TID_ADVANCED_EVENT_TITLE_CHRISTMAS,TID_ADVANCED_EVENT_TEXT_CHRISTMAS,sc/hud.sc,advanced_event_poster_christmas
+,,,,,,,,2,RewardSetChristmas2,,,Voucher2,2,Axe,3,,,,
+,,,,,,,,5,RewardSetChristmas3,,,Voucher3,3,Nail,1,,,,
+,,,,,,,,7,RewardSetChristmas4,,,Voucher4,4,Marker Stake,3,,,,
+,,,,,,,,9,RewardSetChristmas5,,,,,Map Piece,4,,,,
+Event_03_Circus_train,2015-01-3,,2015-01-20,,CircusTrain,event_icon_christmas,CompleteTrain,1,RewardSetChristmas1,ChristmasSledge,1,Voucher1,1,Dynamite,2,TID_ADVANCED_EVENT_TITLE_CHRISTMAS,TID_ADVANCED_EVENT_TEXT_CHRISTMAS,sc/hud.sc,advanced_event_poster_christmas
+,,,,,,,,2,RewardSetChristmas2,,,Voucher2,2,Axe,3,,,,
+,,,,,,,,5,RewardSetChristmas3,,,Voucher3,3,Nail,1,,,,
+,,,,,,,,7,RewardSetChristmas4,,,Voucher4,4,Marker Stake,3,,,,
+,,,,,,,,9,RewardSetChristmas5,,,,,Map Piece,4,,,,

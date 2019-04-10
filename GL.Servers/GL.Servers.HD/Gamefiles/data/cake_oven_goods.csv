@@ -1,0 +1,36 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Cheese Cake,recipe_cheese_cake,TID_CHEESE_CAKE,Cake_Oven,1,Cookie,240,146,140,34,7,79,48,51,24,TID_CAKE_OVEN_PRODUCT_DESCRIPTION,55
+,,,,1,Cheese,,,,,,,,,,,
+Carrot Cake,recipe_carrot_cake,TID_CARROT_CAKE,Cake_Oven,2,Carrot,90,86,83,20,5,46,29,32,21,TID_CAKE_OVEN_PRODUCT_DESCRIPTION,34
+,,,,1,Butter,,,,,,,,,,,
+,,,,1,Brown_Sugar,,,,,,,,,,,
+Birthday Cake,recipe_cream_cake,TID_BIRTHDAY_CAKE,Cake_Oven,5,Wheat,180,112,108,26,6,61,36,41,23,TID_CAKE_OVEN_PRODUCT_DESCRIPTION,42
+,,,,1,Cream,,,,,,,,,,,
+,,,,1,White Sugar,,,,,,,,,,,
+Chocolate Cake,recipe_chocolate_cake,TID_CHOCOLATE_CAKE,Cake_Oven,1,Butter,120,165,159,38,5,89,57,60,36,TID_CAKE_OVEN_PRODUCT_DESCRIPTION,62
+,,,,1,Brown_Sugar,,,,,,,,,,,
+,,,,2,Cacao,,,,,,,,,,,
+Strawberry Cake,recipe_strawberry_cake,TID_STRAWBERRY_CAKE,Cake_Oven,3,Wheat,180,163,156,38,6,88,54,60,35,TID_CAKE_OVEN_PRODUCT_DESCRIPTION,60
+,,,,1,Cream,,,,,,,,,,,
+,,,,1,White Sugar,,,,,,,,,,,
+,,,,2,Strawberry,,,,,,,,,,,
+Berry Cake,recipe_berry_cake,TID_BERRY_CAKE,Cake_Oven,1,Raspberry,60,132,127,31,4,71,49,59,23,TID_CAKE_OVEN_PRODUCT_DESCRIPTION,53
+,,,,2,Cherry,,,,,,,,,,,
+,,,,1,Milk,,,,,,,,,,,
+,,,,1,Egg,,,,,,,,,,,
+Potato Feta Cake,recipe_potato_feta_cake,TID_POTATO_FETA_CAKE,Cake_Oven,1,Potato,120,159,153,37,5,86,59,59,38,TID_CAKE_OVEN_PRODUCT_DESCRIPTION,64
+,,,,1,Goat Cheese,,,,,,,,,,,
+,,,,4,Egg,,,,,,,,,,,
+Lemon Cake,recipe_lemon_cake,TID_PRODUCT_LEMON_CAKE,Cake_Oven,2,Lemon Curd,150,462,444,107,6,249,167,177,68,TID_CAKE_OVEN_PRODUCT_DESCRIPTION,173
+,,,,1,Cream,,,,,,,,,,,
+,,,,2,Egg,,,,,,,,,,,
+,,,,3,Wheat,,,,,,,,,,,
+Honey Apple Cake,recipe_honeyapple_cake,TID_PRODUCT_HONEY_APPLE_CAKE,Cake_Oven,2,Wheat,200,248,239,57,7,134,47,47,42,TID_CAKE_OVEN_PRODUCT_DESCRIPTION,54
+,,,,2,Egg,,,,,,,,,,,
+,,,,2,Apple,,,,,,,,,,,
+,,,,2,Honey,,,,,,,,,,,
+Fruitcake,recipe_fruitcake,TID_FRUIT_CAKE,Cake_Oven,3,Wheat,180,232,223,54,6,125,83,83,89,TID_CAKE_OVEN_PRODUCT_DESCRIPTION,89
+,,,,2,Orange,,,,,,,,,,,
+,,,,2,Cherry,,,,,,,,,,,
+,,,,2,Grapes,,,,,,,,,,,

@@ -1,0 +1,4 @@
+"Name","ExportName","FileName","TileWidth","TileHeight","CategoryID","CategoryNameTID","ScoreType","IsGlobal","MaxSize","ScoreBeatenIndication","CategoryEnabled"
+"string","string","string","int","int","string","string","string","boolean","int","boolean","boolean"
+"BoatScores","boat_leaderboard","sc/buildings_new.sc",1,1,"boat_friends","TID_LEADERBOARD_BOAT_FRIENDS_TITLE","boat_total",,200,"true","true"
+,,,,,"boat_global","TID_LEADERBOARD_BOAT_GLOBAL_TITLE","boat_total","true",200,,"true"

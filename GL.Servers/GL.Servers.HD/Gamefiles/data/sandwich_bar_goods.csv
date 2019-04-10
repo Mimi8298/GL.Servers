@@ -1,0 +1,21 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+BLTToast,recipe_blt_toast,TID_PRODUCT_BLTTOAST,Sandwich_Bar,2,Bread,100,333,321,77,5,180,126,126,65,TID_SANDWICHBAR_PRODUCT_DESCRIPTION,131
+,,,,3,Lettuce,,,,,,,,,,,
+,,,,2,Bacon,,,,,,,,,,,
+,,,,1,Mayonaise,,,,,,,,,,,
+VeggieBagel,recipe_veggie_bagel,TID_PRODUCT_VEGGIEBAGEL,Sandwich_Bar,2,Bread,40,274,264,63,3,148,102,102,61,TID_SANDWICHBAR_PRODUCT_DESCRIPTION,105
+,,,,3,Lettuce,,,,,,,,,,,
+,,,,2,Tomato,,,,,,,,,,,
+,,,,1,OliveOil,,,,,,,,,,,
+EggSandwich,recipe_egg_sandwich,TID_PRODUCT_EGGSANDWICH,Sandwich_Bar,2,Bread,80,300,289,69,4,162,113,113,66,TID_SANDWICHBAR_PRODUCT_DESCRIPTION,117
+,,,,3,Lettuce,,,,,,,,,,,
+,,,,2,Egg,,,,,,,,,,,
+,,,,1,Mayonaise,,,,,,,,,,,
+Honey Toast,recipe_honey_toast,TID_PRODUCT_HONEY_TOAST,Sandwich_Bar,1,Bread,60,133,128,31,4,71,26,26,69,TID_SANDWICHBAR_PRODUCT_DESCRIPTION,30
+,,,,1,Egg,,,,,,,,,,,
+,,,,1,Milk,,,,,,,,,,,
+,,,,1,Honey,,,,,,,,,,,
+Goat Cheese Toast,recipe_goatcheese_toast,TID_GOAT_CHEESE_TOAST,Sandwich_Bar,1,Bread,50,156,150,36,3,84,56,56,92,TID_SANDWICHBAR_PRODUCT_DESCRIPTION,59
+,,,,1,Goat Cheese,,,,,,,,,,,
+,,,,3,Grapes,,,,,,,,,,,

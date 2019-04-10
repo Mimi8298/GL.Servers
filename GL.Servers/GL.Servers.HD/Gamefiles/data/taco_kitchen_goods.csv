@@ -1,0 +1,15 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Taco,recipe_taco,TID_PRODUCT_TACO,Taco_Kitchen,1,Corn Bread,45,205,197,47,3,110,74,74,77,TID_TACO_KITCHEN_PRODUCT_DESCRIPTION,77
+,,,,1,Bacon,,,,,,,,,,,
+,,,,1,Salsa,,,,,,,,,,,
+Fish Taco,recipe_fish_taco,TID_PRODUCT_FISHTACO,Taco_Kitchen,2,Corn Bread,90,202,195,47,5,109,74,74,79,TID_TACO_KITCHEN_PRODUCT_DESCRIPTION,79
+,,,,1,Fish Meat,,,,,,,,,,,
+,,,,2,Chili,,,,,,,,,,,
+,,,,1,Lemon,,,,,,,,,,,
+Quesadilla,recipe_quesadilla,TID_PRODUCT_QUESADILLA,Taco_Kitchen,4,Wheat,60,124,119,29,4,67,44,44,82,TID_TACO_KITCHEN_PRODUCT_DESCRIPTION,48
+,,,,1,Cheese,,,,,,,,,,,
+,,,,2,Chili,,,,,,,,,,,
+Nachos,recipe_nachos,TID_PRODUCT_NACHOS,Taco_Kitchen,4,Corn,75,224,215,52,4,120,78,78,87,TID_TACO_KITCHEN_PRODUCT_DESCRIPTION,82
+,,,,1,Salsa,,,,,,,,,,,
+,,,,1,Cheese,,,,,,,,,,,

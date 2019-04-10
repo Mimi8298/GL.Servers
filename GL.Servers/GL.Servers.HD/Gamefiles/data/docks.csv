@@ -1,0 +1,4 @@
+Name,ExportName,FileName,TileWidth,TileHeight,RepairPrice,TimeMin,TimeSec,ExpToBuild,InstantComplete,TID,TapSound
+String,String,String,int,int,int,int,int,int,int,String,String
+Dock,dock_01,sc/decos.sc,5,2,14000,,,,,,MenuBleep
+Pier,pier_stone,sc/buildings_new.sc,5,2,,1920,,27,68,TID_DOCKS,MenuBleep

@@ -1,0 +1,2661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0" DefaultTargets="Build">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5D5C4FE-BC5A-4F3C-B3F5-014234F02A60}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GL.Servers.CoC</RootNamespace>
+    <AssemblyName>GL - Clash Server</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <NuGetPackageImportStamp />
+    <PublishUrl>ftp://ns3028394.ip-149-202-90.eu/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://dashboard.gobelinland.fr/releases/</InstallUrl>
+    <SupportUrl>https://www.gobelinland.fr/</SupportUrl>
+    <ErrorReportUrl>https://www.gobelinland.fr/</ErrorReportUrl>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>GL Royale Server</ProductName>
+    <PublisherName>GobelinLand</PublisherName>
+    <SuiteName>GL Servers</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.html</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Builds\Debug\</OutputPath>
+    <DefineConstants>DEBUG;USER_MIKE;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>default</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <FileAlignment>1024</FileAlignment>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <DocumentationFile />
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GL.Servers.CoC.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>http://tsa.startssl.com/timestamp</ManifestTimestampUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4FD39E2DECBB936853CE1DC994BB73BCFF045994</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Internet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>Builds\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <LangVersion>default</LangVersion>
+    <FileAlignment>1024</FileAlignment>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>0</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.29.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.1.29.1\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.29.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Auth.1.29.1\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.29.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Auth.1.29.1\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.29.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Core.1.29.1\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Games.v1, Version=1.29.1.999, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Games.v1.1.29.1.999\lib\net45\Google.Apis.Games.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.29.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.1.29.1\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MongoDB.Bson, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Bson.2.4.4\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.2.4.4\lib\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.Core.2.4.4\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis.StrongName, Version=1.2.6.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\StackExchange.Redis.StrongName.1.2.6\lib\net46\StackExchange.Redis.StrongName.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Net.Http.4.3.3\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.X509Certificates.4.3.1\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Consoles\Parser.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Database\Models\GBS.Context.cs" />
+    <Compile Include="Core\Database\Models\GBS.Context1.cs">
+      <DependentUpon>GBS.Context.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Database\Models\GBS.cs">
+      <DependentUpon>GBS.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Database\Models\GBS.Designer.cs">
+      <DependentUpon>GBS.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Database\Models\Mongo\Clans.cs" />
+    <Compile Include="Core\Database\Models\Mongo\Players.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Battles.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Clans.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Players.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Tournaments.cs" />
+    <Compile Include="Core\Database\Mongo.cs" />
+    <Compile Include="Core\Database\MySQL.cs" />
+    <Compile Include="Core\Database\Redis.cs" />
+    <Compile Include="Core\Events\EventHandler.cs" />
+    <Compile Include="Core\Logging.cs" />
+    <Compile Include="Core\Network\Processor.cs" />
+    <Compile Include="Core\Network\SocketEventArgsPool.cs" />
+    <Compile Include="Core\Network\TCPServer.cs" />
+    <Compile Include="Core\Network\Token.cs" />
+    <Compile Include="Core\Network\UDPServer.cs" />
+    <Compile Include="Core\Resources.cs" />
+    <Compile Include="Extensions\Extension.cs" />
+    <Compile Include="Extensions\Game\GamePlayUtil.cs" />
+    <Compile Include="Extensions\Game\Globals.cs" />
+    <Compile Include="Extensions\Helper\ByteStreamHelper.cs" />
+    <Compile Include="Extensions\Helper\JsonHelper.cs" />
+    <Compile Include="Extensions\Helper\ByteWriterHelper.cs" />
+    <Compile Include="Extensions\Helper\ListHelper.cs" />
+    <Compile Include="Extensions\Stream\Reader.cs" />
+    <Compile Include="Extensions\Utils\TimeUtil.cs" />
+    <Compile Include="Files\CSV.cs" />
+    <Compile Include="Files\CSV_Helpers\Data.cs" />
+    <Compile Include="Files\CSV_Helpers\DataTable.cs" />
+    <Compile Include="Files\CSV_Helpers\GlobalID.cs" />
+    <Compile Include="Files\CSV_Logic\Client\BillingPackageData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\BoomboxData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\ClientGlobalData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\DeeplinkData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\EventEntrieData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\FaqData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\HelpshiftData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\HintData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\NewData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\ParticleEmitterData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\ResourcePackData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\TextData.cs" />
+    <Compile Include="Files\CSV_Logic\Client\TextPatchData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\AchievementData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\AllianceBadgeData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\AllianceBadgeLayerData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\AllianceLevelData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\AlliancePortalData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\BuildingClassData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\BuildingData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\CalendarEventFunctionData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\CharacterData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\DecoData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\EffectData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\ExperienceLevelData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\GemBundleData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\GlobalData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\HeroData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\LeagueData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\Leagues2Data.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\LocaleData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\MissionData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\NpcData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\ObstacleData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\ProjectileData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\RegionData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\ResourceData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\ShieldData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\SpellData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\TownhallLevelData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\TrapData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\VariableData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\VillageObjectData.cs" />
+    <Compile Include="Files\CSV_Logic\Logic\WarData.cs" />
+    <Compile Include="Files\CSV_Reader\Gamefiles.cs" />
+    <Compile Include="Files\LevelFile.cs" />
+    <Compile Include="Logic\Attack\BattleLog.cs" />
+    <Compile Include="Logic\Attack\Manager\LiveReplayCommandManager.cs" />
+    <Compile Include="Logic\Attack\NpcAttack.cs" />
+    <Compile Include="Logic\Cooldown\Cooldown.cs" />
+    <Compile Include="Logic\Cooldown\CooldownManager.cs" />
+    <Compile Include="Logic\GameObject\Component\Manager\ComponentManager.cs" />
+    <Compile Include="Logic\GameObject\GameObjectFactory.cs" />
+    <Compile Include="Logic\Log\Manager\GameLogManager.cs" />
+    <Compile Include="Logic\GameObject\Component\BunkerComponent.cs" />
+    <Compile Include="Logic\GameObject\Component\UnitUpgradeComponent.cs" />
+    <Compile Include="Logic\GameObject\Component\UnitStorageComponent.cs" />
+    <Compile Include="Logic\Math\ELOMath.cs" />
+    <Compile Include="Logic\Level\Level.cs" />
+    <Compile Include="Logic\Log\StreamEntry\AllianceMailAvatarStreamEntry.cs" />
+    <Compile Include="Logic\Log\StreamEntry\AvatarStreamEntry.cs" />
+    <Compile Include="Logic\Map\Tile.cs" />
+    <Compile Include="Logic\Map\TileMap.cs" />
+    <Compile Include="Logic\Math\Vector2.cs" />
+    <Compile Include="Logic\Mode\GameMode.cs" />
+    <Compile Include="Logic\Clan\Enums\StreamEvent.cs" />
+    <Compile Include="Logic\Clan\Enums\StreamType.cs" />
+    <Compile Include="Logic\Clan\Items\AllianceHeader.cs" />
+    <Compile Include="Logic\Attack\Replay.cs" />
+    <Compile Include="Logic\GameObject\Component\ResourceStorageComponent.cs" />
+    <Compile Include="Logic\GameObject\Component\ResourceProductionComponent.cs" />
+    <Compile Include="Logic\GameObject\Filter.cs" />
+    <Compile Include="Logic\GameObject\Obstacle.cs" />
+    <Compile Include="Logic\GameObject\Building.cs" />
+    <Compile Include="Logic\GameObject\Component\Component.cs" />
+    <Compile Include="Logic\GameObject\GameObject.cs" />
+    <Compile Include="Logic\Home\Home.cs" />
+    <Compile Include="Logic\Player\Items\Item.cs" />
+    <Compile Include="Logic\Player\Items\Mission.cs" />
+    <Compile Include="Logic\Player\NpcPlayer.cs" />
+    <Compile Include="Logic\Player\PlayerBase.cs" />
+    <Compile Include="Logic\Production\Items\ProductionItem.cs" />
+    <Compile Include="Logic\Player\Items\UnitItem.cs" />
+    <Compile Include="Logic\GameObject\Manager\GameObjectManager.cs" />
+    <Compile Include="Logic\Manager\MissionManager.cs" />
+    <Compile Include="Logic\Production\Manager\UnitProductionManager.cs" />
+    <Compile Include="Logic\Version.cs" />
+    <Compile Include="Logic\Worker\WorkerManager.cs" />
+    <Compile Include="Logic\Player\Player.cs" />
+    <Compile Include="Logic\Player\Slots\AllianceUnitSlots.cs" />
+    <Compile Include="Logic\Player\Slots\DataSlots.cs" />
+    <Compile Include="Logic\Player\Slots\NpcMapSlots.cs" />
+    <Compile Include="Logic\Player\Slots\UnitSlots.cs" />
+    <Compile Include="Logic\Player\Slots\ResourceSlots.cs" />
+    <Compile Include="Logic\Clan\Alliance.cs" />
+    <Compile Include="Logic\Clan\Slots\Members.cs" />
+    <Compile Include="Logic\Clan\Slots\Streams.cs" />
+    <Compile Include="Logic\Clan\StreamEntry\AllianceEventStreamEntry.cs" />
+    <Compile Include="Logic\Clan\StreamEntry\ChatStreamEntry.cs" />
+    <Compile Include="Logic\Clan\StreamEntry\StreamEntry.cs" />
+    <Compile Include="Logic\Device.cs" />
+    <Compile Include="Logic\Enums\Database.cs" />
+    <Compile Include="Logic\Enums\Gamefile.cs" />
+    <Compile Include="Logic\Mode\Enums\State.cs" />
+    <Compile Include="Logic\Enums\Role.cs" />
+    <Compile Include="Logic\Manager\CommandManager.cs" />
+    <Compile Include="Logic\Math\Math.cs" />
+    <Compile Include="Logic\Random.cs" />
+    <Compile Include="Logic\Slots\Battles.cs" />
+    <Compile Include="Logic\Chat\Chats.cs" />
+    <Compile Include="Logic\Slots\Clans.cs" />
+    <Compile Include="Logic\Chat\Chat.cs" />
+    <Compile Include="Logic\Apis\Facebook.cs" />
+    <Compile Include="Logic\Apis\Gamecenter.cs" />
+    <Compile Include="Logic\Apis\Google.cs" />
+    <Compile Include="Logic\Clan\Items\Member.cs" />
+    <Compile Include="Logic\Slots\Accounts.cs" />
+    <Compile Include="Logic\Time.cs" />
+    <Compile Include="Logic\Timer.cs" />
+    <Compile Include="Packets\Command.cs" />
+    <Compile Include="Packets\Commands\Client\Buy_Resources_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Buy_Building_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Debug_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Claim_Achievement_Reward_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Clear_Obstacle_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Mission_Progress_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Collect_Resources_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Cancel_Unit_Production_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Unlock_Building_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Swap_GameObject_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Move_GameObject_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Place_Attacker_Command.cs" />
+    <Compile Include="Packets\Commands\Client\New_Shop_Seen_Command.cs" />
+    <Compile Include="Packets\Commands\Client\New_Seen_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Speed_Up_Construction_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Matchmaking_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Train_Unit_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Send_Alliance_Mail_Command.cs" />
+    <Compile Include="Packets\Commands\Client\Upgrade_Building_Command.cs" />
+    <Compile Include="Packets\Commands\Server\Alliance_Settings_Changed_Command.cs" />
+    <Compile Include="Packets\Commands\Server\Diamonds_Added_Command.cs" />
+    <Compile Include="Packets\Commands\Server\Leave_Alliance_Command.cs" />
+    <Compile Include="Packets\Commands\Server\Join_Alliance_Command.cs" />
+    <Compile Include="Packets\Commands\Server\Change_Avatar_Name_Command.cs" />
+    <Compile Include="Packets\Cryptography\IEncrypter.cs" />
+    <Compile Include="Packets\Cryptography\RC4Encrypter.cs" />
+    <Compile Include="Packets\Cryptography\PepperEncrypter.cs" />
+    <Compile Include="Packets\Cryptography\State\PepperState.cs" />
+    <Compile Include="Packets\Debug.cs" />
+    <Compile Include="Packets\Debugs\Add_Diamonds_Debug.cs" />
+    <Compile Include="Packets\Debugs\Add_Units_Debug.cs" />
+    <Compile Include="Packets\Debugs\Clear_Obstacles_Debug.cs" />
+    <Compile Include="Packets\Debugs\Fast_Forward_Debug.cs" />
+    <Compile Include="Packets\Debugs\Upgrade_All_Buildings_Debug.cs" />
+    <Compile Include="Packets\Enums\AddFriendErrorReason.cs" />
+    <Compile Include="Packets\Enums\AttackHomeFailedReason.cs" />
+    <Compile Include="Packets\Enums\AvatarNameChangeFailedReason.cs" />
+    <Compile Include="Packets\Enums\HomeBattleLiveFailedReason.cs" />
+    <Compile Include="Packets\Enums\ServiceNode.cs" />
+    <Compile Include="Packets\Factory.cs" />
+    <Compile Include="Packets\Message.cs" />
+    <Compile Include="Packets\Messages\Client\Game\Battle_End_Client_Turn_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Avatar\Ask_For_Avatar_Profile_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Home\Attack_Npc_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Home\Go_Home_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Avatar\Ask_For_Avatar_Stream_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Home\End_Client_Turn_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Avatar\Change_Avatar_Name_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Account\Authentification_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Account\Client_Hello_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Avatar\Inbox_Opened_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Account\Keep_Alive_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Alliance\Ask_For_Alliance_Data_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Alliance\Leave_Alliance_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Alliance\Chat_To_Alliance_Stream_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Alliance\Change_Alliance_Settings_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Alliance\Create_Alliance_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Alliance\Ask_For_Joinable_Alliance_List_Message.cs" />
+    <Compile Include="Packets\Messages\Client\Account\Set_Device_Token_Message.cs" />
+    <Compile Include="Packets\Messages\Client\GlobalChat\Send_Global_Chat_Line_Message.cs" />
+    <Compile Include="Packets\Messages\Client\GameCenter\Bind_GameCenter_Account_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Account\Encryption_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Replay\Home_Battle_Live_Replay_Failed_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Replay\Live_Replay_Data_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Replay\Live_Replay_Header_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Replay\Home_Battle_Replay_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Replay\Home_Battle_Replay_Failed_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Home\Enemy_Home_Data_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Home\Attack_Home_Failed_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Home\Npc_Data_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Avatar\Avatar_Profile_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Avatar\Avatar_Stream_Removed_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Avatar\Avatar_Stream_Entry_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Avatar\Avatar_Stream_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Home\Own_Home_Data_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Account\Authentification_Failed_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Account\Authentification_Ok_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Account\Keep_Alive_Server_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Account\Disconnected_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Account\Maintenance_Inbound_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Home\Out_Of_Sync_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Home\Available_Server_Command_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Home\Server_Error_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Account\Server_Hello_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Alliance\Joinable_Alliance_List_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Alliance\Alliance_Stream_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Alliance\Alliance_Stream_Entry_Removed_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Alliance\Alliance_Stream_Entry_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Alliance\Alliance_Data_Message.cs" />
+    <Compile Include="Packets\Messages\Server\GlobalChat\Global_Chat_Line_Message.cs" />
+    <Compile Include="Packets\Messages\Server\GameCenter\GameCenter_Account_Already_Bound_Message.cs" />
+    <Compile Include="Packets\Messages\Server\Friend\Add_Friend_Error_Message.cs" />
+    <Compile Include="Packets\Messages\Server\GameCenter\GameCenter_Account_Bound_Message.cs" />
+    <Compile Include="Packets\ServerCommand.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Core\Database\Models\GBS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GBS.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Core\Database\Models\GBS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GBS.cs</LastGenOutput>
+    </Content>
+    <Content Include="Gamefiles\font\debug.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\image\air_wave_shadow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\image\air_wave_tex.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\image\flare.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\image\range.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\image\tileset.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\battle_lost_02.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\combat_planning_music.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\duel_draw_01.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\fem_talk.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\fem_talk_scared.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\goblin_talk.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\gob_attack.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\new_battle_intro_01.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\onboarding_01.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\ship_travel_arrive_01.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\ship_travel_depart_01.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\v2battleend.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\war_map_ambi_01.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\music\winwinwin.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Core\Database\Models\GBS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GBS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Core\Database\Models\GBS.edmx.diagram">
+      <DependentUpon>GBS.edmx</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gamefiles\csv\animations.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\billing_packages.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\boombox.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\client_globals.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\credits.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\deeplinks.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\event_entries.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\faq.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\helpshift.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\hints.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\news.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\particle_emitters.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\resource_packs.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\texts.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\csv\texts_patch.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\fingerprint.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\font\CCBackBeat-Light_5.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\font\debug.fnt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\font\NotoNaskhArabic-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\font\Supercell-Magic_5.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\globals.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\globals_definition.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\building_levels.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc10.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc11.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc12.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc13.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc14.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc15.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc16.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc17.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc18.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc19.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc20.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc21.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc22.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc23.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc24.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc25.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc26.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc27.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc28.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc29.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc30.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc31.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc32.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc33.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc34.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc35.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc36.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc37.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc38.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc39.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc4.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc40.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc41.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc42.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc43.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc44.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc45.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc46.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc47.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc48.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc5.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc6.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc7.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc8.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\npc9.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\scrambled.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\starting_home.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel10.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel11.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel4.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel5.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel6.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel7.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel8.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\highlevel9.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\playtest0.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\playtest1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\playtest2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\playtest3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\playtest4.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\test\playtest5.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall10.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall11.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall1v2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall2v2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall3v2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall4.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall4v2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall5.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall5v2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall6.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall6v2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall7.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall7v2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall8.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall8v2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\townhall9.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\tutorial_npc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\tutorial_npc2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\level\v2_tutorial.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\achievements.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\alliance_badges.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\alliance_badge_layers.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\alliance_levels.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\alliance_portal.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\buildings.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\building_classes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\calendar_event_functions.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\characters.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\decos.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\effects.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\experience_levels.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\gem_bundles.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\globals.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\heroes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\leagues.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\leagues2.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\locales.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\missions.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\npcs.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\obstacles.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\projectiles.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\regions.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\resources.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\shields.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\spells.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\townhall_levels.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\traps.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\variables.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\village_objects.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\logic\war.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\music\combat_music.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\music\home_music_part_1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\music\home_music_part_2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\music\home_music_part_3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\music\night_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\music\night_combat_planning_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\music\v2_part_1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\music\v2_part_2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\calendar.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\clanchat.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\clans.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\level-th10.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\level-th11.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\level-th4.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\level-th5.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\level-th6.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\level-th7.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\level-th8.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\level-th9.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\offlinedata\players.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\background_npc.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\background_npc_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\background_player.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\background_player_2.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\background_player_2_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\background_player_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\background_war.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\background_war_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\buildings.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\buildings2.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\buildings2_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\buildings_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\building_bases.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\building_bases_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\characters.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\characters_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\clouds.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\clouds_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\content.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\content_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\debug.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\debug_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\env.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\env_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\events.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\events_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\event_content.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\event_content_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_ancientelder.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_ancientelder_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_archer.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_archer_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_babydragon.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_babydragon_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_balloon.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_balloon_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_barbarian.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_barbarian_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_battleram.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_battleram_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_bomber.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_bomber_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_dragon.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_dragon_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_giant.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_giant_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_glowing_minion.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_glowing_minion_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_goblin.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_goblin_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_golem.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_golem_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_healer.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_healer_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_hogrider.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_hogrider_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_icewizard.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_icewizard_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_ironfist_giant.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_ironfist_giant_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_miner.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_miner_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_minion.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_minion_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_moving_cannon.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_moving_cannon_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_nightwitch.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_nightwitch_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_pekka.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_pekka_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_raged_barbarian.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_raged_barbarian_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_rocketeer.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_rocketeer_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_sneaky_archer.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_sneaky_archer_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_super_charged_pekka.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_super_charged_pekka_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_tiny.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_tiny_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_troll.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_troll_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_valkyrie.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_valkyrie_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_wallbreaker.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_wallbreaker_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_warmachine.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_warmachine_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_witch.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_witch_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_wizard.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\info_wizard_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\loading.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\loading_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\map.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\map_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\matchsearch.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\matchsearch_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\news.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\news_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\overlay.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\overlay_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\promo_puzzle_and_dragons.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\promo_puzzle_and_dragons_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\royale.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\royale_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\shop.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\shop_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\tutorial2.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\tutorial2_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\tutorial_characters.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\tutorial_characters_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\tutorial_characters_v2.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\tutorial_characters_v2_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\tutorial_character_neutral.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\tutorial_character_neutral_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\ui.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\ui_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\air_cannon_fire_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\air_cannon_pickup_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\air_cannon_place_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\air_defense_place_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\air_def_attack_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\air_def_hit_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\air_def_pickup_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\air_trap.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\alliance_build_drop_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\alliance_build_pickup_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\alliance_jingle_v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ancient_defcon_1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ancient_defcon_2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ancient_defcon_3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ancient_defcon_4.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ancient_explo_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ancient_fire_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ancient_place_mecha_eagle_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ancient_target_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ancient_target_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\angry_dragon_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_death_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_death_05v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_deploy_09.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_deploy_09v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_deploy_09v3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_invis_01v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_queen_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_queen_attack_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_queen_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_queen_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_queen_scream_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_tower_pick_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\archer_tower_place_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\arrow_hit_07.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\arrow_hit_07v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\arrow_hit_07v3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\arrow_hit_12.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\babydragon_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\baby_dragon_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\baby_dragon_atk_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\baby_dragon_death_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\baby_dragon_death_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bad_move_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\balloon_deploy_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\balloon_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\balloon_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_death_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_death_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_hit_stuff.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_hit_stuff2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_hit_stuff3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_hit_stuff4.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_king_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_king_deploy.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_king_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_king_scream_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_sword_swing_hit_14.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_sword_swing_hit_14v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barbarian_sword_swing_hit_14v3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barb_deploy_11.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barb_deploy_11v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barb_deploy_11v3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\barb_king_rage_fist_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\battle_ram_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bat_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bat_atk_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bat_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\beam_up_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\boarrider_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\boarrider_attack_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\boarrider_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\boarrider_deploy_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\boarrider_die_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bomb_skeleton_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bomb_tower_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bomb_tower_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bottle_break_04_lightning_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bottle_heal_magic_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bottle_jump_spell_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bottle_rage_magic_07v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bow_attack.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bow_load.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bow_out_of_ammo.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bow_pickup.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bow_place.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bow_target.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\builder_bot_atk_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\builder_bot_atk_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\builder_bot_pre_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\builder_hall_tap_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\builder_hut_pickup_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\builder_hut_place_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\building_construct_07.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\building_destroyed_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\building_finished_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\build_pickup_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bush2-halloween.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\bush2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\button_click.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\cake_tap_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\cannon_08.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\cannon_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\cannon_drop2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\cannon_fire3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\cannon_fire_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\cannon_fire_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\cannon_pickup3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\cannon_roll_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clanwars_engaged_on_map_01small.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clash_grass_pop_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clear_tombstone_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clock_tower_pickup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clock_tower_pickup_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clock_tower_pickup_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clock_tower_pickup_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clock_tower_pickup_04bug.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clock_tower_place_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clock_tower_place_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clock_tower_place_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\clock_tower_place_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\coffin_pickup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\coffin_place_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\coffin_popup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\coins_collect_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\coin_steal_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\collect_diamonds_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\copy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\copy_spell_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\crossbow_Archer_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\crowwbow_archer_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\crowwbow_archer_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\crusher_atk_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\darktower_noammo_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\darktower_pickup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\darktower_place_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\darktower_reload_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dark_drill_pickup.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dark_drill_pickup_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dark_drill_place.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dark_drill_place_07.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dark_elixir_collect.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dark_elixir_steal.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dark_storage_pickup.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dark_storage_place.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dark_witch_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dark_witch_dep_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\deploy_bomb_skeleton_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\deploy_pekka_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\deploy_skeleton_07.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\deploy_skeleton_07v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\deploy_skeleton_07v3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\donate_button_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\double_canon_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\double_canon_fire_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\double_canon_pickup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dragon_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dragon_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\dragon_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\duel_notification_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\elixir_collect_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\elixir_pump_drop_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\elixir_pump_pickup_07.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\elixir_steal_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\elixir_storage_drop_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\elixir_storage_pickup_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\explosion_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\explosive_arrow_01v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\face_smacker_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\find_clan_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\flowar_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\flower_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\freeze_spell_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\garg_2_atk_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\garg_2_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\garg_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\garg_deploy_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\garg_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\gem_boost_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\generic_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\giant_attack_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\giant_attack_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\giant_attack_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\giant_attack_hit_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\giant_death_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\giant_deploy_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\giant_deploy_04v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\giant_deploy_04v3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\gift_spell_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\goblin_death_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\goblin_deploy_14.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\goblin_deploy_14v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\goblin_deploy_14v3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\goblin_talk_2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\goblin_talk_3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\goblin_talk_4.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\gob_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\gob_attack_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\gob_attack_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\gob_talk_woop_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\golden_haus_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\golden_haus_drop_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\goldmine_drop4.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\goldmine_pickup4.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\grand_warden_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\grand_warden_aura_loop_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\grand_warden_deploy_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\grand_warden_dizzy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\grand_warden_shield_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\healer_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\healer_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\healer_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\healer_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\healer_hit_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\hero_altar_pickup_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\hero_altar_place.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\hero_energized.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\hero_patrol.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\hero_sleep.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\hero_spot_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\hero_ui_select_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\hero_upgrade_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ice_mage_impact_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ice_wizard_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ice_wiz_death_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ice_wiz_death_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\ice_wiz_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\laser_loop_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\league_bonus.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\league_demote.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\league_promote.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\leg_league_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\leg_league_over_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\lightning_amb_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\loading_screen_jingle.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\mage_attack_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\mage_attack_02v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\mage_attack_02v3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\mage_deploy_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\magic_bottle_fall_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\mech_eagle_reload_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\mech_eagle_sad_no_ammo_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\miner_atk_clash_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\miner_death_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\miner_dig_down_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\miner_dig_oneshot_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\mortar_fire_02_with_fall.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\mortar_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\mortar_pickup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\mortar_place_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\moving_07.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\multi_mortar_fire_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\multi_mortar_fire_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\multi_mortar_pickup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\multi_mortar_place_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_archer_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_archer_atk_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_archer_atk_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_archer_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_archer_deploy_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_archer_deploy_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_archer_impact_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_barb_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_barb_atk_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_barb_atk_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_barb_atk_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_barb_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_barb_deploy_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\new_barb_deploy_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\no_troops_01short.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\observatory_pickup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\observatory_place_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\pekka_attack_02v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\pekka_attack_hit_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\pekka_death_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\poison_garg_2nd_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\poison_garg_2nd_atk_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\poison_garg_atk_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\poison_garg_dep_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\rearm_jingle_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\rock_pickup3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\rock_troll_dep_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\rock_troll_explo_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\rock_troll_hit_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\rock_troll_throw_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\rock_troll_throw_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\rock_troll_throw_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\santa.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\sell_item_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\shrink_spell_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\skelly_spell_land_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\skelly_up_from_ground_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\slimeball_fire_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\spellfactory_pickup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\spellfactory_place_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\spell_ready_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\spell_ui_select_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\start_troop_upgrade_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\stone_golem_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\stone_golem_death_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\stone_golem_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\stone_golem_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\summon_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\summon_die_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\supercell_jingle.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tap_boat_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tap_cauldron_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tap_chest_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tap_grand_warden_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tesla_appear_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tesla_drop_09.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tesla_hit_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tesla_pickup_11.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tesla_zap_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tesla_zap_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tinymite_attack_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tinymite_die_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tinymite_hurt_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tiny_attack_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tiny_deploy_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tiny_die_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tiny_hurt_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\towerexplo01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\town_hall_placing_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\training_finished_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\trap_eject_01v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tree8.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\troop_housing_pickup_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\troop_housing_pickup_09.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\troop_housing_placing_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\troop_housing_placing_08.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\troop_ui_select_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\troop_upgrade_finished_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_happy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_hey_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_no_talk_woop_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_relief_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_talk_aha_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_talk_ahoy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_talk_yeah_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_urgency_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_urgency_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_urgency_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_urgency_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tutor_wow_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tut_builder_backtosleep_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tut_builder_neutral_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tut_builder_snore_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tut_builder_surprised_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\tut_builder_wakeup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\upfromground_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\vial_earthquake_hit_gound_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\vial_fall_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\vial_poison_hit_gound_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\vial_speed_hit_gound_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\villager_onboard_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wall_breaker_attack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wall_breaker_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wall_pickup_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wall_place_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warmachine_lightning_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warriorgirlattack_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warriorgirlattack_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warriorgirlattack_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warriorgirlattack_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warriorgirlattack_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warriorgirlattack_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warriorgirldeploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warriorgirldeploy_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warriorgirl_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\warriorgirl_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\war_machine_dep_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\witch_deploy_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\witch_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\witch_summon_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wizard_die_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wizard_hit_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wizard_tower_drop_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wizard_tower_pickup_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wiz_death_vo_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wiz_death_vo_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\wiz_death_vo_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\xmastree.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sfx\ogg\xp_gain_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\android_emoji.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_naskh_ui_regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_sans_armenian.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_sans_devanagari_regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_sans_fallback.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_sans_hebrew_regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_sans_thai.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\won_type.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GL.Patcher\GL.Patcher.csproj">
+      <Project>{15a935b7-d610-435e-9ade-5eb8fcd004ea}</Project>
+      <Name>GL.Patcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GL.Servers\GL.Servers.csproj">
+      <Project>{5d12a2da-f22e-4813-9394-6409e5c1cb3a}</Project>
+      <Name>GL.Servers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\Json\" />
+    <Folder Include="Logic\Action\" />
+    <Folder Include="Logic\Attack\Items\" />
+    <Folder Include="Logic\Attack\Slots\" />
+    <Folder Include="Packets\Messages\Server\Facebook\" />
+    <Folder Include="Packets\Messages\Server\Google\" />
+    <Folder Include="Packets\Messages\Server\Scoring\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>RMDIR "$(TargetDir)Library\" /S /Q
+RMDIR "$(TargetDir)Patch\" /S /Q
+RMDIR "$(TargetDir)Tools\" /S /Q
+RMDIR "$(TargetDir)Gamefiles\" /S /Q
+RMDIR "$(TargetDir)Logs\" /S /Q
+
+mkdir "$(TargetDir)Logs\"
+mkdir "$(TargetDir)Tools\"
+mkdir "$(TargetDir)Patch\"
+mkdir "$(TargetDir)Gamefiles\"
+mkdir "$(TargetDir)Library\"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+move *.dll "Library\"
+del *.xml
+del *.pdb</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>IF EXIST "$(TargetDir)Library\" RMDIR /S /Q "$(TargetDir)Library\"
+IF EXIST "$(TargetDir)Utilities\" RMDIR /S /Q "$(TargetDir)Utilities\"
+IF EXIST "$(TargetDir)Logs\" RMDIR /S /Q "$(TargetDir)Tools\"
+
+MKDIR "$(TargetDir)Library\"
+MKDIR "$(TargetDir)Logs\"
+MKDIR "$(TargetDir)Tools\"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+del /F /Q *.xml
+del /F /Q *.pdb
+move /Y *.dll "Library\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

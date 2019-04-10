@@ -1,0 +1,37 @@
+{
+  "Globals": {
+     "GiftPackExtension": ""
+  },
+  "Village1": {
+    "SpecialObstacle": ""
+  },
+  "Village2": {
+    "TownHallMaxLevel": 8,
+    "ScoreChangeForLosing": [
+      { "Milestone": 0, "Percentage": 0 },
+      { "Milestone": 400, "Percentage": 30 },
+      { "Milestone": 800, "Percentage": 55 },
+      { "Milestone": 1200, "Percentage": 70 },
+      { "Milestone": 1600, "Percentage": 85 },
+      { "Milestone": 2000, "Percentage": 95 },
+      { "Milestone": 2400, "Percentage": 100 }
+    ],
+    "StrengthRangeForScore": [
+      { "Milestone": 0, "Percentage": 60 },
+      { "Milestone": 200, "Percentage": 80 },
+      { "Milestone": 400, "Percentage": 100 },
+      { "Milestone": 600, "Percentage": 120 },
+      { "Milestone": 800, "Percentage": 140 },
+      { "Milestone": 1000, "Percentage": 160 },
+      { "Milestone": 1200, "Percentage": 180 },
+      { "Milestone": 1400, "Percentage": 200 },
+      { "Milestone": 1600, "Percentage": 400 },
+      { "Milestone": 1800, "Percentage": 600 },
+      { "Milestone": 2000, "Percentage": 1000 }
+    ]
+  },
+  "KillSwitches": {
+    "BattleWaitForProjectileDestruction": false
+  }
+}
+ 

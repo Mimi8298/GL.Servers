@@ -1,0 +1,14 @@
+"Name","TID","InfoTID","BoostMultiplier","ExportNameAdd","ArtifactType","PowerStoneBoostTimeHours"
+"String","String","String","int","String","int","int"
+"BoostGold","TID_BOOST_GOLD","TID_BOOST_GOLD_INFO",200,"_gold",1,72
+"BoostWood","TID_BOOST_WOOD","TID_BOOST_WOOD_INFO",250,"_wood",1,72
+"BoostStone","TID_BOOST_STONE","TID_BOOST_STONE_INFO",250,"_stone",1,72
+"BoostMetal","TID_BOOST_METAL","TID_BOOST_METAL_INFO",250,"_metal",1,72
+"BoostTroopHP","TID_BOOST_TROOP_HP","TID_BOOST_TROOP_HP_INFO",140,"_defensive",3,3
+"BoostBuildingHP","TID_BOOST_BUILDING_HP","TID_BOOST_BUILDING_HP_INFO",130,"_defensive",2,8
+"BoostTroopDamage","TID_BOOST_TROOP_DAMAGE","TID_BOOST_TROOP_DAMAGE_INFO",130,"_offensive",3,3
+"BoostBuildingDamage","TID_BOOST_BUILDING_DAMAGE","TID_BOOST_BUILDING_DAMAGE_INFO",150,"_offensive",2,8
+"BoostGunshipEnergy","TID_BOOST_GUNSHIP_ENERGY","TID_BOOST_GUNSHIP_ENERGY_INFO",170,"_gunboat",4,3
+"BoostLoot","TID_BOOST_LOOT","TID_BOOST_LOOT_INFO",200,"_loot",4,3
+"BoostArtifactDrop","TID_BOOST_ARTIFACT_DROP","TID_BOOST_ARTIFACT_DROP_INFO",300,"_artifactdrop",4,3
+"BoostAllResources","TID_BOOST_ALL","TID_BOOST_ALL_INFO",100,"_allres",1,72

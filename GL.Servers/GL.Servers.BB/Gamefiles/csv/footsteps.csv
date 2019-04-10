@@ -1,0 +1,10 @@
+"Name","SWF","ExportName","YOffset","SpacingBetweenFeet","IntervalTicks","LifeTimeTicks"
+"String","String","String","int","int","int","int"
+"Rifleman step","sc/units.sc","char_gen_footstep",250,40,5,70
+"Heavy step","sc/units.sc","char_gen_footstep",300,60,5,70
+"Zooka step","sc/units.sc","char_gen_footstep",250,40,5,70
+"Warrior step","sc/units.sc","char_gen_footstep",250,40,5,70
+"Tank step","sc/units.sc","tank_gen_footstep",150,300,2,40
+"Healer step","sc/units.sc","char_gen_footstep",250,40,5,70
+"Scorcher step","sc/units.sc","tank_gen_footstep",170,380,2,40
+"Drone step","sc/units.sc","drone_gen_footstep",300,104,1,11

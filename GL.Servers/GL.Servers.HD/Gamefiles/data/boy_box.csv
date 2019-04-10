@@ -1,0 +1,3 @@
+"Name","FileName","ExportName","TileWidth","TileHeight","CollectSound","TapSound"
+"String","String","String","int","int","String","String"
+"BoyBox","sc/buildings_new.sc","buyer_spot",1,1,"Collect","MenuBleep"

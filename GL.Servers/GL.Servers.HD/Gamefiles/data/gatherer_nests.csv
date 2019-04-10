@@ -1,0 +1,3 @@
+Name,FileName,ExportName,Gatherer,MaxGatherer,TID,TapSound,CollectSound,TileWidth,TileHeight,InputResource,InputResourceAmount,OutputGood,ReadyNotificationName
+String,String,String,String,int,String,String,String,int,int,String,int,String,String
+BeeHive,sc/buildings_new.sc,bee_hive,Bee,3,TID_BEE_HIVE,TapBeeHive,Collect,1,1,Nectar,100,Honeycomb,HivesReady

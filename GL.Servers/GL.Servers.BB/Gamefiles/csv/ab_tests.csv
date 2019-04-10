@@ -1,0 +1,8 @@
+"Name","CountryCodes","StoreApple","StoreGooglePlay","Modulo","RemainderMax"
+"String","String","Boolean","Boolean","Int","Int"
+"UnitTest","CH","true","false",100,1
+,"JP,TW","true","true",100,24
+,"AU","true","true",100,4
+,"FOO","false","false",10,0
+,"BAR","false","true",10,5
+"ShowAllMapTeasers","ALL","true","true",100,49

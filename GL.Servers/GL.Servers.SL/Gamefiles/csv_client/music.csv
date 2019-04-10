@@ -1,0 +1,15 @@
+"Name","Filename","Volume","Loop"
+"String","String","int","boolean"
+"Map Music","music/mapmusic2.ogg",60,"true"
+"Map Music2","music/mapmusic3.ogg",60,"true"
+"Game over","music/life_game_over_01.ogg",60,
+"Game won","music/life_game_won_01.ogg",60,
+"Smash logo","music/smashlandlogo_01.ogg",60,
+"Game Music","music/ingame03.ogg",60,"true"
+,"music/ingame01.ogg",60,"true"
+,"music/evil_life_01.ogg",60,"true"
+,"music/ingame04.ogg",60,"true"
+,"music/evil_life_02.ogg",60,"true"
+,"music/ingame08.ogg",60,"true"
+"Advboysail","music/advboysail_01.ogg",60,"true"
+"Orb music loop","music/life_get_orbs_02_loop.ogg",40,"true"

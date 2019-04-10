@@ -1,0 +1,4 @@
+Name,FileName,ExportName,TileWidth,TileHeight,TapSound
+String,String,String,int,int,String
+Train Crossing Top,sc/train_buildings.sc,boom01,3,1,MenuBleep
+Train Crossing Bottom,sc/train_buildings.sc,boom02,3,1,MenuBleep

@@ -1,0 +1,9 @@
+Name,TID,SWF,CollectEffect,ResourceIconExportName,ResourceIconButtonExportName,HudInstanceName,TextRed,TextGreen,TextBlue,PriceInDiamonds
+String,String,String,String,String,String,String,int,int,int,int
+Diamonds,TID_DIAMONDS,sc/ui.sc,,,icon_diamond,diamond_bar,0,92,255,
+Gold,TID_GOLD,sc/ui.sc,,building_resources_gold,icon_coin,gold_bar,240,240,0,
+Energy,TID_ENERGY,sc/ui.sc,,,icon_energy_res,,,244,40,
+Orb1,TID_ORB_1,sc/ui.sc,,,icon_orb1,,,,,75
+Orb2,TID_ORB_2,sc/ui.sc,,,icon_orb2,,,,,75
+Orb3,TID_ORB_3,sc/ui.sc,,,icon_orb3,,,,,75
+Orb4,TID_ORB_4,sc/ui.sc,,,icon_orb4,,,,,150

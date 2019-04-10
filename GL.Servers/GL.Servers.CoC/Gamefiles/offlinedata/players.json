@@ -1,0 +1,6 @@
+{"players":[
+{"name":"Chief","levelfile":"offlinedata/level-th7.json","clan":0},
+{"name":"Chef","levelfile":"offlinedata/level-th8.json","clan":1},
+{"name":"Jefe","levelfile":"offlinedata/level-th9.json","clan":2},
+{"name":"Chefe","levelfile":"offlinedata/level-th10.json","clan":-1}
+]}

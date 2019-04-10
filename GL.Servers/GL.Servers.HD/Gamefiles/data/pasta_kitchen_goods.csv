@@ -1,0 +1,14 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Gnocchi,recipe_gnocchi,TID_PRODUCT_GNOCCHI,Pasta_Kitchen,4,Potato,80,245,236,57,4,132,88,88,72,TID_PASTA_KITCHEN_PRODUCT_DESCRIPTION,92
+,,,,2,Wheat,,,,,,,,,,,
+,,,,3,Tomato,,,,,,,,,,,
+,,,,2,Butter,,,,,,,,,,,
+Lasagna,recipe_lasagne,TID_PRODUCT_LASAGNA,Pasta_Kitchen,3,Raw Pasta,100,275,265,63,5,148,97,100,74,TID_PASTA_KITCHEN_PRODUCT_DESCRIPTION,102
+,,,,1,Cheese,,,,,,,,,,,
+,,,,1,Tomato Sauce,,,,,,,,,,,
+,,,,1,Carrot,,,,,,,,,,,
+Lobster Pasta,recipe_lobsterpasta,TID_PRODUCT_LOBSTERPASTA,Pasta_Kitchen,3,Raw Pasta,120,329,316,76,5,177,98,106,79,TID_PASTA_KITCHEN_PRODUCT_DESCRIPTION,103
+,,,,1,Lobster Meat,,,,,,,,,,,
+,,,,4,Tomato,,,,,,,,,,,
+,,,,2,Cream,,,,,,,,,,,

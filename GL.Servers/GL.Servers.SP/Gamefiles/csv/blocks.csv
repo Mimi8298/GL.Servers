@@ -1,0 +1,12 @@
+"Name","SWF","ExportName","EmitExportName","BreakEffect","BigBreakEffect","SpawnEffect","ColorIndex","LockedSWF","LockedExportName","Special","Boost","BombRadius","RowBombRadius","ColumnBombRadius"
+"String","String","String","String","String","String","String","int","String","String","Boolean","String","Int","Int","Int"
+"Red","sc/blocks.sc","Red","RedParticleFX","RedMatch","RedMatch",,1,"sc/blocks.sc","RedMatchFX",,,,,
+"Green","sc/blocks.sc","Green","GreenParticleFX","GreenMatch","GreenMatch",,2,"sc/blocks.sc","GreenMatchFX",,,,,
+"Blue","sc/blocks.sc","Blue","BlueParticleFX","BlueMatch","BlueMatch",,3,"sc/blocks.sc","BlueMatchFX",,,,,
+"Yellow","sc/blocks.sc","Yellow","YellowParticleFX","YellowMatch","YellowMatch",,4,"sc/blocks.sc","YellowMatchFX",,,,,
+"Purple","sc/blocks.sc","Purple","PurpleParticleFX","PurpleMatch","PurpleMatch",,5,"sc/blocks.sc","PurpleMatchFX",,,,,
+"RedBoost","sc/blocks.sc","RedBoost","RedChargeParticle1","RedBoostMatch","RedBoostMatch","RedBoostSpawn",1,"sc/blocks.sc","BoostRedMatchFX","TRUE","BoostDamage",,,
+"GreenBoost","sc/blocks.sc","GreenBoost","GreenChargeParticle1","GreenBoostMatch","GreenBoostMatch","GreenBoostSpawn",2,"sc/blocks.sc","BoostGreenMatchFX","TRUE","HeroSwap",,,
+"BlueBoost","sc/blocks.sc","BlueBoost","BlueChargeParticle1","BlueBoostMatch","BlueBoostMatch","BlueBoostSpawn",3,"sc/blocks.sc","BoostBlueMatchFX","TRUE","FreezeAll",,,
+"YellowBoost","sc/blocks.sc","YellowBoost","YellowChargeParticle1","YellowBoostMatch","YellowBoostMatch","YellowBoostSpawn",4,"sc/blocks.sc","BoostYellowMatchFX","TRUE","HealAllies",,,
+"PurpleBoost","sc/blocks.sc","PurpleBoost","PurpleChargeParticle1","PurpleBoostMatch","PurpleBoostMatch","PurpleBoostSpawn",5,"sc/blocks.sc","BoostPurpleMatchFX","TRUE","Pushback",,,

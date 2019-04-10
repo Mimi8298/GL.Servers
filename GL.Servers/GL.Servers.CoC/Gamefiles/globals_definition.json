@@ -1,0 +1,52 @@
+{
+  "Globals": {
+    "parameters": {
+      "GiftPackExtension": { "type": "string" }
+    }
+  },
+  "Village1": {
+    "description": "Parameters for village1",
+    "parameters": {
+       "SpecialObstacle": { "type": "string" }
+    }
+  },
+  "Village2": {
+    "description": "Parameters for village2",
+    "parameters": {
+      "TownHallMaxLevel": {
+        "type": "number",
+        "min": 0,
+        "max": 8
+      },
+      "ScoreChangeForLosing": {
+        "type": "list",
+        "listItemType": {
+          "type": "object",
+          "typeName": "Pair",
+          "fields": {
+            "Milestone": { "type": "number", "min": 0, "max": 10000 },
+            "Percentage": { "type": "number", "min": 0, "max": 100 }
+          }
+        }
+      },
+      "StrengthRangeForScore": {
+        "type": "list",
+        "listItemType": {
+          "type": "object",
+          "typeName": "Pair",
+          "fields": {
+            "Milestone": { "type": "number", "min": 0, "max": 10000 },
+            "Percentage": { "type": "number", "min": 0, "max": 10000 }
+          }
+        }
+      }
+    }
+  },
+  "KillSwitches": {
+    "description": "Various kill switches",
+    "parameters": {
+      "BattleWaitForProjectileDestruction": { "type": "boolean" }
+    }
+  }
+  
+}

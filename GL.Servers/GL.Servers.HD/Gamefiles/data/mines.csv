@@ -1,0 +1,7 @@
+Name,ExportName,FileName,TileWidth,TileHeight,TapSound,TapProcessingSound,CollectSound,Tool,NumOres,DiamondChance,RepairPrice,TimeMin,TimeSec,ExpToBuild,InstantComplete,TID
+String,String,String,int,int,String,String,String,String,int,int,int,int,int,int,int,String
+Mine,mine_broken,sc/buildings_new.sc,3,3,MenuBleep,BigRockCollect,Collect,,,,21000,,,,,
+RepairedMine,mine,sc/buildings_new.sc,3,3,MenuBleep,BigRockCollect,Collect,Dynamite,2,6,,2160,,28,71,TID_MINE
+,,,,,,,,Demolition Charge,3,9,,,,,,
+,,,,,,,,Shovel,4,12,,,,,,
+,,,,,,,,Pickaxe,5,10,,,,,,

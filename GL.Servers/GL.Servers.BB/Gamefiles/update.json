@@ -1,0 +1,277 @@
+{
+  "languageColumn": 4,
+  "updates": [
+    {
+      "tid": "TID_UPGRADE_PROTO_LAB",
+      "value": "Améliorez le labo d'armes au niveau <level> pour assembler votre <name> !"
+    },
+    {
+      "tid": "TID_INCREASE_LEVEL_TO_GET_MORE_OUTPOSTS",
+      "value": "La limite d'avant-postes augmentera au niveau <number>."
+    },
+    {
+      "tid": "TID_BUILDING_UPGRADED_ON_OUTPOST",
+      "value": "<name> : niveau <level> atteint"
+    },
+    {
+      "tid": "TID_ALLIANCE_JOIN_HQ_REQUIREMENT_NOT_MET",
+      "value": "Il vous faut un quartier général de niveau <number> pour rejoindre une force spéciale !"
+    },
+    {
+      "tid": "TID_BUTTON_LOCATE",
+      "value": "Voir"
+    },
+    {
+      "tid": "TID_DEVICE_LINK_ERROR_CODE_CURRENT_VILLAGE_TOO_HIGH_TEXT_ANDROID",
+      "value": "Votre base est déjà associée au compte Google utilisé pour vous connecter.\\n\\nComme une progression a déjà été enregistrée (Q.G. de niveau <level> ou achat effectué), elle ne peut plus être supprimée."
+    },
+    {
+      "tid": "TID_TRADER_CHEST_DONATION_TITLE",
+      "value": "Caisse de commerce gratuite reçue"
+    },
+    {
+      "tid": "TID_DEVICE_LINK_ERROR_CODE_CURRENT_VILLAGE_TOO_HIGH_TEXT",
+      "value": "Votre base est déjà associée au compte Game Center utilisé pour vous connecter.\\n\\nComme une progression a déjà été enregistrée (Q.G. de niveau <level> ou achat effectué), elle ne peut plus être supprimée."
+    },
+    {
+      "tid": "TID_UPDATE_TROOP_LEVEL",
+      "value": "Améliorer au niveau <number>"
+    },
+    {
+      "tid": "TID_ACHIEVEMENT_TOWN_HALL",
+      "value": "Améliorer le quartier général au niveau <number>"
+    },
+    {
+      "tid": "TID_GAMECENTER_BOUND_TO_OTHER_ACCOUNT",
+      "value": "Ce compte Game Center est associé à la base de <name> (Q.G. niveau <number>). Pour sauvegarder la base actuelle, connectez-vous à un autre compte Game Center. Charger la base de <name> ?"
+    },
+    {
+      "tid": "TID_TRADER_CHEST_DONATION_ALREADY_CLAIMED_TIME",
+      "value": "Vous avez déjà récupéré cette caisse de commerce il y a <time>."
+    },
+    {
+      "tid": "TID_CAN_NOT_CLEAR_OBSTACLE",
+      "value": "Q.G. de niveau <number> requis pour cette suppression !"
+    },
+    {
+      "tid": "TID_TROOP_UPGRADE_COMPLETED",
+      "value": "Amélioration terminée : <item> niveau <number>"
+    },
+    {
+      "tid": "TID_GOOGLE_SERVICE_BOUND_TO_OTHER_ACCOUNT",
+      "value": "Ce compte Google Play est associé à la base de <name> (Q.G. niveau <number>). Pour sauvegarder la base actuelle, connectez-vous à un autre compte Google Play. Charger la base de <name> ?"
+    },
+    {
+      "tid": "TID_CHANGE_NAME_HINT",
+      "value": "Vous pouvez choisir un nom en améliorant le radar au niveau 2."
+    },
+    {
+      "tid": "TID_ALLIANCE_CREATE_HQ_REQUIREMENT_NOT_MET",
+      "value": "Il vous faut un quartier général de niveau <number> pour créer une force spéciale !"
+    },
+    {
+      "tid": "TID_CANT_UPGRADE_TOWNHALL_UPGRADE_BUILDING",
+      "value": "<name> de niveau <number> nécessaire !"
+    },
+    {
+      "tid": "TID_INBOX_HERO_BOOST",
+      "value": "Voici de quoi améliorer vos héros !"
+    },
+    {
+      "tid": "TID_LOCAL_NOTIFICATION_UPGRADE_READY",
+      "value": "<item> : amélioration au niveau <level> terminée"
+    },
+    {
+      "tid": "TID_DEVICE_LINK_CONFIRMATION_TOWNHALL_LEVEL",
+      "value": "Quartier général de niveau <level>"
+    },
+    {
+      "tid": "TID_COMMAND_CENTER_LEVEL_TOO_LOW",
+      "value": "Vous devez améliorer votre centre de commandement au niveau <number> !"
+    },
+    {
+      "tid": "TID_BUILDING_DEEPSEA_INFO",
+      "value": "Le sous-marin peut découvrir des trésors maritimes. Repérez une zone de plongée sur la carte (radar de niveau 5 requis) pour l'y envoyer en mission. Améliorez-le pour atteindre des eaux plus profondes où se trouvent de meilleures récompenses."
+    },
+    {
+      "tid": "TID_INBOX_HERO_COMPENSATION",
+      "value": "Nous avons remarqué que vous aviez rencontré des problèmes lors des améliorations de héros. Voici un petit cadeau en guise de compensation."
+    },
+    {
+      "tid": "TID_HINT_PLAYERNAME",
+      "value": "Vous pouvez choisir votre nom en améliorant votre radar au niveau 2."
+    },
+    {
+      "tid": "TID_HINT_RADAR",
+      "value": "À partir du niveau 2 du radar, vous verrez d'autres joueurs à attaquer !"
+    },
+    {
+      "tid": "TID_BUILDING_UPGRADE_COMPLETED",
+      "value": "Amélioration terminée : <item> niveau <number>"
+    },
+    {
+      "tid": "TID_MEGABASE_INTRO",
+      "value": "Salut, vous. Avez-vous remarqué qu'une partie de vos troupes avait disparu ?"
+    },
+    {
+      "tid": "TID_MEGABASE_INTRO_2",
+      "value": "Ne vous en faites pas. Vos soldats sont avec moi. Mes expériences vont révéler tout leur potentiel. Mouahaha !"
+    },
+    {
+      "tid": "TID_MEGABASE_NOENERGY",
+      "value": "Déjà à plat ? Quel dommage. J'avais préparé du pop-corn pour vous regarder rater votre prochaine attaque."
+    },
+    {
+      "tid": "TID_MEGABASE_NOENERGY_2",
+      "value": "La folie des grandeurs, ça devient vite fatiguant. Revenez quand vous aurez admis que vous ne me battrez jamais."
+    },
+    {
+      "tid": "TID_MEGABASE_LOSE_1",
+      "value": "Si je devais vous résumer en quelques mots, je choisirais « de héros à zéro »."
+    },
+    {
+      "tid": "TID_MEGABASE_LOSE_2",
+      "value": "Ces derniers temps, je travaille mon ironie. Très belle attaque, au fait."
+    },
+    {
+      "tid": "TID_MEGABASE_LOSE_1ATK",
+      "value": "Ça me rappelle ma jeunesse : le vent dans mes cheveux, les insectes qui s'écrasent sur mon pare-brise..."
+    },
+    {
+      "tid": "TID_MEGABASE_LOSE_2ATK",
+      "value": "Votre incompétence atteint des sommets. Vous avez trouvé votre rang dans une caisse de commerce, non ?"
+    },
+    {
+      "tid": "TID_MEGABASE_LOSE_3ATK",
+      "value": "Si je voulais faire de la médiocrité un superpouvoir, je ne manquerais pas de vous consulter."
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_01",
+      "value": "Vos soi-disant héros n'auront réussi qu'à me donner de nouvelles idées pour vous vaincre."
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_02",
+      "value": "Mes nouveaux sbires manquent un peu de souplesse, mais quelques vidéos de yoga devraient régler le problème."
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_03",
+      "value": "Détail amusant n°1 sur le mutagène : en plus de donner des superpouvoirs, il rend la peau vraiment douce."
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_04",
+      "value": "Détail amusant n°2 sur le mutagène : je ne vous donnerai jamais tous mes détails amusants sur le mutagène !"
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_05",
+      "value": "Détail amusant n°3 sur le mutagène : j'ai commencé par l'essayer sur des tortues, mais les résultats n'étaient pas très... cowabunga."
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_06",
+      "value": "Détail amusant n°4 sur le mutagène : il est vert. Oui. C'est comme ça."
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_07",
+      "value": "Détail amusant n°5 sur le mutagène : il n'est pas impossible que le mutagène soit du jus de melon 100 % bio. "
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_08",
+      "value": "Vos « héros » ne font pas le poids face à mes supersoldats ! Je vous le garantis !"
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_09",
+      "value": "Abandonnez. J'ai capturé le soldat Johnson. Quand vous le reverrez, il sera devenu un monstre invincible !"
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_10",
+      "value": "Vous avez vu les frères Bogdanov ? J'ai mis leurs cuves l'une à côté de l'autre pour qu'ils puissent être seuls ensemble, héhé !"
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_11",
+      "value": "Arrêtez ça ! Ces cuves m'ont coûté cher !"
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_12",
+      "value": "Je ne suis pas énervé. Vous êtes trop méprisable pour me mettre en colère."
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_13",
+      "value": "Vous êtes pénible. Comment vais-je expliquer à l'entreprise de location pourquoi ses cuves à mutagène sont criblées de balles ? "
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_14",
+      "value": "J'ai écrit un poème pour vous. Il s'appelle « Mon mutagène ». Je vous le lirai peut-être, un jour."
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_15",
+      "value": "« Oh mon mutagène, que j'ai de la peine. Je t'ai payé cher, c'était nécessaire, mais je n'ai pas eu de veine. »"
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_16",
+      "value": "Vous savez ce qu'on obtient en multipliant par zéro ? Vous. Vous êtes nul."
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_17",
+      "value": "J'adore le chant tyrolien. J'en fais écouter à mes supersoldats en continu. Ça développe leur oreille !"
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_18",
+      "value": "Les rumeurs selon lesquelles j'essaierais de créer des tortues ninja dans ces cuves sont mensongères. J'ai déjà des tortues ninja !"
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_19",
+      "value": "Vous voulez bien m'attaquer encore ? J'ai renforcé mon programme d'endoctrinement pour rendre mes soldats plus loyaux."
+    },
+    {
+      "tid": "TID_MEGABASE_WIN_20",
+      "value": "Ces résultats sont absurdes. Comment les tyroliennes pourraient-elles avoir un effet négatif sur les performances au combat ?"
+    },
+    {
+      "tid": "TID_MEGABASE_COMEBACK_01",
+      "value": "Vous battez en retraite dans le mauvais sens ! La prochaine fois, demandez votre chemin."
+    },
+    {
+      "tid": "TID_MEGABASE_COMEBACK_02",
+      "value": "On passe de la tragédie à la comédie ! Vous pensez toujours pouvoir me battre, c'est hilarant."
+    },
+    {
+      "tid": "TID_MEGABASE_COMEBACK_03",
+      "value": "Vous aviez réussi à me battre d'un cheveu, mais maintenant, vous vous êtes fait ratiboiser !"
+    },
+    {
+      "tid": "TID_MEGABASE_OUTRO",
+      "value": "Quand on fait des expériences avec le mutagène, on a parfois des accidents dramatiques."
+    },
+    {
+      "tid": "TID_MEGABASE_OUTRO_2",
+      "value": "Par exemple, un bon à rien a détruit mon Méga crabe."
+    },
+    {
+      "tid": "TID_MEGABASE_OUTRO_3",
+      "value": "Peu importe. La vente du mutagène comme produit pour la peau devrait me rapporter une belle somme ! Mouahahaha !"
+    },
+    {
+      "tid": "TID_TROOP_PRISON_RIFLEMAN",
+      "value": "Cuve de fusilier"
+    },
+    {
+      "tid": "TID_TROOP_PRISON_MEDIC",
+      "value": "Cuve d'infirmier"
+    },
+    {
+      "tid": "TID_TROOP_PRISON_WARRIOR",
+      "value": "Cuve de guerrier"
+    },
+    {
+      "tid": "TID_TROOP_PRISON_HEAVY",
+      "value": "Cuve de gros bras"
+    },
+    {
+      "tid": "TID_TROOP_PRISON_DRONE",
+      "value": "Cuve de bestiole"
+    },
+    {
+      "tid": "TID_TROOP_PRISON_GRENADIER",
+      "value": "Cuve de grenadier"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Name,FileName,ExportName,IconName,TID,TileWidth,TileHeight,StopX,StopY,TapSound,ChooSound,WhistleSound,WheelCircum,ChooEffectExportName,MaintenanceSeconds,StoppedTime,MoveTime,MoveDistanceX,Carts
+String,String,String,String,String,int,int,int,int,String,String,String,int,String,int,int,int,int,String
+CircusTrain,sc/train_buildings.sc,train_circus,icon_train01,TID_TRAIN_TRAINSTATION,4,1,17,24,MenuBleep,TrainChoo,TrainWhistle,700,train_smoke,100,500,500,50,CircusCart
+,,,,,,,,,,,,,,,,,,CircusCart
+,,,,,,,,,,,,,,,,,,CircusCart

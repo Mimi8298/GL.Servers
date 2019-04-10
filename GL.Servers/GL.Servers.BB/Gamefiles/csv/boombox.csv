@@ -1,0 +1,9 @@
+"Name","SupportedPlatforms","AllowedDomains","AllowedUrls"
+"String","String","String","String"
+"Boombox","ios","boombeach.com","https://www.youtube.com/embed/"
+,"android","kunlun-cdn.com","about:blank"
+,"kunlun","googlevideo.com",
+,,"ytimg.com",
+,,"doubleclick.net",
+,,"google.com",
+,,"gstatic.com",

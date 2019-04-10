@@ -1,0 +1,17 @@
+"Name","TID","Resource","CapacityPercentage","IconSWF","IconExportName","VillageType"
+"String","String","String","int","String","String","int"
+"Min Gold","TID_RESOURCE_PACK_GOLD_10","Gold",10,"sc/shop.sc","icon_gold_small",
+"Med Gold","TID_RESOURCE_PACK_GOLD_50","Gold",50,"sc/shop.sc","icon_gold_medium",
+"Max Gold","TID_RESOURCE_PACK_GOLD_FULL","Gold",100,"sc/shop.sc","icon_gold_big",
+"Min Elixir","TID_RESOURCE_PACK_ELIXIR_10","Elixir",10,"sc/shop.sc","icon_elixir_small",
+"Med Elixir","TID_RESOURCE_PACK_ELIXIR_50","Elixir",50,"sc/shop.sc","icon_elixir_medium",
+"Max Elixir","TID_RESOURCE_PACK_ELIXIR_FULL","Elixir",100,"sc/shop.sc","icon_elixir_big",
+"Min Dark Elixir","TID_RESOURCE_PACK_DARK_ELIXIR_10","DarkElixir",10,"sc/shop.sc","icon_dark_elixir_small",
+"Med Dark Elixir","TID_RESOURCE_PACK_DARK_ELIXIR_50","DarkElixir",50,"sc/shop.sc","icon_dark_elixir_medium",
+"Max Dark Elixir","TID_RESOURCE_PACK_DARK_ELIXIR_FULL","DarkElixir",100,"sc/shop.sc","icon_dark_elixir_big",
+"Min Gold2","TID_RESOURCE_PACK_GOLD_10","Gold2",10,"sc/shop.sc","icon_gold_small_square",1
+"Med Gold2","TID_RESOURCE_PACK_GOLD_50","Gold2",50,"sc/shop.sc","icon_gold_medium_square",1
+"Max Gold2","TID_RESOURCE_PACK_GOLD_FULL","Gold2",100,"sc/shop.sc","icon_gold_big_square",1
+"Min Elixir2","TID_RESOURCE_PACK_ELIXIR_10","Elixir2",10,"sc/shop.sc","icon_elixir_small",1
+"Med Elixir2","TID_RESOURCE_PACK_ELIXIR_50","Elixir2",50,"sc/shop.sc","icon_elixir_medium",1
+"Max Elixir2","TID_RESOURCE_PACK_ELIXIR_FULL","Elixir2",100,"sc/shop.sc","icon_elixir_big",1

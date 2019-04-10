@@ -1,0 +1,108 @@
+{"events": [
+
+	{ 
+		"id": 0,
+		"name": "Event 0",
+		"boomboxEntry": "CollectorBoost",
+		"eventEntryName": "CollectorBoost",
+		"inboxEntryId": 1,
+		"visibleTime": "20151222T",
+		"startTime": "20161222T",
+		"endTime": "20180105T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "ChangeWorkerLook", "parameters": [ "1", "worker_building_giant", "icon_builder_giant" ] }
+		]
+	},
+  
+	{
+		"id": 1,
+		"name": "Event 1",
+		"boomboxEntry": "CollectorBoost",
+		"eventEntryName": "CollectorBoost",
+		"inboxEntryId": 1,
+		"visibleTime": "20151222T",
+		"startTime": "20161222T",
+		"endTime": "20180105T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "BuildingSign", "parameters": [ "1000015" ] }
+		]
+	},
+  
+	{ 
+		"id": 2,
+		"name": "Event 2",
+		"boomboxEntry": "CollectorBoost",
+		"eventEntryName": "CollectorBoost",
+		"inboxEntryId": 1,
+		"visibleTime": "20151222T",
+		"startTime": "20161222T",
+		"endTime": "20180105T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "EnableTrap", "parameters": [ "12000015" ] }
+		]
+	},
+	   
+	{ 
+		"id": 3,
+		"name": "Event 3",
+		"boomboxEntry": "CollectorBoost",
+		"eventEntryName": "CollectorBoost",
+		"inboxEntryId": 1,
+		"visibleTime": "20151222T",
+		"startTime": "20161222T",
+		"endTime": "20180105T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "BuildingDestroyedSpawnUnit", "parameters": [ "1000015", "4000003", "1" ] }
+		]
+	},
+          
+	{ 
+		"id": 4,
+		"name": "Event 4",
+		"boomboxEntry": "CollectorBoost",
+		"eventEntryName": "CollectorBoost",
+		"inboxEntryId": 1,
+		"visibleTime": "20151222T",
+		"startTime": "20161222T",
+		"endTime": "20180105T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "EnableSpell", "parameters": [ "26000022" ] }
+		]
+	},
+	
+  { 
+		"id": 5,
+		"name": "Event 5",
+		"boomboxEntry": "",
+		"eventEntryName": "",
+		"inboxEntryId": 0,
+		"visibleTime": "",
+		"startTime": "20161222T",
+		"endTime": "20180105T",
+		"showUpcoming": 0,
+		"functions": [
+			{ "name": "ClanWarLootMultiplier", "parameters": [ "2", "3", "4" ] }
+		]
+	},
+
+  { 
+		"id": 5,
+		"name": "Event 5",
+		"boomboxEntry": "",
+		"eventEntryName": "",
+		"inboxEntryId": 0,
+		"visibleTime": "",
+		"startTime": "20161222T",
+		"endTime": "20180105T",
+		"showUpcoming": 0,
+		"functions": [
+			{ "name": "EnableTroop", "parameters": [ "4000045" ] }
+		]
+	}
+  	
+]}

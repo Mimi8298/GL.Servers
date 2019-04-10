@@ -1,0 +1,10 @@
+"Name","ExportName","IsFruit","DeadExportName","FileName","TileWidth","TileHeight","TimeMin","FruitCount","ExpClear","InstantComplete","Tool","TID","DescriptionTID","TapSound","TapProcessingSound","CollectSound","Price","CollectIconExportName","ShopIconExportName","BirdCanLand","FBHelpTitle","FBHelpText","FBHelpDescription","FBPictureURL","GathererMineResource","ChildExportName","MineX","MineY","ResourceExportName","MineExportName","MineCount","ExpCollect","BuySound"
+"String","String","boolean","String","String","int","int","int","int","int","int","String","String","String","String","String","String","int","String","String","boolean","String","String","String","String","String","String","int","int","String","String","int","int","String"
+"Dandelion","nectar_dandelion_stage_1",,"nectar_dandelion_stage_2","sc/fruit_trees_berrybushes.sc",1,1,0,8,5,5,"Axe","TID_DANDELION","TID_DANDELION_DESCRIPTION","BigPineTap","BigPineTap","BigPineCollect",120,"tool_collect_honey","shop_icon_nectar_bush",,"TID_FRUIT_TREE_FB_HELP_TITLE","TID_DANDELION_FB_HELP_TEXT","TID_GENERIC_FB_DESCRIPTION","http://c15056174.r74.cf2.rackcdn.com/static/fb_feed_icons/fb_feed_dead_nectarbush.png","Nectar","NectarFlowers",-284,-22,"Nectar%02d","Flower%02d",250,8,"BigPineTap"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,28,-298,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,-399,-182,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,-128,-76,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,-342,-395,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,-167,-401,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,-277,-251,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,-59,-205,,,,,

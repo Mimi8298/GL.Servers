@@ -1,0 +1,32 @@
+Name,TID,InfoUIExportName,LevelBackgroundSWF,LevelBackgroundExportNames,LevelEndBackgroundExportNames,LevelForegroundExportNames,LevelOverlayExportNames,LevelCloudSWF,LevelCloudExportNames,ShadowColorMulR,ShadowColorMulG,ShadowColorMulB,ShadowAlpha,ProfileBackgroundExportName,BarrelEnemies,BarrelEnemyChance,VignetteSWF,VignetteExportName
+String,String,String,String,String,String,String,String,String,String,int,int,int,int,String,String,int,String,String
+Forest,TID_MYSTERY_FOREST,quest_info_map_part1,sc/env_forest.sc,forest_bg_01,forest_bg_end,forest_fg_01,forest_overlay_01,sc/common.sc,cloud_01,0,0,200,50,profile_bg_forest,Spider,20,sc/ui.sc,vignette_shadow_common
+,,,,forest_bg_02,,,forest_overlay_02,,cloud_01,,,,,,Bee,80,,
+,,,,,,,forest_overlay_03,,,,,,,,,,,
+Spooky,TID_MUSHROOM_LAND,quest_info_map_part2,sc/env_spooky.sc,spooky_bg_01,spooky_bg_end,spooky_fg_01,spooky_overlay_01,sc/common.sc,cloud_01,0,0,0,50,spooky_bg_01,SpiderSpooky,30,,
+,,,,spooky_bg_02,,spooky_fg_02,spooky_overlay_01,,cloud_01,,,,,,Baby Spider,60,,
+,,,,spooky_bg_03,,,spooky_overlay_01,,cloud_01,,,,,,Bat,10,,
+Desert,TID_SANDLAND,quest_info_map_sandland,sc/env_desert.sc,desert_bg_01,desert_bg_end,desert_fg_01,desert_overlay_02,sc/common.sc,cloud_desert,200,25,0,65,desert_bg_01,Gem Beetle,30,,vignette_shadow_yellow
+,,,,desert_bg_02,,,desert_overlay_01,,,,,,,,Baby Spider,35,,
+,,,,desert_bg_03,,,desert_overlay_02,,,,,,,,Bee,35,,
+,,,,desert_bg_04,,,desert_overlay_01,,,,,,,,,,,
+,,,,desert_bg_05,,,desert_overlay_02,,,,,,,,,,,
+,,,,desert_bg_06,,,desert_overlay_01,,,,,,,,,,,
+,,,,desert_bg_07,,,desert_overlay_02,,,,,,,,,,,
+Ice,TID_ICELAND,quest_info_map_ice,sc/env_ice.sc,ice_bg_01,ice_bg_end,,,sc/common.sc,cloud_01,0,0,200,50,ice_bg_01,SpiderSpooky,35,,vignette_shadow_blue
+,,,,ice_bg_02,,,,,,,,,,,,,,
+ForestEvent1,TID_MYSTERY_FOREST,quest_info_map_part1,sc/env_forest.sc,forest_bg_event_bee_01,forest_bg_event_bee_01,,forest_overlay_event_bee_01,sc/common.sc,cloud_01,0,0,200,50,profile_bg_forest,Spider,20,,vignette_shadow_yellow
+,,,,,,,forest_overlay_event_bee_01,,,,,,,,Bee,80,,
+,,,,,,,forest_overlay_event_bee_01,,,,,,,,,,,
+,,,,,,,forest_overlay_event_bee_01,,,,,,,,,,,
+,,,,,,,forest_overlay_event_bee_01,,,,,,,,,,,
+IceEvent1,TID_ICELAND,quest_info_map_ice,sc/env_ice.sc,ice_bg_end,ice_bg_end,,ice_overlay_01,sc/common.sc,cloud_01,0,0,200,50,ice_bg_01,,,,vignette_shadow_blue
+,,,,,,,ice_overlay_01,,,,,,,,,,,
+,,,,,,,ice_overlay_01,,,,,,,,,,,
+,,,,,,,ice_overlay_01,,,,,,,,,,,
+,,,,,,,ice_overlay_01,,,,,,,,,,,
+SpookyEvent1,TID_MUSHROOM_LAND,quest_info_map_part2,sc/env_spooky.sc,spooky_bg_special_event,spooky_bg_special_event,,spooky_overlay_special,sc/common.sc,cloud_01,0,0,0,50,spooky_bg_01,SpiderSpooky,30,,vignette_shadow_common
+,,,,,,,spooky_overlay_special,,,,,,,,Baby Spider,60,,
+,,,,,,,spooky_overlay_special,,,,,,,,Bat,10,,
+,,,,,,,spooky_overlay_special,,,,,,,,,,,
+,,,,,,,spooky_overlay_special,,,,,,,,,,,

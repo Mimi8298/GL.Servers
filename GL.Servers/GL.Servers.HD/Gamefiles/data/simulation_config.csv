@@ -1,0 +1,10 @@
+"Name","Value"
+"String","int"
+"MinutesPlaying",2
+"MinutesNotPlaying",180
+"StopSimulationLevel",38
+"EnableConsoleOutput",1
+"GuestOrderCompleteSiloPercentage",70
+"GuestOrderCompleteWarehousePercentage",30
+"OnlyReportAtLevelUp",0
+"UseDiscardCheat",1

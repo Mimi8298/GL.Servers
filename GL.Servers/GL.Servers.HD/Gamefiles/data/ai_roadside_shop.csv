@@ -1,0 +1,43 @@
+Name,Good,Amount,Probability
+String,String,int,int
+A,Wheat,1,20
+B,Corn,1,20
+C,Soybean,1,20
+D,Sugarcane,1,17
+E,Carrot,1,17
+F,Indigo,1,17
+G,Pumpkin,1,17
+H,Chili,1,17
+I,Chicken Food,5,12
+J,Cow Food,5,12
+K,Pig Food,5,12
+L,Sheep Food,5,9
+Q,Dynamite,1,11
+R,Saw,1,11
+S,Axe,1,33
+T,Demolition Charge,1,6
+U,Shovel,1,6
+V,Tomato,1,14
+X,Apple,1,14
+Y,Cherry,1,14
+Z,Raspberry,1,14
+W,Blackberry,1,14
+AA,Strawberry,1,14
+BB,Cacao,1,14
+CC,Potato,1,14
+DD,Lettuce,1,14
+EE,Rice,1,14
+FF,Coffee,1,14
+GG,Olive,1,14
+HH,Lemon,1,14
+II,Goat Food,5,6
+JJ,Cream,1,1
+KK,Butter,1,1
+LL,Cheese,1,1
+MM,SoySauce,1,1
+NN,Lemon Curd,1,1
+OO,Mayonaise,1,1
+PP,OliveOil,1,1
+QQ,Brown_Sugar,1,1
+RR,White Sugar,1,1
+SS,Syrup,1,1

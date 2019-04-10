@@ -1,0 +1,33 @@
+"Quest","DialogType","DialogTID","Sound","OwnText","Boss","TakeDmgTaunt","DealDmgTaunt","HitObstacleTaunt","DieTaunt","KillTaunt","SpecialTaunt"
+"String","String","String","String","boolean","String","String","String","String","String","String","String"
+"ForestWizard","prematch","TID_WIZARD_1","Wiz Dialog 1","FALSE",,"TID_WIZ_TAKE_DMG","TID_WIZ_DEAL_DMG","TID_WIZ_HIT_OBSTACLE","TID_WIZ_DIE","TID_WIZ_KILL","TID_WIZ_SPECIAL"
+,,"TID_WIZARD_2","Adv Boy Dialog 1","TRUE",,,,,,,
+,,"TID_WIZARD_3","Wiz Dialog 2","FALSE",,,,,,,
+"ForestWizard","win","TID_WIZARD_WIN","Wiz Dialog 3","FALSE",,,,,,,
+"ForestWizard","lose","TID_WIZARD_LOSE","Wiz Dialog 3","FALSE",,,,,,,
+"ForestPrincess","prematch","TID_PRINCESS_1","Adv Boy Dialog 1","TRUE",,"TID_PRINCESS_TAKE_DMG","TID_PRINCESS_DEAL_DMG","TID_PRINCESS_HIT_OBSTACLE","TID_PRINCESS_DIE","TID_PRINCESS_KILL","TID_PRINCESS_SPECIAL"
+,,"TID_PRINCESS_2","Princess dialog 1","FALSE",,,,,,,
+"ForestPrincess","win","TID_PRINCESS_WIN","Princess dialog 2","FALSE",,,,,,,
+"ForestPrincess","lose","TID_PRINCESS_LOSE","Princess dialog 3","FALSE",,,,,,,
+"DesertMummy","prematch","TID_MUMMY_1","Adv Boy Dialog 1","TRUE",,"TID_MUMMY_TAKE_DMG","TID_MUMMY_DEAL_DMG","TID_MUMMY_HIT_OBSTACLE","TID_MUMMY_DIE","TID_MUMMY_KILL","TID_MUMMY_SPECIAL"
+,,"TID_MUMMY_2","mummy dialog 01","FALSE",,,,,,,
+,,"TID_MUMMY_3","Adv Boy Dialog 2","TRUE",,,,,,,
+,,"TID_MUMMY_4","mummy dialog 04","FALSE",,,,,,,
+"DesertMummy","win","TID_MUMMY_WIN","mummy dialog 03","FALSE",,,,,,,
+"DesertMummy","lose","TID_MUMMY_LOSE","mummy dialog 02","FALSE",,,,,,,
+"DesertPirate","prematch","TID_PIRATE_1","Pirate dialog 1","FALSE",,"TID_PIRATE_TAKE_DMG","TID_PIRATE_DEAL_DMG","TID_PIRATE_HIT_OBSTACLE","TID_PIRATE_DIE","TID_PIRATE_KILL","TID_PIRATE_SPECIAL"
+"DesertPirate","win","TID_PIRATE_WIN","Pirate dialog 2","FALSE",,,,,,,
+"DesertPirate","lose","TID_PIRATE_LOSE","Pirate dialog 3","FALSE",,,,,,,
+"ForestBeeBoss","prematch","TID_BEEBOSS_1","Adv Boy Dialog 1","TRUE","King Bee",,,,,,
+,,"TID_BEEBOSS_2",,"FALSE",,,,,,,
+"ForestBeeBoss","prematch_replay","TID_BEEBOSS_REPLAY","Adv Boy Dialog 1","TRUE","King Bee",,,,,,
+"ForestBeeBoss","win","TID_BEEBOSS_WIN",,"FALSE","King Bee",,,,,,
+"ForestBeeBoss","lose","TID_BEEBOSS_LOSE",,"FALSE","King Bee",,,,,,
+"DesertBoss","prematch","TID_DESERT_BOSS_1","Adv Boy Dialog 1","TRUE","Skull Boss",,,,,,
+"DesertBoss","prematch_replay","TID_DESERT_BOSS_REPLAY","Adv Boy Dialog 1","TRUE","Skull Boss",,,,,,
+"DesertBoss","win","TID_DESERT_BOSS_WIN","Adv Boy Dialog 1","TRUE","Skull Boss",,,,,,
+"DesertBoss","lose","TID_DESERT_BOSS_LOSE",,"FALSE","Skull Boss",,,,,,
+"SpookyBoss","prematch","TID_SPOOKY_BOSS_1","Adv Boy Dialog 1","TRUE","Mush Boss",,,,,,
+"SpookyBoss","prematch_replay","TID_SPOOKY_BOSS_REPLAY","Adv Boy Dialog 1","TRUE","Mush Boss",,,,,,
+"SpookyBoss","win","TID_SPOOKY_BOSS_WIN",,"TRUE","Mush Boss",,,,,,
+"SpookyBoss","lose","TID_SPOOKY_BOSS_LOSE",,"TRUE","Mush Boss",,,,,,

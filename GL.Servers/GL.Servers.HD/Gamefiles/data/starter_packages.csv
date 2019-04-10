@@ -1,0 +1,66 @@
+Name,Rewards,RewardAmounts
+String,String,int
+Starter_Pack_Farm,Cash,500
+,Bolt,3
+,Plank,3
+,Duct Tape,3
+,Nail,3
+,Screw,3
+,Wood Panel,3
+Starter_Pack_Farm_Expansion,Cash,1000
+,Land Deed,5
+,Marker Stake,5
+,Mallet,5
+Starter_Pack_Farm_Fishing,Cash,2000
+,Land Deed,2
+,Marker Stake,2
+,Mallet,2
+,BaitRed,2
+,BaitGreen,2
+,BaitBlue,2
+,BaitPurple,2
+,BaitGold,2
+Starter_Pack_Town,Cash,5000
+,Stone Block,6
+,Hammer,6
+,Hand Drill,6
+,Paint Bucket,6
+,Tar Bucket,6
+,Brick,6
+Starter_Pack_Town_Expansion,Cash,10000
+,Map Piece,8
+,Land Deed,8
+,Marker Stake,8
+,Mallet,8
+Starter_Pack_Farm_1,Cash,2000
+,Bolt,4
+,Plank,4
+,Duct Tape,4
+,Nail,4
+,Screw,4
+,Wood Panel,4
+Starter_Pack_Farm_Expansion_1,Cash,10000
+,Land Deed,6
+,Marker Stake,6
+,Mallet,6
+Starter_Pack_Farm_Fishing_1,Cash,50000
+,Land Deed,3
+,Marker Stake,3
+,Mallet,3
+,BaitRed,3
+,BaitGreen,3
+,BaitBlue,3
+,BaitPurple,3
+,BaitGold,3
+Starter_Pack_Town_1,Cash,100000
+,Stone Block,7
+,Hammer,7
+,Hand Drill,7
+,Paint Bucket,7
+,Tar Bucket,7
+,Brick,7
+Starter_Pack_Town_Expansion_1,Cash,200000
+,Map Piece,10
+,Land Deed,10
+,Marker Stake,10
+,Mallet,10

@@ -1,0 +1,8 @@
+Name,ToolIconExportName,UnlockLevel,TID,DumbValue,DiamondPrice,DescriptionTID,ExpCollect
+String,String,int,String,int,int,string,int
+Dynamite,tool_dynamite,5,TID_DYNAMITE,7,3,TID_DYNAMITE_DESCRIPTION,25
+Demolition Charge,tool_demo_charge,5,TID_DEMOLITION_CHARGE,20,7,TID_DEMOLITION_CHARGE_DESCRIPTION,25
+Axe,tool_axe,5,TID_AXE,10,4,TID_AXE_DESCRIPTION,25
+Saw,tool_saw,5,TID_SAW,15,5,TID_SAW_DESCRIPTION,25
+Shovel,tool_shovel,5,TID_SHOVEL,30,10,TID_SHOVEL_DESCRIPTION,25
+Pickaxe,tool_pickaxe,34,TID_TOOL_PICKAXE,35,12,TID_TOOL_PICKAXE_DESC,25

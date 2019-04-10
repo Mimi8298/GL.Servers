@@ -1,0 +1,5 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Brown_Sugar,recipe_brown_sugar,TID_BROWN_SUGAR,Sugar_Mill,1,Sugarcane,20,16,16,4,2,9,5,8,7,TID_SUGAR_MILL_PRODUCT_DESCRIPTION,7
+White Sugar,recipe_white_sugar,TID_WHITE_SUGAR,Sugar_Mill,2,Sugarcane,40,27,26,6,3,14,9,14,13,TID_SUGAR_MILL_PRODUCT_DESCRIPTION,12
+Syrup,recipe_syrup,TID_SYRUP,Sugar_Mill,4,Sugarcane,90,47,45,11,5,25,17,27,18,TID_SUGAR_MILL_PRODUCT_DESCRIPTION,22

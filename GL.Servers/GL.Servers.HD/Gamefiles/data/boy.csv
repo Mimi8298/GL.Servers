@@ -1,0 +1,5 @@
+"Name","FileName","ExportName","Speed","TapSound","HireDays","HirePrice","DiscountHirePrice","DiscountPercent","OfferMinutesMin","OfferMinutesMax","InitialHireDays","CooldownMinutes","CancelMinutes","ItemCountMin","ItemCountMax","PriceCoefficient","ItemVariance","PopupFileName","PopupExportName","PopupSleepyExportName","OfferIntervalDaysMin","OfferIntervalDaysMax",CollectIconOffsetX,CollectIconOffsetY
+"String","String","String","int","String","int","int","int","int","int","int","int","int","int","int","int","int","int","String","String","String","int","int",int,int
+"Boy","sc/humans02.sc","fixer01",75,"MenuBleep",1,15,15,0,10,15,3,120,2,1,3,12,10,"sc/humans02.sc","popup_fixer","popup_fixer_sleepy",4,4,-100,-100
+,,,,,5,60,54,10,,,,,,4,6,12,10,,,,,,,
+,,,,,10,100,90,10,,,,,,9,9,12,10,,,,,,,

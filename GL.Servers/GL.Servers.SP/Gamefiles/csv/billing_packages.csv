@@ -1,0 +1,8 @@
+Name,TID,Disabled,Diamonds,USD,IconSWF,IconExportName,ShopItemExportName
+String,String,boolean,int,int,String,String,String
+com.supercell.phoenix.gemspack1,TID_DIAMOND_PACK_1,,10,99,sc/ui.sc,icon_gem_small,ShopItem1
+com.supercell.phoenix.gemspack2,TID_DIAMOND_PACK_2,,32,299,sc/ui.sc,icon_gem_normal,ShopItem2
+com.supercell.phoenix.gemspack3,TID_DIAMOND_PACK_3,,68,599,sc/ui.sc,icon_gem_medium,ShopItem3
+com.supercell.phoenix.gemspack4,TID_DIAMOND_PACK_4,,120,999,sc/ui.sc,icon_gem_large,ShopItem4
+com.supercell.phoenix.gemspack5,TID_DIAMOND_PACK_5,,250,1899,sc/ui.sc,icon_gem_huge,ShopItem5
+com.supercell.phoenix.gemspack6,TID_DIAMOND_PACK_5,,650,4599,sc/ui.sc,icon_gem_huge,ShopItem6

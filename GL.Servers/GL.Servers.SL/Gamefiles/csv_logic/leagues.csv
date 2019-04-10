@@ -1,0 +1,14 @@
+Name,TID,IconSWF,IconExportName,IconExportNameSmall,MultiplayerIconSWF,MultiplayerIconExportName,IconText,DemoteLimit,PromoteLimit,PlacementLimitLow,PlacementLimitHigh,DemoteEnabled,PromoteEnabled,PVPGoldReward,PVPXpReward,QuestItem
+String,String,String,String,String,String,String,String,Int,Int,Int,Int,boolean,boolean,Int,Int,String
+League1,TID_TIER_1,sc/ui.sc,tier9_big,tier9,sc/map.sc,rank_icon_09,9,0,200,0,199,FALSE,TRUE,170,130,PvPTier1
+League2,TID_TIER_2,sc/ui.sc,tier8_big,tier8,sc/map.sc,rank_icon_08,8,150,400,200,399,TRUE,TRUE,190,150,PvPTier2
+League3,TID_TIER_3,sc/ui.sc,tier7_big,tier7,sc/map.sc,rank_icon_07,7,350,600,400,599,TRUE,TRUE,220,170,PvPTier3
+League4,TID_TIER_4,sc/ui.sc,tier6_big,tier6,sc/map.sc,rank_icon_06,6,550,800,600,799,TRUE,TRUE,250,190,PvPTier4
+League5,TID_TIER_5,sc/ui.sc,tier5_big,tier5,sc/map.sc,rank_icon_05,5,750,1000,800,999,TRUE,TRUE,280,220,PvPTier5
+League6,TID_TIER_6,sc/ui.sc,tier4_big,tier4,sc/map.sc,rank_icon_04,4,950,1200,1000,1199,TRUE,TRUE,320,250,PvPTier6
+League7,TID_TIER_7,sc/ui.sc,tier3_big,tier3,sc/map.sc,rank_icon_03,3,1150,1400,1200,1399,TRUE,TRUE,360,280,PvPTier7
+League8,TID_TIER_8,sc/ui.sc,tier2_big,tier2,sc/map.sc,rank_icon_02,2,1350,1600,1400,1599,TRUE,TRUE,400,310,PvPTier8
+League9,TID_TIER_9,sc/ui.sc,tier1_big,tier1,sc/map.sc,rank_icon_01,1,1550,1900,1600,1799,TRUE,TRUE,460,350,PvPTier9
+League10,TID_TIER_10,sc/ui.sc,tier_champ1_big,tier_champ3,sc/map.sc,rank_icon_crown_01,,1850,2200,1900,1999,TRUE,TRUE,520,400,PvPTier10
+League11,TID_TIER_11,sc/ui.sc,tier_champ2_big,tier_champ2,sc/map.sc,rank_icon_crown_02,,2150,2500,2200,2199,TRUE,TRUE,580,450,PvPTier11
+League12,TID_TIER_12,sc/ui.sc,tier_champ3_big,tier_champ1,sc/map.sc,rank_icon_crown_03,,2450,10000000,2500,10000000,TRUE,FALSE,650,500,PvPTier12

@@ -1,0 +1,4 @@
+Name,FileName,ExportName,TileWidth,TileHeight,TapSound,RepairPrice,TID,TimeMin,TimeSec,ExpToBuild,InstantComplete
+String,String,String,int,int,String,int,String,int,int,int,int
+SanctuaryBookstandBroken,sc/train_buildings.sc,sanctuary_bookstand_broken,2,1,MenuBleep,10000,TID_SANCTUARY_BOOKSTAND,,,,
+SanctuaryBookstand,sc/train_buildings.sc,sanctuary_bookstand,2,1,MenuBleep,,TID_SANCTUARY_BOOKSTAND,240,,11,21

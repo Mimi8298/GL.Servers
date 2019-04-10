@@ -1,0 +1,14 @@
+Name,ToolIconExportName,RequirementAmount,Requirement,TimeMin,TimeSec,ExpCollect,Units,InstantComplete,TID,ProcessingBuilding,DumbValue,DescriptionTID,DiamondPrice,SpecialUnlockRequirement
+String,String,int,String,int,int,int,int,int,String,String,int,string,int,string
+Chicken Food,tool_feed_chicken,2,Wheat,5,,1,3,1,TID_CHICKEN_FOOD,Hammermill,2,TID_FEED_MILL_PRODUCT_DESCRIPTION,2,
+,,1,Corn,,,,,,,,,,,
+Cow Food,tool_feed_cow,1,Corn,10,,2,3,2,TID_COW_FOOD,Hammermill,4,TID_FEED_MILL_PRODUCT_DESCRIPTION,3,
+,,2,Soybean,,,,,,,,,,,
+Pig Food,tool_feed_pig,2,Carrot,20,,2,3,2,TID_PIG_FOOD,Hammermill,4,TID_FEED_MILL_PRODUCT_DESCRIPTION,3,
+,,1,Soybean,,,,,,,,,,,
+Sheep Food,tool_feed_sheep,3,Wheat,30,,3,3,3,TID_SHEEP_FOOD,Hammermill,4,TID_FEED_MILL_PRODUCT_DESCRIPTION,3,
+,,1,Soybean,,,,,,,,,,,
+Goat Food,tool_feed_goat,1,Wheat,40,,3,3,3,TID_GOAT_FOOD,Hammermill,4,TID_FEED_MILL_PRODUCT_DESCRIPTION,3,
+,,2,Carrot,,,,,,,,,,,
+,,1,Corn,,,,,,,,,,,
+Herbivore Food,tool_feed_herbivore,75,Wheat,90,,10,3,6,TID_HERBIVORE_FOOD,Hammermill,14,TID_FEED_MILL_PRODUCT_DESCRIPTION,10,Sanctuary

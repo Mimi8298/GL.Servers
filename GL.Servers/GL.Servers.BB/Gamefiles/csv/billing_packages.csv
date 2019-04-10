@@ -1,0 +1,14 @@
+"Name","TID","BannerTID","BonusTID","BonusValue","Disabled","Diamonds","Workers","InstantTraining","ExpirationDays","IsSubscription","CostTID","USD","IconSWF","IconExportName","ShopItemExportName","RMB","KunlunOnly","LenovoID","RED","ExistsApple","ExistsAndroid","OverrideDisabledOnMinorVersion"
+"String","String","String","String","int","boolean","int","int","boolean","int","boolean","String","int","String","String","String","int","boolean","int","boolean","boolean","boolean","int"
+"com.supercell.reef.packs1","TID_DIAMOND_PACK_1",,"TID_BASE_VALUE",,,500,,,,,"TID_COST",499,"sc/diamond-packs.sc","icon_gem_small","shop_item_diamond_pack",3000,,11085,,"TRUE","TRUE",
+"com.supercell.reef.packs2","TID_DIAMOND_PACK_2",,"TID_BONUS_DIAMONDS",20,,1200,,,,,"TID_COST",999,"sc/diamond-packs.sc","icon_gem_normal","shop_item_diamond_pack",6800,,11086,,"TRUE","TRUE",
+"com.supercell.reef.packs3","TID_DIAMOND_PACK_3",,"TID_BONUS_DIAMONDS",25,,2500,,,,,"TID_COST",1999,"sc/diamond-packs.sc","icon_gem_medium","shop_item_diamond_pack",12800,,11087,,"TRUE","TRUE",
+"com.supercell.reef.packs4","TID_DIAMOND_PACK_4",,"TID_BONUS_DIAMONDS",30,,6500,,,,,"TID_COST",4999,"sc/diamond-packs.sc","icon_gem_large","shop_item_diamond_pack",32800,,11088,,"TRUE","TRUE",
+"com.supercell.reef.packs5","TID_DIAMOND_PACK_5","TID_BEST_VALUE","TID_BONUS_DIAMONDS",40,,14000,,,,,"TID_COST",9999,"sc/diamond-packs.sc","icon_gem_huge","shop_item_diamond_pack",64800,,11089,,"TRUE","TRUE",
+"com.supercell.reef.packs6","TID_DIAMOND_PACK_6",,,,,90,,,,,"TID_COST",100,"sc/diamond-packs.sc","icon_gem_kunlun","shop_item_diamond_pack",600,,11084,,"TRUE","TRUE",
+"com.supercell.reef.packs7","TID_DIAMOND_PACK_RED",,,,"TRUE",500,,,,,"TID_COST",499,"sc/diamond-packs.sc","icon_gem_red","shop_item_diamond_pack_red",3000,,,"true","TRUE","FALSE",
+"com.supercell.reef.worker1","TID_WORKER_PACK",,,,,0,1,,,"true","TID_COST_PER_MONTH",299,"sc/diamond-packs.sc","icon_unit_builder","shop_item_subscription",1800,,,,"FALSE","TRUE",
+"com.supercell.reef.worker1b","TID_WORKER_PACK",,,,,0,1,,30,,"TID_COST_PER_DAYS",299,"sc/diamond-packs.sc","icon_unit_builder","shop_item_subscription",1800,,103145,,"TRUE","TRUE",
+"com.supercell.reef.worker1a","TID_WORKER_PACK",,,,,0,1,,,"true","TID_COST_PER_MONTH",299,"sc/diamond-packs.sc","icon_unit_builder","shop_item_subscription",1800,,,,"TRUE","FALSE",
+"com.supercell.reef.freetroops1","TID_INSTANT_TRAINING_PACK",,,,,0,0,"true",,"true","TID_COST_PER_MONTH",999,"sc/diamond-packs.sc","icon_instant_training","shop_item_subscription",7000,,,,"TRUE","TRUE",
+"com.supercell.reef.freetroops1b","TID_INSTANT_TRAINING_PACK",,,,,0,0,"true",30,,"TID_COST_PER_DAYS",999,"sc/diamond-packs.sc","icon_instant_training","shop_item_subscription",7000,,143981,,"TRUE","TRUE",

@@ -1,0 +1,18 @@
+"Name","ToolIconExportName","UnlockLevel","TID","DumbValue","DiamondPrice","DescriptionTID","ReputationUnlockLevel"
+"String","String","int","String","int","int","String","int"
+"Plank","collection_plank",1,"TID_PLANK",75,8,"TID_PLANK_DESCRIPTION",
+"Nail","collection_nail",1,"TID_NAIL",75,8,"TID_NAIL_DESCRIPTION",
+"Bolt","collection_bolt",1,"TID_BOLT",75,8,"TID_BOLT_DESCRIPTION",
+"Screw","collection_screw",1,"TID_SCREW",75,8,"TID_SCREW_DESCRIPTION",
+"Duct Tape","collection_duct_tape",1,"TID_DUCT_TAPE",75,8,"TID_DUCT_TAPE_DESCRIPTION",
+"Wood Panel","collection_wood_panel",1,"TID_WOOD_PANEL",75,8,"TID_WOOD_PANEL_DESCRIPTION",
+"Land Deed","collection_land_deed",22,"TID_LAND_DEED",112,12,"TID_LAND_DEED_DESCRIPTION",
+"Mallet","collection_mallet",22,"TID_MALLET",112,12,"TID_MALLET_DESCRIPTION",
+"Marker Stake","collection_marker_stake",22,"TID_STAKE",112,12,"TID_STAKE_DESCRIPTION",
+"Hammer","icon_collection_hammer",1,"TID_TRAIN_ITEM_HAMMER",95,10,"TID_TRAIN_ITEM_HAMMER_DESC",2
+"Hand Drill","icon_collection_hand_drill",1,"TID_TRAIN_ITEM_HAND_DRILL",95,10,"TID_TRAIN_ITEM_HAND_DRILL_DESC",2
+"Paint Bucket","icon_collection_paint_bucket",1,"TID_TRAIN_ITEM_PAINT_BUCKET",95,10,"TID_TRAIN_ITEM_PAINT_BUCKET_DESC",2
+"Stone Block","icon_collection_stones",1,"TID_TRAIN_ITEM_STONES",95,10,"TID_TRAIN_ITEM_STONES_DESC",2
+"Brick","icon_collection_bricks",1,"TID_TRAIN_ITEM_BRICKS",95,10,"TID_TRAIN_ITEM_BRICKS_DESC",2
+"Tar Bucket","icon_collection_tar_bucket",1,"TID_TRAIN_ITEM_TAR_BUCKET",95,10,"TID_TRAIN_ITEM_TAR_BUCKET_DESC",2
+"Map Piece","icon_collection_map_piece",1,"TID_TRAIN_ITEM_MAP_PIECE",125,14,"TID_TRAIN_ITEM_MAP_PIECE_DESC",3

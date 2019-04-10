@@ -1,0 +1,11 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+ClocheHat,recipe_felt_hat,TID_CLOCHE_HAT,Hat_Maker,6,Wool,120,242,233,56,5,130,91,91,70,TID_HAT_MAKER_PRODUCT_DESCRIPTION,96
+,,,,2,Strawberry,,,,,,,,,,,
+TopHat,recipe_top_hat,TID_TOP_HAT,Hat_Maker,3,Cotton Fabrics,210,320,308,74,7,172,102,108,72,TID_HAT_MAKER_PRODUCT_DESCRIPTION,109
+,,,,1,Duck Down,,,,,,,,,,,
+,,,,1,CoalBar,,,,,,,,,,,
+SunHat,recipe_duchess_hat,TID_SUN_HAT,Hat_Maker,3,Wool,150,287,276,66,6,155,83,95,74,TID_HAT_MAKER_PRODUCT_DESCRIPTION,89
+,,,,2,Duck Down,,,,,,,,,,,
+,,,,1,Indigo,,,,,,,,,,,
+,,,,1,Raspberry,,,,,,,,,,,

@@ -1,0 +1,3 @@
+"Name","UnlockLevel","MinTutorialPeopleToSpawnBeforeUnlock","MinSpawnTime","MaxSpawnTime","MinOrderSize","MaxOrderSize","CanCompleteOrderChance","MaxPeople","GoodNumber","GoldMultiplier","ExpMultiplier","ConstantExp","ForcedUnlockLevel"
+"String","int","int","int","int","int","int","int","int","int","int","int","int","int"
+"PeopleSpawner",6,2,120,900,35,65,80,2,2,140,0,5,9

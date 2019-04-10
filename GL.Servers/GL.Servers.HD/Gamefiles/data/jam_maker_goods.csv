@@ -1,0 +1,10 @@
+Name,ToolIconExportName,TID,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,ProcessingBuilding,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,int,String,int,int,int,int,int,int,int,int,String,int,string,int
+Apple Jam,recipe_apple_jam,TID_APPLE_JAM,3,Apple,360,113,109,26,8,61,29,29,Jam_Maker,35,TID_JAM_MAKER_PRODUCT_DESCRIPTION,37
+Raspberry Jam,recipe_raspberry_jam,TID_RASPBERRY_JAM,3,Raspberry,420,129,124,30,9,70,36,36,Jam_Maker,36,TID_JAM_MAKER_PRODUCT_DESCRIPTION,45
+Blackberry Jam,recipe_blackberry_jam,TID_BLUEBERRY_JAM,3,Blackberry,480,201,194,46,10,108,58,58,Jam_Maker,37,TID_JAM_MAKER_PRODUCT_DESCRIPTION,68
+Cherry Jam,recipe_cherry_jam,TID_CHERRY_JAM,3,Cherry,420,173,167,40,9,93,48,48,Jam_Maker,38,TID_JAM_MAKER_PRODUCT_DESCRIPTION,57
+Strawberry Jam,recipe_strawberry_jam,TID_STRAWBERRY_JAM,3,Strawberry,450,140,134,32,9,75,39,39,Jam_Maker,50,TID_JAM_MAKER_PRODUCT_DESCRIPTION,48
+Marmelade,recipe_marmelade,TID_PRODUCT_MARMELADE,3,Orange,510,236,227,54,10,127,64,64,Jam_Maker,74,TID_JAM_MAKER_PRODUCT_DESCRIPTION,74
+Peach Jam,recipe_peach_jam,TID_PRODUCT_PEACHJAM,3,Peach,480,239,230,55,10,129,61,61,Jam_Maker,79,TID_JAM_MAKER_PRODUCT_DESCRIPTION,71
+Grape Jam,recipe_grape_jam,TID_GRAPE_JAM,3,Grapes,390,83,80,19,9,45,27,27,Jam_Maker,85,TID_JAM_MAKER_PRODUCT_DESCRIPTION,36

@@ -1,0 +1,12 @@
+Name,FileName,ExportName,PopupExportName,WalkSpeed,IdleTime,Greeting,UnlockLevel,TapSound
+String,String,String,String,int,int,String,int,string
+Mike,sc/humans.sc,farmer01,popup_mike,16,390,TID_PEOPLE_ORDER_GREETING1,1,FarmMaleAttention
+,,,,,,TID_PEOPLE_ORDER_GREETING2,,FarmMaleAttention
+Joan,sc/humans.sc,female01,popup_joan,16,450,TID_PEOPLE_ORDER_GREETING3,1,FarmFemaleAttention
+,,,,,,TID_PEOPLE_ORDER_GREETING4,,FarmFemaleAttention
+Greg,sc/humans.sc,lumberjack01,popup_greg,16,460,TID_PEOPLE_ORDER_GREETING5,1,FarmMaleAttention
+,,,,,,TID_PEOPLE_ORDER_GREETING6,,FarmMaleAttention
+Betty,sc/humans.sc,female02,popup_betty,16,460,TID_PEOPLE_ORDER_GREETING7,1,FarmFemaleAttention
+,,,,,,TID_PEOPLE_ORDER_GREETING8,,FarmFemaleAttention
+Girl,sc/humans.sc,female03,popup_girl,18,480,TID_PEOPLE_ORDER_GREETING9,1,FarmFemaleAttention
+,,,,,,TID_PEOPLE_ORDER_GREETING10,,FarmFemaleAttention

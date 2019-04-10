@@ -1,0 +1,9 @@
+Name,FileName,ExportName,ShopIconExportName,Feed,FeedAmount,Capacity,Price,CollectIconExportName,TID,MaxHabitatsColumnName,BuySound,RandomSounds,TapSound,WhistleSound,ShopDescriptionTID,TileWidth,TileHeight,FeedOnRightSide,FeedTileOffset
+String,String,String,String,string,int,int,int,String,String,String,String,String,String,String,String,int,int,Boolean,int
+CatHouse,sc/buildings_new.sc,cat_house_01,shop_icon_cathouse01,Milk,1,3,500,tool_collect_eggs,TID_CAT_HOUSE,MaxCatHouseAmount,Buy,,MenuBleep,PetWhistle,TID_CAT_HOUSE_SHOP_DESCRIPTION,2,2,,0
+DogHouse,sc/buildings_new.sc,dog_house_01,shop_icon_doghouse01,Bacon,1,3,1000,tool_collect_eggs,TID_DOG_HOUSE,MaxDogHouseAmount,Buy,,MenuBleep,PetWhistle,TID_DOG_HOUSE_SHOP_DESCRIPTION,2,2,,0
+HorseHouse,sc/buildings_new.sc,horse_stable_01,shop_icon_horsestable01,Carrot,1,3,10000,tool_collect_eggs,TID_HORSE_HOUSE,MaxHorseHouseAmount,Buy,,MenuBleep,PetWhistle,TID_HORSE_HOUSE_SHOP_DESCRIPTION,2,3,true,1
+DonkeyHouse,sc/buildings_new.sc,donkey_barn,shop_icon_donkey_barn,Carrot,1,3,25000,tool_collect_eggs,TID_DONKEY_HOUSE,MaxDonkeyHouseAmount,Buy,,MenuBleep,PetWhistle,TID_DONKEY_HOUSE_SHOP_DESCRIPTION,2,3,,
+BunnyHouse,sc/buildings_new.sc,bunny_house_01,shop_icon_bunnyhouse,Carrot,1,3,20000,tool_collect_eggs,TID_BUNNY_HOUSE,MaxBunnyHouseAmount,Buy,,MenuBleep,PetWhistle,TID_BUNNY_HOUSE_DESCRIPTION,2,2,,0
+KittenHouse,sc/buildings_new.sc,kitten_house_01,shop_icon_kittenhouse01,Milk,1,3,35000,tool_collect_eggs,TID_KITTEN_HOUSE,MaxKittenHouseAmount,Buy,,MenuBleep,PetWhistle,TID_KITTEN_HOUSE_DESCRIPTION,2,2,,0
+PuppyHouse,sc/buildings_new.sc,puppy_house_01,shop_icon_puppyhouse01,Bacon,1,3,23000,tool_collect_eggs,TID_PUPPY_HOUSE,MaxPuppyHouseAmount,Buy,,MenuBleep,PetWhistle,TID_PUPPY_HOUSE_DESCRIPTION,2,2,,0

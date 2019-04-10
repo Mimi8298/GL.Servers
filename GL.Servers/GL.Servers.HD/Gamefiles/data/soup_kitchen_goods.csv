@@ -1,0 +1,28 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Lobster Soup,recipe_lobster_soup,TID_LOBSTER_SOUP,Soup_Kitchen,2,Lobster Meat,150,315,303,73,6,170,78,94,46,TID_SOUP_KITCHEN_PRODUCT_DESCRIPTION,84
+,,,,1,Cream,,,,,,,,,,,
+,,,,1,Tomato,,,,,,,,,,,
+,,,,2,Chili,,,,,,,,,,,
+Tomato Soup,recipe_tomato_soup,TID_TOMATO_SOUP,Soup_Kitchen,2,Tomato,90,247,237,57,5,133,88,88,47,TID_SOUP_KITCHEN_PRODUCT_DESCRIPTION,93
+,,,,1,Tomato Juice,,,,,,,,,,,
+,,,,1,Chili,,,,,,,,,,,
+,,,,1,Goat Cheese,,,,,,,,,,,
+Fish Soup,recipe_fish_soup,TID_FISH_SOUP,Soup_Kitchen,3,Potato,180,154,148,35,6,83,57,57,53,TID_SOUP_KITCHEN_PRODUCT_DESCRIPTION,63
+,,,,1,Milk,,,,,,,,,,,
+,,,,2,Fish Meat,,,,,,,,,,,
+,,,,1,Carrot,,,,,,,,,,,
+Pumpkin Soup,recipe_pumpkin_soup,TID_PRODUCT_PUMPKIN_SOUP,Soup_Kitchen,3,Pumpkin,120,202,194,47,5,109,50,50,49,TID_SOUP_KITCHEN_PRODUCT_DESCRIPTION,55
+,,,,2,Carrot,,,,,,,,,,,
+,,,,1,Butter,,,,,,,,,,,
+,,,,1,Honey,,,,,,,,,,,
+Noodle Soup,recipe_noodle_soup,TID_PRODUCT_NOODLE_SOUP,Soup_Kitchen,3,Rice Noodles,120,223,215,52,5,120,75,75,73,TID_SOUP_KITCHEN_PRODUCT_DESCRIPTION,82
+,,,,2,Carrot,,,,,,,,,,,
+,,,,1,Chili,,,,,,,,,,,
+,,,,2,Egg,,,,,,,,,,,
+Onion Soup,recipe_onion_soup,TID_PRODUCT_ONIONSOUP,Soup_Kitchen,3,Onion,150,170,163,39,6,91,60,60,72,TID_SOUP_KITCHEN_PRODUCT_DESCRIPTION,66
+,,,,1,Cheese,,,,,,,,,,,
+,,,,2,Bread,,,,,,,,,,,
+PotatoSoup,recipe_potato_soup,TID_POTATO_SOUP,Soup_Kitchen,3,Potato,150,132,127,31,6,71,49,49,78,TID_SOUP_KITCHEN_PRODUCT_DESCRIPTION,55
+,,,,1,Milk,,,,,,,,,,,
+,,,,2,Onion,,,,,,,,,,,

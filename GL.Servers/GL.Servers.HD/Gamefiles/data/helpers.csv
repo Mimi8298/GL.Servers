@@ -1,0 +1,10 @@
+"Name","TID","DescriptionTID","HireDays","DiamondPrice","Voucher","VoucherCount","FirstTryHireDays","DiscountPercent","OfferMinutes","FreeUseDelayDays","FreeUseDelayDaysSpender","PopupFileName","PopupExportName","SelectionExportName","MinimumCropLimit","ExcessFeedPerAnimal","LowResourceLimitCrop","LowResourceLimitOther","ShopIconExportName","AttentionSound","Version","VersionExtraHireDays"
+"String","String","String","int","int","String","int","int","int","int","int","int","String","String","String","int","int","int","int","String","String","int","int"
+"Caretaker","TID_HELPER_CARETAKER","TID_HELPER_CARETAKER_DESCRIPTION",14,55,,,7,10,60,30,30,"sc/humans03.sc","popup_helper_caretaker","popup_helper_caretaker",10,1,20,,"helper_icon_caretaker","CaretakerAttention",1,0
+,,,7,30,,,,,,,,,,,,,,,,,,
+,,,3,15,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+"Miller","TID_HELPER_MILLER","TID_HELPER_MILLER_DESCRIPTION",14,55,,,7,10,60,30,30,"sc/humans03.sc","popup_helper_miller","popup_helper_miller",10,,20,5,"helper_icon_miller","MillerAttention",1,0
+,,,7,30,,,,,,,,,,,,,,,,,,
+,,,3,15,,,,,,,,,,,,,,,,,,
+

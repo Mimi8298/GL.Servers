@@ -1,0 +1,10 @@
+Name,IntValue,StringValue,BooleanValue
+String,int,String,boolean
+BackgroundExportNameEdgeEast,,bg_edge_east,
+BackgroundExportNameEdgeNorth,,bg_edge_north,
+BackgroundExportNameEdgeSouth,,bg_edge_south,
+BackgroundExportNameEdgeWest,,bg_edge_west,
+BackgroundExportNameDecoLayer,,deco_layer_01,
+BackgroundColor,,FF4C919F,
+NumberOfPassengerGreetings,5,,
+NumberOfPassengerRewardGreetings,5,,

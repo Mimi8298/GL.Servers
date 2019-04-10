@@ -1,0 +1,6 @@
+"Monsters",,,,
+,"Name","Wave","x","y"
+,"string","int","int","int"
+,"Basic_Baby",,2,5
+,"Basic_Baby",1,2,5
+,"Basic_Baby",1,2,3

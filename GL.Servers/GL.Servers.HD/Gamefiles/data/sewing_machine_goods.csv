@@ -1,0 +1,13 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Cotton Shirt,recipe_cotton_shirt,TID_PRODUCT_COTTON_SHIRT,Sewing_Machine,2,Cotton Fabrics,45,124,119,29,3,67,45,45,19,TID_SEWING_MACHINE_PRODUCT_DESCRIPTION,48
+Wooly Pants,recipe_wooly_pants,TID_PRODUCT_WOOLY_PANTS,Sewing_Machine,1,Cotton Fabrics,90,159,153,37,5,86,59,59,21,TID_SEWING_MACHINE_PRODUCT_DESCRIPTION,64
+,,,,3,Wool,,,,,,,,,,,
+Violet Dress,recipe_violet_dress,TID_PRODUCT_COTTON_VIOLET_DRESS,Sewing_Machine,2,Cotton Fabrics,135,168,162,39,5,91,61,61,25,TID_SEWING_MACHINE_PRODUCT_DESCRIPTION,66
+,,,,1,Indigo,,,,,,,,,,,
+,,,,1,Raspberry,,,,,,,,,,,
+Pillow,recipe_pillow,TID_PRODUCT_PILLOW,Sewing_Machine,2,Cotton Fabrics,180,350,336,81,6,188,93,111,51,TID_SEWING_MACHINE_PRODUCT_DESCRIPTION,99
+,,,,3,Duck Down,,,,,,,,,,,
+Blanket,recipe_blanket,TID_PRODUCT_BLANKET,Sewing_Machine,3,Cotton Fabrics,210,566,545,131,7,305,151,181,59,TID_SEWING_MACHINE_PRODUCT_DESCRIPTION,158
+,,,,5,Duck Down,,,,,,,,,,,
+,,,,1,Pumpkin,,,,,,,,,,,

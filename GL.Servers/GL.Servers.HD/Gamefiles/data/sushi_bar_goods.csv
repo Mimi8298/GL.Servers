@@ -1,0 +1,12 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+SushiRoll,recipe_sushiroll,TID_PRODUCT_SUSHIROLL,Sushi_Bar,15,Rice,60,253,243,58,4,136,85,85,56,TID_SUSHIBAR_PRODUCT_DESCRIPTION,89
+,,,,1,SoySauce,,,,,,,,,,,
+,,,,1,Fish Meat,,,,,,,,,,,
+LobsterSushi,recipe_lobstersushi,TID_PRODUCT_LOBSTERSUSHI,Sushi_Bar,15,Rice,60,329,317,76,4,177,95,103,59,TID_SUSHIBAR_PRODUCT_DESCRIPTION,99
+,,,,1,SoySauce,,,,,,,,,,,
+,,,,1,Lobster Meat,,,,,,,,,,,
+EggRoll,recipe_eggroll,TID_PRODUCT_EGGROLL,Sushi_Bar,15,Rice,120,285,274,66,5,153,96,99,63,TID_SUSHIBAR_PRODUCT_DESCRIPTION,101
+,,,,4,Egg,,,,,,,,,,,
+,,,,1,SoySauce,,,,,,,,,,,
+,,,,1,Brown_Sugar,,,,,,,,,,,

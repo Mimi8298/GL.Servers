@@ -1,0 +1,7 @@
+Name,TID,InfoTID,UnlockCost,CreateCost,CreateTime,Action,ActionValue,TriggerRadius,PickUpEffect,UseEffect,BouncingStopsEffect,SWF,ExportName,ExportNameFly,IconSWF,IconExportName,IconExportCard
+String,String,String,int,int,int,String,int,int,String,String,String,String,String,String,String,String,String
+HP,TID_SPELL_HP,TID_INFO_SPELL_HP,40000,300,300,GIVE_HP,7,16,Hearth Spell,,SpellAppear,sc/ui.sc,spell_on_board,spell_projectile,sc/ui.sc,spell3,spell_card1
+Freeze,TID_SPELL_FREEZE,TID_INFO_SPELL_FREEZE,45000,400,300,FREEZE,2,16,SpellCollect,Use Freeze Spell,SpellAppear,sc/ui.sc,spell_on_board,spell_projectile,sc/ui.sc,spell4,spell_card2
+Obstacle,TID_SPELL_OBSTACLE,TID_INFO_SPELL_OBSTACLE,70000,125,180,CREATE_OBSTACLE,,16,SpellCollect,Place Spell Cubes,SpellAppear,sc/ui.sc,spell_on_board,spell_projectile,sc/ui.sc,spell1,spell_card3
+Earthquake,TID_SPELL_EARTHQUAKE,TID_INFO_SPELL_EARTHQUAKE,75000,450,360,EARTH_QUAKE,35,16,SpellCollect,,SpellAppear,sc/ui.sc,spell_on_board,spell_projectile,sc/ui.sc,spell2,spell_card4
+Supersize,TID_SPELL_SUPERSIZE,TID_INFO_SPELL_SUPERSIZE,80000,500,420,SUPER_SIZE,,16,Grow Spell,,SpellAppear,sc/ui.sc,spell_on_board,spell_projectile,sc/ui.sc,spell5,spell_card5

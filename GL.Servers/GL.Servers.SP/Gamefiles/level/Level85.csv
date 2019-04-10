@@ -1,0 +1,3 @@
+"Monsters",,,,,
+,"Name","Wave","x","y","Star"
+,"string","int","int","int","int"

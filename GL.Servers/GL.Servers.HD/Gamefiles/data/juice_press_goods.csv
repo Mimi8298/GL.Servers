@@ -1,0 +1,10 @@
+Name,ToolIconExportName,TID,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,ProcessingBuilding,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,int,String,int,int,int,int,int,int,int,int,String,int,string,int
+Carrot Juice,recipe_carrot_juice,TID_CARROT_JUICE,3,Carrot,30,24,23,6,3,13,9,9,Juice_Press,26,TID_JUICE_PRESS_PRODUCT_DESCRIPTION,12
+Tomato Juice,recipe_tomato_juice,TID_TOMATO_JUICE,3,Tomato,90,84,81,19,5,45,29,29,Juice_Press,31,TID_JUICE_PRESS_PRODUCT_DESCRIPTION,34
+Apple Juice,recipe_apple_juice,TID_APPLE_JUICE,2,Apple,120,66,64,15,5,36,23,23,Juice_Press,28,TID_JUICE_PRESS_PRODUCT_DESCRIPTION,28
+Cherry Juice,recipe_cherry_juice,TID_CHERRY_JUICE,2,Cherry,150,111,107,26,6,60,40,40,Juice_Press,30,TID_JUICE_PRESS_PRODUCT_DESCRIPTION,46
+Berry Juice,recipe_berry_juice,TID_BERRY_JUICE,1,Raspberry,180,106,102,24,6,57,38,38,Juice_Press,31,TID_JUICE_PRESS_PRODUCT_DESCRIPTION,44
+,,,1,Blackberry,,,,,,,,,,,,
+Orange Juice,recipe_orange_juice,TID_PRODUCT_ORANGEJUICE,2,Orange,120,120,116,28,5,65,41,41,Juice_Press,71,TID_JUICE_PRESS_PRODUCT_DESCRIPTION,46
+Grape Juice,recipe_grape_juice,TID_GRAPE_JUICE,2,Grapes,150,55,52,13,6,29,18,18,Juice_Press,84,TID_JUICE_PRESS_PRODUCT_DESCRIPTION,24

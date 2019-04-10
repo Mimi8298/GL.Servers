@@ -1,0 +1,8 @@
+Name,FileName,ExportName,ShopIconExportName,Feed,FeedAmount,Capacity,Price,CollectIconExportName,TID,MaxHabitatsColumnName,BuySound,RandomSounds,TapSound,WhistleSound,ShopDescriptionTID,TileWidth,TileHeight,ReputationUnlockLevel,EffectExportName,CollectIconOffsetX,CollectIconOffsetY,FeedTileOffsetX,FeedTileOffsetY
+String,String,String,String,string,int,int,int,String,String,String,String,String,String,String,String,int,int,int,String,int,int,int,int
+ElephantHouse,sc/train_buildings.sc,elephanthouse_01,shop_icon_elephanthome01,Herbivore Food,1,2,0,tool_collect_eggs,TID_ELEPHANT_HOUSE,,Buy,,MenuBleep,PetWhistle,TID_ELEPHANT_HOUSE_SHOP_DESCRIPTION,2,2,3,repairsmoke_02,,,0,2
+,,elephanthouse_02,,,,,,,,,,,,,,,,,,,,2,0
+HippoHouse,sc/train_buildings.sc,hippohouse_01,shop_icon_hippohome01,Herbivore Food,1,2,0,tool_collect_eggs,TID_HIPPO_HOUSE,,Buy,,MenuBleep,PetWhistle,TID_HIPPO_HOUSE_SHOP_DESCRIPTION,2,2,3,repairsmoke_02,,,-1,0
+,,hippohouse_02,,,,,,,,,,,,,,,,,,,,1,-1
+GiraffeHouse,sc/train_buildings.sc,giraffehouse_01,shop_icon_giraffehome01,Herbivore Food,1,2,0,tool_collect_eggs,TID_GIRAFFE_HOUSE,,Buy,,MenuBleep,PetWhistle,TID_GIRAFFE_HOUSE_SHOP_DESCRIPTION,2,2,3,repairsmoke_02,-75,-75,,
+,,giraffehouse_02,,,,,,,,,,,,,,,,,,,,,

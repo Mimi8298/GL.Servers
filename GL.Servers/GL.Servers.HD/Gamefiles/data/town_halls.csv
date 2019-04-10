@@ -1,0 +1,14 @@
+Name,FileName,ExportName,TileWidth,TileHeight,BrokenPartCount,BrokenExportName,EffectExportName,TapSound,CollectSound,TID,DescriptionTID,VillageCapacity,CollectionTool1,CollectionTool1Amount,CollectionTool2,CollectionTool2Amount,CollectionTool3,CollectionTool3Amount,ReputationLevelRequired
+String,String,String,int,int,int,String,String,String,String,String,String,int,String,int,String,int,String,int,int
+Town Hall,sc/train_buildings.sc,townhall_lvl1,4,4,6,townhall_broken,repairsmoke_03,MenuBleep,CoinXpExplosion,TID_TRAIN_TOWNHALL,TID_TRAIN_TOWNHALL_DESC,9,Stone Block,1,Hammer,1,Paint Bucket,1,2
+,sc/train_buildings.sc,townhall_lvl2,,,,,,,,,,12,Stone Block,2,Hammer,2,Paint Bucket,2,3
+,sc/train_buildings.sc,townhall_lvl3,,,,,,,,,,15,Stone Block,3,Hammer,3,Paint Bucket,3,4
+,sc/train_buildings.sc,townhall_lvl3,,,,,,,,,,18,Stone Block,4,Hammer,4,Paint Bucket,4,5
+,sc/train_buildings.sc,townhall_lvl4,,,,,,,,,,21,Stone Block,5,Hammer,5,Paint Bucket,5,6
+,sc/train_buildings.sc,townhall_lvl4,,,,,,,,,,24,Stone Block,6,Hammer,6,Paint Bucket,6,7
+,sc/train_buildings.sc,townhall_lvl4,,,,,,,,,,27,Stone Block,7,Hammer,7,Paint Bucket,7,8
+,sc/train_buildings.sc,townhall_lvl4,,,,,,,,,,30,Stone Block,8,Hammer,8,Paint Bucket,8,9
+,sc/train_buildings.sc,townhall_lvl4,,,,,,,,,,33,Stone Block,9,Hammer,9,Paint Bucket,9,10
+,sc/train_buildings.sc,townhall_lvl4,,,,,,,,,,36,Stone Block,10,Hammer,10,Paint Bucket,10,11
+,sc/train_buildings.sc,townhall_lvl4,,,,,,,,,,39,Stone Block,11,Hammer,11,Paint Bucket,11,12
+,sc/train_buildings.sc,townhall_lvl4,,,,,,,,,,42,,,,,,,

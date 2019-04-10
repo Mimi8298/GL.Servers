@@ -1,0 +1,5 @@
+Name,FileName,ExportName,TileWidth,TileHeight,TapSound,RepairPrice,TID,TimeMin,TimeSec,ExpToBuild,InstantComplete
+String,String,String,int,int,String,int,String,int,int,int,int
+FishingBoatWreck,sc/common.sc,fishing_boat_wreck,3,3,MenuBleep,35000,,,,,
+FishingBoat,sc/common.sc,fishing_boat,3,3,MenuBleep,,TID_FISHING_BOAT,4320,,47,97
+FishingBoatFishing,sc/common.sc,fishing_boat_norack,3,3,MenuBleep,,TID_FISHING_BOAT,,,,

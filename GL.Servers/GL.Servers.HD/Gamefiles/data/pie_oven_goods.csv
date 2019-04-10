@@ -1,0 +1,36 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Carrot Pie,recipe_carrot_pie,TID_CARROT_PIE,Pie_Oven,3,Carrot,60,42,40,10,4,23,16,16,14,TID_PIE_OVEN_PRODUCT_DESCRIPTION,20
+,,,,2,Wheat,,,,,,,,,,,
+,,,,1,Egg,,,,,,,,,,,
+Bacon Pie,recipe_bacon_pie,TID_BACON_PIE,Pie_Oven,3,Bacon,180,114,110,26,6,61,42,42,18,TID_PIE_OVEN_PRODUCT_DESCRIPTION,48
+,,,,2,Wheat,,,,,,,,,,,
+,,,,1,Egg,,,,,,,,,,,
+Pumpkin Pie,recipe_pumpkin_pie,TID_PUMPKIN_PIE,Pie_Oven,3,Pumpkin,120,82,79,19,5,44,29,29,15,TID_PIE_OVEN_PRODUCT_DESCRIPTION,34
+,,,,2,Wheat,,,,,,,,,,,
+,,,,1,Egg,,,,,,,,,,,
+Apple Pie,recipe_apple_pie,TID_APPLE_PIE,Pie_Oven,3,Apple,150,140,135,32,6,75,50,60,28,TID_PIE_OVEN_PRODUCT_DESCRIPTION,56
+,,,,2,Wheat,,,,,,,,,,,
+,,,,1,Egg,,,,,,,,,,,
+,,,,1,Syrup,,,,,,,,,,,
+Feta Pie,recipe_feta_pie,TID_FETA_PIE,Pie_Oven,1,Goat Cheese,90,114,110,26,5,62,42,42,34,TID_PIE_OVEN_PRODUCT_DESCRIPTION,47
+,,,,2,Wheat,,,,,,,,,,,
+,,,,1,Egg,,,,,,,,,,,
+Casserole,recipe_casserole,TID_CASSEROLE,Pie_Oven,2,Potato,120,189,182,44,5,102,69,69,36,TID_PIE_OVEN_PRODUCT_DESCRIPTION,74
+,,,,1,Cheese,,,,,,,,,,,
+,,,,2,Bacon,,,,,,,,,,,
+,,,,2,Egg,,,,,,,,,,,
+Shepherds Pie,recipe_shepherds_pie,TID_SHEPHERDS_PIE,Pie_Oven,2,Potato,100,146,140,34,5,78,55,55,39,TID_PIE_OVEN_PRODUCT_DESCRIPTION,60
+,,,,2,Carrot,,,,,,,,,,,
+,,,,2,Bacon,,,,,,,,,,,
+,,,,2,Pumpkin,,,,,,,,,,,
+Fish Pie,recipe_fishpie,TID_FISHPIE,Pie_Oven,3,Fish Meat,120,117,113,27,5,63,44,44,28,TID_PIE_OVEN_PRODUCT_DESCRIPTION,48
+,,,,2,Wheat,,,,,,,,,,,
+,,,,1,Egg,,,,,,,,,,,
+Lemon Pie,recipe_lemon_pie,TID_PRODUCT_LEMON_PIE,Pie_Oven,1,Lemon Curd,135,229,221,53,5,124,82,87,67,TID_PIE_OVEN_PRODUCT_DESCRIPTION,87
+,,,,2,Wheat,,,,,,,,,,,
+,,,,1,Egg,,,,,,,,,,,
+Peach Tart,recipe_peach_tart,TID_PRODUCT_PEACHTART,Pie_Oven,3,Peach,150,225,216,52,6,121,75,75,76,TID_PIE_OVEN_PRODUCT_DESCRIPTION,81
+,,,,2,Wheat,,,,,,,,,,,
+,,,,1,Cream,,,,,,,,,,,
+,,,,2,Egg,,,,,,,,,,,

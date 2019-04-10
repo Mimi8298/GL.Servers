@@ -1,0 +1,23 @@
+Name,ExportName,FileName,TileWidth,TileHeight,TimeMin,TimeSec,ExpClear,InstantComplete,Tool,TapSound,TapProcessingSound,CollectSound,Type,Mode
+String,String,String,int,int,int,int,int,int,String,String,String,String,int,String
+rock_1x1_01,rock_1x1_01,sc/nature_new.sc,1,1,,2,3,1,Dynamite,BigRockTap,,BigRockCollect,1,Farm
+rock_2x2_01,rock_2x2_01,sc/nature_new.sc,2,2,,5,8,1,Demolition Charge,BigRockTap,,BigRockCollect,1,Farm
+fir_small_01,fir_small_01,sc/nature_new.sc,1,1,,5,4,1,Axe,BigPineTap,,SmallPineCollect,,Farm
+leafy_small_01,leafy_small_01,sc/nature_new.sc,1,1,,5,4,1,Axe,BigPineTap,,SmallPineCollect,,Farm
+fir_medium_01,fir_medium_01,sc/nature_new.sc,1,1,,10,5,1,Saw,BigPineTap,,BigPineCollect,,Farm
+fir_medium_02,fir_medium_02,sc/nature_new.sc,1,1,,10,5,1,Saw,BigPineTap,,BigPineCollect,,Farm
+fir_big_01,fir_big_01,sc/nature_new.sc,1,1,,10,5,1,Saw,BigPineTap,,BigPineCollect,,Farm
+bog_3x3_01,bog_3x3_01,sc/nature_new.sc,3,3,,30,15,1,Shovel,BigSwampTap,,BigSwampCollect,2,Farm
+leafy_big_01,leafy_big_01,sc/nature_new.sc,1,1,,10,5,1,Saw,BigPineTap,,BigPineCollect,,Farm
+leafy_big_02,leafy_big_02,sc/nature_new.sc,1,1,,10,5,1,Saw,BigPineTap,,BigPineCollect,,Farm
+redrock_1x1_01,redrock_1x1_01,sc/train_nature.sc,1,1,,2,3,1,Dynamite,BigRockTap,,BigRockCollect,1,TrainStation
+redrock_2x2_01,redrock_2x2_01,sc/train_nature.sc,2,2,,5,8,1,Demolition Charge,BigRockTap,,BigRockCollect,1,TrainStation
+pine_small_01,pine_small_01,sc/train_nature.sc,1,1,,5,4,1,Axe,BigPineTap,,SmallPineCollect,,TrainStation
+pine_big_01,pine_big_01,sc/train_nature.sc,1,1,,10,5,1,Saw,BigPineTap,,BigPineCollect,,TrainStation
+pine_big_02,pine_big_02,sc/train_nature.sc,1,1,,10,5,1,Saw,BigPineTap,,BigPineCollect,,TrainStation
+train_fir_small_01,fir_small_01,sc/train_nature.sc,1,1,,5,4,1,Axe,BigPineTap,,SmallPineCollect,,TrainStation
+train_fir_medium_01,fir_medium_01,sc/train_nature.sc,1,1,,10,5,1,Saw,BigPineTap,,BigPineCollect,,TrainStation
+train_fir_medium_02,fir_medium_02,sc/train_nature.sc,1,1,,10,5,1,Saw,BigPineTap,,BigPineCollect,,TrainStation
+train_fir_big_01,fir_big_01,sc/train_nature.sc,1,1,,10,5,1,Saw,BigPineTap,,BigPineCollect,,TrainStation
+wildbush01,wildbush01,sc/train_nature.sc,1,1,,5,4,1,Axe,BigPineTap,,SmallPineCollect,,TrainStation
+puddle_3x3_01,puddle_3x3_01,sc/train_nature.sc,2,2,,30,15,1,Shovel,BigSwampTap,,BigSwampCollect,2,TrainStation

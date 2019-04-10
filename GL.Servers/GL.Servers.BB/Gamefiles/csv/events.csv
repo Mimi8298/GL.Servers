@@ -1,0 +1,15 @@
+"Name","TID","InfoTID","NotificationTID","RegionIndex","NodeIndex","LaunchDate","DurationDays","IntervalDays","NumLevels","PersistentEventNumAttacks","PlayerDefenceEvent","MercenaryCampEvent","BoomboxEntry","C0","C1","C2","R0","R1","R2","DummyNpc","CommonPieceInterval","RarePieceInterval","EpicPieceInterval","Deprecated"
+"String","String","String","String","int","int","String","int","int","int","int","boolean","boolean","String","int","int","int","int","int","int","String","int","int","int","boolean"
+"Event 1","TID_EVENT_1","TID_EVENT_1_INFO","TID_EVENT_1_NOTIFICATION",23,0,"2013-12-4",1,7,20,0,,,"dr_t_0",150,20,35,0,0,0,"dummy_small_b",1,6,16,"true"
+"Event 2","TID_EVENT_2","TID_EVENT_2_INFO","TID_EVENT_2_NOTIFICATION",33,1,"2013-12-21",1,7,20,0,,,"dr_t_volcano_0",600,50,40,0,0,0,"dummy_enemybase",1,4,12,"true"
+"Event 3","TID_EVENT_1","TID_EVENT_1_INFO","TID_EVENT_1_NOTIFICATION",23,0,"2015-3-1",1,3,7,0,,,"dr_t_0",150,-200,385,100,500,100,"dummy_small_b",1,3,6,"true"
+"Event 4","TID_EVENT_2","TID_EVENT_2_INFO","TID_EVENT_2_NOTIFICATION",33,1,"2015-3-2",1,3,7,0,,,"dr_t_volcano_0",600,-200,460,600,600,120,"dummy_enemybase",1,2,6,"true"
+"Event 5","TID_EVENT_3","TID_EVENT_3_INFO","TID_EVENT_3_NOTIFICATION",111,0,"2015-3-3",1,6,1,5,,,"gearheart",0,0,0,0,0,0,"persistent_enemybase",1,1,1,"true"
+"Event 6","TID_EVENT_4","TID_EVENT_4_INFO","TID_EVENT_4_NOTIFICATION",0,5,"2015-3-6",1,6,7,0,"true",,"hammerman",70,15,5,0,0,0,"persistent_enemybase",1,1,1,"true"
+"Hammerman","TID_EVENT_4","TID_EVENT_4_INFO","TID_EVENT_4_NOTIFICATION",0,5,"2016-9-19",1,7,7,0,"true",,"hammerman",70,15,5,0,0,0,"persistent_enemybase",1,1,1,
+"DR_T_0","TID_EVENT_1","TID_EVENT_1_INFO","TID_EVENT_1_NOTIFICATION",23,0,"2016-9-20",1,7,7,0,,,"dr_t_0",150,-200,385,100,500,100,"dummy_small_b",1,3,6,
+"DR_T_Volcano_0","TID_EVENT_2","TID_EVENT_2_INFO","TID_EVENT_2_NOTIFICATION",33,1,"2016-9-21",1,7,7,0,,,"dr_t_volcano_0",600,-200,460,600,600,120,"dummy_enemybase",1,2,6,
+"Gearheart","TID_EVENT_3","TID_EVENT_3_INFO","TID_EVENT_3_NOTIFICATION",111,0,"2016-9-22",1,7,1,5,,,"gearheart",0,0,0,0,0,0,"persistent_enemybase",1,1,1,
+"Mercenary_Camp","TID_EVENT_5","TID_EVENT_5_INFO","TID_EVENT_5_NOTIFICATION",58,0,"2016-9-23",1,7,7,8,,"true","mercenary_camp",150,-200,385,3500,600,120,"mercenary_camp_1",1,2,6,
+"DR_T_1","TID_EVENT_1","TID_EVENT_1_INFO","TID_EVENT_1_NOTIFICATION",23,0,"2016-9-24",1,7,7,0,,,"dr_t_1",150,-200,385,100,500,100,"dummy_small_b",1,3,6,
+"DR_T_Volcano_1","TID_EVENT_2","TID_EVENT_2_INFO","TID_EVENT_2_NOTIFICATION",33,1,"2016-9-25",1,7,7,0,,,"dr_t_volcano_1",600,-200,460,600,600,120,"dummy_enemybase",1,2,6,

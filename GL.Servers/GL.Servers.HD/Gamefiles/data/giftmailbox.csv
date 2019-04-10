@@ -1,0 +1,3 @@
+Name,FileName,ExportName,TileWidth,TileHeight,TapSound,LetterCapacity,GiftCardCapacity
+String,String,String,int,int,String,int,int
+GiftMailBox,sc/buildings_new.sc,gift_post_box,1,1,MailboxTap,60,40

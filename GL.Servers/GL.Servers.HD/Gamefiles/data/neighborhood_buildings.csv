@@ -1,0 +1,4 @@
+"Name","ExportName","FileName","TileWidth","TileHeight","TapSound","TapProcessingSound","CollectSound","RepairPrice","TimeMin","TimeSec","ExpToBuild","InstantComplete","TID"
+"String","String","String","int","int","String","String","String","int","int","int","int","int","String"
+"NeighborhoodBuildingBroken","nh_house_broken","sc/buildings_new.sc",3,3,"MenuBleep","BigRockCollect","Collect",2500,,,,,
+"NeighborhoodBuilding","nh_house_lvl1","sc/buildings_new.sc",3,3,"MenuBleep","BigRockCollect","Collect",,480,,14,36,"TID_NEIGHBORHOOD"

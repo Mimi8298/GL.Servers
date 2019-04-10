@@ -1,0 +1,11 @@
+"Name","FileName","StateIdleExportName","StateIdleMinMS","StateIdleMaxMS","Feed","TimeMin","TimeSec","HungerValue","TID","TapSound","FeedSound"
+"String","String","String","int","int","string","int","int","int","String","String","String"
+"Elephant","sc/animals.sc","chicken01_idle01",3000,9000,"Carrot",10,30,2,"TID_ELEPHANT","TapChicken","FeedAnimal"
+,,"chicken01_idle02",,,"Strawberry",,,4,,,
+,,,,,"Cheese Cake",,,8,,,
+,,,,,"Hamburger",,,16,,,
+,,,,,"Fishburger",,,,,,
+"Giraffe","sc/animals.sc","sheep01_idle01",4000,10000,"Pancakes",5,15,5,"TID_GIRAFFE","TapSheep","FeedAnimal"
+,,"sheep01_idle02",,,"Lemon Cake",,,10,,,
+,,"sheep01_idle03",,,"Roasted Tomatoes",,,15,,,
+,,,,,"Wheat",,,,,,

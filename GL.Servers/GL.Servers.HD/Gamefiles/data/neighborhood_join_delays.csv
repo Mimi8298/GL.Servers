@@ -1,0 +1,10 @@
+Level,JoinDelayMinutes,LevelStayTimeMinutes
+String,int,int
+1,0,0
+2,5,240
+3,10,240
+4,20,240
+5,60,240
+6,90,240
+7,120,240
+8,480,240

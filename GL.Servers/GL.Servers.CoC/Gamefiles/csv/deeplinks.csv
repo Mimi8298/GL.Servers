@@ -1,0 +1,21 @@
+"Name","ParameterType","ParameterName","Description","Public"
+"String","String","String","String","Boolean"
+"OpenShop",,,"Open the shop","true"
+"OpenShopBillingPackage","BillingPackage","package","Open the shop and show the billing package","true"
+"OpenShopOfferBundle","Bundle","bundle","Open the shop and show bundle","true"
+"OpenShopBuilding","Building","building","Open the shop and show the building","true"
+"OpenShopTrap","Trap","trap","Open the shop and show the trap","true"
+"OpenTraining",,,"Open the training screen","true"
+"OpenTrainingTroop","Troop","troop","Open the training screen and show the troop","true"
+"OpenTrainingSpell","Spell","spell","Open the training screen and show the spell","true"
+"OpenWeb","String","url","Open default browser and go to address","false"
+,,"url2","If address cannot be opened i.e. clashroyale:// then the following urls are tested.",
+,,"url3",,
+"Share","String","url","Open native share dialogue with message","false"
+,"String","message",,
+"OpenPlayerProfile","String","tag","Open player profile","true"
+"OpenClanProfile","String","tag","Open a clans profile","true"
+"OpenEvents","int","eventId","Open event calendar and highlight event","true"
+"SelectGameObject","GameObject","name","Select first game object with name","true"
+"OpenHelpshift","String","article","Open Helpshift. Show article if defined, show section if defined, else show FAQ.","true"
+,"String","section",,

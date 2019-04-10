@@ -1,0 +1,24 @@
+Event,GoodReward,GoodAmount,Weight
+String,String,int,int
+Bonus_01,Dynamite,1,9
+Bonus_02,Demolition Charge,1,12
+Bonus_03,Axe,1,50
+Bonus_04,Saw,1,21
+Bonus_05,Shovel,1,10
+Bonus_06,Plank,1,12
+Bonus_07,Nail,1,12
+Bonus_08,Bolt,1,12
+Bonus_09,Screw,1,12
+Bonus_10,Duct Tape,1,12
+Bonus_11,Wood Panel,1,12
+Bonus_12,Land Deed,1,12
+Bonus_13,Mallet,1,12
+Bonus_14,Marker Stake,1,12
+Bonus_15,Hammer,1,10
+Bonus_16,Hand Drill,1,10
+Bonus_17,Paint Bucket,1,10
+Bonus_18,Stone Block,1,10
+Bonus_19,Brick,1,10
+Bonus_20,Tar Bucket,1,10
+Bonus_21,Map Piece,1,5
+Bonus_22,Pickaxe,1,10

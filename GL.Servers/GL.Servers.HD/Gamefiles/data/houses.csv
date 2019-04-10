@@ -1,0 +1,12 @@
+Name,FileName,ExportName,RequiredAchievementPoints,TileWidth,TileHeight,BrokenPartCount,BrokenExportName,EffectExportName,TapSound,CollectSound
+String,String,String,int,int,int,int,String,String,String,String
+Home building,sc/buildings_new.sc,home_01,,4,4,6,home_01_broken,repairsmoke_03,MenuBleep,CoinXpExplosion
+,sc/buildings_new.sc,home_02,1,,,,,,,
+,sc/buildings_new.sc,home_03,4,,,,,,,
+,sc/buildings_new.sc,home_04,7,,,,,,,
+,sc/buildings_new.sc,home_05,10,,,,,,,
+,sc/buildings_new.sc,home_06,13,,,,,,,
+,sc/buildings_new.sc,home_07,16,,,,,,,
+,sc/buildings_new.sc,home_08,19,,,,,,,
+,sc/buildings_new.sc,home_09,22,,,,,,,
+,sc/buildings_new.sc,home_10,25,,,,,,,

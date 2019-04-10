@@ -1,0 +1,15 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Hot Dog,recipe_hotdog,TID_PRODUCT_HOTDOG,Hotdog_Stand,1,Bread,30,191,184,44,3,103,69,72,75,TID_HOTDOG_STAND_PRODUCT_DESCRIPTION,72
+,,,,2,Bacon,,,,,,,,,,,
+,,,,1,Tomato Sauce,,,,,,,,,,,
+Tofu Dog,recipe_tofudog,TID_PRODUCT_TOFUDOG,Hotdog_Stand,3,Lettuce,45,189,182,44,3,102,68,68,76,TID_HOTDOG_STAND_PRODUCT_DESCRIPTION,71
+,,,,6,Soybean,,,,,,,,,,,
+,,,,4,Tomato,,,,,,,,,,,
+Corn Dog,recipe_corndog,TID_PRODUCT_CORNDOG,Hotdog_Stand,4,Bacon,60,273,262,63,4,147,102,102,78,TID_HOTDOG_STAND_PRODUCT_DESCRIPTION,106
+,,,,4,Corn,,,,,,,,,,,
+,,,,1,OliveOil,,,,,,,,,,,
+Onion Dog,recipe_oniondog,TID_PRODUCT_ONIONDOG,Hotdog_Stand,1,Bread,75,157,151,36,4,85,59,59,80,TID_HOTDOG_STAND_PRODUCT_DESCRIPTION,63
+,,,,2,Bacon,,,,,,,,,,,
+,,,,3,Onion,,,,,,,,,,,
+,,,,1,Chili,,,,,,,,,,,

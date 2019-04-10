@@ -1,0 +1,4 @@
+Name,TID,SWF,ExportName,IconSWF,IconExportName,TriggerRadius,PickUpEffect,AppearEffect,BouncingStopsEffect,ColorMulR,ColorMulG,ColorMulB,ColorAddR,ColorAddG,ColorAddB,RewardResource,RewardAmount,DisappearTurns
+String,String,String,String,String,String,int,String,String,String,int,int,int,int,int,int,String,int,int
+Gold1,,sc/common.sc,collectable_gold_single_master,,,,,,,,,,,,,Gold,1,1
+HP_Small,,sc/common.sc,item_hearth_master,,,64,,,,,,,,,,,25,

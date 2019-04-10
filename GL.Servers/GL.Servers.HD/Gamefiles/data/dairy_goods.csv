@@ -1,0 +1,6 @@
+"Name","ToolIconExportName","TID","ProcessingBuilding","RequirementAmount","Requirement","TimeMin","OrderPrice","OrderExp","ExpCollect","InstantComplete","DumbValue","OrderValue","BoatOrderValue","UnlockLevel","DescriptionTID","Difficulty"
+"String","String","String","String","int","String","int","int","int","int","int","int","int","int","int","string","int"
+"Cream","recipe_cream","TID_CREAM","Dairy",1,"Milk",20,25,24,6,2,14,8,8,6,"TID_DAIRY_PRODUCT_DESCRIPTION",10
+"Butter","recipe_butter","TID_BUTTER","Dairy",2,"Milk",30,44,42,10,3,23,15,15,9,"TID_DAIRY_PRODUCT_DESCRIPTION",18
+"Cheese","recipe_cheese","TID_CHEESE","Dairy",3,"Milk",60,64,61,15,4,34,22,22,12,"TID_DAIRY_PRODUCT_DESCRIPTION",26
+"Goat Cheese","recipe_goat_cheese","TID_GOAT_CHEESE","Dairy",2,"Goat Milk",90,83,80,19,5,45,31,31,33,"TID_DAIRY_PRODUCT_DESCRIPTION",36

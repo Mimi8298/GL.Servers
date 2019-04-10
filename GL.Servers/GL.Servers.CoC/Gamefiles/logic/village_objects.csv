@@ -1,0 +1,7 @@
+"Name","TID","InfoTID","SWF","ExportName","TileX100","TileY100","RequiredTH","BuildTimeD","BuildTimeH","BuildTimeM","BuildTimeS","RequiresBuilder","BuildResource","BuildCost","TownHallLevel","PickUpEffect","Animations","AnimX","AnimY","AnimID","AnimDir","AnimVisibilityOdds","HasInfoScreen","VillageType","UnitHousing","HousesUnits"
+"String","String","String","String","String","int","int","int","int","int","int","int","boolean","String","int","int","String","String","int","int","int","int","int","boolean","int","int","boolean"
+"Shipyard","TID_VILLAGE_OBJECT_SHIP","TID_VILLAGE_OBJECT_SHIP_INFO","sc/content.sc","northwestern_wreck",2500,5460,4,,,,1,"true","Gold",0,4,"Tap Ship",,,,,,,"true",,,
+,,,"sc/content.sc","northwestern",2500,5460,,0,0,0,5,,,,4,,,,,,,,,,,
+"Shipyard2","TID_VILLAGE_OBJECT_SHIP","TID_VILLAGE_OBJECT_SHIP_INFO","sc/content.sc","northwestern",1450,-1100,0,,,,,"true",,,4,"Tap Ship",,,,,,,"true",1,,
+"Rowboat","TID_VILLAGE_ROWBOAT","TID_VILLAGE_OBJECT_ROWBOAT_INFO","sc/content.sc","rowboat_idle_nowheel",3400,5460,4,,,,1,"true","Gold",25000,4,"Tap Ship",,,,,,,"true",,,
+"Rowboat2","TID_VILLAGE_ROWBOAT","TID_VILLAGE_OBJECT_ROWBOAT_INFO","sc/content.sc","rowboat_idle",930,-800,0,,,,,"true",,,4,"Tap Ship",,,,,,,"true",1,,

@@ -1,0 +1,3 @@
+Name,TID,TimeMin,TimeSec,DescriptionTID,UnlockLevel
+String,String,int,int,String,int
+Nectar,TID_NECTAR,1,,TID_NECTAR_DESCRIPTION,39

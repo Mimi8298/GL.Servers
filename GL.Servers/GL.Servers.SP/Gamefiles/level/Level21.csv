@@ -1,0 +1,17 @@
+"Monsters",,,,
+,"Name","Wave","x","y"
+,"string","int","int","int"
+,"Fat",,,3
+,"Basic_Baby",,,4
+,"Basic_Baby",,1,5
+,"Barrel",,2,5
+,"Splitter_(Mid)",,2,4
+,"Fat",,3,3
+,"Basic_Baby",,3,5
+,"Basic_Baby",,4,4
+,"Bomb",1,,4
+,"Bomb",1,1,2
+,"Fat",1,2,4
+,"Basic_Baby",1,2,3
+,"Basic_Baby",1,3,3
+,"Bomb",1,4,2

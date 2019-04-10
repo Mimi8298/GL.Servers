@@ -1,0 +1,6 @@
+Name,FileName,ExportName,TileWidth,TileHeight,AccurateWidth,TapSound
+String,String,String,int,int,int,String
+CoalCart,sc/train_buildings.sc,coal_cart,1,1,800,MenuBleep
+PassengerCartLevel1,sc/train_buildings.sc,cart_lvl1,3,1,1650,MenuBleep
+PassengerCartLevel2,sc/train_buildings.sc,cart_lvl2,3,1,1650,MenuBleep
+PassengerCartLevel3,sc/train_buildings.sc,cart_lvl3,3,1,1650,MenuBleep

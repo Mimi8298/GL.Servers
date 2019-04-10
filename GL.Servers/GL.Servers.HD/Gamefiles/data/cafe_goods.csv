@@ -1,0 +1,21 @@
+Name,ToolIconExportName,TID,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,ProcessingBuilding,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,int,String,int,int,int,int,int,int,int,int,String,int,string,int
+Espreso,recipe_espresso,TID_ESPRESSO,3,Coffee,5,128,123,29,1,69,46,51,Cafe_Kiosk,42,TID_CAFE_PRODUCT_DESCRIPTION,47
+,,,1,White Sugar,,,,,,,,,,,,
+Latte,recipe_caffe_latte,TID_CAFFE_LATTE,2,Coffee,10,114,109,26,2,61,41,46,Cafe_Kiosk,43,TID_CAFE_PRODUCT_DESCRIPTION,43
+,,,1,Milk,,,,,,,,,,,,
+,,,1,White Sugar,,,,,,,,,,,,
+Mocha,recipe_caffe_mocha,TID_CAFFE_MOCHA,1,Coffee,15,151,145,35,2,81,101,101,Cafe_Kiosk,45,TID_CAFE_PRODUCT_DESCRIPTION,103
+,,,2,Cacao,,,,,,,,,,,,
+,,,1,Cream,,,,,,,,,,,,
+Raspberry Mocha,recipe_raspberry_mocha,TID_RASPBERRY_MOCHA,1,Coffee,30,134,128,31,3,72,92,92,Cafe_Kiosk,46,TID_CAFE_PRODUCT_DESCRIPTION,95
+,,,1,Cacao,,,,,,,,,,,,
+,,,1,Cream,,,,,,,,,,,,
+,,,1,Raspberry,,,,,,,,,,,,
+Hot Chocolate,recipe_hot_chocolate,TID_HOT_CHOCOLATE,2,Cacao,25,164,158,38,3,88,58,63,Cafe_Kiosk,47,TID_CAFE_PRODUCT_DESCRIPTION,61
+,,,1,Milk,,,,,,,,,,,,
+,,,1,Cream,,,,,,,,,,,,
+,,,1,White Sugar,,,,,,,,,,,,
+BananaLatte,recipe_banana_latte,TID_BANANA_LATTE,1,Banana,20,143,137,33,2,77,49,49,Cafe_Kiosk,88,TID_CAFE_PRODUCT_DESCRIPTION,51
+,,,2,Coffee,,,,,,,,,,,,
+,,,1,Milk,,,,,,,,,,,,

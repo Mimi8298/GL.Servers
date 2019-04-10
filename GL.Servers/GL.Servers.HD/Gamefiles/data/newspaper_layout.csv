@@ -1,0 +1,8 @@
+Name,PageA1,PageB1,PageA2,PageB2,PageA3,PageB3,PageA4,PageB4,PageA5,PageB5,PageA6,PageB6,PageA7,PageB7,PageA8,PageB8,PageA9,PageB9,PageA10,PageB10,PageM1,PageM2,PageM3,PageM4,PageM5,PageM6,PageM7,PageM8,PageM9,PageM10,PageM11,PageM12,PageM13,PageM14,PageM15,PageM16,PageM17,PageM18
+String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String
+Layout1,H,H,P,Pda,Pdaw,Pdaw,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,H,P,Pda,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA
+,FSf,FSf,TO,GA,Pfb,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,FSf,TO,Pfb,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA
+,FSf,FSf,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,,,,,,,,,,,,,,,,,,
+Layout2,H,H,Pfb,P,Pdaw,Pdaw,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,H,Pfb,Pda,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA
+,FSf,FSf,TO,Pda,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,FSf,TO,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA
+,FSf,FSf,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,GA,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,14 @@
+"Name","ParameterType","ParameterName","Description","Public"
+"String","String","String","String","Boolean"
+"OpenShopBillingPackage","BillingPackage","package","Open the shop and show the billing package","true"
+"OpenShopBuilding","Building","building","Open the shop and show the building","true"
+"OpenWeb","String","url","Open default browser and go to address","false"
+,,"url2","If address cannot be opened i.e. clashroyale:// then the following urls are tested.",
+,,"url3",,
+"Share","String","url","Open native share dialogue with message","false"
+,"String","message",,
+"VisitPlayer","String","tag","Visit a player","true"
+"ViewTaskforce","String","tag","Open a task force info page","true"
+"BaseTest","String","base_id","Initiates a basebuilder test","true"
+,"String","user_id",,
+,"String","token",,

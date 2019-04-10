@@ -1,0 +1,16 @@
+Name,FileName,ExportName,FenceBelowExportName,FenceRightExportName,FenceCornerExportName,SpecialExportName,SpecialBelowExportName,SpecialRightExportName,SpecialCornerExportName,TileWidth,TileHeight,TagSpecial,TagNature,TagDeco,TagSanctuary,HideFromLevelUpScreen,SanctuaryAnimal
+String,String,String,String,String,String,String,String,String,String,int,int,Boolean,Boolean,Boolean,Boolean,Boolean,String
+Fence,sc/decos.sc,exp_fence_pole,exp_fence01,exp_fence01_mirror,exp_fence_corner,exp_fence_pole,expspecial_fence01,expspecial_fence01_mirror,expspecial_fence_corner,1,1,,,TRUE,,,
+,,,exp_fence02,exp_fence02_mirror,,,expspecial_fence02,expspecial_fence02_mirror,,,,,,,,,
+,,,exp_fence03,exp_fence03_mirror,,,expspecial_fence03,expspecial_fence03_mirror,,,,,,,,,
+,,,exp_fence04,exp_fence04_mirror,,,expspecial_fence04,expspecial_fence04_mirror,,,,,,,,,
+,,,exp_fence05,exp_fence05_mirror,,,expspecial_fence05,expspecial_fence05_mirror,,,,,,,,,
+,,,exp_fence06,exp_fence06_mirror,,,exp_fence01,exp_fence02_mirror,,,,,,,,,
+,,,,,,,exp_fence04,exp_fence05_mirror,,,,,,,,,
+,,,,,,,exp_fence06,exp_fence06_mirror,,,,,,,,,
+TrainFence,sc/train_nature.sc,exp_fence_pole,exp_fence01,exp_fence01_mirror,exp_fence_corner,,,,,1,1,,,TRUE,,,
+,,,exp_fence02,exp_fence02_mirror,,,,,,,,,,,,,
+,,,exp_fence03,exp_fence03_mirror,,,,,,,,,,,,,
+,,,exp_fence04,exp_fence04_mirror,,,,,,,,,,,,,
+,,,exp_fence05,exp_fence05_mirror,,,,,,,,,,,,,
+,,,exp_fence06,exp_fence06_mirror,,,,,,,,,,,,,

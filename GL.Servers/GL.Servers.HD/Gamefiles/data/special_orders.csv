@@ -1,0 +1,31 @@
+Name,Goods,Probability,UnlockLevel,OrderValueMultiplier,OrderReceiver
+String,String,int,int,int,String
+A,SilverBar,5,24,100,Order Frank's Factory
+B,GoldBar,4,25,100,Order Frank's Factory
+C,PlatinumBar,3,25,100,Order Frank's Factory
+D,SilverBar,2,25,100,Order Frank's Factory
+,GoldBar,,,,
+E,SilverBar,1,25,100,Order Frank's Factory
+,PlatinumBar,,,,
+F,GoldBar,1,25,100,Order Frank's Factory
+,PlatinumBar,,,,
+G,SilverBar,2,25,100,Order Frank's Factory
+,GoldBar,,,,
+,PlatinumBar,,,,
+H,Bracelet,7,38,100,Order Susan's Store
+I,Necklace,7,39,100,Order Susan's Store
+J,Diamond Ring,7,40,100,Order Susan's Store
+K,CoalBar,5,33,100,Order Frank's Factory
+L,IronBar,5,34,100,Order Frank's Factory
+M,CoalBar,2,34,100,Order Frank's Factory
+,IronBar,,,,
+N,IronBracelet,7,41,100,Order Susan's Store
+O,IronBracelet,1,50,100,Order Susan's Store
+,Bracelet,,,,
+,Necklace,,,,
+,Diamond Ring,,,,
+P,CoalBar,1,50,100,Order Frank's Factory
+,IronBar,,,,
+,SilverBar,,,,
+,GoldBar,,,,
+,PlatinumBar,,,,

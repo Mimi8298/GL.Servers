@@ -1,0 +1,2142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28BC6B52-446A-45B2-87EF-83F74EF63009}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GL.Servers.HD</RootNamespace>
+    <AssemblyName>GL.Servers.HD</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Builds\Debug\</OutputPath>
+    <DefineConstants>DEBUG;USER_MIKE;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>default</LangVersion>
+    <FileAlignment>1024</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Builds\Release\</OutputPath>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>default</LangVersion>
+    <FileAlignment>1024</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GL.Servers.HD.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.29.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.1.29.1\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.29.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Auth.1.29.1\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.29.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Auth.1.29.1\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.29.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Core.1.29.1\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Games.v1, Version=1.29.1.999, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.Games.v1.1.29.1.999\lib\net45\Google.Apis.Games.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.29.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Google.Apis.1.29.1\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Bson.2.4.4\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.2.4.4\lib\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.Core.2.4.4\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\StackExchange.Redis.1.2.6\lib\net46\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Net.Http.4.3.3\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.X509Certificates.4.3.1\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Consoles\Parser.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Database\Models\Mongo\Clans.cs" />
+    <Compile Include="Core\Database\Models\Mongo\Players.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Battles.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Clans.cs" />
+    <Compile Include="Core\Database\Models\GBS.Context.cs" />
+    <Compile Include="Core\Database\Models\GBS.Context1.cs">
+      <DependentUpon>GBS.Context.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Database\Models\GBS.cs">
+      <DependentUpon>GBS.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Database\Models\GBS.Designer.cs">
+      <DependentUpon>GBS.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Database\Models\MySQL\Players.cs" />
+    <Compile Include="Core\Database\Models\MySQL\Tournaments.cs" />
+    <Compile Include="Core\Database\Mongo.cs" />
+    <Compile Include="Core\Database\MySQL.cs" />
+    <Compile Include="Core\Database\Redis.cs" />
+    <Compile Include="Core\Events\EventHandler.cs" />
+    <Compile Include="Core\Logging.cs" />
+    <Compile Include="Core\Network\Processor.cs" />
+    <Compile Include="Core\Network\SocketEventArgsPool.cs" />
+    <Compile Include="Core\Network\TCPServer.cs" />
+    <Compile Include="Core\Network\Token.cs" />
+    <Compile Include="Core\Network\UDPServer.cs" />
+    <Compile Include="Core\Resources.cs" />
+    <Compile Include="Files\CSV.cs" />
+    <Compile Include="Files\CSV_Helpers\Data.cs" />
+    <Compile Include="Files\CSV_Helpers\DataTable.cs" />
+    <Compile Include="Files\CSV_Helpers\GlobalID.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AboutLayoutData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AbTestData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AchievementData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AdvanceSettingData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AiRoadsideShopData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AllianceBadgeData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AllianceBadgeLayerData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AllianceLevelData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AlliancePortalData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AmbientAnimalData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AmbientAnimalSpawnerData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AnimalData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AnimalFeedData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AnimalGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AnimalHabitatData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\AnimalHabitatPieceData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BaitData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BaitMakerData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BakeryGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BalloonData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BarbecueGrillGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BoatData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BoosterData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BoyBoxData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BoyData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BuildingClasseData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\BuildingData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CafeGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CakeOvenGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CalendarEventData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CalendarEventFunctionData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CalendarEventRewardData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CalendarEventTownData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CandleMakerGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CandyMachineGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CarData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CashPackageData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CatalogueGiftData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CatalogueLayoutData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CharacterData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CircuAnimalData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CircuTrainData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CircuTrainPartData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CollectionToolData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ConstructionBuildingData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\CreditData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DairyGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DecoData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DecoDitcheData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DecoFenceData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DecorationData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DerbyData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DerbyLeagueData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DerbyRewardData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DerbyThresholdData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DiamondPackageData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DockData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DrasineData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DuckData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\DuckSalonData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\EasterEggData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\EasterEggSpawnerData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\EffectData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\EmojiData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\EventboardData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\EventData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ExpansionData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ExpansionFenceData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ExperienceLevelData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ExpLevelData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ExpLevelThresholdRewardData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FacebookErrorData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FaqData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FaqLayoutData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FeatureData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FieldData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FishConfigData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FisheData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FishingBoatData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FishingGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FishingHutData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FishingSpotData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FontData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ForestData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FruitData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\FruitTreeData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GameConfigData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GathererData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GathererHabitatData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GathererMineData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GathererMineResourceData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GathererNestData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GathererNestGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GemBundleData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GiftData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GiftmailboxData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\GlobalData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\HatMakerGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\HelperCharacterData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\HelperCollectionAreaData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\HelperData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\HelperHouseData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\HeroData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\HoneyExtractorGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\HotdogStandGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\HouseData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\IceCreamMakerGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\IssueTypeData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\JamMakerGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\JewelerGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\JuicePresGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\LanguageData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\LeagueData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\Leagues2Data.cs" />
+    <Compile Include="Files\CSV_Logic\Data\LimitedCollectionToolData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\LobsterData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\LobsterPoolData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\LocaleData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\LoomGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\LumberjackData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\MailboxeData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\MineData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\MineGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\MissionData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\MoneyData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\MovieTicketData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\MysteryBoxeData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\MysteryBoxSpawnerData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NameData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NeighborhoodBadgeData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NeighborhoodBuildingData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NeighborhoodDonationAreaData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NeighborhoodEventboardData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NeighborhoodJoinDelayData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NeighborhoodMemberRightData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NeighborhoodRequestBoardData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NeighborhoodTaskData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NetData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NetMakerData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NewspaperLayoutData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NewspaperStorieData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NotificationData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NotificationSettingData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\NpcData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ObstacleData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\OfferData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\OpenGraphObjectData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\OrderData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\OrderItemFilterData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\OrderTableData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ParachuteData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PassengerAnimalBonuData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PassengerBonuData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PassengerData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PassengerSpawnerData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PastaKitchenGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PastaMakerGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PeopleData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PeopleSpawnerData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PersonalTrainData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PetData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PetHabitatData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PieOvenGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PopcornPotGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PostmanData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PredefinedOrderData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ProcessingBuildingData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ProjectileData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\PuzzlePieceData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\RegionData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ReputationLevelData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ResourceData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\RewardLimitData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\RoadsideShopData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\RuleData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SaladBarGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SanctuaryAnimalData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SanctuaryAnimalHabitatData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SanctuaryBookstandData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SanctuaryCollectionAreaData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SanctuaryEventData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SandwichBarGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SauceMixerGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ScarecrowData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ScoreBoardData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ServiceBuildingData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SewingMachineGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ShackData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ShieldData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SiloData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SimulationConfigData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SmelterGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SmoothieMixerGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SoundData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SoupKitchenGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SpecialBoatRewardData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SpecialOrderData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SpellData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\StarterPackageData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SugarMillGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\SushiBarGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TackleBoxData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TacoKitchenGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TargetedOfferData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TeaStandGoodData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ThemeData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TileData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ToolData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\ToolOfferData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TownHallData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TownhallLevelData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TownRequestBoardData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TrackingEventData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TrainConfigData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TrainCrossingData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TrainData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TrainExpansionData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TrainPartData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TrainStationData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TrapData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TutorialData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\TutorialPeopleOrderData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\VariableData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\VillageObjectData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\VoucherData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\WarData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\WarehouseData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\WheelCarData.cs" />
+    <Compile Include="Files\CSV_Logic\Data\WonderData.cs" />
+    <Compile Include="Files\CSV_Reader\Gamefiles.cs" />
+    <Compile Include="Logic\Device.cs" />
+    <Compile Include="Logic\Enums\Database.cs" />
+    <Compile Include="Logic\Enums\Gamefile.cs" />
+    <Compile Include="Logic\MathUtil\Math.cs" />
+    <Compile Include="Logic\Player\Player.cs" />
+    <Compile Include="Logic\Player\PlayerBase.cs" />
+    <Compile Include="Logic\Apis\Facebook.cs" />
+    <Compile Include="Logic\Apis\Gamecenter.cs" />
+    <Compile Include="Logic\Apis\Google.cs" />
+    <Compile Include="Logic\Slots\Players.cs" />
+    <Compile Include="Logic\TimeUtil\Time.cs" />
+    <Compile Include="Logic\TimeUtil\Timer.cs" />
+    <Compile Include="Packets\Debug.cs" />
+    <Compile Include="Packets\Factory.cs" />
+    <Compile Include="Packets\Message.cs" />
+    <Compile Include="Packets\Messages\Account\ServerHelloMessage.cs" />
+    <Compile Include="Packets\Messages\Account\KeepAliveServerMessage.cs" />
+    <Compile Include="Packets\Messages\Account\LoginMessage.cs" />
+    <Compile Include="Packets\Messages\Account\ClientHelloMessage.cs" />
+    <Compile Include="Packets\Messages\Account\KeepAliveMessage.cs" />
+    <Compile Include="Packets\Messages\Account\SetDeviceTokenMessage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Core\Database\Models\GBS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GBS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="client_secret.json" />
+    <None Include="Core\Database\Models\GBS.edmx.diagram">
+      <DependentUpon>GBS.edmx</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_catching_fish_loop01.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_fishing_01.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_fishing_01_halloween.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_fishing_01_winter.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_ingame_music_03.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_ingame_music_03_halloween.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_ingame_music_03_winter.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_intro_01-1.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_train_area_music_02.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_train_area_music_02_halloween.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gamefiles\audio\music\mp3\hayday_train_area_music_02_winter.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Gamefiles\audio\sfx\ogg\add_to_queue.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\add_to_queue_3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\bait_underwater_01v2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\bakery.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\bakery_door_1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\balloon_pop_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\big_pine.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\big_pine_saw_fall_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\big_rock_hit.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\big_swamp_step.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\birds_wind_temp_02_loop.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\boat_engine_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\boat_horn_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\cake_in_owen_new_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\calling_whistle_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\car_horn.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\car_loop_2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\cast_line_new_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\cat_meow_demo_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\cat_meow_demo_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\chickens_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\chicken_idle_1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\coin_xp_explo_temp_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\collectlobstercage_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\collect_new_temp_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\collect_new_temp_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\complete_puzzle_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\construction_site_newer_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\cows_new.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\cow_idle2_1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\crate_break_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\crops_seeding_1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\crops_seeding_2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\crops_seeding_3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\crop_into_silo_1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\crop_into_silo_2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\crow_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\cutting_crop_1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\cutting_crop_2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\derby_game_tab.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\derby_jingle_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\derby_new_board.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\derby_race_key_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\dog_bark_demo_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\dog_bark_demo_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\donkey_072.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\door_open_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\duck_collect_01_001.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\duck_ejecting_01_001.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\duck_incoming_01_001.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\duck_landing_01_001.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\duck_tap_01_001.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\earning_money_2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\earn_money_01_new.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\earn_money_02_new.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\event_bell_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\fishingnetcollect_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\fishingnetreadytap_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\fish_jump_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\fish_jump_inwater_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\fish_jump_temp_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\food_mixer_loop_new.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\food_mix_wooden_spoon.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\fox_growl_temp_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\frog_temp_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\gain_xp_temp_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\giraffe_idle_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\giraffe_idle_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\giraffe_idle_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\giraffe_tap_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\goats_idle_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\hayday_booster_end_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\hayday_booster_start_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\hayday_crate_drop_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\hayday_loading_jingle_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\hayday_loading_jingle_01_halloween.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\hayday_loading_jingle_01_winter.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\hay_day_xmas_deco01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\horse_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\horse_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\horse_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\horse_snore_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_elephant_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_elephant_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_elephant_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_elephant_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_hippo_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_hippo_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_hippo_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_hippo_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_lion_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_lion_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_lion_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\idle_lion_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\jammaker_processing.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\juice_press_idle_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\juice_press_process_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\kitten_001.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\kitten_002.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\lake_ambiance_02_loop.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\level_up_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\lobsterdropsintopool_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\lobsterharvesting_end_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\lobsterharvesting_first_part_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\lobsterpooltapidle1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\lobsterpooltapprocessing02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\loom.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\loom_loop_new.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\lure_maker_active_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\lure_maker_idle_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\luukku_2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\magic_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\mail_box_tap_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\menu_bleep.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\menu_ingame_pause_open.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\menu_switch.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\mine_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\netmakertapidle_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\netmakertapprocessing_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\news_paper_page02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\newyear_surprise_package_01_001.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\paistuu_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\pig_idle_3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\placelobstercage_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\placemysterynet_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\placenet_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\place_puzzle_piece_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\popcorn_pot_metal_pot.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\popcorn_pot_processing_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\possuja_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\puppy_001.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\puppy_002.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\rabbit_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\rabbit_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\reel_in_01_loop_v3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\reel_in_with_fish_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\river_temp_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\rock_deto_blast_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\rullahihna_loop_2_new_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\saladbar_processing_001.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\sanctuary_birds_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\scooter_loop_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\seagull_diveunderwater_anim_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\seagull_takeoff_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\select_hihna_kolisee_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\sewing_machine_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\sewing_machine_idle01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\sheep_herd_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\shore_loop_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\sickle_begin_cutting.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\silo_warehouse_upgrade_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\small_pine_axe_fall_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\soupkitchentapprocessing_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\soupkitchentap_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\sugarmill.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\sugarmill_loop_new.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\supercell_jingle.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\swamp_dig_collect_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\take_photo_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\taplobster_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\tap_beehive_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\tap_bee_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\tap_bee_07.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\tap_elephant_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\tap_goat_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\tap_hippo_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\tap_lion_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\tap_sheep_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\train_chug_01v3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\train_steem_release_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\train_wagon_loop_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\train_whistle_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\treasure_box_locked_temp_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_attention_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_attention_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_attention_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_attention_08.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_mumble_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_mumble_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_mumble_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_mumble_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_nom_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_nom_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_nom_08.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_thank_you_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_thank_you_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_thank_you_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\female\fem_thank_you_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\attention_voc_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\attention_voc_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\attention_voc_07.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\nom_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\nom_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\nom_03.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\random_voc_04.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\random_voc_05.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\random_voc_06.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\random_voc_07.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\random_voc_09.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\thank_you_06_no_lang.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\thank_you_07_no_lang.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\thank_you_10_no_lang.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\thank_you_11_no_lang.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\thank_you_12_no_lang.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\vo\male\whistle_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\water_fall_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\water_tap_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\wheel_car_honky_02.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\audio\sfx\ogg\xmas_surprise_package_01.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\about_layout.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\ab_tests.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\achievements.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\advance_settings.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\ai.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\ai_roadside_shop.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\ai_town.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\ambient_animals.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\ambient_animal_spawners.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\animals.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\animal_feed.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\animal_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\animal_habitats.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\animal_habitat_pieces.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\baits.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\bait_maker.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\bakery_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\balloons.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\barbecue_grill_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\boats.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\boosters.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\boy.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\boy_box.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\cafe_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\cake_oven_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\calendar_events.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\calendar_events_town.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\calendar_event_rewards.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\candle_maker_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\candy_machine_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\cars.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\cash_packages.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\catalogue_gifts.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\catalogue_layout.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\circus_animals.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\circus_trains.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\circus_train_parts.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\collection_tools.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\construction_buildings.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\credits.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\dairy_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\decorations.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\deco_ditches.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\deco_fences.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\derby.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\derby_leagues.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\derby_rewards.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\derby_thresholds.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\diamond_packages.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\docks.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\drasine.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\ducks.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\duck_salon.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\easter_eggs.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\easter_egg_spawners.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\emoji.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\eventboard.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\events.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\expansions.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\expansion_fences.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\exp_levels.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\exp_levels_threshold_rewards.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\facebook_errors.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\faqs.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\faqs_layout.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\features.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fields.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fishes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fishing_0.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fishing_boat.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fishing_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fishing_hut.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fishing_spots.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fish_config.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fonts.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\forests.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fruits.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\fruit_trees.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\game_config.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\gatherers.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\gatherer_habitats.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\gatherer_mines.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\gatherer_mine_resources.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\gatherer_nests.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\gatherer_nest_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\giftmailbox.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\gifts.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\hat_maker_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\helpers.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\helper_characters.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\helper_collection_area.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\helper_house.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\honey_extractor_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\hotdog_stand_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\houses.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\ice_cream_maker_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\issue_types.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\jam_maker_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\jeweler_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\juice_press_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\languages.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\level_0.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\limited_collection_tools.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\lobsters.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\lobster_pool.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\loom_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\lumberjack.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\mailboxes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\mines.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\mine_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\money.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\movie_tickets.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\mystery_boxes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\mystery_box_spawners.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\names.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\neighborhood_badges.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\neighborhood_buildings.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\neighborhood_donations_area.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\neighborhood_eventboard.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\neighborhood_join_delays.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\neighborhood_member_rights.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\neighborhood_request_board.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\neighborhood_tasks.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\nets.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\net_maker.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\newspaper_layout.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\newspaper_stories.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\notifications.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\notifications_settings.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\offers.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\open_graph_objects.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\orders.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\order_item_filters.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\order_tables.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\parachutes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\passenger.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\passenger_animal_bonus.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\passenger_bonus.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\passenger_spawners.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\pasta_kitchen_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\pasta_maker_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\people.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\people_spawners.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\personal_train.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\pets.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\pet_habitats.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\pie_oven_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\popcorn_pot_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\postman.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\predefined_orders.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\processing_buildings.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\puzzle_pieces.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\regions.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\reputation_levels.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\reward_limits.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\roadside_shop.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\rules.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\salad_bar_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sanctuary_animals.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sanctuary_animal_habitats.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sanctuary_bookstands.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sanctuary_collection_area.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sanctuary_events.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sandwich_bar_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sauce_mixer_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\scarecrows.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\score_boards.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\service_buildings.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sewing_machine_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\shacks.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\silos.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\simulation_config.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\smelter_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\smoothie_mixer_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sounds.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\soup_kitchen_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\special_boat_rewards.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\special_orders.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\starter_packages.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sugar_mill_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\sushi_bar_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\tackle_box.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\taco_kitchen_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\targeted_offers.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\tea_stand_goods.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\themes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\tiles.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\tools.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\tool_offers.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\town_halls.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\town_request_board.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\tracking_events.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\train.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\train_config.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\train_crossings.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\train_expansions.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\train_parts.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\train_stations.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\train_station_0.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\tutorials.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\tutorial_people_orders.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\vouchers.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\warehouses.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\wheel_cars.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\data\wonders.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\fingerprint.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\font\opensans-bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\font\sc_ccbackbeatregular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\font\sc_secorigbb.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\Lib\armeabi-v7a\libg.so" />
+    <None Include="Gamefiles\Lib\x86\libg.so" />
+    <None Include="Gamefiles\localization\ar.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\ch.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\cht.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\da.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\de.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\es.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\fi.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\fr.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\id.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\it.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\jp.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\kr.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\ms.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\nl.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\no.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\pt.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\ru.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\sv.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\texts.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\texts_patch.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\th.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\tr.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\localization\vi.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\ambient_animals.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\ambient_animals_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\animals.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\animals02.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\animals02_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\animals03.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\animals03_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\animals04.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\animals04_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\animals_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\background.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\background_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\buildings_new.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\buildings_new_lowres.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\buildings_new_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\buildings_new_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\common.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\common_lowres.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\common_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\common_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\decos.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\decos02.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\decos02_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\decos_lowres.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\decos_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\decos_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\effects.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\effects_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishes.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishes_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_area_buildings_and_decos.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_area_buildings_and_decos_lowres.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_area_buildings_and_decos_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_area_buildings_and_decos_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_background.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_background_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_humans.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_humans_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_icons.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_icons_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_unlock.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fishing_unlock_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\foreground.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\foreground_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fruit_trees_berrybushes.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fruit_trees_berrybushes02.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fruit_trees_berrybushes02_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\fruit_trees_berrybushes_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\hud.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\hud_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\humans.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\humans02.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\humans02_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\humans03.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\humans03_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\humans_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\icons.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\icons_lowres.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\icons_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\icons_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\intro.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\intro_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\loading_screen.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\loading_screen_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\nature_new.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\nature_new_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\newspaper.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\newspaper_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\order_images.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\order_images_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\scrapbook.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\scrapbook_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\town_unlock.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\town_unlock_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_background.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_background_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_buildings.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_buildings_lowres.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_buildings_lowres_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_buildings_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_humans.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_humans_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_icons.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_icons_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_nature.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_nature_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_puzzlebook.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\train_puzzlebook_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\tutorials.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\sc\tutorials_tex.sc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\settings_template.csv" />
+    <None Include="Gamefiles\titan\fonts\android_emoji.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_naskh_ui_regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_sans_armenian.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_sans_devanagari_regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_sans_fallback.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_sans_hebrew_regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\droid_sans_thai.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamefiles\titan\fonts\won_type.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\Database\Models\GBS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GBS.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Core\Database\Models\GBS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GBS.cs</LastGenOutput>
+    </Content>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GL.Servers\GL.Servers.csproj">
+      <Project>{5d12a2da-f22e-4813-9394-6409e5c1cb3a}</Project>
+      <Name>GL.Servers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Logic\Alliance\" />
+    <Folder Include="Logic\Attack\" />
+    <Folder Include="Packets\Messages\Home\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>IF EXIST "$(TargetDir)Library\" RMDIR /S /Q "$(TargetDir)Library\"
+IF EXIST "$(TargetDir)Utilities\" RMDIR /S /Q "$(TargetDir)Utilities\"
+IF EXIST "$(TargetDir)Logs\" RMDIR /S /Q "$(TargetDir)Tools\"
+
+MKDIR "$(TargetDir)Library\"
+MKDIR "$(TargetDir)Logs\"
+MKDIR "$(TargetDir)Tools\"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+del /F /Q *.xml
+del /F /Q *.pdb
+move /Y *.dll "Library\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

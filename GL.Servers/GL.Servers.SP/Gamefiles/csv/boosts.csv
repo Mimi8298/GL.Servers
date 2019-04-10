@@ -1,0 +1,7 @@
+"Name","TID","InfoTID","SWF","IconExportName","HitEffect","LoopingEffect","GlobalEffect","TargetSelf","TargetTeam","TargetLane","TargetAll","HeroSwap","Damage","Heal","StunTurns","DamageBoost","KnockBack","EnergyCost","Turns","BlockType"
+"String","String","String","String","String","String","String","String","Boolean","Boolean","Boolean","Boolean","Boolean","Int","Int","Int","Int","Int","int","int","String"
+"HealAllies","TID_CallToShrink","TID_CallToShrink_desc","sc/ui.sc","AbilityIconHeal","HealthBoost",,"HealSplash",,"TRUE",,,,,150,,,,55,1,"YellowBoost"
+"BoostDamage","TID_BOOST_DAMAGE","TID_BOOST_DAMAGE_DESC","sc/ui.sc","AbilityIconBoost","AttackBoost",,"BoostDamageSplash",,"TRUE",,,,,,,300,,30,1,"RedBoost"
+"FreezeAll","TID_FreezingIceCubes","TID_FreezingIceCubes_desc","sc/ui.sc","AbilityIconFreeze","Freezer","GhostFrozen","FreezeSplash",,,,"TRUE",,,,2,,,40,2,"BlueBoost"
+"Pushback","TID_Fan","TID_Fan_desc","sc/ui.sc","AbilityIconPushback","FanStream",,"PushbackSplash",,,,"TRUE",,,,,,2,35,1,"PurpleBoost"
+"HeroSwap","TID_HERO_SWAP","TID_HERO_SWAP_DESC","sc/ui.sc","AbilityIconSwap","HeroMoveArrows",,"HeroSwapSplash",,"TRUE",,,"TRUE",,,,,,25,1,"GreenBoost"

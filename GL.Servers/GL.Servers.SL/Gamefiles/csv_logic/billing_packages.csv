@@ -1,0 +1,7 @@
+Name,TID,Disabled,ExistsApple,ExistsAndroid,Diamonds,USD,IconSWF,IconExportName,Order
+String,String,boolean,boolean,boolean,int,int,String,String,int
+com.supercell.life.diamondpack1,TID_DIAMOND_PACK_1,,TRUE,TRUE,500,499,sc/ui.sc,diamond_pack_01,1
+com.supercell.life.diamondpack2,TID_DIAMOND_PACK_2,,TRUE,TRUE,1200,999,sc/ui.sc,diamond_pack_02,2
+com.supercell.life.diamondpack3,TID_DIAMOND_PACK_3,,TRUE,TRUE,2500,1999,sc/ui.sc,diamond_pack_03,3
+com.supercell.life.diamondpack4,TID_DIAMOND_PACK_4,,TRUE,TRUE,6500,4999,sc/ui.sc,diamond_pack_04,4
+com.supercell.life.diamondpack5,TID_DIAMOND_PACK_5,,TRUE,TRUE,14000,9999,sc/ui.sc,diamond_pack_05,5

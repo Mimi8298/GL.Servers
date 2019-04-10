@@ -1,0 +1,10 @@
+"Monsters",,,,
+,"Name","Wave","x","y"
+,"string","int","int","int"
+,"Spawner_Adult_(Static)",,2,2
+,"Firehead_Child",,2,5
+,"EnergyDrop",1,1,4
+,"Barrel",1,2,4
+,"Spawner_Adult_(Static)",1,2,3
+,"Basic_Baby",1,2,5
+,"Basic_Baby",1,2,6

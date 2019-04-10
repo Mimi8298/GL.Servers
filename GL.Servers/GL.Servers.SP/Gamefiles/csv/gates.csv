@@ -1,0 +1,6 @@
+"Name","GateTimeMin","GateStars","GateCost"
+"String","int","int","int"
+"Gate1",1440,48,9
+"Gate2",2880,84,18
+"Gate3",4320,120,18
+"Gate4",4320,156,18

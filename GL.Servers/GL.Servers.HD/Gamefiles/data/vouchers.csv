@@ -1,0 +1,6 @@
+Name,Deprecated,VoucherType,ToolIconExportName,ToolBigIconExportName,TID,DescriptionTID,DiamondPrice,Probability,UnlockLevel
+String,boolean,int,String,String,String,String,int,int,int
+Voucher1,false,1,icon_voucher_common,icon_voucher_common_big,TID_VOUCHER1,TID_VOUCHER1_DESCRIPTION,15,12,20
+Voucher2,false,2,icon_voucher_uncommon,icon_voucher_uncommon_big,TID_VOUCHER2,TID_VOUCHER2_DESCRIPTION,30,6,20
+Voucher3,false,3,icon_voucher_rare,icon_voucher_rare_big,TID_VOUCHER3,TID_VOUCHER3_DESCRIPTION,50,3,20
+Voucher4,false,4,icon_voucher_epic,icon_voucher_epic_big,TID_VOUCHER4,TID_VOUCHER4_DESCRIPTION,80,1,20

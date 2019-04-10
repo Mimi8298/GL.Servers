@@ -1,0 +1,3 @@
+Name,FileName,ExportName,TileWidth,TileHeight,CollectSound,TapSound
+String,String,String,int,int,String,String
+HelperCollectionArea,sc/buildings_new.sc,helper_collection_area,4,2,Collect,MenuBleep

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D12A2DA-F22E-4813-9394-6409E5C1CB3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GL.Servers</RootNamespace>
+    <AssemblyName>GL.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Builds\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <LangVersion>default</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <FileAlignment>1024</FileAlignment>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Builds\Release\</OutputPath>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <LangVersion>default</LangVersion>
+    <FileAlignment>1024</FileAlignment>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Cluster.cs" />
+    <Compile Include="Core\Consoles\Colorful\ColorAlternator.cs" />
+    <Compile Include="Core\Consoles\Colorful\ColorAlternatorFactory.cs" />
+    <Compile Include="Core\Consoles\Colorful\ColorExtensions.cs" />
+    <Compile Include="Core\Consoles\Colorful\ColorfulConsoleBack.cs" />
+    <Compile Include="Core\Consoles\Colorful\ColorfulConsoleFront.cs" />
+    <Compile Include="Core\Consoles\Colorful\ColorManager.cs" />
+    <Compile Include="Core\Consoles\Colorful\ColorManagerFactory.cs" />
+    <Compile Include="Core\Consoles\Colorful\ColorMapper.cs" />
+    <Compile Include="Core\Consoles\Colorful\ColorMappingException.cs" />
+    <Compile Include="Core\Consoles\Colorful\COLORREF.cs" />
+    <Compile Include="Core\Consoles\Colorful\ColorStore.cs" />
+    <Compile Include="Core\Consoles\Colorful\ConsoleAccessException.cs" />
+    <Compile Include="Core\Consoles\Colorful\DefaultFonts.cs" />
+    <Compile Include="Core\Consoles\Colorful\ExtensionMethods.cs" />
+    <Compile Include="Core\Consoles\Colorful\Figlet.cs" />
+    <Compile Include="Core\Consoles\Colorful\FigletFont.cs" />
+    <Compile Include="Core\Consoles\Colorful\Formatter.cs" />
+    <Compile Include="Core\Consoles\Colorful\FrequencyBasedColorAlternator.cs" />
+    <Compile Include="Core\Consoles\Colorful\GradientGenerator.cs" />
+    <Compile Include="Core\Consoles\Colorful\IPrototypable.cs" />
+    <Compile Include="Core\Consoles\Colorful\MatchLocation.cs" />
+    <Compile Include="Core\Consoles\Colorful\Pattern.cs" />
+    <Compile Include="Core\Consoles\Colorful\PatternBasedColorAlternator.cs" />
+    <Compile Include="Core\Consoles\Colorful\PatternCollection.cs" />
+    <Compile Include="Core\Consoles\Colorful\StyleClass.cs" />
+    <Compile Include="Core\Consoles\Colorful\StyledString.cs" />
+    <Compile Include="Core\Consoles\Colorful\Styler.cs" />
+    <Compile Include="Core\Consoles\Colorful\StyleSheet.cs" />
+    <Compile Include="Core\Consoles\Colorful\TextAnnotator.cs" />
+    <Compile Include="Core\Consoles\Colorful\TextFormatter.cs" />
+    <Compile Include="Core\Consoles\Colorful\TextPattern.cs" />
+    <Compile Include="Core\Consoles\Colorful\TextPatternCollection.cs" />
+    <Compile Include="Core\Consoles\HotKeyManager.cs" />
+    <Compile Include="Core\Consoles\Prefixed.cs" />
+    <Compile Include="Core\Consoles\RedisTextWriter.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Exceptions\InternalServerError.cs" />
+    <Compile Include="Core\Exceptions\Session.cs" />
+    <Compile Include="Core\Exceptions\Synchronisation.cs" />
+    <Compile Include="Core\Exceptions\Unknown_Object.cs" />
+    <Compile Include="Core\Keys.cs" />
+    <Compile Include="Core\Logging.cs" />
+    <Compile Include="Core\Network\SocketEventArgsPool.cs" />
+    <Compile Include="Core\Network\UDPServer.cs" />
+    <Compile Include="Core\Performance.cs" />
+    <Compile Include="Core\XorShift.cs" />
+    <Compile Include="DataStream\ByteStream.cs" />
+    <Compile Include="Extensions\Base64.cs" />
+    <Compile Include="Extensions\Binary\Reader.cs" />
+    <Compile Include="Extensions\ConsolePad.cs" />
+    <Compile Include="DataStream\ChecksumEncoder.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Extensions\List\Writer.cs" />
+    <Compile Include="Extensions\Tags.cs" />
+    <Compile Include="Files\Calendar.cs" />
+    <Compile Include="Files\CSV_Data\IData.cs" />
+    <Compile Include="Files\CSV_Reader\Column.cs" />
+    <Compile Include="Files\CSV_Reader\Row.cs" />
+    <Compile Include="Files\CSV_Reader\Table.cs" />
+    <Compile Include="Files\Fingerprint.cs" />
+    <Compile Include="Files\Home.cs" />
+    <Compile Include="Library\Blake2B\Blake2BBase.cs" />
+    <Compile Include="Library\Blake2B\Blake2BBuilder.cs" />
+    <Compile Include="Library\Blake2B\Blake2BConfig.cs" />
+    <Compile Include="Library\Blake2B\Blake2BCore-FullyUnrolled.cs" />
+    <Compile Include="Library\Blake2B\Blake2BCore.cs" />
+    <Compile Include="Library\Blake2B\Blake2BHasher.cs" />
+    <Compile Include="Library\Blake2B\Blake2BTreeConfig.cs" />
+    <Compile Include="Library\Crypto.cs" />
+    <Compile Include="Library\LZMA\Common\CommandLineParser.cs" />
+    <Compile Include="Library\LZMA\Common\CRC.cs" />
+    <Compile Include="Library\LZMA\Common\InBuffer.cs" />
+    <Compile Include="Library\LZMA\Common\OutBuffer.cs" />
+    <Compile Include="Library\LZMA\Compress\LzmaAlone\LzmaAlone.cs" />
+    <Compile Include="Library\LZMA\Compress\LzmaAlone\LzmaBench.cs" />
+    <Compile Include="Library\LZMA\Compress\LZMA\LzmaBase.cs" />
+    <Compile Include="Library\LZMA\Compress\LZMA\LzmaDecoder.cs" />
+    <Compile Include="Library\LZMA\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="Library\LZMA\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="Library\LZMA\Compress\LZ\LzBinTree.cs" />
+    <Compile Include="Library\LZMA\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="Library\LZMA\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="Library\LZMA\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="Library\LZMA\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="Library\LZMA\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="Library\LZMA\ICoder.cs" />
+    <Compile Include="Library\Rjindael.cs" />
+    <Compile Include="Library\Sodium\KeyPair.cs" />
+    <Compile Include="Library\Sodium\KeyPairGL.cs" />
+    <Compile Include="Library\Sodium\PublicBox.cs" />
+    <Compile Include="Library\Sodium\SecretBox.cs" />
+    <Compile Include="Library\Sodium\Sodium.cs" />
+    <Compile Include="Library\TweetNaCl\curve25519.cs" />
+    <Compile Include="Library\TweetNaCl\curve25519xsalsa20poly1305.cs" />
+    <Compile Include="Library\TweetNaCl\hsalsa20.cs" />
+    <Compile Include="Library\TweetNaCl\poly1305.cs" />
+    <Compile Include="Library\TweetNaCl\salsa20.cs" />
+    <Compile Include="Library\TweetNaCl\verify_16.cs" />
+    <Compile Include="Library\TweetNaCl\xsalsa20.cs" />
+    <Compile Include="Library\TweetNaCl\xsalsa20poly1305.cs" />
+    <Compile Include="Library\ZLib\CRC32.cs" />
+    <Compile Include="Library\ZLib\Deflate.cs" />
+    <Compile Include="Library\ZLib\DeflateStream.cs" />
+    <Compile Include="Library\ZLib\GZipStream.cs" />
+    <Compile Include="Library\ZLib\Inflate.cs" />
+    <Compile Include="Library\ZLib\InfTree.cs" />
+    <Compile Include="Library\ZLib\Iso8859Dash1Encoding.cs" />
+    <Compile Include="Library\ZLib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="Library\ZLib\Tree.cs" />
+    <Compile Include="Library\ZLib\Zlib.cs" />
+    <Compile Include="Library\ZLib\ZlibBaseStream.cs" />
+    <Compile Include="Library\ZLib\ZlibCodec.cs" />
+    <Compile Include="Library\ZLib\ZlibConstants.cs" />
+    <Compile Include="Library\ZLib\ZlibStream.cs" />
+    <Compile Include="Logic\Enums\DBMS.cs" />
+    <Compile Include="Logic\Enums\Direction.cs" />
+    <Compile Include="Logic\Enums\Exits.cs" />
+    <Compile Include="Logic\Enums\Hiring.cs" />
+    <Compile Include="Logic\Enums\Mode.cs" />
+    <Compile Include="Logic\Enums\Rank.cs" />
+    <Compile Include="Logic\Enums\Reason.cs" />
+    <Compile Include="Logic\Enums\State.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logic\Interfaces\" />
+    <Folder Include="Logic\Slots\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Tools\GL.Servers.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+del /F /Q *.xml
+del /F /Q *.pdb
+move /Y *.dll "Library\"
+move /Y "Library\$(TargetFileName)" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>IF EXIST "$(TargetDir)Library\" RMDIR /S /Q "$(TargetDir)Library\"
+
+MKDIR "$(TargetDir)Library\"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

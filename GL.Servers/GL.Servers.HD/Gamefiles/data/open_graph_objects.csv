@@ -1,0 +1,170 @@
+Title,DescriptionTID,IconExportName,GlobalID,ObjectGlobalID,Name,Type,ObjectType
+String,String,String,int,int,String,String,String
+Copper-Redhorse,,Copper-Redhorse,9700000,97000,Fish_1 (fishes),9700000-0,fish
+Copper-Redhorse_1,,Copper-Redhorse_1,9700000,97010,Fish_1 (fishes),9700000-1,fish
+Copper-Redhorse_2,,Copper-Redhorse_2,9700000,97020,Fish_1 (fishes),9700000-2,fish
+Copper-Redhorse_3,,Copper-Redhorse_3,9700000,97030,Fish_1 (fishes),9700000-3,fish
+,,,,,,,
+Roach,,Roach,9700001,97001,Fish_7 (fishes),9700001-0,fish
+Roach_1,,Roach_1,9700001,97011,Fish_7 (fishes),9700001-1,fish
+Roach_2,,Roach_2,9700001,97021,Fish_7 (fishes),9700001-2,fish
+Roach_3,,Roach_3,9700001,97031,Fish_7 (fishes),9700001-3,fish
+,,,,,,,
+Coho-Salmon,,Coho-Salmon,9700002,97002,Fish_6 (fishes),9700002-0,fish
+Coho-Salmon_1,,Coho-Salmon_1,9700002,97012,Fish_6 (fishes),9700002-1,fish
+Coho-Salmon_2,,Coho-Salmon_2,9700002,97022,Fish_6 (fishes),9700002-2,fish
+Coho-Salmon_3,,Coho-Salmon_3,9700002,97032,Fish_6 (fishes),9700002-3,fish
+,,,,,,,
+Yellow-Perch,,Yellow-Perch,9700003,97003,Fish_10 (fishes),9700003-0,fish
+Yellow-Perch_1,,Yellow-Perch_1,9700003,97013,Fish_10 (fishes),9700003-1,fish
+Yellow-Perch_2,,Yellow-Perch_2,9700003,97023,Fish_10 (fishes),9700003-2,fish
+Yellow-Perch_3,,Yellow-Perch_3,9700003,97033,Fish_10 (fishes),9700003-3,fish
+,,,,,,,
+Fallfish,,Fallfish,9700004,97004,Fish_13 (fishes),9700004-0,fish
+Fallfish_1,,Fallfish_1,9700004,97014,Fish_13 (fishes),9700004-1,fish
+Fallfish_2,,Fallfish_2,9700004,97024,Fish_13 (fishes),9700004-2,fish
+Fallfish_3,,Fallfish_3,9700004,97034,Fish_13 (fishes),9700004-3,fish
+,,,,,,,
+Salmon,,Salmon,9700005,97005,Fish_14 (fishes),9700005-0,fish
+Salmon_1,,Salmon_1,9700005,97015,Fish_14 (fishes)",9700005-1,fish
+Salmon_2,,Salmon_2,9700005,97025,Fish_14 (fishes)",9700005-2,fish
+Salmon_3,,Salmon_3,9700005,97035,Fish_14 (fishes)",9700005-3,fish
+,,,,,,,
+Bluegill,,Bluegill,9700006,97006,Fish_36 (fishes),9700006-0,fish
+Bluegill_1,,Bluegill_1,9700006,97016,Fish_36 (fishes),9700006-1,fish
+Bluegill_2,,Bluegill_2,9700006,97026,Fish_36 (fishes),9700006-2,fish
+Bluegill_3,,Bluegill_3,9700006,97036,Fish_36 (fishes),9700006-3,fish
+,,,,,,,
+Australian-Rainbowfish,,Australian-Rainbowfish,9700007,97007,Fish_17 (fishes),9700007-0,fish
+Australian-Rainbowfish_1,,Australian-Rainbowfish_1,9700007,97017,Fish_17 (fishes),9700007-1,fish
+Australian-Rainbowfish_2,,Australian-Rainbowfish_2,9700007,97027,Fish_17 (fishes),9700007-2,fish
+Australian-Rainbowfish_3,,Australian-Rainbowfish_3,9700007,97037,Fish_17 (fishes),9700007-3,fish
+,,,,,,,
+Bluespotted-Sunfish,,Bluespotted-Sunfish,9700008,97008,Fish_3 (fishes),9700008-0,fish
+Bluespotted-Sunfish_1,,Bluespotted-Sunfish_1,9700008,97018,Fish_3 (fishes),9700008-1,fish
+Bluespotted-Sunfish_2,,Bluespotted-Sunfish_2,9700008,97028,Fish_3 (fishes),9700008-2,fish
+Bluespotted-Sunfish_3,,Bluespotted-Sunfish_3,9700008,97038,Fish_3 (fishes),9700008-3,fish
+,,,,,,,
+Bitterling,,Bitterling,9700009,97009,Fish_19 (fishes),9700009-0,fish
+Bitterling_1,,Bitterling_1,9700009,97019,Fish_19 (fishes),9700009-1,fish
+Bitterling_2,,Bitterling_2,9700009,97029,Fish_19 (fishes),9700009-2,fish
+Bitterling_3,,Bitterling_3,9700009,97039,Fish_19 (fishes),9700009-3,fish
+,,,,,,,
+Asp,,Asp,9700010,970010,Fish_20 (fishes),9700010-0,fish
+Asp_1,,Asp_1,9700010,970110,Fish_20 (fishes),9700010-1,fish
+Asp_2,,Asp_2,9700010,970210,Fish_20 (fishes),9700010-2,fish
+Asp_3,,Asp_3,9700010,970310,Fish_20 (fishes),9700010-3,fish
+,,,,,,,
+Speckled-Daze,,Speckled-Daze,9700011,970011,Fish_25 (fishes),9700011-0,fish
+Speckled-Daze_1,,Speckled-Daze_1,9700011,970111,Fish_25 (fishes),9700011-1,fish
+Speckled-Daze_2,,Speckled-Daze_2,9700011,970211,Fish_25 (fishes),9700011-2,fish
+Speckled-Daze_3,,Speckled-Daze_3,9700011,970311,Fish_25 (fishes),9700011-3,fish
+,,,,,,,
+Huchen,,Huchen,9700012,970012,Fish_2 (fishes),9700012-0,fish
+Huchen_1,,Huchen_1,9700012,970112,Fish_2 (fishes),9700012-1,fish
+Huchen_2,,Huchen_2,9700012,970212,Fish_2 (fishes),9700012-2,fish
+Huchen_3,,Huchen_3,9700012,970312,Fish_2 (fishes),9700012-3,fish
+,,,,,,,
+Shadow-Bass,,Shadow-Bass,9700013,970013,Fish_52 (fishes),9700013-0,fish
+Shadow-Bass_1,,Shadow-Bass_1,9700013,970113,Fish_52 (fishes),9700013-1,fish
+Shadow-Bass_2,,Shadow-Bass_2,9700013,970213,Fish_52 (fishes),9700013-2,fish
+Shadow-Bass_3,,Shadow-Bass_3,9700013,970313,Fish_52 (fishes),9700013-3,fish
+,,,,,,,
+Northern-Pike,,Northern-Pike,9700014,970014,Fish_56 (fishes),9700014-0,fish
+Northern-Pike_1,,Northern-Pike_1,9700014,970114,Fish_56 (fishes),9700014-1,fish
+Northern-Pike_2,,Northern-Pike_2,9700014,970214,Fish_56 (fishes),9700014-2,fish
+Northern-Pike_3,,Northern-Pike_3,9700014,970314,Fish_56 (fishes),9700014-3,fish
+,,,,,,,
+Rainbow-Smelt,,Rainbow-Smelt,9700015,970015,Fish_38 (fishes),9700015-0,fish
+Rainbow-Smelt_1,,Rainbow-Smelt_1,9700015,970115,Fish_38 (fishes),9700015-1,fish
+Rainbow-Smelt_2,,Rainbow-Smelt_2,9700015,970215,Fish_38 (fishes),9700015-2,fish
+Rainbow-Smelt_3,,Rainbow-Smelt_3,9700015,970315,Fish_38 (fishes),9700015-3,fish
+,,,,,,,
+Spotted-Sunfish,,Spotted-Sunfish,9700016,970016,Fish_27 (fishes),9700016-0,fish
+Spotted-Sunfish_1,,Spotted-Sunfish_1,9700016,970116,Fish_27 (fishes),9700016-1,fish
+Spotted-Sunfish_2,,Spotted-Sunfish_2,9700016,970216,Fish_27 (fishes),9700016-2,fish
+Spotted-Sunfish_3,,Spotted-Sunfish_3,9700016,970316,Fish_27 (fishes),9700016-3,fish
+,,,,,,,
+Sauger,,Sauger,9700017,970017,Fish_43 (fishes),9700017-0,fish
+Sauger_1,,Sauger_1,9700017,970117,Fish_43 (fishes),9700017-1,fish
+Sauger_2,,Sauger_2,9700017,970217,Fish_43 (fishes),9700017-2,fish
+Sauger_3,,Sauger_3,9700017,970317,Fish_43 (fishes),9700017-3,fish
+,,,,,,,
+Artic-Charr,,"Artic-Charr,9700018,970018,Fish_45 (fishes),9700018-0,fish
+Artic-Charr_1,,Artic-Charr_1,9700018,970117,Fish_45 (fishes),9700018-1,fish
+Artic-Charr_2,,Artic-Charr_2,9700018,970217,Fish_45 (fishes),9700018-2,fish
+Artic-Charr_3,,Artic-Charr_3,9700018,970317,Fish_45 (fishes),9700018-3,fish
+,,,,,,,
+Rudd,,Rudd,9700019,970019,Fish_47 (fishes),9700019-0,fish
+Rudd_1,,Rudd_1,9700019,970119,Fish_47 (fishes),9700019-1,fish
+Rudd_2,,Rudd_2,9700019,970219,Fish_47 (fishes),9700019-2,fish
+Rudd_3,,Rudd_3,9700019,970319,Fish_47 (fishes),9700019-3,fish
+,,,,,,,
+Yellow-Bass,,Yellow-Bass,9700020,970020,Fish_48 (fishes),9700020-0,fish
+Yellow-Bass_1,,Yellow-Bass_1,9700020,970120,Fish_48 (fishes),9700020-1,fish
+Yellow-Bass_2,,Yellow-Bass_2,9700020,970220,Fish_48 (fishes),9700020-2,fish
+Yellow-Bass_3,,Yellow-Bass_3,9700020,970320,Fish_48 (fishes),9700020-3,fish
+,,,,,,,
+Greater-Redhorse,,Greater-Redhorse,9700021,970021,Fish_55 (fishes),9700021-0,fish
+Greater-Redhorse_1,,Greater-Redhorse_1,9700021,970121,Fish_55 (fishes),9700021-1,fish
+Greater-Redhorse_2,,Greater-Redhorse_2,9700021,970221,Fish_55 (fishes),9700021-2,fish
+Greater-Redhorse_3,,Greater-Redhorse_3,9700021,970321,Fish_55 (fishes),9700021-3,fish
+,,,,,,,
+Golden-Trout,,Golden-Trout,9700022,970022,Fish_50 (fishes),9700022-0,fish
+Golden-Trout_1,,Golden-Trout_1,9700022,970122,Fish_50 (fishes),9700022-1,fish
+Golden-Trout_2,,Golden-Trout_2,9700022,970222,Fish_50 (fishes),9700022-2,fish
+Golden-Trout_3,,Golden-Trout_3,9700022,970322,Fish_50 (fishes),9700022-3,fish
+,,,,,,,
+Largemouth-Bass,,Largemouth-Bass,9700023,970023,Fish_57 (fishes),9700023-0,fish
+Largemouth-Bass_1,,Largemouth-Bass_1,9700023,970123,Fish_57 (fishes),9700023-1,fish
+Largemouth-Bass_2,,Largemouth-Bass_2,9700023,970223,Fish_57 (fishes),9700023-2,fish
+Largemouth-Bass_3,,Largemouth-Bass_3,9700023,970323,Fish_57 (fishes),9700023-3,fish
+,,,,,,,
+Brook-Trout,,Brook-Trout,9700024,970024,Fish_31 (fishes),9700024-0,fish
+Brook-Trout_1,,Brook-Trout_1,9700024,970124,Fish_31 (fishes),9700024-1,fish
+Brook-Trout_2,,Brook-Trout_2,9700024,970224,Fish_31 (fishes),9700024-2,fish
+Brook-Trout_3,,Brook-Trout_3,9700024,970324,Fish_31 (fishes),9700024-3,fish
+,,,,,,,
+Grass-carp,,Grass-carp,9700025,970025,Fish_59 (fishes),9700025-0,fish
+Grass-carp_1,,Grass-carp_1,9700025,970125,Fish_59 (fishes),9700025-1,fish
+Grass-carp_2,,Grass-carp_2,9700025,970225,Fish_59 (fishes),9700025-2,fish
+Grass-carp_3,,Grass-carp_3,9700025,970325,Fish_59 (fishes),9700025-3,fish
+,,,,,,,
+Green-Sunfish,,Green-Sunfish,9700026,970026,Fish_60 (fishes),9700026-0,fish
+Green-Sunfish_1,,Green-Sunfish_1,9700026,970126,Fish_60 (fishes),9700026-1,fish
+Green-Sunfish_2,,Green-Sunfish_2,9700026,970226,Fish_60 (fishes),9700026-2,fish
+Green-Sunfish_3,,Green-Sunfish_3,9700026,970326,Fish_60 (fishes),9700026-3,fish
+,,,,,,,
+Northern-Studfish,,Northern-Studfish,9700027,970027,Fish_62 (fishes),9700027-0,fish
+Northern-Studfish_1,,Northern-Studfish_1,9700027,970127,Fish_62 (fishes),9700027-1,fish
+Northern-Studfish_2,,Northern-Studfish_2,9700027,970227,Fish_62 (fishes),9700027-2,fish
+Northern-Studfish_3,,Northern-Studfish_3,9700027,970327,Fish_62 (fishes),9700027-3,fish
+,,,,,,,
+Striped-Bass,,Striped-Bass,9700028,970028,Fish_63 (fishes),9700028-0,fish
+Striped-Bass_1,,Striped-Bass_1,9700028,970128,Fish_63 (fishes),9700028-1,fish
+Striped-Bass_2,,Striped-Bass_2,9700028,970228,Fish_63 (fishes),9700028-2,fish
+Striped-Bass_3,,Striped-Bass_3,9700028,970328,Fish_63 (fishes),9700028-3,fish
+,,,,,,,
+Longear-Sunfish,,Longear-Sunfish,9700029,970029,Fish_66 (fishes),9700029-0,fish
+Longear-Sunfish_1,,Longear-Sunfish_1,9700029,970129,Fish_66 (fishes),9700029-1,fish
+Longear-Sunfish_2,,Longear-Sunfish_2,9700029,970229,Fish_66 (fishes),9700029-2,fish
+Longear-Sunfish_3,,Longear-Sunfish_3,9700029,970329,Fish_66 (fishes),9700029-3,fish
+,,,,,,,
+unlock_Tom,,unlock_Tom,5200029,52029,Boy (features),U-14,unlock
+unlock_Lobsters,,unlock_Lobsters,10700001,107001,LobsterPool (lobster_pool),10700001-0,unlock
+unlock_Alfred,,unlock_Alfred,5200070,52070,Postman (features),U-15,unlock
+unlock_TruckOrders,,unlock_TruckOrders,200000,2000,Truck (cars),U-5,unlock
+unlock_RoadsideShop,,unlock_RoadsideShop,3500000,35000,RoadsideShop (roadside_shop),U-7,unlock
+unlock_Pets,,unlock_Pets,7800003,78003,Dog1 (pets),7800003-0,unlock
+unlock_Boat,,unlock_Boat,5200017,52017,Boat (features),U-17,unlock
+unlock_Mine,,unlock_Mine,5200018,52018,Mine (features),U-24,unlock
+unlock_Fishing_boat,,unlock_Fishing_boat,5200073,52073,FishingBoat (features),U-27,unlock
+unlock_Expansions,,unlock_Expansions,5200049,52049,Expansions (features),U-22,unlock
+,,,,,,,
+BoatOrders_1,,BoatOrders_1,1900031,190031,BoatOrderComplete",BO,boat_order
+BoatOrders_2,,BoatOrders_2,1900031,190131,BoatOrderComplete",BO-1,boat_order
+BoatOrders_3,,BoatOrders_3,1900031,190231,BoatOrderComplete",BO-2,boat_order
+,,,,,,,
+TruckOrders_1,,TruckOrders_1,19031,19031,TruckOrderComplete",TO,boat_order
+TruckOrders_2,,TruckOrders_2,19031,19131,TruckOrderComplete",TO-1,boat_order
+TruckOrders_3,,TruckOrders_3,19031,19231,TruckOrderComplete",TO-2,boat_order

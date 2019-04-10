@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1DFA7A0-7885-4966-8EFB-74C5EABCD30F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GL.Clients.BS</RootNamespace>
+    <AssemblyName>GL.Clients.BS</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Builds\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <FileAlignment>1024</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Builds\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <FileAlignment>1024</FileAlignment>
+    <DebugSymbols>false</DebugSymbols>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GL.Clients.BS.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Database\Models\clans.cs" />
+    <Compile Include="Core\Database\Models\GL.Context.cs" />
+    <Compile Include="Core\Database\Models\GL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GL.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Database\Models\players.cs" />
+    <Compile Include="Core\Logging.cs" />
+    <Compile Include="Core\Network\Gateway.cs" />
+    <Compile Include="Core\Network\Processor.cs" />
+    <Compile Include="Core\Network\Token.cs" />
+    <Compile Include="Logic\Device.cs" />
+    <Compile Include="Logic\Enums\CVersion.cs" />
+    <Compile Include="Logic\Profile.cs" />
+    <Compile Include="Logic\Player.cs" />
+    <Compile Include="Logic\Slots\Bots.cs" />
+    <Compile Include="Logic\Slots\Cards.cs" />
+    <Compile Include="Logic\Slots\Items\Brawler.cs" />
+    <Compile Include="Logic\Slots\Players.cs" />
+    <Compile Include="Packets\Command.cs" />
+    <Compile Include="Packets\Factory.cs" />
+    <Compile Include="Packets\Message.cs" />
+    <Compile Include="Packets\Messages\Client\Ask_Profile.cs" />
+    <Compile Include="Packets\Messages\Client\Ask_Battle_Result.cs" />
+    <Compile Include="Packets\Messages\Client\Authentification.cs" />
+    <Compile Include="Packets\Messages\Client\Client_Capabilities.cs" />
+    <Compile Include="Packets\Messages\Client\Execute_Commands.cs" />
+    <Compile Include="Packets\Messages\Client\Get_Device_Token.cs" />
+    <Compile Include="Packets\Messages\Client\Go_Home.cs" />
+    <Compile Include="Packets\Messages\Client\Keep_Alive.cs" />
+    <Compile Include="Packets\Messages\Server\Authentification_Failed.cs" />
+    <Compile Include="Packets\Messages\Server\Authentification_OK.cs" />
+    <Compile Include="Packets\Messages\Server\Clan_Info.cs" />
+    <Compile Include="Packets\Messages\Server\Disconnected.cs" />
+    <Compile Include="Packets\Messages\Server\Clan_Stream.cs" />
+    <Compile Include="Packets\Messages\Server\Battle_Result.cs" />
+    <Compile Include="Packets\Messages\Server\Keep_Alive_OK.cs" />
+    <Compile Include="Packets\Messages\Server\Out_Of_Sync.cs" />
+    <Compile Include="Packets\Messages\Server\Profile_Data.cs" />
+    <Compile Include="Packets\Messages\Server\Own_Home_Data.cs" />
+    <Compile Include="Packets\Messages\Server\Server_Capabilities.cs" />
+    <Compile Include="Packets\Messages\Server\Server_Error.cs" />
+    <Compile Include="Packets\Messages\Server\Server_Shutdown.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\Resources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <EntityDeploy Include="Core\Database\Models\GL.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GL.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Core\Database\Models\GL.edmx.diagram">
+      <DependentUpon>GL.edmx</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GL.Servers\GL.Servers\GL.Servers.csproj">
+      <Project>{5d12a2da-f22e-4813-9394-6409e5c1cb3a}</Project>
+      <Name>GL.Servers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\Database\Models\GL.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GL.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Core\Database\Models\GL.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GL.cs</LastGenOutput>
+    </Content>
+    <Content Include="credentials.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>IF EXIST "$(TargetDir)Library\" RMDIR /S /Q "$(TargetDir)Library\"
+IF EXIST "$(TargetDir)Utilities\" RMDIR /S /Q "$(TargetDir)Utilities\"
+IF EXIST "$(TargetDir)Logs\" RMDIR /S /Q "$(TargetDir)Tools\"
+
+MKDIR "$(TargetDir)Library\"
+MKDIR "$(TargetDir)Logs\"
+MKDIR "$(TargetDir)Tools\"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+del /F /Q *.xml
+del /F /Q *.pdb
+move /Y *.dll "Library\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

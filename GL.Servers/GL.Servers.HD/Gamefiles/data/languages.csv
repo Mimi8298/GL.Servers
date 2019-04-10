@@ -1,0 +1,24 @@
+Name,LocalizedName,FileName,Enabled,SystemFont,ForcedFontFullName,WordListName,HelpshiftSDKLanguage,HelpshiftSDKLanguageAndroid,HelpshiftMetadataLanguage
+String,String,String,boolean,String,String,String,String,String,String
+EN,English,localization/texts.csv,true,,,english,en,,EN
+DE,Deutsch,localization/de.csv,true,,,german,de,,DE
+ES,Español,localization/es.csv,true,,,spanish,es,,ES
+FR,Français,localization/fr.csv,true,,,french,fr,,FR
+IT,Italiano,localization/it.csv,true,,,italian,it,,IT
+NL,Nederlands,localization/nl.csv,true,,,dutch,nl,,NL
+NO,Norsk,localization/no.csv,true,,,norwegian,nb,no,NO
+PT,Português,localization/pt.csv,true,,,portuguese,pt,pt_BR,PT
+TR,Türkçe,localization/tr.csv,true,,,turkish,tr,,TR
+DA,Dansk,localization/da.csv,true,,,danish,da,,DA
+SV,Svenska,localization/sv.csv,true,,,swedish,sv,,SV
+ID,Bahasa Indonesia,localization/id.csv,true,,,indonesian,id,in,id
+RU,Pусский,localization/ru.csv,true,HelveticaNeue-Bold,,russian,ru,,RU
+CH,简体中文,localization/ch.csv,true,STHeitiSC-Medium,,chinese,zh-Hans,zh_CN,ZH-HANS
+CHT,繁體中文,localization/cht.csv,true,STHeitiSC-Medium,,chinese,zh-Hant,zh_TW,ZH-HANT
+JP,日本語,localization/jp.csv,true,HiraKakuProN-W6,,japanese,ja,,JP
+FI,Suomi,localization/fi.csv,true,,,finnish,fi,,FI
+KR,한국어,localization/kr.csv,true,,,korean,ko,,KR
+AR,العربية,localization/ar.csv,true,,,arabic,ar,,AR
+MS,Bahasa Melayu,localization/ms.csv,true,,,malay,ms,,ms
+VI,Tiếng Việt,localization/vi.csv,true,HelveticaNeue-Bold,Open Sans Bold,vietnamese,vi,,vi
+TH,ภาษาไทย,localization/th.csv,true,,,thai,th,,th

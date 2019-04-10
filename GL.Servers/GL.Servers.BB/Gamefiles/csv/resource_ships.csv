@@ -1,0 +1,7 @@
+"Name","TID","InfoTID","SWF","ExportName","ModelName","TextureName","ShadowModelName","ShadowMeshName","ShadowTextureName","Width","Height","TimeBetweenTripsS"
+"String","String","String","String","String","String","String","String","String","String","int","int","int"
+"ResourceShip","TID_BUILDING_LANDING_SHIP","TID_BUILDING_LANDING_SHIP_INFO","sc/in-game.sc","empty3x3","model/cargo_ship.sbm","model/cargo_ship.pvr","model/boat_shadows.sbm:34","cargo_ship_shadow","model/boat_shadows.pvr",3,3,1800
+,,,,"reward_ship_tap","model/reward_ship.sbm","model/reward_ship.pvr","model/boat_shadows.sbm:34","reward_ship_shadow","model/boat_shadows.pvr",,,
+,,,,"reward_ship_tap","model/reward_ship_daily.sbm","model/reward_ship.pvr","model/boat_shadows.sbm:34","reward_ship_shadow","model/boat_shadows.pvr",,,
+,,,,"reward_ship_tap","model/trader_submarine.sbm","model/trader_submarine.pvr","model/boat_shadows.sbm:34","trader_shadow","model/boat_shadows.pvr",,,
+,,,,"empty3x3","model/trader_buoy.sbm","model/trader_buoy.pvr","model/boat_shadows.sbm:34","trader_buoy_shadow","model/boat_shadows.pvr",,,

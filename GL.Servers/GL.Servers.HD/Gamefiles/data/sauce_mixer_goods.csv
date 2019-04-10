@@ -1,0 +1,17 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+SoySauce,recipe_soy_sauce,TID_PRODUCT_SOYSAUCE,Sauce_Mixer,9,Soybean,180,80,77,19,6,43,25,25,54,TID_SAUCEMIXER_PRODUCT_DESCRIPTION,31
+,,,,1,Wheat,,,,,,,,,,,
+OliveOil,recipe_olive_oil,TID_PRODUCT_OLIVEOIL,Sauce_Mixer,3,Olive,45,144,138,33,3,77,54,54,60,TID_SAUCEMIXER_PRODUCT_DESCRIPTION,57
+Mayonaise,recipe_mayonaise,TID_PRODUCT_MAYONAISE,Sauce_Mixer,4,Egg,15,190,183,44,2,102,72,72,62,TID_SAUCEMIXER_PRODUCT_DESCRIPTION,74
+,,,,1,OliveOil,,,,,,,,,,,
+Lemon Curd,recipe_lemon_curd,TID_PRODUCT_LEMON_CURD,Sauce_Mixer,2,Lemon,25,194,187,45,3,105,71,76,66,TID_SAUCEMIXER_PRODUCT_DESCRIPTION,74
+,,,,2,Egg,,,,,,,,,,,
+,,,,1,Butter,,,,,,,,,,,
+,,,,1,White Sugar,,,,,,,,,,,
+Tomato Sauce,recipe_tomato_sauce,TID_PRODUCT_TOMATO_SAUCE,Sauce_Mixer,2,Tomato,30,119,114,27,3,64,42,45,69,TID_SAUCEMIXER_PRODUCT_DESCRIPTION,45
+,,,,1,Brown_Sugar,,,,,,,,,,,
+,,,,1,Lemon,,,,,,,,,,,
+Salsa,recipe_salsa,TID_PRODUCT_SALSA,Sauce_Mixer,2,Tomato,20,130,125,30,2,70,48,48,77,TID_SAUCEMIXER_PRODUCT_DESCRIPTION,50
+,,,,2,Onion,,,,,,,,,,,
+,,,,2,Chili,,,,,,,,,,,

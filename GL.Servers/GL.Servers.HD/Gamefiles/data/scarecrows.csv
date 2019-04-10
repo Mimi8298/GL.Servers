@@ -1,0 +1,4 @@
+"Name","FileName","ExportName","TileWidth","TileHeight","IdleAnim","TapSound","GuestTilePositionX","GuestTilePositionY","BoatTilePositionX","BoatTilePositionY","NeighborhoodTilePositionX","NeighborhoodTilePositionY"
+"String","String","String","int","int","String","String","int","int","int","int","int","int"
+"Scarecrow","sc/humans.sc","scarecrow01",1,1,,"MenuBleep",15,17,0,13,13,38
+"Fisherman","sc/fishing_humans.sc","fisherman",1,1,"Idle","MenuBleep",15,17,0,13,13,38

@@ -1,0 +1,17 @@
+"Monsters",,,,
+,"Name","Wave","x","y"
+,"string","int","int","int"
+,"Wall",,,7
+,"Wall",,,4
+,"Bomb",,,5
+,"Fat",,1,4
+,"Splitter_(Large)",,1,2
+,"Splitter_(Large)",,1,
+,"Hypno",,2,1
+,"Fat",,2,5
+,"Splitter_(Large)",,2,3
+,"Splitter_(Large)",,3,2
+,"Splitter_(Large)",,3,
+,"Wall",,4,7
+,"Wall",,4,4
+,"Bomb",,4,5

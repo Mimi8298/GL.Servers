@@ -1,0 +1,26 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+GreekSalad,recipe_greek_salad,TID_PRODUCT_GREEK_SALAD,Salad_Bar,3,Lettuce,90,384,369,89,5,207,143,143,58,TID_SALADBAR_PRODUCT_DESCRIPTION,148
+,,,,2,Goat Cheese,,,,,,,,,,,
+,,,,1,Roasted Tomatoes,,,,,,,,,,,
+,,,,2,Olive,,,,,,,,,,,
+BaconSalad,recipe_bacon_salad,TID_PRODUCT_BACON_SALAD,Salad_Bar,3,Lettuce,105,373,359,86,5,201,139,139,62,TID_SALADBAR_PRODUCT_DESCRIPTION,144
+,,,,2,Bacon,,,,,,,,,,,
+,,,,1,Roasted Tomatoes,,,,,,,,,,,
+,,,,1,Mayonaise,,,,,,,,,,,
+SeafoodSalad,recipe_seafood_salad,TID_PRODUCT_LOBSTER_SALAD,Salad_Bar,3,Lettuce,120,394,379,91,5,212,130,138,64,TID_SALADBAR_PRODUCT_DESCRIPTION,135
+,,,,1,Lobster Meat,,,,,,,,,,,
+,,,,1,Fish Meat,,,,,,,,,,,
+,,,,1,Mayonaise,,,,,,,,,,,
+Pasta Salad,recipe_pasta_salad,TID_PRODUCT_PASTA_SALAD,Salad_Bar,4,Raw Pasta,150,392,377,90,6,211,144,144,67,TID_SALADBAR_PRODUCT_DESCRIPTION,150
+,,,,1,OliveOil,,,,,,,,,,,
+,,,,2,Lemon,,,,,,,,,,,
+,,,,2,Tomato,,,,,,,,,,,
+Fruit Salad,recipe_fruit_salad,TID_PRODUCT_FRUITSALAD,Salad_Bar,1,Orange,120,309,297,71,5,166,93,93,82,TID_SALADBAR_PRODUCT_DESCRIPTION,98
+,,,,3,Strawberry,,,,,,,,,,,
+,,,,2,Blackberry,,,,,,,,,,,
+,,,,1,Honey,,,,,,,,,,,
+Summer Salad,recipe_summer_salad,TID_PRODUCT_SUMMERSALAD,Salad_Bar,1,Peach,180,285,274,66,6,154,102,102,84,TID_SALADBAR_PRODUCT_DESCRIPTION,108
+,,,,3,Tomato,,,,,,,,,,,
+,,,,1,Goat Cheese,,,,,,,,,,,
+,,,,3,Onion,,,,,,,,,,,

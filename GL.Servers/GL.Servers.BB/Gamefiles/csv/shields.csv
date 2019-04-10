@@ -1,0 +1,4 @@
+"Name","Width","Height","Filename","ExportNameFront","ExportNameBack","DestroyEffect"
+"String","Int","Int","String","String","String","String"
+"Shield_5x5",5,5,"sc/defenses.sc","shield_front_lvl1","shield_back_lvl1","foo"
+"Shield_7x7",7,7,"sc/defenses.sc","shield_front_7x7_lvl1","shield_back_7x7_lvl1","foo"

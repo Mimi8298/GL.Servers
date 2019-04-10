@@ -1,0 +1,18 @@
+Category,CategoryID,Message,OS
+String,int,String,String
+Invalid,0,TID_FACEBOOK_ERROR_UNKNOWN,iOS
+Retry,1,TID_FACEBOOK_ERROR_RETRY,iOS
+Authentication reopen session,2,TID_FACEBOOK_ERROR_RETRY,iOS
+Permission,3,TID_FACEBOOK_ERROR_RETRY,iOS
+Server,4,TID_FACEBOOK_ERROR_RETRY_LATER,iOS
+Throttling,5,TID_FACEBOOK_ERROR_RETRY_LATER,iOS
+User cancelled,6,TID_FACEBOOK_ERROR_CANCELED,iOS
+Facebook other,-1,TID_FACEBOOK_ERROR_UNKNOWN,iOS
+Bad request,-2,TID_FACEBOOK_ERROR_UNKNOWN,iOS
+System login error,100,TID_FACEBOOK_ERROR_SETTINGS,iOS
+FacebookAuthorizationException,200,TID_FACEBOOK_ERROR_SETTINGS,Android
+FacebookDialogException,201,TID_FACEBOOK_ERROR_UNKNOWN,Android
+FacebookError,202,TID_FACEBOOK_ERROR_UNKNOWN,Android
+FacebookGraphObjectException,203,TID_FACEBOOK_ERROR_UNKNOWN,Android
+FacebookOperationCanceledException,204,TID_FACEBOOK_ERROR_CANCELED,Android
+FacebookServiceException,205,TID_FACEBOOK_ERROR_RETRY,Android

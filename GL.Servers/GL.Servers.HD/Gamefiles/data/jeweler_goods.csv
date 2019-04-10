@@ -1,0 +1,13 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string
+Bracelet,recipe_bracelet,TID_BRACELET,Jeweler,2,SilverBar,120,531,128,61,5,143,85,85,38,TID_JEWELER_PRODUCT_DESCRIPTION
+,,,,1,GoldBar,,,,,,,,,,
+Necklace,recipe_necklace,TID_NECKLACE,Jeweler,2,SilverBar,180,751,181,87,6,202,120,120,39,TID_JEWELER_PRODUCT_DESCRIPTION
+,,,,1,GoldBar,,,,,,,,,,
+,,,,1,PlatinumBar,,,,,,,,,,
+Diamond Ring,recipe_diamond_ring,TID_DIAMOND_RING,Jeweler,2,GoldBar,240,1236,205,98,7,229,136,136,40,TID_JEWELER_PRODUCT_DESCRIPTION
+,,,,2,PlatinumBar,,,,,,,,,,
+,,,,1,Diamonds,,,,,,,,,,
+IronBracelet,recipe_iron_bracelet,TID_IRONBRACELET,Jeweler,2,IronBar,90,681,164,79,5,183,106,106,41,TID_JEWELER_PRODUCT_DESCRIPTION
+,,,,2,CoalBar,,,,,,,,,,
+,,,,1,SilverBar,,,,,,,,,,

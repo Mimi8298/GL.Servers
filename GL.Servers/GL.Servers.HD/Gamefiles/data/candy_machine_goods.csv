@@ -1,0 +1,16 @@
+Name,ToolIconExportName,TID,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,ProcessingBuilding,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,int,String,int,int,int,int,int,int,int,int,String,int,string,int
+Caramel Apple,recipe_caramel_apple,TID_CARAMEL_APPLE,1,Apple,120,66,255,31,5,71,46,66,Candy_Machine,51,TID_CANDY_PRODUCT_DESCRIPTION,51
+,,,2,Syrup,,,,,,,,,,,,
+Toffee,recipe_toffee,TID_TOFFEE,1,Butter,90,45,173,21,5,49,30,35,Candy_Machine,52,TID_CANDY_PRODUCT_DESCRIPTION,35
+,,,1,Wheat,,,,,,,,,,,,
+,,,1,White Sugar,,,,,,,,,,,,
+Chocolate,recipe_chocolate_bar,TID_CHOCOLATE,3,Cacao,1200,119,456,55,15,128,80,85,Candy_Machine,54,TID_CANDY_PRODUCT_DESCRIPTION,95
+,,,1,Cream,,,,,,,,,,,,
+,,,1,White Sugar,,,,,,,,,,,,
+Lollipop,recipe_lollipop,TID_LOLLIPOP,1,Syrup,720,88,339,41,12,95,62,72,Candy_Machine,57,TID_CANDY_PRODUCT_DESCRIPTION,74
+,,,2,Strawberry,,,,,,,,,,,,
+,,,1,Cherry,,,,,,,,,,,,
+Jelly Beans,recipe_jelly_beans,TID_JELLY_BEANS,1,Raspberry Jam,1440,122,984,81,16,190,119,124,Candy_Machine,60,TID_CANDY_PRODUCT_DESCRIPTION,135
+,,,1,Blackberry Jam,,,,,,,,,,,,
+,,,1,White Sugar,,,,,,,,,,,,

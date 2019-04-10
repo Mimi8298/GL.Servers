@@ -1,0 +1,303 @@
+Name,Probability,UnlockLevel,FileName,ExportName,OpenDurationMillis,TapSound,TileWidth,TileHeight,GoodReward,GoodAmount,Area,HomeOrVisiting,Theme,CalendarEvent,DayMod,DayGroup,HourMod,HourGroup
+String,int,int,String,String,int,String,int,int,String,int,String,String,String,String,int,int,int,int
+HalloweenEasterEgg,999999,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,HalloweenCoffin,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,FreeDiamonds,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,FreeDiamonds,3,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Demolition Charge,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Axe,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Saw,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Shovel,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Bolt,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Plank,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Duct Tape,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Nail,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Screw,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,22,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Wood Panel,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,12,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher1,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,6,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher2,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,3,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher3,1,fishing,,Halloween,,,,5,0
+HalloweenEasterEgg,1,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher4,1,fishing,,Halloween,,,,5,0
+ChristmasEasterEgg,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,ChristmasSnowglobe,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,HolidayTree,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,2,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Gifts,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,2,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,ToySoldier,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,2,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,CandyPole,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,2,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,HolidayFlower,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,2,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Snowman,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,2,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,ChristmasLantern,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,FreeDiamonds,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,FreeDiamonds,3,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Demolition Charge,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Axe,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Saw,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Shovel,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Bolt,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Plank,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Duct Tape,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Nail,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Screw,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Wood Panel,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,12,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher1,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,6,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher2,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,3,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher3,1,fishing,,Christmas,,,,5,0
+ChristmasEasterEgg,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher4,1,fishing,,Christmas,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,3,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Demolition Charge,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Axe,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Saw,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Shovel,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Bolt,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Plank,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Duct Tape,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Nail,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Screw,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Wood Panel,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,6,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher1,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,6,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher2,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,6,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher3,1,fishing,,NewYear,,,,5,0
+NewYearEasterEgg,6,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher4,1,fishing,,NewYear,,,,5,0
+HalloweenEasterEgg2014,999999,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,HalloweenCoffin,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,FreeDiamonds,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,FreeDiamonds,3,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Demolition Charge,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Axe,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Saw,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Shovel,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Bolt,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Plank,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Duct Tape,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Nail,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Screw,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Wood Panel,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher1,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher2,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher3,1,fishing,,Halloween2014,,,,5,0
+HalloweenEasterEgg2014,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher4,1,fishing,,Halloween2014,,,,5,0
+ChristmasEasterEgg2014,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,HolidayTree,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Gifts,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,ToySoldier,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,CandyPole,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,HolidayFlower,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Snowman,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,ChristmasLantern,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Snowgirl,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,FreeDiamonds,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,FreeDiamonds,3,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Demolition Charge,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Axe,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Saw,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Shovel,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,34,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Pickaxe,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Bolt,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Plank,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Duct Tape,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Nail,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Screw,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Wood Panel,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Land Deed,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Mallet,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Marker Stake,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,12,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher1,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,6,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher2,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,3,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher3,1,fishing,,Christmas2014,,,,5,0
+ChristmasEasterEgg2014,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher4,1,fishing,,Christmas2014,,,,5,0
+NewYearEasterEgg2014,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,NewYearBalloonPig,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,BalloonCow,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,BalloonChicken,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,3,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Demolition Charge,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Axe,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Saw,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Shovel,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,34,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Pickaxe,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Bolt,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Plank,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Duct Tape,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Nail,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Screw,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Wood Panel,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Land Deed,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Mallet,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Marker Stake,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,12,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher1,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,6,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher2,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,3,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher3,1,fishing,,NewYear2014,,,,5,0
+NewYearEasterEgg2014,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher4,1,fishing,,NewYear2014,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,3,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Demolition Charge,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Axe,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Saw,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Shovel,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,34,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Pickaxe,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Bolt,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Plank,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Duct Tape,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Nail,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Screw,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Wood Panel,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Land Deed,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Mallet,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Marker Stake,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,12,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher1,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,6,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher2,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,3,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher3,1,fishing,,ChineseNewYear,,,,5,0
+ChineseNewYearEasterEgg,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher4,1,fishing,,ChineseNewYear,,,,5,0
+HalloweenEasterEgg2015,999999,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,HalloweenCoffin,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,FreeDiamonds,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,FreeDiamonds,3,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Demolition Charge,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Axe,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Saw,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Shovel,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Bolt,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Plank,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Duct Tape,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Nail,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Screw,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Wood Panel,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher1,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher2,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher3,1,fishing,,Halloween2015,,,,5,0
+HalloweenEasterEgg2015,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher4,1,fishing,,Halloween2015,,,,5,0
+ChristmasEasterEgg2015,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,HolidayTree,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Gifts,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,ToySoldier,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,CandyPole,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,HolidayFlower,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Snowman,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,ChristmasLantern,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Snowgirl,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,FreeDiamonds,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,FreeDiamonds,3,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Demolition Charge,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Axe,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Saw,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Shovel,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,34,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Pickaxe,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Bolt,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Plank,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Duct Tape,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Nail,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Screw,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Wood Panel,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Land Deed,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Mallet,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Marker Stake,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,12,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher1,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,6,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher2,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,3,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher3,1,fishing,,Christmas2015,,,,5,0
+ChristmasEasterEgg2015,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher4,1,fishing,,Christmas2015,,,,5,0
+NewYearEasterEgg2015,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,NewYearBalloonPig,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,BalloonCow,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,BalloonChicken,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,3,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Demolition Charge,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Axe,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Saw,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Shovel,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,34,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Pickaxe,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Bolt,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Plank,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Duct Tape,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Nail,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Screw,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Wood Panel,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Land Deed,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Mallet,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Marker Stake,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,12,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher1,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,6,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher2,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,3,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher3,1,fishing,,NewYear2015,,,,5,0
+NewYearEasterEgg2015,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher4,1,fishing,,NewYear2015,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,3,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Demolition Charge,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Axe,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Saw,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Shovel,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,34,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Pickaxe,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Bolt,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Plank,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Duct Tape,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Nail,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Screw,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Wood Panel,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Land Deed,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Mallet,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Marker Stake,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,12,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher1,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,6,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher2,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,3,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher3,1,fishing,,ChineseNewYear2016,,,,5,0
+ChineseNewYearEasterEgg2016,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher4,1,fishing,,ChineseNewYear2016,,,,5,0
+HalloweenEasterEgg2016,999999,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,HalloweenCoffin,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,FreeDiamonds,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,FreeDiamonds,3,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Demolition Charge,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Axe,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Saw,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Shovel,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Bolt,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Plank,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Duct Tape,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Nail,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Screw,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Wood Panel,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher1,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher2,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher3,1,fishing,,Halloween2016,,,,5,0
+HalloweenEasterEgg2016,20,27,sc/fishing_area_buildings_and_decos.sc,ghost_chicken,4600,TapChicken,1,1,Voucher4,1,fishing,,Halloween2016,,,,5,0
+NewYearEasterEgg2016,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,NewYearBalloonPig,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,BalloonCow,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,BalloonChicken,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,FreeDiamonds,3,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Demolition Charge,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Axe,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Saw,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Shovel,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,34,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Pickaxe,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Bolt,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Plank,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Duct Tape,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Nail,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Screw,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Wood Panel,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Land Deed,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Mallet,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,22,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Marker Stake,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,12,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher1,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,6,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher2,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,3,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher3,1,fishing,,NewYear2016,,,,5,0
+NewYearEasterEgg2016,1,27,sc/common.sc,new_years_eve_barrel,5240,Fireworks,1,1,Voucher4,1,fishing,,NewYear2016,,,,5,0
+ChristmasEasterEgg2016,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,HolidayTree,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Gifts,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,ToySoldier,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,CandyPole,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,HolidayFlower,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Snowman,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,ChristmasLantern,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Snowgirl,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,FreeDiamonds,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,FreeDiamonds,3,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Demolition Charge,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Axe,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Saw,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Shovel,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,34,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Pickaxe,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Bolt,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Plank,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Duct Tape,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Nail,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Screw,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Wood Panel,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Land Deed,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Mallet,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,22,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Marker Stake,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,12,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher1,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,6,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher2,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,3,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher3,1,fishing,,Christmas2016,,,,5,0
+ChristmasEasterEgg2016,1,27,sc/common.sc,christmas_package_gift,1200,HolidayPresent,1,1,Voucher4,1,fishing,,Christmas2016,,,,5,0

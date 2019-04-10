@@ -1,0 +1,15 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+GreenSmoothie,recipe_green_smoothie,TID_PRODUCT_GREENSMOOTHIE,Smoothie_Mixer,5,Lettuce,45,166,160,38,3,89,63,63,66,TID_SMOOTHIEMIXER_PRODUCT_DESCRIPTION,66
+,,,,1,Apple,,,,,,,,,,,
+,,,,1,Lemon,,,,,,,,,,,
+BerrySmoothie,recipe_berry_smoothie,TID_PRODUCT_BERRYSMOOTHIE,Smoothie_Mixer,3,Raspberry,75,283,272,65,4,152,109,109,64,TID_SMOOTHIEMIXER_PRODUCT_DESCRIPTION,113
+,,,,3,Blackberry,,,,,,,,,,,
+,,,,3,Strawberry,,,,,,,,,,,
+YogurtSmoothie,recipe_yogurt_smoothie,TID_PRODUCT_YOGURTSMOOTHIE,Smoothie_Mixer,1,Cream,60,181,174,42,4,97,65,70,70,TID_SMOOTHIEMIXER_PRODUCT_DESCRIPTION,69
+,,,,1,White Sugar,,,,,,,,,,,
+,,,,2,Raspberry,,,,,,,,,,,
+,,,,1,Cherry,,,,,,,,,,,
+MixedSmoothie,recipe_mixed_smoothie,TID_PRODUCT_MIXEDSMOOTHIE,Smoothie_Mixer,2,Peach,30,261,251,60,3,140,91,91,88,TID_SMOOTHIEMIXER_PRODUCT_DESCRIPTION,94
+,,,,2,Orange,,,,,,,,,,,
+,,,,1,Lemon,,,,,,,,,,,

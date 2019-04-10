@@ -1,0 +1,5 @@
+Name,FileName,ExportName,BrokenExportName,EffectExportName,LockedExportName,PatioExportName,GateExportName,TileWidth,TileHeight,CollectSound,TapSound
+String,String,String,String,String,String,String,String,int,int,String,String
+DonationsArea,sc/buildings_new.sc,nh_donations_area,nh_donations_area_locked,repairsmoke_03,nh_donations_area_locked,nh_patio,nh_gate,4,2,Collect,MenuBleep
+,,,,,,nh_patio_lvl2,nh_gate,,,,
+,,,,,,nh_patio_lvl2,nh_gate_lvl2,,,,

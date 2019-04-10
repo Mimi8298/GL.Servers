@@ -1,0 +1,10 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Sweater,recipe_sweater,TID_SWEATER,Loom,2,Wool,120,77,74,18,5,42,27,27,17,TID_LOOM_PRODUCT_DESCRIPTION,32
+Blue Woolly Hat,recipe_blue_woolly_hat,TID_BLUE_WOOLLY_HAT,Loom,1,Wool,60,57,55,13,4,31,20,20,19,TID_LOOM_PRODUCT_DESCRIPTION,24
+,,,,1,Indigo,,,,,,,,,,,
+Blue Sweater,recipe_blue_sweater,TID_BLUE_SWEATER,Loom,2,Wool,180,108,104,25,6,58,38,38,20,TID_LOOM_PRODUCT_DESCRIPTION,44
+,,,,2,Indigo,,,,,,,,,,,
+Red Scarf,recipe_redscarf,TID_RED_SCARF,Loom,2,Wool,150,148,143,34,6,80,54,54,48,TID_LOOM_PRODUCT_DESCRIPTION,39
+,,,,2,Strawberry,,,,,,,,,,,
+Cotton Fabrics,recipe_cotton_sheet,TID_PRODUCT_COTTON_FABRICS,Loom,3,Cotton,30,55,53,13,3,30,21,21,18,TID_LOOM_PRODUCT_DESCRIPTION,24

@@ -1,0 +1,74 @@
+"Name","PiecesNeeded","PieceResource","PieceDropChance","SellResource","SellResourceAmount","BoostPercentage","BoostProbability","BuildTimeS","ArtifactType"
+"String","int","String","int","String","int","int","int","int","int"
+"Common Artifact",7,"CommonPiece",85,"RarePiece",1,3,20,10,1
+,,,,,,4,10,,
+,,,,,,5,5,,
+"Rare Artifact",7,"RarePiece",12,"EpicPiece",1,6,20,3600,1
+,,,,,,7,12,,
+,,,,,,8,8,,
+,,,,,,9,5,,
+,,,,,,10,3,,
+"Epic Artifact",7,"EpicPiece",3,"PowerStone",7,12,20,36000,1
+,,,,,,14,15,,
+,,,,,,16,12,,
+,,,,,,18,10,,
+,,,,,,20,8,,
+,,,,,,21,6,,
+,,,,,,22,4,,
+,,,,,,23,3,,
+,,,,,,24,2,,
+,,,,,,25,1,,
+"Common Artifact Ice",7,"CommonPieceIce",85,"RarePieceIce",1,3,20,10,2
+,,,,,,4,10,,
+,,,,,,5,5,,
+"Rare Artifact Ice",7,"RarePieceIce",12,"EpicPieceIce",1,6,20,3600,2
+,,,,,,7,12,,
+,,,,,,8,8,,
+,,,,,,9,5,,
+,,,,,,10,3,,
+"Epic Artifact Ice",7,"EpicPieceIce",3,"PowerStone",7,12,20,36000,2
+,,,,,,14,15,,
+,,,,,,16,12,,
+,,,,,,18,10,,
+,,,,,,20,8,,
+,,,,,,21,6,,
+,,,,,,22,4,,
+,,,,,,23,3,,
+,,,,,,24,2,,
+,,,,,,25,1,,
+"Common Artifact Fire",7,"CommonPieceFire",85,"RarePieceFire",1,3,20,10,3
+,,,,,,4,10,,
+,,,,,,5,5,,
+"Rare Artifact Fire",7,"RarePieceFire",12,"EpicPieceFire",1,6,20,3600,3
+,,,,,,7,12,,
+,,,,,,8,8,,
+,,,,,,9,5,,
+,,,,,,10,3,,
+"Epic Artifact Fire",7,"EpicPieceFire",3,"PowerStone",7,12,20,36000,3
+,,,,,,14,15,,
+,,,,,,16,12,,
+,,,,,,18,10,,
+,,,,,,20,8,,
+,,,,,,21,6,,
+,,,,,,22,4,,
+,,,,,,23,3,,
+,,,,,,24,2,,
+,,,,,,25,1,,
+"Common Artifact Dark",7,"CommonPieceDark",85,"RarePieceDark",1,3,20,10,4
+,,,,,,4,10,,
+,,,,,,5,5,,
+"Rare Artifact Dark",7,"RarePieceDark",12,"EpicPieceDark",1,6,20,3600,4
+,,,,,,7,12,,
+,,,,,,8,8,,
+,,,,,,9,5,,
+,,,,,,10,3,,
+"Epic Artifact Dark",7,"EpicPieceDark",3,"PowerStone",7,12,20,36000,4
+,,,,,,14,15,,
+,,,,,,16,12,,
+,,,,,,18,10,,
+,,,,,,20,8,,
+,,,,,,21,6,,
+,,,,,,22,4,,
+,,,,,,23,3,,
+,,,,,,24,2,,
+,,,,,,25,1,,

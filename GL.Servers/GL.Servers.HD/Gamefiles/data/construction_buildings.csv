@@ -1,0 +1,13 @@
+Name,FileName,ExportName,TileWidth,TileHeight,TapSound,TapProcessingSound,CollectSound,OnlyForBuilding
+String,String,String,int,int,String,String,String,String
+4x4 Construction Site,sc/common.sc,construction_4x4,4,4,ConstructionSite,ConstructionSite,CoinXpExplosion,
+3x3 Construction Site,sc/common.sc,construction_3x3,3,3,ConstructionSite,ConstructionSite,CoinXpExplosion,
+2x2 Construction Site,sc/common.sc,construction_2x2,2,2,ConstructionSite,ConstructionSite,CoinXpExplosion,
+ChickenTent,sc/buildings_new.sc,chicken_tent,3,3,ConstructionSite,ConstructionSite,CoinXpExplosion,ChickenHabitat
+DockConstruction,sc/buildings_new.sc,pier_stone_construction,5,2,ConstructionSite,ConstructionSite,CoinXpExplosion,Dock
+PierConstruction,sc/buildings_new.sc,pier_stone_construction,5,2,ConstructionSite,ConstructionSite,CoinXpExplosion,Pier
+MineConstruction,sc/buildings_new.sc,mine_construction,3,3,ConstructionSite,ConstructionSite,CoinXpExplosion,RepairedMine
+2x3Construction Site,sc/common.sc,construction_2x3,2,3,ConstructionSite,ConstructionSite,CoinXpExplosion,
+BoatConstruction,sc/common.sc,construction_3x2_boat,3,3,ConstructionSite,ConstructionSite,CoinXpExplosion,FishingBoat
+1x4 Construction Site,sc/train_buildings.sc,construction_1x4,1,4,ConstructionSite,ConstructionSite,CoinXpExplosion,PersonalTrain
+2x3constructionbookstand,sc/train_buildings.sc,construction_2x3_bookstand,2,3,ConstructionSite,ConstructionSite,CoinXpExplosion,SanctuaryBookstand

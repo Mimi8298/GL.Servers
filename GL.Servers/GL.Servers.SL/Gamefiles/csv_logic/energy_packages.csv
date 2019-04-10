@@ -1,0 +1,13 @@
+Name,TID,InfoTID,IncreaseInMaxEnergy,Diamonds,IconSWF,IconExportName,HideWhenOnStartingEnergy
+String,String,String,int,int,String,String,boolean
+FillEnergy,TID_SHOP_FILL_ENERY,TID_FILL_ENERGY_INFO,0,0,sc/ui.sc,fill_energy_pack,true
+IncreaseMaxEnergy,TID_SHOP_MORE_MAX_NRG,TID_SHOP_MORE_MAX_NRG_INFO,1,0,sc/ui.sc,buy_more_max_energy_01,
+,,,1,100,sc/ui.sc,buy_more_max_energy_01,
+,,,1,200,sc/ui.sc,buy_more_max_energy_01,
+,,,1,400,sc/ui.sc,buy_more_max_energy_01,
+,,,1,800,sc/ui.sc,buy_more_max_energy_01,
+,,,1,1500,sc/ui.sc,buy_more_max_energy_01,
+,,,1,2000,sc/ui.sc,buy_more_max_energy_01,
+,,,1,3000,sc/ui.sc,buy_more_max_energy_01,
+,,,1,4000,sc/ui.sc,buy_more_max_energy_01,
+,,,1,5000,sc/ui.sc,buy_more_max_energy_01,

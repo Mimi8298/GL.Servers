@@ -1,0 +1,34 @@
+Label,Type,Product,ProductDetail,Enabled,IsEvent
+String,String,String,String,boolean,boolean
+Economy,Spend GC,*,*,,true
+Level,floater,*,*,,true
+Game,Crops,*,*,,true
+Game,UI,newspaper,shown,true,true
+Game,UI,Silo full,shown,true,true
+Game,UI,Warehouse full,shown,true,true
+Game,UI,premium_purchase,shown,true,true
+Game,UI,wheel_of_fortune,shown,true,true
+Game,UI,helpers_tab,shown,true,true
+Game,UI,leaderboards,shown,true,true
+Game,UI,event_bg,shown,true,true
+Game,UI,TOS,*,true,true
+Game,UI,ButtonPressed,SiloTutorial,true,true
+Game,UI,*,*,,true
+Game,Productions,*,*,,true
+Game,LoadTimeStat,*,*,,true
+Game,Pet,*,*,,true
+Game,Crosspromo,*,*,,true
+Social,Visiting players,*,*,,true
+Social,facebook,*,*,,true
+Social,G Connect,*,*,,true
+Social,GC Connect,*,*,,true
+Social,FB Connect,*,*,,true
+Economy,InAppPurchase,*,*,,true
+Economy,Spend PC,*,*,,true
+Economy,openShop,*,*,,true
+Economy,Instant complete,*,*,,true
+economy,purchasing,*,*,,true
+Session,sessionStart,*,*,,true
+Session,sessionEnd,*,*,,true
+Level,Level reached,*,*,,true
+Level,Installed,*,*,,true

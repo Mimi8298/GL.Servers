@@ -1,0 +1,7 @@
+Name,ToolIconExportName,TID,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,ProcessingBuilding,UnlockLevel,DescriptionTID
+String,String,String,int,String,int,int,int,int,int,int,int,int,String,int,string
+SilverBar,recipe_silver_bar,TID_SILVER_BAR,3,SilverOre,480,77,74,18,10,41,25,25,Smelter,24,TID_SMELTER_PRODUCT_DESCRIPTION
+GoldBar,recipe_gold_bar,TID_GOLD_BAR,3,GoldOre,720,92,88,21,12,50,30,30,Smelter,25,TID_SMELTER_PRODUCT_DESCRIPTION
+PlatinumBar,recipe_platinum_bar,TID_PLATINUM_BAR,3,PlatinumOre,960,106,102,24,13,57,34,34,Smelter,25,TID_SMELTER_PRODUCT_DESCRIPTION
+CoalBar,recipe_refined_coal,TID_COAL_BAR,3,CoalOre,360,56,54,13,8,30,17,17,Smelter,33,TID_SMELTER_PRODUCT_DESCRIPTION
+IronBar,recipe_iron_bar,TID_IRON_BAR,3,IronOre,420,67,64,15,9,36,21,21,Smelter,34,TID_SMELTER_PRODUCT_DESCRIPTION

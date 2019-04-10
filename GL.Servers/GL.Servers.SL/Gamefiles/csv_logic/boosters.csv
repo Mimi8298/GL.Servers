@@ -1,0 +1,5 @@
+Name,TID,InfoTID,TimeDays,BoostPercentage,Diamonds,IconSWF,IconExportName
+String,String,String,int,int,int,String,String
+XpBooster1D,TID_SHOP_SMALL_XP_BOOSTER_1D,TID_XP_BOOSTER_INFO,2,100,300,sc/ui.sc,booster_pack_01
+XpBooster3D,TID_SHOP_SMALL_XP_BOOSTER_3D,TID_XP_BOOSTER_INFO,2,150,600,sc/ui.sc,booster_pack_02
+XpBooster7D,TID_SHOP_SMALL_XP_BOOSTER_7D,TID_XP_BOOSTER_INFO,2,200,1500,sc/ui.sc,booster_pack_03

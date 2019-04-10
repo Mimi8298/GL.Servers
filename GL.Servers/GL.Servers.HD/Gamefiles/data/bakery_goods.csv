@@ -1,0 +1,33 @@
+Name,ToolIconExportName,TID,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,ProcessingBuilding,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,int,String,int,int,int,int,int,int,int,int,String,int,string,int
+Bread,recipe_bread,TID_BREAD,3,Wheat,5,11,11,3,1,6,4,4,Bakery,2,TID_BAKERY_PRODUCT_DESCRIPTION,5
+Cookie,recipe_cookie,TID_COOKIE,2,Wheat,60,54,52,13,4,29,19,22,Bakery,10,TID_BAKERY_PRODUCT_DESCRIPTION,23
+,,,1,Brown_Sugar,,,,,,,,,,,,
+,,,2,Egg,,,,,,,,,,,,
+Corn Bread,recipe_corn_bread,TID_CORN_BREAD,2,Corn,30,36,35,8,3,20,13,13,Bakery,7,TID_BAKERY_PRODUCT_DESCRIPTION,16
+,,,2,Egg,,,,,,,,,,,,
+Pizza,recipe_pizza,TID_PIZZA,2,Wheat,15,98,94,23,2,53,34,34,Bakery,33,TID_BAKERY_PRODUCT_DESCRIPTION,36
+,,,1,Tomato,,,,,,,,,,,,
+,,,1,Cheese,,,,,,,,,,,,
+Spicy Pizza,recipe_spicy_pizza,TID_SPICY_PIZZA,2,Wheat,15,117,112,27,2,63,41,41,Bakery,37,TID_BAKERY_PRODUCT_DESCRIPTION,43
+,,,1,Tomato,,,,,,,,,,,,
+,,,1,Cheese,,,,,,,,,,,,
+,,,1,Chili,,,,,,,,,,,,
+Raspberry Muffin,recipe_raspberry_muffin,TID_RASPBERRY_MUFFIN,2,Raspberry,45,72,69,17,3,39,27,27,Bakery,19,TID_BAKERY_PRODUCT_DESCRIPTION,30
+,,,2,Wheat,,,,,,,,,,,,
+,,,1,Egg,,,,,,,,,,,,
+Blackberry Muffin,recipe_blackberry_muffin,TID_BLACKBERRY_MUFFIN,2,Blackberry,45,117,112,27,3,63,44,44,Bakery,26,TID_BAKERY_PRODUCT_DESCRIPTION,47
+,,,1,Wheat,,,,,,,,,,,,
+,,,2,Egg,,,,,,,,,,,,
+Potato Bread,recipe_potato_bread,TID_POTATOE_BREAD,2,Potato,45,147,142,34,3,79,53,58,Bakery,39,TID_BAKERY_PRODUCT_DESCRIPTION,64
+,,,1,White Sugar,,,,,,,,,,,,
+,,,3,Egg,,,,,,,,,,,,
+,,,1,Butter,,,,,,,,,,,,
+Frutti di Mare Pizza,recipe_pizza_frutti_di_mare,TID_FRUTTI_DI_MARE_PIZZA,2,Wheat,15,208,200,48,2,112,58,66,Bakery,45,TID_BAKERY_PRODUCT_DESCRIPTION,60
+,,,1,Cheese,,,,,,,,,,,,
+,,,1,Fish Meat,,,,,,,,,,,,
+,,,1,Lobster Meat,,,,,,,,,,,,
+BananaBread,recipe_banana_bread,TID_BANANA_BREAD,3,Banana,30,219,210,50,3,118,73,73,Bakery,91,TID_BAKERY_PRODUCT_DESCRIPTION,76
+,,,2,Grapes,,,,,,,,,,,,
+,,,3,Wheat,,,,,,,,,,,,
+,,,1,Egg,,,,,,,,,,,,

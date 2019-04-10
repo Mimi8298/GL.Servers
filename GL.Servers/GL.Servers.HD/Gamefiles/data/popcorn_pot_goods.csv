@@ -1,0 +1,11 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,String,int
+Popcorn,recipe_popcorn,TID_POPCORN,Popcorn_Pot,2,Corn,30,17,17,4,3,9,5,5,8,TID_POPCORN_POT_PRODUCT_DESCRIPTION,8
+Butter Popcorn,recipe_butter_popcorn,TID_BUTTER_POPCORN,Popcorn_Pot,2,Corn,60,65,62,15,4,35,21,21,16,TID_POPCORN_POT_PRODUCT_DESCRIPTION,25
+,,,,1,Butter,,,,,,,,,,,
+Chili Popcorn,recipe_chili_popcorn,TID_CHILI_POPCORN,Popcorn_Pot,2,Corn,120,63,61,15,5,34,21,21,25,TID_POPCORN_POT_PRODUCT_DESCRIPTION,26
+,,,,2,Chili,,,,,,,,,,,
+Chocolate Popcorn,recipe_choco_popcorn,TID_PRODUCT_CHOCOLATE_POPCORN,Popcorn_Pot,2,Corn,150,127,122,29,9,69,43,43,44,TID_POPCORN_POT_PRODUCT_DESCRIPTION,52
+,,,,2,Cacao,,,,,,,,,,,
+Honey Popcorn,recipe_honey_popcorn,TID_PRODUCT_HONEY_POPCORN,Popcorn_Pot,2,Corn,90,186,178,43,5,100,23,23,40,TID_POPCORN_POT_PRODUCT_DESCRIPTION,28
+,,,,2,Honey,,,,,,,,,,,

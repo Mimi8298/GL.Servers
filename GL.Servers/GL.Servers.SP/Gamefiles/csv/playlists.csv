@@ -1,0 +1,10 @@
+"Name","Music","Loop","Shuffle"
+"String","String","Boolean","Boolean"
+"Playlist1","Music01","TRUE","false"
+,"Music02",,
+,"Music03",,
+,"Music04",,
+,"Music05",,
+,"Music06",,
+,"Music07",,
+"Playlist2","Tutmusic","TRUE","false"

@@ -1,0 +1,24 @@
+Event,GoodReward,GoodAmount,WeightAnimals1,WeightAnimals2,WeightAnimals3,WeightAnimals4
+String,String,int,int,int,int,int
+Bonus_01,FreeCash,4,30,30,30,15
+Bonus_02,FreeCash,8,10,20,30,65
+Bonus_03,Axe,1,50,40,40,40
+Bonus_04,Saw,1,50,40,40,40
+Bonus_05,Shovel,1,30,20,20,20
+Bonus_06,Plank,1,5,6,8,12
+Bonus_07,Nail,1,5,6,8,12
+Bonus_08,Bolt,1,5,6,8,12
+Bonus_09,Screw,1,5,6,8,12
+Bonus_10,Duct Tape,1,5,6,8,12
+Bonus_11,Wood Panel,1,5,6,8,12
+Bonus_12,Land Deed,1,5,6,8,12
+Bonus_13,Mallet,1,5,6,8,12
+Bonus_14,Marker Stake,1,5,6,8,12
+Bonus_15,Hammer,1,10,10,12,15
+Bonus_16,Hand Drill,1,10,10,12,15
+Bonus_17,Paint Bucket,1,10,10,12,15
+Bonus_18,Stone Block,1,10,10,12,15
+Bonus_19,Brick,1,10,10,12,15
+Bonus_20,Tar Bucket,1,10,10,12,15
+Bonus_21,Map Piece,1,5,5,6,8
+Bonus_22,Pickaxe,1,10,10,10,10

@@ -1,0 +1,6 @@
+Name,TID,Cooldown,Attributes,ExecuteBeforeMoves,Effect,Projectile,DelayMillis
+String,String,int,int,Boolean,String,String,Int
+SkipLanes,TID_SKIP_LANES,1,,,,,
+Stun,TID_STUN,3,1,,,,
+Hypnotize,TID_HYPNOTIZE,0,1,,,Hypno,750
+Heal,TID_HEAL,0,50,TRUE,GhostHealCloud,,

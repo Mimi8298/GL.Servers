@@ -1,0 +1,3 @@
+Name,FileName,ExportName,TileWidth,TileHeight,TapSound,LetterCapacity,GiftCardCapacity,SoundDelay
+String,String,String,int,int,String,int,int,int
+NeighborhoodEventBoard,sc/decos.sc,halloween_coffin,2,2,MenuBleep,60,40,3000

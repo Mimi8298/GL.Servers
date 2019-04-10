@@ -1,0 +1,12 @@
+"Name","Goods","GoodAmounts","OrderReceiver"
+"String","String","int","String"
+"A","Egg",2,"Order Kindergarten"
+"B","Egg",1,
+,"Wheat",4,
+"C","Corn",2,
+,"Wheat",3,
+"D","Bread",1,
+"E","Wheat",7,
+"F","Egg",3,
+"G","Bread",1,
+,"Corn",2,

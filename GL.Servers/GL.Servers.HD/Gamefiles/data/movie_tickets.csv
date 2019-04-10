@@ -1,0 +1,44 @@
+Name,FileName,ExportName,RequiredLevel,OnlyForNonPayingUsers,SkipVideo,SkipVideoSpenders,FirstRewardIsDiamondProbability,FirstRewardIsDiamondProbabilitySpenders,DaysWithoutSpendingLimit,FinishedDiamondReward,CycleDurationMinutes,MoviesPerCycle,MoviesPerCycleSpenders,OnlyInHighMemoryDevices,EnableInAndroid,Rewards,RewardAmounts,Probabilities,RewardsSpenders,RewardAmountsSpenders,ProbabilitiesSpenders
+String,String,String,int,boolean,boolean,boolean,int,int,int,int,int,int,int,boolean,boolean,String,int,int,String,int,int
+MovieTickets,sc/buildings_new.sc,movie_ticket,11,,,true,35,0,,1,1440,4,2,,true,FreeDiamonds,1,35,Birdhouse_2,1,2
+,,,,,,,,,,,,,,,,Axe,1,9,Axe,1,9
+,,,,,,,,,,,,,,,,Saw,1,9,Saw,1,9
+,,,,,,,,,,,,,,,,Shovel,1,9,Shovel,1,9
+,,,,,,,,,,,,,,,,Dynamite,1,9,Dynamite,1,9
+,,,,,,,,,,,,,,,,Demolition Charge,1,9,Demolition Charge,1,9
+,,,,,,,,,,,,,,,,Pickaxe,1,9,Pickaxe,1,9
+,,,,,,,,,,,,,,,,Plank,1,5,Plank,1,5
+,,,,,,,,,,,,,,,,Nail,1,5,Nail,1,5
+,,,,,,,,,,,,,,,,Bolt,1,5,Bolt,1,5
+,,,,,,,,,,,,,,,,Screw,1,5,Screw,1,5
+,,,,,,,,,,,,,,,,Duct Tape,1,5,Duct Tape,1,5
+,,,,,,,,,,,,,,,,Wood Panel,1,5,Wood Panel,1,5
+,,,,,,,,,,,,,,,,Land Deed,1,5,Land Deed,1,5
+,,,,,,,,,,,,,,,,Mallet,1,5,Mallet,1,5
+,,,,,,,,,,,,,,,,Marker Stake,1,5,Marker Stake,1,5
+,,,,,,,,,,,,,,,,Hammer,1,3,Hammer,1,3
+,,,,,,,,,,,,,,,,Hand Drill,1,3,Hand Drill,1,3
+,,,,,,,,,,,,,,,,Paint Bucket,1,3,Paint Bucket,1,3
+,,,,,,,,,,,,,,,,Stone Block,1,3,Stone Block,1,3
+,,,,,,,,,,,,,,,,Brick,1,3,Brick,1,3
+,,,,,,,,,,,,,,,,Tar Bucket,1,3,Tar Bucket,1,3
+,,,,,,,,,,,,,,,,Map Piece,1,2,Map Piece,1,2
+,,,,,,,,,,,,,,,,Voucher1,1,12,Voucher1,1,12
+,,,,,,,,,,,,,,,,Voucher2,1,6,Voucher2,1,6
+,,,,,,,,,,,,,,,,Voucher3,1,3,Voucher3,1,3
+,,,,,,,,,,,,,,,,Voucher4,1,1,Voucher4,1,1
+,,,,,,,,,,,,,,,,Brown_Sugar,1,2,Brown_Sugar,1,2
+,,,,,,,,,,,,,,,,White Sugar,1,2,White Sugar,1,2
+,,,,,,,,,,,,,,,,Syrup,1,2,Syrup,1,2
+,,,,,,,,,,,,,,,,Chocolate,1,2,Chocolate,1,2
+,,,,,,,,,,,,,,,,Lollipop,1,2,Lollipop,1,2
+,,,,,,,,,,,,,,,,Jelly Beans,1,2,Jelly Beans,1,2
+,,,,,,,,,,,,,,,,Vanilla Ice Cream,1,2,Vanilla Ice Cream,1,2
+,,,,,,,,,,,,,,,,Cherry Popsicle,1,2,Cherry Popsicle,1,2
+,,,,,,,,,,,,,,,,Strawberry Ice Cream,1,2,Strawberry Ice Cream,1,2
+,,,,,,,,,,,,,,,,Chocolate Ice Cream,1,2,Chocolate Ice Cream,1,2
+,,,,,,,,,,,,,,,,Apple Jam,1,2,Apple Jam,1,2
+,,,,,,,,,,,,,,,,Raspberry Jam,1,2,Raspberry Jam,1,2
+,,,,,,,,,,,,,,,,Blackberry Jam,1,2,Blackberry Jam,1,2
+,,,,,,,,,,,,,,,,Cherry Jam,1,2,Cherry Jam,1,2
+,,,,,,,,,,,,,,,,Strawberry Jam,1,2,Strawberry Jam,1,2

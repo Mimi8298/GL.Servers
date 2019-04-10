@@ -1,0 +1,17 @@
+"Monsters",,,,
+,"Name","Wave","x","y"
+,"string","int","int","int"
+,"Spawner_Adult_(Moving)",,1,5
+,"Spawner_Adult_(Moving)_3",,3,3
+,"Barrel",1,,
+,"Spawner_Adult_(Moving)_3",1,,1
+,"Barrel",1,,6
+,"Spawner_Adult_(Moving)_3",1,,4
+,"Barrel",1,,3
+,"Wall",1,1,6
+,"Barrel",1,2,1
+,"Spawner_Adult_(Moving)_3",1,2,2
+,"Spawner_Adult_(Moving)",1,2,6
+,"Barrel",1,2,5
+,"Barrel",1,4,3
+,"Spawner_Adult_(Moving)",1,4,4

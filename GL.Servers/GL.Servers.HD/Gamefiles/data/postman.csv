@@ -1,0 +1,3 @@
+Name,FileName,ExportName,TapSound,WalkAnim,WalkSpeed,WalkGiftSpeed,DeliverLettersAnim,DeliverLettersAnimDurationMillis,DeliverNothingAnim,DeliverNothingAnimDurationMillis,DeliverGiftAnim,DeliverGiftAnimDurationMillis,RidingAnim,RideSpeed,Capacity,PreserveLetterCapacity,GiftCardLimit,GiftCardProbablity
+String,String,String,String,String,int,int,String,int,String,int,String,int,String,Int,int,int,int,int
+Postman,sc/humans.sc,postman,MenuBleep,Walk,15,15,DeliverLetters,7000,DeliverNothing,7100,DeliverNothing,0,DriveVespa,48,30,5,5,50

@@ -1,0 +1,8 @@
+"Name","TID","MinLevel","DefaultValue","UserConfigDisabled","Group","HeadlineTID"
+"String","String","int","boolean","boolean","String","String"
+"DiamondConfirmation","TID_DIAMOND_CONFIRMATION_SETTINGS_TEXT",1,"true",,"Diamond","TID_DIAMOND_CONFIRMATION_SETTINGS_HEADLINE"
+"NeighborhoodChat","TID_ADVANCE_SETTINGS_CHAT_TEXT",20,"true",,"Advanced","TID_ADVANCE_SETTINGS_CHAT_HEADLINE"
+"NeighborhoodDerbyOptIn","TID_ADVANCE_SETTINGS_DERBY_OPT_IN_TEXT",18,"true",,"Derby","TID_ADVANCE_SETTINGS_DERBY_HEADLINE"
+"SiloTutorialButtonHighlight","TID_NONE",10,"false",,"None","TID_NONE"
+"BarnButtonAnimation","TID_NONE",10,"false",,"None","TID_NONE"
+"FriendBookButtonHighlight","TID_NONE",6,"false",,"None","TID_NONE"

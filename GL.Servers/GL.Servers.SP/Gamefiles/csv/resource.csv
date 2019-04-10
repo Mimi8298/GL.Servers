@@ -1,0 +1,7 @@
+"Name","InfoTID","GemCostPerThousand","SWF","IconExportName","Material"
+"String","String","int","String","String","Boolean"
+"Diamonds","TID_DIAMONDS",,"sc/ui.sc","HUD0Resource",
+"Energy","TID_ENERGY_INFO",,"sc/ui.sc","Resource1HUD",
+"Coins","TID_COINS",,"sc/ui.sc","Resource1HUD","TRUE"
+"Lives","TID_LIVES_INFO",,"sc/ui.sc","Resource1HUD",
+"PackageCounter",,,,,

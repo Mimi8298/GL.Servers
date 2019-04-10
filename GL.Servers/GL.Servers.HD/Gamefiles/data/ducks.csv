@@ -1,0 +1,8 @@
+Name,FileName,ToolIconExportName,TID,DescriptionTID,Good,JacuzziTimeSec,StateIdleExportName,MinSecNextIdle,MaxSecNextIdle,StateReadyExportName,MinSecNextReady,MaxSecNextReady,StateHarvestExportName,TapSound,DropSound,CollectSound,SlideSound
+String,String,String,String,String,String,int,String,int,int,String,int,int,String,String,String,String,String
+Duck,sc/fishes.sc,icon_duck,TID_DUCK,,Duck Down,10800,duck_01,1,3,duck_ready,1,3,duck_01,TapDuck,DuckDrop,DuckHarvest,
+,,,,,,,duck_02,,,,,,,,,,
+,,,,,,,duck_03,,,,,,,,,,
+,,,,,,,duck_04,,,,,,,,,,
+,,,,,,,duck_05,,,,,,,,,,
+,,,,,,,duck_06,,,,,,,,,,

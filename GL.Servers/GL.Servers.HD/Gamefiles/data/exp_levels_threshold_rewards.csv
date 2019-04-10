@@ -1,0 +1,189 @@
+Name,Rewards,RewardAmounts,Probabilities
+String,String,int,int
+RewardSetML1,Plank,1,10
+,Nail,1,10
+,Bolt,1,10
+,Screw,1,10
+,Duct Tape,1,10
+,Wood Panel,1,10
+RewardSetML2,Axe,1,10
+,Saw,1,10
+,Shovel,1,10
+,Dynamite,1,10
+,Demolition Charge,1,10
+,Pickaxe,1,10
+RewardSetML3,Voucher3,1,20
+,Voucher4,1,10
+RewardSetML4,Plank,1,20
+,Nail,1,20
+,Bolt,1,20
+,Screw,1,20
+,Duct Tape,1,20
+,Wood Panel,1,20
+,Axe,1,40
+,Saw,1,40
+,Shovel,1,40
+,Dynamite,1,40
+,Demolition Charge,1,40
+,FasterBoats_lv1,1,2
+,FasterCrops3_lv2,1,2
+,FreeTom_lv2,1,2
+,FasterBuildings2_lv1,1,2
+,FasterCrops2_lv1,1,2
+,FasterTrees_lv1,1,2
+,FreeErnest_lv1,1,2
+,FasterBuildings1_lv2,1,2
+RewardSetML5,Voucher1,1,20
+,Voucher2,1,20
+,Voucher3,1,10
+,Voucher4,1,10
+,FreeDiamonds,3,5
+RewardSetML6,Plank,1,20
+,Nail,1,20
+,Bolt,1,20
+,Screw,1,20
+,Duct Tape,1,20
+,Wood Panel,1,20
+,Axe,1,10
+,Saw,1,10
+,Shovel,1,10
+,Dynamite,1,10
+,Demolition Charge,1,10
+RewardSetML7,Hammer,1,20
+,Hand Drill,1,20
+,Paint Bucket,1,20
+,Stone Block,1,20
+,Brick,1,20
+,Tar Bucket,1,20
+,Land Deed,1,30
+,Mallet,1,30
+,Marker Stake,1,30
+,Pickaxe,1,20
+,FasterCrops1_lv2,1,2
+,FasterCrops4_lv1,1,2
+,FasterTom_lv1,1,2
+,FasterBuildings3_lv2,1,2
+,FasterTrees_lv2,1,2
+,FreeRose_lv1,1,2
+,EasierBoats_lv2,1,2
+,FasterBuildings4_lv1,1,2
+RewardSetML8,Plank,2,10
+,Nail,2,10
+,Bolt,2,10
+,Screw,2,10
+,Duct Tape,2,10
+,Wood Panel,2,10
+,Axe,2,10
+,Saw,2,10
+,Shovel,2,10
+,Dynamite,2,10
+,Demolition Charge,2,10
+,Pickaxe,2,10
+RewardSetML9,Voucher1,2,80
+,Voucher2,2,80
+,Voucher3,1,40
+,Voucher4,1,40
+,FasterBushes_lv2,1,2
+,FreeTom_lv1,1,2
+,FasterCrops3_lv1,1,2
+,FasterCrops2_lv2,1,2
+,FasterBuildings3_lv1,1,2
+,FasterBuildings1_lv1,1,2
+,FasterBuildings4_lv2,1,2
+,EasierBoats_lv1,1,2
+RewardSetML10,Plank,3,10
+,Nail,3,10
+,Bolt,3,10
+,Screw,3,10
+,Duct Tape,3,10
+,Wood Panel,3,10
+,Hammer,3,10
+,Hand Drill,3,10
+,Paint Bucket,3,10
+,Stone Block,3,10
+,Brick,3,10
+,Tar Bucket,3,10
+,Land Deed,3,10
+,Mallet,3,10
+,Marker Stake,3,10
+,Voucher1,2,10
+,Voucher2,2,10
+,Voucher3,2,10
+,Voucher4,2,10
+,FreeDiamonds,5,5
+,FasterBushes_lv1,1,2
+,FasterTom_lv2,1,2
+,FasterCrops1_lv1,1,2
+,FasterBoats_lv2,1,2
+,FasterCrops4_lv2,1,2
+,FreeErnest_lv2,1,2
+,FreeRose_lv2,1,2
+,FasterBuildings2_lv2,1,2
+RewardSetML11,Plank,5,10
+,Nail,5,10
+,Bolt,5,10
+,Screw,5,10
+,Duct Tape,5,10
+,Wood Panel,5,10
+,Hammer,5,10
+,Hand Drill,5,10
+,Paint Bucket,5,10
+,Stone Block,5,10
+,Brick,5,10
+,Tar Bucket,5,10
+,Land Deed,5,10
+,Mallet,5,10
+,Marker Stake,5,10
+,Voucher1,3,10
+,Voucher2,3,10
+,Voucher3,3,10
+,Voucher4,3,10
+,FreeDiamonds,5,10
+,Axe,5,10
+,Saw,5,10
+,Shovel,5,10
+,Dynamite,5,10
+,Demolition Charge,5,10
+,Pickaxe,5,10
+,FasterBoats_lv3,1,2
+,FreeRose_lv3,1,2
+,FasterTom_lv3,1,2
+,FasterCrops3_lv3,1,2
+,FasterCrops4_lv3,1,2
+,FasterBuildings1_lv3,1,2
+,FasterBuildings4_lv3,1,2
+,FreeErnest_lv3,1,2
+RewardSetML12,Plank,5,10
+,Nail,5,10
+,Bolt,5,10
+,Screw,5,10
+,Duct Tape,5,10
+,Wood Panel,5,10
+,Hammer,5,10
+,Hand Drill,5,10
+,Paint Bucket,5,10
+,Stone Block,5,10
+,Brick,5,10
+,Tar Bucket,5,10
+,Land Deed,5,10
+,Mallet,5,10
+,Marker Stake,5,10
+,Voucher1,3,10
+,Voucher2,3,10
+,Voucher3,3,10
+,Voucher4,3,10
+,FreeDiamonds,5,10
+,Axe,5,10
+,Saw,5,10
+,Shovel,5,10
+,Dynamite,5,10
+,Demolition Charge,5,10
+,Pickaxe,5,10
+,EasierBoats_lv3,1,2
+,FasterCrops2_lv3,1,2
+,FasterCrops1_lv3,1,2
+,FreeTom_lv3,1,2
+,FasterBuildings2_lv3,1,2
+,FasterBuildings3_lv3,1,2
+,FasterTrees_lv3,1,2
+,FasterBushes_lv3,1,2

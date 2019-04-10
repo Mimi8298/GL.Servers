@@ -1,0 +1,9 @@
+"Name","HousingSpaceDestroyed","RewardGems","SecondIntelDrop"
+"String","int","int","int"
+1,10,1,0
+,25,2,5
+,45,3,10
+,70,4,25
+,100,5,50
+,135,6,70
+,175,7,100

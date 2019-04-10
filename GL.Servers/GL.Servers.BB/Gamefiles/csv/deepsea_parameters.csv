@@ -1,0 +1,5 @@
+"Name","Probability","Parameter1","Parameter2"
+"String","int","int","int"
+"Diamonds",20,40000,500
+"Resources",40,10,600
+"Power Stones",40,70,130

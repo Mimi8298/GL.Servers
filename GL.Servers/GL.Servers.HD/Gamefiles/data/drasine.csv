@@ -1,0 +1,5 @@
+Name,FileName,ExportName,TileWidth,TileHeight,TapSound,RepairPrice,TID,TimeMin,TimeSec,ExpToBuild,InstantComplete
+String,String,String,int,int,String,int,String,int,int,int,int
+DraisineFarmBroken,sc/common.sc,train_farm_station_broken,3,3,MenuBleep,39000,,,,,
+DraisineFarm,sc/common.sc,train_farm_station,3,3,MenuBleep,,TID_TRAIN,4320,,39,97
+Draisine,sc/common.sc,draisine,2,2,MenuBleep,,TID_TRAIN,,,,

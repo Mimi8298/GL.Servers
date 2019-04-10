@@ -1,0 +1,46 @@
+"Name","ParameterType","ParameterName","Description","MinValue","MaxValue","TargetingSupported","Category"
+"String","String","String","String","int","int","boolean","String"
+"TroopTrainingBoost","int","cost","Gem cost for boosting troop training",1,100,,"Modifier"
+"SpellBrewingBoost","int","cost","Gem cost for boosting spell brewing",1,100,,"Modifier"
+"BuildingBoost","Building","building","Gem cost for boosting Resource Collectors",,,,"Modifier"
+,"int","cost",,1,100,,
+"TroopDiscount","Troop","troop","Troop training cost (as percentage of the normal cost)",,,,"Modifier"
+,"int","percentage",,1,100,,
+"SpellDiscount","Spell","spell","Spell brewing cost (as percentage of the normal cost)",,,,"Modifier"
+,"int","percentage",,1,100,,
+"ClanXPMultiplier","int","multiplier","Clan XP earned is multiplied by this amount",,,,"Modifier"
+"OfferBundle","Bundle","bundle","Activate a special offer from gem_bundles.csv.",,,"true","Modifier"
+"EnableBillingPackage","BillingPackage","package","Enable a temporary billing package",,,"true","Modifier"
+"StarBonusMultiplier","int","multiplier","Star Bonus reward is multiplied by this amount",2,10,,"Modifier"
+"EnableTroop","Troop","troop","Enable a temporary troop",,,,"Modifier"
+"EnableSpell","Spell","spell","Enable a temporary spell",,,,"Modifier"
+"EnableTrap","Trap","trap","Enable a temporary trap",,,,"Modifier"
+"UseTroop","Troop","troop","Uses a specified troop and adds an event objective -  complete useCount battles, using ratioOfHousing troops of the event type, and get rewardGems and rewardXP",,,,"Modifier"
+,"int","useCount","How many multiplayer battles need to be won to complete the objective and get the rewards",1,100,,
+,"int","ratioOfHousing","Percentage of the max troop housing space for player TH level; rounds to the upper value",1,100,,
+,"int","rewardGems","Gem reward when completing the objective",0,1000,,
+,"int","rewardXP","XP reward when completing the objective",0,10000,,
+"TargetingTownHallLevel","int","min","Min townhall level",1,11,,"Targeting"
+,"int","max","Max townhall level",1,11,,
+"TargetingPurchasedDiamonds","int","min","Min diamonds purchased",0,,,"Targeting"
+,"int","max","Max diamonds purchased",0,,,
+"ChangeWorkerLook","Animation","animation","New worker animation",,,,"Modifier"
+,"String","ExportName","Builder hut new export name",,,,
+,"String","icon","HUD icon export name",,,,
+"GiveFreeTroops","Troop","troop","Give free troops",,,,"Modifier"
+,"int","ratioOfHousing","Percentage of the max troop housing space for player TH level; rounds to the upper value",1,100,,
+"GiveFreeSpells","Spell","spell","Give free troops",,,,"Modifier"
+,"int","ratioOfHousing","Percentage of the max spell housing space for player TH level; rounds to the upper value",1,100,,
+"GiveFreeHeroHealth","Hero","hero","Gives a free hero health speedup. by default gives it to all heroes, if hero is defined give only free health to that hero.",,,,"Modifier"
+"BuildingSign","Building","building","Palce a sign on a building. Requires text data: TID_SIGN_TITLE, TID_SIGN_MESSAGE, TID_SIGN_BUTTON, BUTTON_SIGN_LINK",,,,"Modifier"
+"BuildingDestroyedSpawnUnit","Building","building","Building to spawn units from",,,,"Modifier"
+,"Troop","troop","Troop to spawn",,,,
+,"int","characterCount","How many units to spawn",1,10,,
+"UseSpell","Spell","spell","Uses a specified spell and adds an event objective -  complete useCount battles, using ratioOfHousing spell of the event type, and get rewardGems and rewardXP",,,,"Modifier"
+,"int","useCount","How many multiplayer battles need to be won to complete the objective and get the rewards",1,100,,
+,"int","ratioOfHousing","Percentage of the max troop housing space for player TH level; rounds to the upper value",1,100,,
+,"int","rewardGems","Gem reward when completing the objective",0,1000,,
+,"int","rewardXP","XP reward when completing the objective",0,10000,,
+"ClanWarLootMultiplier","int","win","Clan War win loot multiplier",,,,"Modifier"
+,"int","draw","Clan War draw loot multiplier",,,,
+,"int","loose","Clan War loose loot multiplier",,,,

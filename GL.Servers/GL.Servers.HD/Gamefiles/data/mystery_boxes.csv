@@ -1,0 +1,73 @@
+Name,FileName,ExportName,UnlockLevel,ReputationUnlockLevel,GoodReward,GoodAmount,Probability,DiamondPrice,RandomNumberMax,TileWidth,TileHeight,OpenSound,LockedSound,Mode
+String,String,String,int,int,String,int,int,int,int,int,int,String,String,String
+Box1,sc/buildings_new.sc,mystery_box_01,1,,FreeDiamonds,5,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box2,sc/buildings_new.sc,mystery_box_01,6,,Demolition Charge,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box3,sc/buildings_new.sc,mystery_box_01,6,,Axe,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box4,sc/buildings_new.sc,mystery_box_01,6,,Saw,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box5,sc/buildings_new.sc,mystery_box_01,6,,Shovel,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box6,sc/buildings_new.sc,mystery_box_01,1,,Bolt,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box7,sc/buildings_new.sc,mystery_box_01,1,,Plank,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box8,sc/buildings_new.sc,mystery_box_01,1,,Duct Tape,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box9,sc/buildings_new.sc,mystery_box_01,1,,Nail,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box10,sc/buildings_new.sc,mystery_box_01,1,,Screw,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box11,sc/buildings_new.sc,mystery_box_01,1,,Wood Panel,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box12,sc/buildings_new.sc,mystery_box_01,1,,CashInGems,8,200,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box13,sc/buildings_new.sc,mystery_box_01,20,,Voucher,1,150,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box14,sc/buildings_new.sc,mystery_box_01,34,,Pickaxe,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box15,sc/buildings_new.sc,mystery_box_01,6,,Dynamite,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+TownCrate1,sc/common.sc,mystery_crate_01,,3,FreeDiamonds,8,10,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate2,sc/common.sc,mystery_crate_01,,3,Demolition Charge,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate3,sc/common.sc,mystery_crate_01,,3,Dynamite,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate4,sc/common.sc,mystery_crate_01,,3,Axe,1,200,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate5,sc/common.sc,mystery_crate_01,,3,Saw,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate6,sc/common.sc,mystery_crate_01,,3,Shovel,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate7,sc/common.sc,mystery_crate_01,,3,Pickaxe,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate8,sc/common.sc,mystery_crate_01,,3,Bolt,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate9,sc/common.sc,mystery_crate_01,,3,Plank,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate10,sc/common.sc,mystery_crate_01,,3,Duct Tape,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate11,sc/common.sc,mystery_crate_01,,3,Nail,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate12,sc/common.sc,mystery_crate_01,,3,Screw,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate13,sc/common.sc,mystery_crate_01,,3,Wood Panel,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate14,sc/common.sc,mystery_crate_01,,3,Voucher,1,50,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate15,sc/common.sc,mystery_crate_01,,3,Hammer,1,20,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate16,sc/common.sc,mystery_crate_01,,3,Hand Drill,1,20,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate17,sc/common.sc,mystery_crate_01,,3,Paint Bucket,1,20,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate18,sc/common.sc,mystery_crate_01,,3,Stone Block,1,20,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate19,sc/common.sc,mystery_crate_01,,3,Brick,1,20,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate20,sc/common.sc,mystery_crate_01,,3,Tar Bucket,1,20,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate21_maps,sc/common.sc,mystery_crate_01,,3,Map Piece,1,10,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+Box16,sc/buildings_new.sc,mystery_box_01,35,,FasterBoats_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box17,sc/buildings_new.sc,mystery_box_01,35,,FasterCrops1_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box18,sc/buildings_new.sc,mystery_box_01,35,,FasterCrops2_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box19,sc/buildings_new.sc,mystery_box_01,35,,FasterCrops3_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box20,sc/buildings_new.sc,mystery_box_01,35,,FasterCrops4_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box21,sc/buildings_new.sc,mystery_box_01,35,,FasterTom_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box22,sc/buildings_new.sc,mystery_box_01,35,,FasterBuildings1_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box23,sc/buildings_new.sc,mystery_box_01,35,,FasterBuildings2_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box24,sc/buildings_new.sc,mystery_box_01,35,,FasterBuildings3_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box25,sc/buildings_new.sc,mystery_box_01,35,,FasterBuildings4_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box26,sc/buildings_new.sc,mystery_box_01,35,,FasterTrees_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box27,sc/buildings_new.sc,mystery_box_01,35,,FasterBushes_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box28,sc/buildings_new.sc,mystery_box_01,35,,FreeTom_lv1,1,2,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box29,sc/buildings_new.sc,mystery_box_01,35,,FreeRose_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box30,sc/buildings_new.sc,mystery_box_01,35,,FreeErnest_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box31,sc/buildings_new.sc,mystery_box_01,35,,EasierBoats_lv1,1,4,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+TownCrate21,sc/common.sc,mystery_crate_01,35,3,FasterBoats_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate22,sc/common.sc,mystery_crate_01,35,3,FasterCrops1_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate23,sc/common.sc,mystery_crate_01,35,3,FasterCrops2_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate24,sc/common.sc,mystery_crate_01,35,3,FasterCrops3_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate25,sc/common.sc,mystery_crate_01,35,3,FasterCrops4_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate26,sc/common.sc,mystery_crate_01,35,3,FasterTom_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate27,sc/common.sc,mystery_crate_01,35,3,FasterBuildings1_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate28,sc/common.sc,mystery_crate_01,35,3,FasterBuildings2_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate29,sc/common.sc,mystery_crate_01,35,3,FasterBuildings3_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate30,sc/common.sc,mystery_crate_01,35,3,FasterBuildings4_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate31,sc/common.sc,mystery_crate_01,35,3,FasterTrees_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate32,sc/common.sc,mystery_crate_01,35,3,FasterBushes_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate33,sc/common.sc,mystery_crate_01,35,3,FreeTom_lv2,1,2,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate34,sc/common.sc,mystery_crate_01,35,3,FreeRose_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate35,sc/common.sc,mystery_crate_01,35,3,FreeErnest_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+TownCrate36,sc/common.sc,mystery_crate_01,35,3,EasierBoats_lv2,1,4,5,16,2,2,TreasureBox,TreasureBoxLocked,train
+Box32,sc/buildings_new.sc,mystery_box_01,25,,Expansion Key,1,50,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+Box33,sc/buildings_new.sc,mystery_box_01,,3,Puzzle Piece 1,1,23,3,16,2,2,TreasureBox,TreasureBoxLocked,home
+TownCrate37,sc/common.sc,mystery_crate_01,,3,Puzzle Piece 1,1,21,5,16,2,2,TreasureBox,TreasureBoxLocked,train

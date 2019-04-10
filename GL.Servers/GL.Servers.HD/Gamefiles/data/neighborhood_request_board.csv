@@ -1,0 +1,4 @@
+Name,FileName,ExportName,BrokenExportName,EffectExportName,LockedExportName,TileWidth,TileHeight,CollectSound,TapSound,BirdAnimationExportName,NewRequestSound,FreeRequestSound
+String,String,String,String,String,String,int,int,String,String,String,String,String
+RequestBoard,sc/buildings_new.sc,nh_requests,nh_requests_broken,repairsmoke_01,nh_requests_locked,1,1,Collect,MenuBleep,nh_request_raven,RavenSwipe,RavenSwipe
+,sc/buildings_new.sc,nh_requests_lvl2,,,nh_requests_lvl2_locked,,,,,,,

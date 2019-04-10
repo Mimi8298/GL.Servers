@@ -1,0 +1,3 @@
+"Name","ExportName","FileName","TileWidth","TileHeight","TID","TapSound"
+"String","String","String","int","int","String","String"
+"OrderTable","orderboard_01","sc/buildings_new.sc",2,2,"TID_ORDER_TABLE_TITLE","MenuBleep"

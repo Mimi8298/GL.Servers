@@ -1,0 +1,61 @@
+﻿namespace GL.Servers.BB.Files.Enums
+{
+    public enum Gamefile
+    {
+        Building,
+        Locale,
+        Resource,
+        Character,
+        Animation,
+        Projectile,
+        BuildingClass,
+        Obstacle,
+        Effect,
+        ParticleEmitter,
+        ExperienceLevel,
+        Trap,
+        AllianceBadge,
+        Global,
+        TownHall,
+        Prototype,
+        Npc,
+        Deco,
+        ResourcePack,
+
+        Mission = 20,
+        BillingPackage,
+        Achievement,
+
+        Spell = 25,
+        Hint,
+        LandingShip,
+        Artifact,
+        ArtifactBonus,
+        Deepsea,
+        ExplorationCost,
+
+        ResourceShip = 34,
+        LootBox,
+        LibaratedIncome,
+        Region,
+        DefenseReward,
+        Locator,
+        Event,
+        Footstep,
+        PersistentEvent,
+        CommunityLink,
+        Shield,
+        AbTest,
+        Letter,
+        Rank,
+        Country,
+
+        Boombox = 51,
+        Hero,
+        HeroAbility,
+        Offer,
+        DeepLink,
+        Sector,
+        SectorBonus
+    }
+}

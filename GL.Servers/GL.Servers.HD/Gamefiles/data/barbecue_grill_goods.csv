@@ -1,0 +1,27 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Pancakes,recipe_pancakes,TID_PANCAKE,Barbecue_Grill,3,Egg,30,56,54,13,3,30,20,23,9,TID_BARBECUE_PRODUCT_DESCRIPTION,23
+,,,,1,Brown_Sugar,,,,,,,,,,,
+Bacon and Eggs,recipe_bacon_and_eggs,TID_BACON_AND_EGGS,Barbecue_Grill,4,Egg,60,104,100,24,4,56,40,40,11,TID_BARBECUE_PRODUCT_DESCRIPTION,44
+,,,,2,Bacon,,,,,,,,,,,
+Hamburger,recipe_hamburger,TID_HAMBURGER,Barbecue_Grill,2,Bread,120,93,90,22,5,50,33,33,18,TID_BARBECUE_PRODUCT_DESCRIPTION,38
+,,,,2,Bacon,,,,,,,,,,,
+Roasted Tomatoes,recipe_roasted_tomatoes,TID_ROASTED_TOMATOES,Barbecue_Grill,2,Tomato,90,62,59,14,5,33,21,21,30,TID_BARBECUE_PRODUCT_DESCRIPTION,26
+Baked Potato,recipe_baked_potato,TID_BAKED_POTATO,Barbecue_Grill,2,Potato,35,155,149,36,3,83,54,54,35,TID_BARBECUE_PRODUCT_DESCRIPTION,57
+,,,,1,Cream,,,,,,,,,,,
+,,,,1,Chili,,,,,,,,,,,
+,,,,1,Cheese,,,,,,,,,,,
+Fishburger,recipe_fishburger,TID_FISHBURGER,Barbecue_Grill,2,Fish Meat,120,116,112,27,5,63,42,42,27,TID_BARBECUE_PRODUCT_DESCRIPTION,47
+,,,,2,Bread,,,,,,,,,,,
+,,,,1,Chili,,,,,,,,,,,
+Fish and Chips,recipe_fishandchips,TID_PRODUCT_FISH_AND_CHIPS,Barbecue_Grill,2,Fish Meat,90,126,121,29,5,68,48,48,41,TID_BARBECUE_PRODUCT_DESCRIPTION,53
+,,,,3,Potato,,,,,,,,,,,
+Lobster Skewer,recipe_lobsterskewers,TID_PRODUCT_LOBSTERSKEWERS,Barbecue_Grill,1,Lobster Meat,40,216,208,50,3,116,39,47,48,TID_BARBECUE_PRODUCT_DESCRIPTION,42
+,,,,1,Honey,,,,,,,,,,,
+,,,,1,Chili,,,,,,,,,,,
+Grilled Onion,recipe_grilled_onion,TID_PRODUCT_GRILLEDONION,Barbecue_Grill,2,Onion,60,99,95,23,4,53,35,35,68,TID_BARBECUE_PRODUCT_DESCRIPTION,39
+,,,,1,Butter,,,,,,,,,,,
+BananaPancakes,recipe_banana_pancakes,TID_BANANA_PANCAKES,Barbecue_Grill,1,Banana,60,182,175,42,4,98,64,64,94,TID_BARBECUE_PRODUCT_DESCRIPTION,68
+,,,,2,Blackberry,,,,,,,,,,,
+,,,,3,Wheat,,,,,,,,,,,
+,,,,1,Cream,,,,,,,,,,,

@@ -1,0 +1,19 @@
+"Name","TID","Projectile","Sound","Damage","Range","AttackSpeed","StunSingle","StunWave","StunCoolDown","Radius","BlockTimeMillis","HitEffect"
+"String","String","String","String","int","int","int","boolean","boolean","int","int","int","String"
+"BasicMeleeAttack1","TID_BASIC_MELEE_ATTACK",,"ghost attack",50,1,,,,,,,
+"BasicMeleeAttack2","TID_BASIC_MELEE_ATTACK",,"ghost attack",100,1,,,,,,,
+"BasicMeleeAttack3","TID_BASIC_MELEE_ATTACK",,"ghost attack",150,1,,,,,,,
+"StrongMeleeAttack1","TID_BASIC_MELEE_ATTACK",,"ghost attack",200,1,,,,,,,
+"RangedAttack1","TID_RANGED_ATTACK","Shockwave","ghost shoot",50,10,2000,,,,,,
+"RangedAttack2","TID_RANGED_ATTACK","Shockwave","ghost shoot",100,10,2000,,,,,,
+"RangedAttack3","TID_RANGED_ATTACK","Shockwave","ghost shoot",150,10,2000,,,,,,
+"RangedAttack4","TID_RANGED_ATTACK","Shockwave","ghost shoot",200,10,2000,,,,,,
+"StunAttack","TID_STUN_ATTACK","Shockwave","ghost attack",10,5,2000,,"TRUE",5,,,
+"RangedAttack5","TID_RANGED_ATTACK","Shockwave","ghost attack",250,10,2000,,,,,,
+"Explosion1","TID_EXPLOSION","Explosion","Barrel Explosion",200,,,,,,1,1000,"Explosion1"
+"Explosion2","TID_EXPLOSION","Explosion","Barrel Explosion",200,,,,,,2,1000,"Explosion1"
+"RangedAttackOrange","TID_RANGED_ATTACK","RangeOrange","ghost shoot",100,10,2000,,,,,,
+"RangedAttackPink","TID_RANGED_ATTACK","RangePink","ghost shoot",100,10,2000,,,,,,
+"RangedAttackOrangeJnr","TID_RANGED_ATTACK","RangeOrangeJnr","ghost shoot",50,10,2000,,,,,,
+"RangedAttackPinkJnr","TID_RANGED_ATTACK","RangePinkJnr","ghost shoot",50,10,2000,,,,,,
+"ExplosionBomb","TID_EXPLOSION","Explosion","Bomb explosion",200,,,,,,1,1000,"Explosion1"

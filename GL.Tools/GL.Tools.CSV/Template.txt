@@ -1,0 +1,22 @@
+﻿namespace GL.Servers.CR.Files.CSV_Logic
+{
+    internal class #Name# : Data
+    {
+		/// <summary>
+        /// Initializes a new instance of the <see cref="#Name#"/> class.
+        /// </summary>
+        /// <param name="Row">The row.</param>
+        /// <param name="DataTable">The data table.</param>
+        public #Name#(Row Row, DataTable DataTable) : base(Row, DataTable)
+        {
+            // #Name#.
+        }
+
+		internal override LoadingFinished()
+		{
+			// LoadingFinished.
+		}
+
+		#Property#
+    }
+}

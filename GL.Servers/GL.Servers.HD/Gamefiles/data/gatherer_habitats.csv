@@ -1,0 +1,6 @@
+Name,FileName,ExportName,ExportNameMiddle,ExportNameTop,TileWidth,TileHeight,ShopIconExportName,CollectIconExportName,Nest,NestCount,Price,TID,MaxHabitatsColumnName,BuySound,RandomSounds,TapSound,ShopDescriptionTID,MasteryGatherCount,MasteryDiamondPrice
+String,String,String,String,String,int,int,String,String,String,int,int,String,String,String,String,String,String,int,int
+BeeHiveTree,sc/buildings_new.sc,bee_tree_lvl1_bottom,bee_tree_lvl1_middle,bee_tree_lvl1_top,2,2,shop_icon_beetree,tool_collect_honey,BeeHive,1,4000,TID_BEE_HIVE_TREE,MaxBeeHabitats,Buy,,TapBeeHive,TID_BEE_HIVE_TREE_SHOP_DESCRIPTION,4000,199
+,,bee_tree_lvl2_bottom,bee_tree_lvl2_middle,bee_tree_lvl2_top,,,,,,2,,,,,,,,44000,699
+,,bee_tree_lvl3_bottom,bee_tree_lvl3_middle,bee_tree_lvl3_top,,,,,,3,,,,,,,,444000,1499
+,,bee_tree_lvl4_bottom,bee_tree_lvl4_middle,bee_tree_lvl4_top,,,,,,4,,,,,,,,,

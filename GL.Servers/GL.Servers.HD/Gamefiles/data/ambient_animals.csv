@@ -1,0 +1,10 @@
+"Name","FileName","ExportName","UnlockLevel","Behavior","TapSound","SpeedMultiplier"
+"String","String","String","int","int","String","int"
+"Butterfly1","sc/ambient_animals.sc","butterfly01",2,,,100
+"Butterfly2","sc/ambient_animals.sc","butterfly02",2,,,100
+"Butterfly3","sc/ambient_animals.sc","butterfly03",2,,,100
+"Butterfly4","sc/ambient_animals.sc","butterfly04",2,,,100
+"Bird","sc/ambient_animals.sc","bird01",2,1,,80
+"Fox","sc/ambient_animals.sc","fox01",2,2,"FoxTap",100
+"Frog","sc/ambient_animals.sc","frog01",2,3,"FrogTap",100
+"Fish","sc/ambient_animals.sc","fish01",2,4,,100

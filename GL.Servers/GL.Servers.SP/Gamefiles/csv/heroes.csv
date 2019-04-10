@@ -1,0 +1,27 @@
+"Name","TID","TIDSlogan","SWF","ExportNamePortrait","ExportNameCharacterPose","ExportNameBackside","ExportNameIdle","ExportNameAttack","AttackFrame","ExportNameCharge","ExportNameReceiveDamage","ExportNameCelebrate","ExportNameDie","ExportNameRun","LoadedEffectExportName","BlockColor","Health","BaseDamage","Projectile","BeamSWF","BeamExportName","BeamCageExportName","HurtSound","ProjectileType","Color","LowHealthSound","Boost","AlignToBottom"
+"String","String","String","String","String","String","String","String","String","int","String","String","String","String","String","String","String","int","int","String","String","String","String","String","String","String","String","String","Boolean"
+"Musician","TID_MUSICIAN","TID_MUSICIAN_SLOGAN","sc/heroes.sc","PortraitMusician","MusicianPosture","hero_footballer_idle","hero_footballer_idle","hero_footballer_attack",15,"hero_footballer_charge1","hero_footballer_hit","hero_footballer_celebrate","hero_footballer_die","hero_footballer_move","redGlow","Red",300,5,"Red","sc/effects.sc","HeroBeamRedStep1","CageRed","micheal hurt","PenetrationV","6e000a","Low health loop","BoostDamage","TRUE"
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamRedStep2",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamRedStep3",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamRedStep4",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamRedStep5",,,,,,,
+"Nerd","TID_NERD","TID_NERD_SLOGAN","sc/heroes.sc","PortraitNerd","NerdPosture","hero_nerd_idle","hero_nerd_idle","hero_nerd_attack",18,"hero_nerd_charge1","hero_nerd_hit","hero_nerd_celebrate","hero_nerd_die","hero_nerd_move","greenGlow","Green",300,5,"Green","sc/effects.sc","HeroBeamGreenStep1","CageGreen","kevin hurt","PenetrationV","084d00","Low health loop","HeroSwap","TRUE"
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamGreenStep2",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamGreenStep3",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamGreenStep4",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamGreenStep5",,,,,,,
+"Scientist","TID_SCIENTIST","TID_SCIENTIST_SLOGAN","sc/heroes.sc","PortraitScientist","ScientistPosture","hero_scientist_idle","hero_scientist_idle","hero_scientist_attack",30,"hero_scientist_charge1","hero_scientist_hit","hero_scientist_celebrate","hero_scientist_die","hero_scientist_move","purpleGlow","Purple",300,5,"Purple","sc/effects.sc","HeroBeamPurpleStep1","CagePurple","zed hurt","PenetrationV",510081,"Low health loop","Pushback","TRUE"
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamPurpleStep2",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamPurpleStep3",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamPurpleStep4",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamPurpleStep5",,,,,,,
+"NightGuard","TID_GUARD","TID_GUARD_SLOGAN","sc/heroes.sc","PortraitPolice","GuardPosture","hero_guard_idle","hero_guard_idle","hero_guard_attack",23,"hero_guard_charge1","hero_guard_hit","hero_guard_celebrate","hero_guard_die","hero_guard_move","blueGlow","Blue",300,5,"Blue","sc/effects.sc","HeroBeamBlueStep1","CageBlue","hugo hurt","PenetrationV","00487d","Low health loop","FreezeAll","TRUE"
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamBlueStep2",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamBlueStep3",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamBlueStep4",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamBlueStep5",,,,,,,
+"GymLady","TID_GYMLADY","TID_GYMLADY_SLOGAN","sc/heroes.sc","PortraitGymlady","GymladyPosture","hero_dog_idle","hero_dog_idle","hero_dog_attack",15,"hero_dog_charge1","hero_dog_hit","hero_dog_celebrate","hero_dog_die","hero_dog_move","yellowGlow","Yellow",300,5,"Yellow","sc/effects.sc","HeroBeamYellowStep1","CageYellow","aliss hurt","PenetrationV","523c00","Low health loop","HealAllies","TRUE"
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamYellowStep2",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamYellowStep3",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamYellowStep4",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,"HeroBeamYellowStep5",,,,,,,

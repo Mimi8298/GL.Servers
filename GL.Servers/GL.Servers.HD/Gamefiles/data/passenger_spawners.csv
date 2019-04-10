@@ -1,0 +1,3 @@
+Name,UnlockLevel,MinSpawnTime,MaxSpawnTime,MaxAIPassengers,MaxIdleAIPassengers,AIVisitorCooldownIntervalSeconds
+String,int,int,int,int,int,int
+PassengerSpawner,32,1,3,2,10,79200

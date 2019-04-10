@@ -1,0 +1,3 @@
+"Name","TID","InfoTID","SWF","ExportName","Width","Height","PickupRadius","CheckPickupTimeTicks"
+"String","String","String","String","String","int","int","int","int"
+"LootBox","TID_BUILDING_LANDING_SHIP","TID_BUILDING_LANDING_SHIP_INFO","sc/in-game.sc","loot_box",2,2,3600,15

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E4B7DBB-E124-4802-8304-8CDCC716CD86}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GL.Clients.CR</RootNamespace>
+    <AssemblyName>GL - Royale Client</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Builds\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>default</LangVersion>
+    <FileAlignment>1024</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Builds\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>default</LangVersion>
+    <FileAlignment>1024</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GL.Clients.CR.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Consoles\Parser.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Network\Gateway.cs" />
+    <Compile Include="Core\Network\Processor.cs" />
+    <Compile Include="Core\Network\Token.cs" />
+    <Compile Include="Logic\Client.cs" />
+    <Compile Include="Logic\Device.cs" />
+    <Compile Include="Logic\Enums\Action.cs" />
+    <Compile Include="Logic\Enums\Arena.cs" />
+    <Compile Include="Logic\Enums\CVersion.cs" />
+    <Compile Include="Logic\Enums\Database.cs" />
+    <Compile Include="Logic\Enums\DBMS.cs" />
+    <Compile Include="Logic\Enums\Defcon.cs" />
+    <Compile Include="Logic\Enums\Direction.cs" />
+    <Compile Include="Logic\Enums\Events.cs" />
+    <Compile Include="Logic\Enums\Exits.cs" />
+    <Compile Include="Logic\Enums\Game.cs" />
+    <Compile Include="Logic\Enums\Gamefile.cs" />
+    <Compile Include="Logic\Enums\Hiring.cs" />
+    <Compile Include="Logic\Enums\Mode.cs" />
+    <Compile Include="Logic\Enums\Rank.cs" />
+    <Compile Include="Logic\Enums\Rarity.cs" />
+    <Compile Include="Logic\Enums\Reason.cs" />
+    <Compile Include="Logic\Enums\Resource.cs" />
+    <Compile Include="Logic\Enums\Role.cs" />
+    <Compile Include="Logic\Enums\State.cs" />
+    <Compile Include="Logic\Enums\Status.cs" />
+    <Compile Include="Logic\Enums\Stream_Type.cs" />
+    <Compile Include="Packets\Command.cs" />
+    <Compile Include="Packets\CommandFactory.cs" />
+    <Compile Include="Packets\Message.cs" />
+    <Compile Include="Packets\MessageFactory.cs" />
+    <Compile Include="Packets\Messages\Client\Authentification.cs" />
+    <Compile Include="Packets\Messages\Client\Client_Capabilities.cs" />
+    <Compile Include="Packets\Messages\Client\Execute_Commands.cs" />
+    <Compile Include="Packets\Messages\Client\Get_Device_Token.cs" />
+    <Compile Include="Packets\Messages\Client\Go_Home.cs" />
+    <Compile Include="Packets\Messages\Client\Keep_Alive.cs" />
+    <Compile Include="Packets\Messages\Client\Pre_Authentification.cs" />
+    <Compile Include="Packets\Messages\Server\Authentification_Failed.cs" />
+    <Compile Include="Packets\Messages\Server\Authentification_OK.cs" />
+    <Compile Include="Packets\Messages\Server\Disconnected.cs" />
+    <Compile Include="Packets\Messages\Server\Keep_Alive_OK.cs" />
+    <Compile Include="Packets\Messages\Server\Out_Of_Sync.cs" />
+    <Compile Include="Packets\Messages\Server\Own_Home_Data.cs" />
+    <Compile Include="Packets\Messages\Server\Pre_Authentification_OK.cs" />
+    <Compile Include="Packets\Messages\Server\Server_Capabilities.cs" />
+    <Compile Include="Packets\Messages\Server\Server_Error.cs" />
+    <Compile Include="Packets\Messages\Server\Server_Shutdown.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Packets\Commands\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GL.Servers\GL.Servers\GL.Servers.csproj">
+      <Project>{5D12A2DA-F22E-4813-9394-6409E5C1CB3A}</Project>
+      <Name>GL.Servers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

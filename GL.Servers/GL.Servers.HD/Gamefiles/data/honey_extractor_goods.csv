@@ -1,0 +1,4 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Honey,recipe_honey,TID_PRODUCT_HONEY,Honey_Extractor,2,Honeycomb,20,81,78,19,2,43,8,8,39,TID_HONEYEXTRACTOR_PRODUCT_DESCRIPTION,10
+Beeswax,recipe_beeswax,TID_PRODUCT_BEESWAX,Honey_Extractor,3,Honeycomb,45,121,116,28,3,65,12,12,48,TID_HONEYEXTRACTOR_PRODUCT_DESCRIPTION,15

@@ -1,0 +1,102 @@
+"Name","SWF","ExportName","TutorialTitleTID","TutorialTextTID","Level","Wave","Turn","DragEvent","NextStep","ValidateMove","ValidMoveFromX","ValidMoveFromY","ValidMoveToX","ValidMoveToY","DialogPosition","DialogExportName","Puzzle","BlockTimer","Sound","HeroSwap","PuzzleMask","MaskColor"
+"String","String","String","String","String","int","int","int","int","String","Boolean","int","int","int","int","String","String","String","Boolean","String","Int","String","String"
+"Tutorial_Level1","sc/tutorial.sc",,"TID_TUTORIAL1_TITLE","TID_TUTORIAL1_TEXT",1,1,0,-1,"Tutorial_Level1b","FALSE",,,,,"BottomLeft","Tut_Scientist",,,"Prof speech 1",0,,
+"Tutorial_Level1b","sc/tutorial.sc",,,"TID_TUTORIAL1B_TEXT",1,1,0,0,,"TRUE",3,1,3,2,"BottomCenter","Tut_Instruction",,,"Sizzle",0,"Tutorial1_Mask",88000000
+,,,,,,,,0,,,3,2,3,1,,,,,,,,
+"Tutorial_Level1c","sc/tutorial.sc",,"TID_TUTORIAL1_TITLE","TID_TUTORIAL1C_TEXT",1,2,0,0,,"TRUE",3,1,3,2,"Center","Tut_Instruction2_5blocks","L1Wave2",,"Sizzle",0,"Tutorial1_Mask02",88000000
+,,,,,,,,0,,,3,2,3,1,,,,,,,,
+"Tutorial_Level2","sc/tutorial.sc",,"TID_TUTORIAL2_TITLE","TID_TUTORIAL2_TEXT",2,1,0,,"Tutorial_Level2b","FALSE",,,,,"BottomRight","Tut_Scientist_Right",,,"Prof speech 3",0,,
+"Tutorial_Level2b",,,,,2,2,0,,,"FALSE",,,,,,,"L2Wave2",,,,,
+"Tutorial_Level3","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_TUTORIAL3_TEXT",3,1,0,-1,"Tutorial_Level3b","FALSE",,,,,"BottomRight","Tut_Guard_Right","Tutorial1",,"Security lady speech 1",0,,
+"Tutorial_Level3b","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_TUTORIAL3b_TEXT",3,1,0,-1,"Tutorial_Level3c","FALSE",,,,,"BottomLeft","Tut_Scientist",,,"Prof speech 2",0,,
+"Tutorial_Level3c","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_TUTORIAL3c_TEXT",3,1,0,0,,"TRUE",2,1,2,2,"BottomCenter","Tut_Instruction2c",,"true","Sizzle",0,"Tutorial2_Mask",88000000
+,,,,,,,,0,,,2,2,2,1,,,,,,,,
+"GhostIntro1","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_GHOST_INTRO2_TEXT",4,1,0,,,"FALSE",,,,,"BottomRight","Tut_Guard_Right","L4Wave1",,"Security lady speech 3",0,,
+"Tutorial_Level4","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_TUTORIAL4_TEXT",4,1,1,,,"FALSE",,,,,"Center","Tut_Instruction_GameOver",,,"Sizzle",0,,
+"Tutorial_Level5","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_TUTORIAL5_TEXT1",5,1,0,,"Tutorial_Level5b","FALSE",,,,,"BottomRight","Tut_Guard_Right","L5Wave1",,"Security lady speech 1",0,,
+"Tutorial_Level5b","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_TUTORIAL5_TEXT2",5,1,0,,"Tutorial_Level5c","FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 4",0,,
+"Tutorial_Level5c","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_TUTORIAL5_TEXT3",5,1,0,,,"FALSE",,,,,"BottomRight","Tut_GuardDog",,,"Security lady speech 5",0,,
+"Tutorial_Level5d",,,,,5,2,0,,,"FALSE",,,,,,,"L5Wave2",,,,,
+"Tutorial6","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_TUTORIAL6_TEXT",6,1,0,-1,"Tutorial6b","FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 5",0,,
+"Tutorial6b","sc/tutorial.sc",,,"TID_TUTORIAL6_TEXT_2",6,1,0,0,,"TRUE",2,2,3,2,"BottomCenter","Tut_Instruction2",,"true","Sizzle",0,"Tutorial1_Mask2",88000000
+,,,,,,,,0,,,3,2,2,2,,,,,,,,
+"Tutorial6c","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_TUTORIAL6_TEXT_3",6,1,0,1,,"TRUE",2,1,2,2,"BottomCenter","Tut_Instruction2c",,"true","Sizzle",0,"Tutorial8_Mask",88000000
+,,,,,,,,1,,,2,2,2,1,,,,,,,,
+"GhostIntro2","sc/tutorial.sc",,"TID_TUTORIAL3_TITLE","TID_GHOST_INTRO6_TEXT",7,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 3",0,,
+"Tutorial17","sc/tutorial.sc",,,"TID_TUTORIAL17_TEXT",8,1,0,-1,"Tutorial17b","FALSE",,,,,"BottomLeft","Tut_Scientist","L8Wave1",,"Prof speech 1",0,,
+"Tutorial17b","sc/tutorial.sc","swap_counter",,"TID_TUTORIAL17B_TEXT",8,1,0,0,"Tutorial17c","FALSE",,,,,"BottomRight","Tut_Guard_Right",,,"Security lady speech 3",0,,
+"Tutorial17c","sc/tutorial.sc",,,"TID_TUTORIAL17C_TEXT",8,1,0,0,"Tutorial17d","FALSE",,,,,"BottomRight","Tut_Guard_Right2",,,"Security lady speech 1",0,,
+"Tutorial17d","sc/tutorial.sc",,,"TID_TUTORIAL17D_TEXT",8,1,0,,,,,,,,"BottomCenter","Tut_Instruction4",,,"Prof speech 6",1,,
+,,,,,,,,,,,,,,,,,,,,2,,
+"GhostIntro9","sc/tutorial.sc",,,"TID_GHOST_INTRO9_TEXT",10,1,0,,"GhostIntro9b","FALSE",,,,,"BottomRight","Tut_Scientist_Right",,,"Prof speech 6",0,,
+"GhostIntro9b","sc/tutorial.sc",,,"TID_GHOST_INTRO9B_TEXT",10,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 1",0,,
+"Tutorial8","sc/tutorial.sc",,"TID_TUTORIAL8_TITLE","TID_TUTORIAL8_TEXT",11,1,0,,"Tutorial9","FALSE",,,,,"BottomRight","Tut_Student",,,"Girl speech 1",0,,
+"GhostIntro10","sc/tutorial.sc",,,"TID_GHOST_INTRO10_TEXT",14,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 2",0,,
+"GhostIntro1","sc/tutorial.sc",,"TID_GHOST_INTRO1_TITLE","TID_GHOST_INTRO1_TEXT",90,1,0,,"GhostIntro1b","FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 1",0,,
+"GhostIntro1b","sc/tutorial.sc",,,"TID_GHOST_INTRO1B_TEXT",90,1,0,,"GhostIntro1c","FALSE",,,,,"BottomLeft","Tut_Scientist_Right",,,"Prof speech 6",0,,
+"GhostIntro1c","sc/tutorial.sc",,"TID_GHOST_INTRO1C_TITLE","TID_GHOST_INTRO1C_TEXT",90,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 2",0,,
+"GhostIntro7","sc/tutorial.sc",,,"TID_GHOST_INTRO7_TEXT",18,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 1",0,,
+"GhostIntroFat","sc/tutorial.sc",,"TID_GHOST_INTRO1C_TITLE","TID_GHOST_INTRO3_TEXT",21,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 1",0,,
+"Tutorial14","sc/tutorial.sc",,"TID_TUTORIAL14_TEXT","TID_TUTORIAL14_TEXT",16,1,0,,"Tutorial15","FALSE",,,,,"BottomRight","Tut_Jock",,,"Jock 2",0,,
+"Tutorial15","sc/tutorial.sc",,"TID_TUTORIAL15_TITLE","TID_TUTORIAL15_TEXT",,,,,"Tutorial16","FALSE",,,,,"BottomLeft","Tut_Student_Left",,,"Girl speech 3",0,,
+"Tutorial16","sc/tutorial.sc",,,"TID_TUTORIAL16_TITLE",,,,,,"FALSE",,,,,"BottomRight","Tut_Jock",,,"Jock 3",0,,
+"Tutorial9","sc/tutorial.sc",,"TID_TUTORIAL9_TITLE","TID_TUTORIAL9_TEXT",,,,,"Tutorial10","FALSE",,,,,"BottomLeft","Tut_Scientist",,,"Prof speech 4",0,,
+"Tutorial10","sc/tutorial.sc",,"TID_TUTORIAL10_TITLE","TID_TUTORIAL10_TEXT",,,,,,"FALSE",,,,,"BottomRight","Tut_Student2",,,"Girl speech 2",0,,
+"GhostIntro3","sc/tutorial.sc",,,"TID_GHOST_INTRO1_TEXT",26,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 2",0,,
+"GhostIntro6b","sc/tutorial.sc",,,"TID_GHOST_INTRO6B_TEXT",36,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 1",0,,
+"GhostIntro11","sc/tutorial.sc",,,"TID_GHOST_INTRO11_TEXT",43,1,0,,"GhostIntro11b","FALSE",,,,,"BottomLeft","Tut_Student_Left",,,"Girl speech 3",0,,
+"GhostIntro11b","sc/tutorial.sc",,,"TID_GHOST_INTRO11B_TEXT",43,1,0,,,"FALSE",,,,,"BottomRight","Tut_Dog1_Right",,,"Dog 1",0,,
+"GhostIntro5","sc/tutorial.sc",,,"TID_GHOST_MAGICIAN1_INTRO_TEXT",51,1,0,,,"FALSE",,,,,"BottomRight","Tut_Student2",,,"Girl speech 1",0,,
+"GhostIntro5b","sc/tutorial.sc",,,"TID_GHOST_MAGICIAN1B_INTRO_TEXT",51,1,1,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 3",0,,
+"GhostIntro6","sc/tutorial.sc",,,"TID_GHOST_MAGICIAN2_INTRO_TEXT",54,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 5",0,,
+"GhostIntro6c","sc/tutorial.sc",,,"TID_GHOST_INTRO6C_TEXT",90,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Guard_Left",,,"Security lady speech 1",0,,
+"GhostIntro8","sc/tutorial.sc",,,"TID_GHOST_INTRO8_TEXT",57,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 2",0,,
+"GhostIntro13","sc/tutorial.sc",,,"TID_GHOST_INTRO13_TEXT",90,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 3",0,,
+"GhostIntro14","sc/tutorial.sc",,,"TID_GHOST_INTRO20_TEXT",60,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 3",0,,
+"GhostIntro15","sc/tutorial.sc",,,"TID_GHOST_INTRO21_TEXT",66,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 3",0,,
+"AbilityIntro1","sc/tutorial.sc","Tut_RedBoost","TID_ABILITY_TUTORIAL_TITLE","TID_ABILITY_TUTORIAL_TEXT",30,1,0,-1,"AbilityIntro1b","FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 5",0,,
+"AbilityIntro1b","sc/tutorial.sc","Tut_RedBoost",,"TID_ABILITY_TUTORIAL_TEXT2",30,1,0,-1,"AbilityIntro1c","FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 6",0,,
+"AbilityIntro1c","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT3",30,1,0,,,"TRUE",1,3,1,2,"BottomCenter","Tut_Instruction5",,"true","Sizzle",0,"Tutorial3_Mask",88000000
+,,,,,,,,,,,1,2,1,3,,,,,,,,
+"AbilityIntro1cBlock",,,,,30,1,0,1,,"TRUE",-1,-1,-1,-1,,,,,,,,
+"AbilityIntro1d","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT4",30,1,1,0,,"TRUE",5,2,5,3,"BottomCenter","Tut_Instruction5b",,"true","Sizzle",0,"Tutorial3_Mask2",88000000
+,,,,,,,,,,,5,3,5,2,,,,,,,,
+"AbilityIntro1f","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT6",30,1,1,1,,"TRUE",3,2,3,3,"BottomCenter","Tut_Instruction5c",,"true","Sizzle",0,"Tutorial3_Mask3",88000000
+,,,,,,,,,,,3,3,3,2,,,,,,,,
+"AbilityIntro1g","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT6",30,1,1,2,,"TRUE",2,1,2,2,"BottomCenter","Tut_Instruction5d",,"true","Sizzle",0,"Tutorial3_Mask4",88000000
+,,,,,,,,,,,2,2,2,1,,,,,,,,
+"AbilityIntro1h","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT6",30,1,1,3,,"TRUE",2,1,2,0,"BottomCenter","Tut_Instruction5e",,"true","Sizzle",0,"Tutorial3_Mask5",88000000
+,,,,,,,,,,,2,0,2,1,,,,,,,,
+"AbilityIntro1i","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT6",30,1,1,4,,"TRUE",3,1,4,1,"BottomCenter","Tut_Instruction5f",,"true","Sizzle",0,"Tutorial3_Mask6",88000000
+,,,,,,,,,,,4,1,3,1,,,,,,,,
+"GhostIntro12","sc/tutorial.sc",,,"TID_GHOST_INTRO12_TEXT",31,1,0,,,"FALSE",,,,,"BottomLeft","Tut_Dog1",,,"Dog 2",0,,
+"AbilityIntro2","sc/tutorial.sc","Tut_GreenBoost","TID_ABILITY_TUTORIAL_TITLE","TID_ABILITY_TUTORIAL_TEXT7",25,1,0,-1,"AbilityIntro2b","FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 4",0,,
+"AbilityIntro2b","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT8",25,1,0,0,,"TRUE",4,0,4,1,"BottomCenter","Tut_Instruction6",,,"Sizzle",0,"Tutorial4_Mask",88000000
+,,,,,,,,,,,4,1,4,0,,,,,,,,
+"AbilityIntro2bBlock",,,,,25,1,0,1,,"TRUE",-1,-1,-1,-1,,,,,,,,
+"AbilityIntro2c","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT9",25,1,1,0,,"TRUE",1,2,0,2,"BottomCenter","Tut_Instruction6b",,"true","Sizzle",0,"Tutorial4_Mask2",88000000
+,,,,,,,,,,,0,2,1,2,,,,,,,,
+"AbilityIntro2d","sc/tutorial.sc","swap_counter","TID_ABILITY_TUTORIAL_TITLE","TID_ABILITY_TUTORIAL_TEXT10",25,1,2,-1,,"FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 5",0,,
+"AbilityIntro3","sc/tutorial.sc","Tut_BlueBoost","TID_ABILITY_TUTORIAL_TITLE","TID_ABILITY_TUTORIAL_TEXT11",35,1,0,-1,"AbilityIntro3b","FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 6",0,,
+"AbilityIntro3b","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT12",35,1,0,,,"TRUE",1,1,2,1,"BottomCenter","Tut_Instruction7",,,"Sizzle",0,"Tutorial5_Mask",88000000
+,,,,,,,,,,,2,1,1,1,,,,,,,,
+"AbilityIntro3bBlock",,,,,35,1,0,1,,"TRUE",-1,-1,-1,-1,,,,,,,,
+"AbilityIntro3c","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT13",35,1,1,0,,"TRUE",2,1,2,0,"BottomCenter","Tut_Instruction7b",,"true","Sizzle",0,"Tutorial5_Mask2",88000000
+,,,,,,,,,,,2,0,2,1,,,,,,,,
+"AbilityIntro3d","sc/tutorial.sc",,"TID_ABILITY_TUTORIAL_TITLE","TID_ABILITY_TUTORIAL_TEXT14",35,1,2,-1,,"FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 5",0,,
+"AbilityIntro4","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT23",40,1,1,-1,"AbilityIntro4b","FALSE",,,,,"BottomLeft","Tut_Student_Left",,,"Prof speech 6",0,,
+"AbilityIntro4b","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT24",40,1,1,-1,"AbilityIntro4d","FALSE",,,,,"BottomRight","Tut_Scientist_Right",,,"Prof speech 6",0,,
+"AbilityIntro4d","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT16",40,1,1,0,,"TRUE",3,1,2,1,"BottomCenter","Tut_Instruction8",,,"Sizzle",0,"Tutorial6_Mask",88000000
+,,,,,,,,,,,2,1,3,1,,,,,,,,
+"AbilityIntro4bBlock",,,,,40,1,1,1,,"TRUE",2,3,2,4,,,,,,,,
+,,,,,,,,,,,2,4,2,3,,,,,,,,
+"AbilityIntro4e","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT17",40,1,2,0,,"TRUE",5,3,5,4,"BottomCenter","Tut_Instruction8b",,"true","Sizzle",0,"Tutorial6_Mask2",88000000
+,,,,,,,,,,,5,4,5,3,,,,,,,,
+"AbilityIntro4f","sc/tutorial.sc",,"TID_ABILITY_TUTORIAL_TITLE","TID_ABILITY_TUTORIAL_TEXT18",40,1,3,-1,,"FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 5",0,,
+"AbilityIntro5","sc/tutorial.sc","Tut_PurpleBoost","TID_ABILITY_TUTORIAL_TITLE","TID_ABILITY_TUTORIAL_TEXT19",45,1,0,-1,"AbilityIntro5b","FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 6",0,,
+"AbilityIntro5b","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT20",45,1,0,0,,"TRUE",4,0,4,1,"BottomCenter","Tut_Instruction9",,,"Sizzle",0,"Tutorial7_Mask",88000000
+,,,,,,,,,,,4,1,4,0,,,,,,,,
+"AbilityIntro5bBlock",,,,,45,1,0,1,,"TRUE",-1,-1,-1,-1,,,,,,,,
+"AbilityIntro5c","sc/tutorial.sc",,,"TID_ABILITY_TUTORIAL_TEXT21",45,1,1,0,,"TRUE",1,3,1,4,"BottomCenter","Tut_Instruction9b",,"true","Sizzle",0,"Tutorial7_Mask2",88000000
+,,,,,,,,,,,1,4,1,3,,,,,,,,
+"AbilityIntro5d","sc/tutorial.sc",,"TID_ABILITY_TUTORIAL_TITLE","TID_ABILITY_TUTORIAL_TEXT22",45,1,2,-1,,"FALSE",,,,,"BottomLeft","Tut_Scientist_Left",,,"Prof speech 6",0,,

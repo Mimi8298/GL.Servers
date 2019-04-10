@@ -1,0 +1,6 @@
+Name,FileName,RowName,ColumnName,ArrayIndex,NewIntValue,NewStringValue,NewBooleanValue,Group,Percentage,iOSOnly,AndroidOnly,SpendersOnly,NonSpendersOnly
+String,String,String,String,int,int,String,boolean,int,int,boolean,boolean,boolean,boolean
+SpenderNot3,data/game_config.csv,DaysWithoutSpendingLimit,IntValue,,60,,,1,20,,,true,
+SpenderNot3,data/features.csv,HelperVideoAds,Enabled,,,,false,1,20,,,true,
+SpenderNot3,data/game_config.csv,DaysWithoutSpendingLimit,IntValue,,90,,,2,20,,,true,
+SpenderNot3,data/features.csv,HelperVideoAds,Enabled,,,,false,2,20,,,true,

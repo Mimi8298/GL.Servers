@@ -1,0 +1,10 @@
+"Name","FileName","ExportName","Helper","ProductionBuildings","AlertBuilding","MaxPathLength","MaxDistanceFromBuilding","Speed","SpeedNotWorking","IdleMinMS","IdleMaxMS","IdleNotWorkingMinMS","IdleNotWorkingMaxMS","StayAtBuildingMinMS","StayAtBuildingMaxMS","TapSound"
+"String","String","String","String","String","String","int","int","int","int","int","int","int","int","int","int","string"
+"CaretakerCharacter","sc/humans03.sc","helper_caretaker","Caretaker","Hammermill","Home building",150,2,12,10,2000,5000,20000,30000,20000,40000,"FarmFemaleAttention"
+,,,,"ChickenHabitat",,,,,,,,,,,,
+,,,,"CowHabitat",,,,,,,,,,,,
+,,,,"PigHabitat",,,,,,,,,,,,
+,,,,"SheepHabitat",,,,,,,,,,,,
+,,,,"GoatHabitat",,,,,,,,,,,,
+"MillerCharacter","sc/humans03.sc","helper_miller","Miller","Dairy","Home building",150,2,14,10,2000,5000,20000,30000,20000,40000,"FarmMaleAttention"
+,,,,"Sugar_Mill",,,,,,,,,,,,

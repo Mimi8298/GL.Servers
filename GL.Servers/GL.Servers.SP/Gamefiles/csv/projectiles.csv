@@ -1,0 +1,14 @@
+Name,SWF,ExportName,HitEffect,TilesPerSecond
+String,String,String,String,Int
+Red,sc/effects.sc,BeamPulse,ProjectileDamage,12
+Green,sc/effects.sc,BeamPulse,ProjectileDamage,12
+Blue,sc/effects.sc,BeamPulse,ProjectileDamage,12
+Purple,sc/effects.sc,BeamPulse,ProjectileDamage,12
+Yellow,sc/effects.sc,BeamPulse,ProjectileDamage,12
+Shockwave,sc/effects.sc,GhostShockwaveProjectile,ShockwaveDamage,12
+Explosion,sc/effects.sc,GhostShockwaveProjectile,Explosion1,
+Hypno,sc/effects.sc,GhostHypnoSwirlFX,ShockwaveDamage,8
+RangeOrange,sc/effects.sc,ghost_projectile_orange,ShockwaveDamage,12
+RangePink,sc/effects.sc,ghost_projectile_pink,ShockwaveDamage,12
+RangeOrangeJnr,sc/effects.sc,ghost_projectile_orange_jnr,ShockwaveDamage,12
+RangePinkJnr,sc/effects.sc,ghost_projectile_pink_jnr,ShockwaveDamage,12

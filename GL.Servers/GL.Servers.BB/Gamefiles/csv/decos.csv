@@ -1,0 +1,13 @@
+"Name","TID","InfoTID","SWF","ExportName","ExportNameConstruction","BuildCost","RequiredExpLevel","MaxCount","Width","Height","Icon","ExportNameBase","VillagerProbability","EventProbability"
+"String","String","String","String","String","String","String","int","int","int","int","String","String","int","int"
+"Cage","TID_ISLANDER_CAGE","TID_ISLANDER_CAGE","sc/in-game.sc","islander_cage","empty_state","100,100,100",,1,2,2,,"empty_state",10,0
+"Old Native Hut","TID_ISLANDER_HUT","TID_ISLANDER_HUT","sc/in-game.sc","islander_hut","empty_state","100,100,100",,1,3,3,,"reef_native_base_3x3",10,0
+"New Native Hut1","TID_ISLANDER_HUT","TID_ISLANDER_HUT","sc/in-game.sc","damaged_hut_1","empty_state","100,100,100",,1,3,3,,"reef_native_base_3x3",10,0
+"New Native Hut2","TID_ISLANDER_HUT","TID_ISLANDER_HUT","sc/in-game.sc","damaged_hut_2","empty_state","100,100,100",,1,3,3,,"reef_native_base_3x3",10,0
+"New Native Hut3","TID_ISLANDER_HUT","TID_ISLANDER_HUT","sc/in-game.sc","damaged_hut_3","empty_state","100,100,100",,1,3,3,,"reef_native_base_3x3",10,0
+"Burned Hut","TID_DAMAGED_HUT2","TID_ISLANDER_HUT","sc/in-game.sc","destroyed_hut_1","empty_state","100,100,100",,1,3,3,,"reef_native_base_3x3",10,0
+"Campfire","TID_CAMPFIRE","TID_CAMPFIRE","sc/in-game.sc","campfire","empty_state","100,100,100",,1,2,2,,"empty_state",10,0
+"Debris2","TID_DEBRIS","TID_DEBRIS","sc/in-game.sc","gen_destroyed_2_native","empty_state","100,100,100",,1,2,2,,"empty_state",10,0
+"Debris3","TID_DEBRIS","TID_DEBRIS","sc/in-game.sc","gen_destroyed_3_native","empty_state","100,100,100",,1,3,3,,"empty_state",10,0
+"Debris4","TID_DEBRIS","TID_DEBRIS","sc/in-game.sc","gen_destroyed_3_native","empty_state","100,100,100",,1,3,3,,"empty_state",10,0
+"Debris5","TID_DEBRIS","TID_DEBRIS","sc/in-game.sc","gen_destroyed_3_native","empty_state","100,100,100",,1,3,3,,"empty_state",10,0

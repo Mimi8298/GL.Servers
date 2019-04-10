@@ -1,0 +1,10 @@
+Name,ShopIconExportName,UnlockLevel,TimeMin,TimeSec,Slots,Price,PriceIncrease,DoPriceIncreaseEveryNObject,MaxHabitatsColumnName,FileName,ExportName,ExportNameMastered,TileWidth,TileHeight,ExpToBuild,InstantComplete,TID,DescriptionTID,TapSound,TapProcessingSound,CollectSound,BuySound,RandomSounds,BuildingMasteryHours,BuildingMasteryBonusPercent,BuildingMasteryBonusType,BuildingMasteryStarDiamondPrice,BuildingMasteryEnabled
+String,String,int,int,int,int,int,int,int,String,String,String,String,int,int,int,int,String,String,String,String,String,String,String,int,int,String,int,Boolean
+BaitMaker,shop_icon_luremaker,1,,10,2,20,,,,sc/fishing_area_buildings_and_decos.sc,lure_maker,lure_maker_mastered,2,2,3,1,TID_BAITMAKER,TID_BAITMAKER_DESCRIPTION,WorkbenchTap,WorkbenchTapProcessing,Collect,Buy,,120,-5,SpeedUp,372,true
+,,,,,,10,,,,,,,,,,,,,,,,,,960,-10,SpeedUp,1370,
+,,,,,,20,,,,,,,,,,,,,,,,,,6840,-15,SpeedUp,5000,
+,,,,,,45,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,90,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,130,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,260,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,415,,,,,,,,,,,,,,,,,,,,,,

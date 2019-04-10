@@ -1,0 +1,8 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,String,int,int,int,int,int,int,int,int,int,string,int
+Strawberry Candle,recipe_candle_strawberry,TID_PRODUCT_STRAWBERRY_CANDLE,Candle_Maker,1,Beeswax,120,191,184,44,5,103,37,37,48,TID_CANDLEMAKER_PRODUCT_DESCRIPTION,42
+,,,,2,Strawberry,,,,,,,,,,,
+Raspberry Candle,recipe_candle_rasberry,TID_PRODUCT_RASPBERRY_CANDLE,Candle_Maker,1,Beeswax,105,185,178,43,5,100,35,35,52,TID_CANDLEMAKER_PRODUCT_DESCRIPTION,40
+,,,,2,Raspberry,,,,,,,,,,,
+Lemon Candle,recipe_candle_lemon,TID_PRODUCT_LEMON_CANDLE,Candle_Maker,1,Beeswax,135,237,228,55,5,127,53,53,72,TID_CANDLEMAKER_PRODUCT_DESCRIPTION,58
+,,,,2,Lemon,,,,,,,,,,,

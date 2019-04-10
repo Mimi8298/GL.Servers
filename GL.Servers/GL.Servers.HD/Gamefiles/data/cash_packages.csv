@@ -1,0 +1,8 @@
+"Name","ExportName","CurrencyInUSD","DiamondCost","TID","Enabled"
+"String","String","int","int","String","boolean"
+"com.supercell.soil.cashpackage1","icon_coins_pile",99,30,"TID_CASH_PACK_1","true"
+"com.supercell.soil.cashpackage2","icon_coins_bag",299,95,"TID_CASH_PACK_2","true"
+"com.supercell.soil.cashpackage3","icon_coins_sack",799,270,"TID_CASH_PACK_3","true"
+"com.supercell.soil.cashpackage4","icon_coins_box",1499,550,"TID_CASH_PACK_4","true"
+"com.supercell.soil.cashpackage5","icon_coins_chest",2999,1170,"TID_CASH_PACK_5","true"
+"com.supercell.soil.cashpackage6","icon_coins_trunk",7999,3970,"TID_CASH_PACK_6","true"

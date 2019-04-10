@@ -1,0 +1,16 @@
+Name,UnlockLevel,FileName,ShopIconExportName,Feed,Good,Value,ProcessValue,Price,PriceIncrease,DoPriceIncreaseEveryNObject,StateIdleExportName,StateIdleMinMS,StateIdleMaxMS,StatePanicExportName,StatePanicMinMS,StatePanicMaxMS,StateMoveExportName,MovementSpeed,PanicMovementSpeed,StateHungryExportName,StateReadyExportName,HarvestExportName,TID,ReadyNotificationName,TapSound,TapProcessingSound,CollectSound,BuySound,FeedSound
+String,int,String,String,string,string,int,int,int,int,int,String,int,int,String,int,int,String,int,int,String,String,String,String,String,String,String,String,String,String
+Chicken,1,sc/animals.sc,shop_icon_chicken01,Chicken Food,Egg,449,331,10,130,6,chicken01_idle01,3000,9000,chicken01_panic01,3000,10000,chicken01_walk01,50,100,chicken01_hungry01,chicken01_ready01,chicken01_harvest01,TID_CHICKEN,ChickenReady,TapChicken,TapChicken,Collect,Buy,FeedAnimal
+,,,,,,,,,,,chicken01_idle02,,,,,,chicken01_walk01,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,chicken01_panic01,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,chicken01_walk01,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,chicken01_walk01,,,,,,,,,,,,
+Cow,6,sc/animals.sc,shop_icon_cow01,Cow Food,Milk,772,514,50,550,5,cow01_idle01,4000,10000,cow01_panic01,4000,6000,cow01_walk01,65,0,cow01_hungry01,cow01_ready01,cow01_harvest01,TID_COW,CowReady,TapCow,TapCow,Collect,Buy,FeedAnimal
+Sheep,16,sc/animals.sc,shop_icon_sheep01,Sheep Food,Wool,1160,896,800,1500,5,sheep01_idle01,2000,6000,sheep01_panic01,8000,9000,sheep01_walk01,70,200,sheep01_hungry01,sheep01_ready01,sheep01_harvest01,TID_SHEEP,SheepReady,TapSheep,TapSheep,Collect,Buy,FeedAnimal
+,,,,,,,,,,,sheep01_idle02,,,sheep01_panic02,,,,,,,,,,,,,,,
+,,,,,,,,,,,sheep01_idle03,,,,,,,,,,,,,,,,,,
+Pig,10,sc/animals.sc,shop_icon_pig01,Pig Food,Bacon,1399,1053,500,900,5,pig01_idle01,3000,8000,pig01_panic01,5000,8000,pig01_walk01,60,0,pig01_hungry01,pig01_ready01,pig01_harvest01,TID_PIG,PigReady,TapPig,TapPig,Collect,Buy,FeedAnimal
+,,,,,,,,,,,pig01_idle02,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,pig01_idle01,,,,,,,,,,,,,,,,,,
+Goat,32,sc/animals.sc,shop_icon_goat01,Goat Food,Goat Milk,1160,896,2150,3250,4,goat01_idle01,2000,6000,goat01_panic01,4000,4000,goat01_walk01,30,0,goat01_hungry01,goat01_ready01,goat01_harvest01,TID_GOAT,GoatReady,TapGoat,TapGoat,Collect,Buy,FeedAnimal
+,,,,,,,,,,,goat01_idle02,,,,,,,,,goat01_hungry02,,,,,,,,,

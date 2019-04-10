@@ -1,0 +1,273 @@
+Name,Rewards,RewardAmounts,Probabilities
+String,String,int,int
+RewardSet1,Axe,3,10
+,Saw,3,10
+,Dynamite,3,10
+,Demolition Charge,3,10
+,Shovel,2,10
+,Bolt,1,10
+,Plank,1,10
+,Duct Tape,1,10
+,Land Deed,1,10
+,Mallet,1,10
+,Marker Stake,1,10
+,Voucher1,2,10
+,Voucher2,2,10
+RewardSet2,Axe,4,10
+,Saw,4,10
+,Dynamite,4,10
+,Demolition Charge,4,10
+,Shovel,3,10
+,Pickaxe,3,10
+,Nail,2,10
+,Screw,2,10
+,Wood Panel,2,10
+,Voucher1,3,10
+,Voucher2,3,10
+RewardSet3,Axe,5,45
+,Saw,5,45
+,Shovel,4,45
+,Pickaxe,4,45
+,Bolt,3,45
+,Plank,3,45
+,Duct Tape,3,45
+,Land Deed,3,45
+,Mallet,3,45
+,Marker Stake,3,45
+,Voucher3,3,45
+,Voucher4,3,45
+,FasterBoats_lv1,1,2
+,FasterCrops1_lv1,1,2
+,FasterCrops2_lv1,1,2
+,FasterCrops3_lv1,1,2
+,FasterCrops4_lv1,1,2
+,FasterTom_lv1,1,2
+,FasterBuildings1_lv1,1,2
+,FasterBuildings2_lv1,1,2
+,FasterBuildings3_lv1,1,2
+,FasterBuildings4_lv1,1,2
+,FasterTrees_lv1,1,2
+,FasterBushes_lv1,1,2
+,FreeTom_lv1,1,2
+,FreeRose_lv1,1,2
+,FreeErnest_lv1,1,2
+,EasierBoats_lv1,1,2
+RewardSet4,Axe,6,50
+,Shovel,5,50
+,Pickaxe,5,50
+,Nail,4,50
+,Screw,4,50
+,Wood Panel,4,50
+,Land Deed,4,50
+,Mallet,4,50
+,Marker Stake,4,50
+,Voucher3,4,50
+,Voucher4,4,50
+,FasterBoats_lv2,1,2
+,FasterCrops1_lv2,1,2
+,FasterCrops2_lv2,1,2
+,FasterCrops3_lv2,1,2
+,FasterCrops4_lv2,1,2
+,FasterTom_lv2,1,2
+,FasterBuildings1_lv2,1,2
+,FasterBuildings2_lv2,1,2
+,FasterBuildings3_lv2,1,2
+,FasterBuildings4_lv2,1,2
+,FasterTrees_lv2,1,2
+,FasterBushes_lv2,1,2
+,FreeTom_lv2,1,2
+,FreeRose_lv2,1,2
+,FreeErnest_lv2,1,2
+,EasierBoats_lv2,1,2
+RewardSet5,Axe,7,80
+,Pickaxe,6,80
+,Bolt,5,80
+,Plank,5,80
+,Duct Tape,5,80
+,Voucher3,5,80
+,Voucher4,5,80
+,FasterBoats_lv3,1,2
+,FasterCrops1_lv3,1,2
+,FasterCrops2_lv3,1,2
+,FasterCrops3_lv3,1,2
+,FasterCrops4_lv3,1,2
+,FasterTom_lv3,1,2
+,FasterBuildings1_lv3,1,2
+,FasterBuildings2_lv3,1,2
+,FasterBuildings3_lv3,1,2
+,FasterBuildings4_lv3,1,2
+,FasterTrees_lv3,1,2
+,FasterBushes_lv3,1,2
+,FreeTom_lv3,1,2
+,FreeRose_lv3,1,2
+,FreeErnest_lv3,1,2
+,EasierBoats_lv3,1,2
+RewardSetHalloween1,Axe,10,10
+RewardSetHalloween2,HalloweenTombstone,1,20
+,Shovel,5,10
+RewardSetHalloween3,HalloweenCauldron,1,20
+,Saw,5,10
+RewardSetHalloween4,HalloweenDeadTree,1,60
+,Axe,10,10
+,Shovel,10,10
+,Saw,10,10
+RewardSetHalloween5,HalloweenBirdhouse,1,10
+RewardSetChristmas1,Gifts,1,20
+,HolidayFlower,1,20
+RewardSetChristmas2,ChristmasLantern,1,20
+,CandyPole,1,20
+RewardSetChristmas3,ToySoldier,1,20
+,Snowman,1,20
+RewardSetChristmas4,HolidayTree,1,20
+RewardSetChristmas5,ChristmasSnowglobe,1,20
+CompanyRewardSet1,Nail,10,5
+,Screw,10,5
+,Wood Panel,10,5
+,Bolt,10,5
+,Plank,10,5
+,Duct Tape,10,5
+,FreeDiamonds,100,1
+CompanyRewardSet2,Nail,20,5
+,Screw,20,5
+,Wood Panel,20,5
+,Bolt,20,5
+,Plank,20,5
+,Duct Tape,20,5
+,FreeDiamonds,200,1
+CompanyRewardSet3,Nail,30,5
+,Screw,30,5
+,Wood Panel,30,5
+,Bolt,30,5
+,Plank,30,5
+,Duct Tape,30,5
+,FreeDiamonds,300,1
+CompanyRewardSet4,Nail,40,5
+,Screw,40,5
+,Wood Panel,40,5
+,Bolt,40,5
+,Plank,40,5
+,Duct Tape,40,5
+,FreeDiamonds,400,1
+CompanyRewardSet5,Nail,50,5
+,Screw,50,5
+,Wood Panel,50,5
+,Bolt,50,5
+,Plank,50,5
+,Duct Tape,50,5
+,FreeDiamonds,500,1
+RewardSetEaster1,Voucher1,1,40
+,Voucher2,1,20
+RewardSetEaster2,Voucher1,2,20
+,Voucher2,2,20
+,Voucher3,1,10
+RewardSetEaster3,Voucher2,2,20
+,Voucher3,2,20
+,Voucher4,1,10
+RewardSetEaster4,Voucher1,5,20
+,Voucher3,2,20
+,Voucher4,2,20
+RewardSetEaster5,Voucher3,4,20
+,Voucher4,4,20
+RewardSetBirthday1,Nail,1,5
+,Screw,1,5
+,Wood Panel,1,5
+,Land Deed,1,5
+,Mallet,1,5
+,Marker Stake,1,5
+,Bolt,1,5
+,Plank,1,5
+,Duct Tape,1,5
+,Hammer,1,20
+,Hand Drill,1,1
+,Paint Bucket,1,20
+,Stone Block,1,20
+,Brick,1,20
+,Tar Bucket,1,20
+,Map Piece,1,1
+,Voucher3,1,40
+,Voucher4,1,40
+RewardSetBirthday2,Nail,2,5
+,Screw,2,5
+,Wood Panel,2,5
+,Land Deed,2,5
+,Mallet,2,5
+,Marker Stake,2,5
+,Bolt,2,5
+,Plank,2,5
+,Duct Tape,2,5
+,Hammer,2,20
+,Hand Drill,2,1
+,Paint Bucket,2,20
+,Stone Block,2,20
+,Brick,2,20
+,Tar Bucket,2,20
+,Map Piece,2,1
+,Voucher3,2,70
+,Voucher4,2,70
+RewardSetBirthday3,Nail,3,5
+,Screw,3,5
+,Wood Panel,3,5
+,Land Deed,3,5
+,Mallet,3,5
+,Marker Stake,3,5
+,Bolt,3,5
+,Plank,3,5
+,Duct Tape,3,5
+,Hammer,3,20
+,Hand Drill,3,1
+,Paint Bucket,3,20
+,Stone Block,3,20
+,Brick,3,20
+,Tar Bucket,3,20
+,Map Piece,3,1
+,Voucher3,3,70
+,Voucher4,3,70
+RewardSetBirthday4,Nail,4,2
+,Screw,4,2
+,Wood Panel,4,2
+,Land Deed,4,2
+,Mallet,4,2
+,Marker Stake,4,2
+,Bolt,4,2
+,Plank,4,2
+,Duct Tape,4,2
+,Hammer,4,15
+,Hand Drill,4,1
+,Paint Bucket,4,15
+,Stone Block,4,15
+,Brick,4,15
+,Tar Bucket,4,15
+,Map Piece,4,1
+,Voucher3,4,70
+,Voucher4,4,70
+RewardSetBirthday5,Nail,5,1
+,Screw,5,1
+,Wood Panel,5,1
+,Land Deed,5,1
+,Mallet,5,1
+,Marker Stake,5,1
+,Bolt,5,1
+,Plank,5,1
+,Duct Tape,5,1
+,Hammer,5,5
+,Hand Drill,5,1
+,Paint Bucket,5,5
+,Stone Block,5,5
+,Brick,5,5
+,Tar Bucket,5,5
+,Map Piece,5,1
+,Voucher3,5,70
+,Voucher4,5,70
+RewardSetNewYear1,NewYearBalloonPig,1,10
+,BalloonCow,1,10
+,BalloonChicken,1,10
+RewardSetCNY2,Axe,8,10
+RewardSetSpecialDiamonds,FreeDiamonds,25,100
+RewardSetHalloween20161,HalloweenPumpkinLantern,1,9
+,HalloweenPumpkintotem,1,1
+RewardSetHalloween20162,HalloweenTombstone,1,999
+,SpookyPumpkin,1,1
+RewardSetHalloween20163,HalloweenCauldron,1,999
+,SpookyPlant,1,1
+RewardSetHalloween20164,HalloweenBirdhouse,1,999
+,OpenGrave,1,1

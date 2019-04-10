@@ -1,0 +1,11 @@
+"Name","AbilityPassive","AbilityActive","MenuOrder","PortraitSWF","PortraitExportName","UnlockHeroBoatLevel","UnlockRegionIndex","UnlockNodeIndex","MapFrame"
+"String","String","String","int","String","String","int","int","int","int"
+"Mechromancer","Mechanic","Overloader",3,"sc/tutorial.sc","hero_mechromancer_masked",0,111,0,35
+,,"DemoCharge",,,,,,,
+,,"HackPad",,,,,,,
+"DrillSergeant","Grenades","Clustergrenade",1,"sc/tutorial.sc","hero_sergeant_masked",0,-1,-1,
+,,"Damageresistance",,,,,,,
+,,"Boost",,,,,,,
+"WitchDoctor","Protector","Medicritters",2,"sc/tutorial.sc","hero_witchdoctor_masked",0,48,0,37
+,,"Crystalshields",,,,,,,
+,,"Defib",,,,,,,

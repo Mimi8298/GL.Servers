@@ -1,0 +1,13 @@
+Name,ToolIconExportName,TID,ProcessingBuilding,OrderPrice,OrderExp,ExpCollect,DumbValue,OrderValue,BoatOrderValue,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,String,int,int,int,int,int,int,int,String,int
+Apple,icon_apple,TID_APPLE,AppleTree,22,15,7,11,7,7,15,TID_APPLE_DESCRIPTION,11
+Cherry,icon_cherries,TID_CHERRY,CherryTree,40,26,13,19,13,13,22,TID_CHERRY_DESCRIPTION,19
+Raspberry,icon_raspberry,TID_RASPBERRY,RaspberryBush,26,17,9,13,9,9,19,TID_RASPBERRY_DESCRIPTION,14
+Blackberry,icon_blackberry,TID_BLUEBERRY,BlueberryBush,47,32,16,23,16,16,26,TID_BLUEBERRY_DESCRIPTION,22
+Cacao,icon_cacao,TID_CACAO,CacaoTree,49,33,16,24,16,16,36,TID_CACAO_DESCRIPTION,22
+Coffee,icon_coffee,TID_COFFEE,CoffeeBush,37,25,12,18,12,12,42,TID_COFFEE_DESCRIPTION,17
+Olive,icon_olive,TID_PRODUCT_OLIVE,OliveTree,50,34,17,23,17,17,57,TID_PRODUCT_OLIVE_DESCRIPTION,33
+Lemon,icon_lemon,TID_PRODUCT_LEMON,LemonTree,55,36,18,26,18,18,66,TID_PRODUCT_LEMON_DESCRIPTION,35
+Orange,icon_orange,TID_PRODUCT_ORANGE,OrangeTree,58,39,19,27,18,18,71,TID_PRODUCT_ORANGE_DESCRIPTION,36
+Peach,icon_peach,TID_PRODUCT_PEACH,PeachTree,59,39,20,28,17,17,76,TID_PRODUCT_PEACH_DESCRIPTION,34
+Banana,icon_banana,TID_PRODUCT_BANANA,BananaTree,61,41,20,29,17,17,88,TID_PRODUCT_BANANA_DESCRIPTION,34

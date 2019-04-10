@@ -1,0 +1,14 @@
+Name,TID,FileName,ExportName,ExportNamePlatform,ExportNameWaterTank,TileWidth,TileHeight,BrokenPartCount,BrokenExportName,BrokenExportNamePlatform,BrokenExportNameWaterTank,TileWidthWaterTank,TileHeightWaterTank,EffectExportName,TapSound,CollectSound,NPCTrainMinPassengers,NPCTrainMaxPassengers,NPCTrainIntervalSeconds,NPCTrainSpeedUpPrice,CollectionTool1,CollectionTool1Amount,CollectionTool2,CollectionTool2Amount,CollectionTool3,CollectionTool3Amount,ReputationLevelRequired
+String,String,String,String,String,String,int,int,int,String,String,String,int,int,String,String,String,int,int,int,int,String,int,String,int,String,int,int
+Train Station,TID_TRAIN_STATION,sc/train_buildings.sc,trainstation_lvl1,trainstation_platform_lvl1,Watertank_lvl1-6,3,2,7,trainstation_broken,trainstation_platform_broken,Watertank_broken,2,2,repairsmoke_03,MenuBleep,CoinXpExplosion,3,3,21600,8,Tar Bucket,1,Brick,1,Hand Drill,1,2
+,,sc/train_buildings.sc,trainstation_lvl2,trainstation_platform_lvl2,Watertank_lvl1-6,,,,,,,,,,,,4,4,21600,8,Tar Bucket,2,Brick,2,Hand Drill,2,3
+,,sc/train_buildings.sc,trainstation_lvl3,trainstation_platform_lvl3,Watertank_lvl1-6,,,,,,,,,,,,5,5,21600,8,Tar Bucket,3,Brick,3,Hand Drill,3,4
+,,sc/train_buildings.sc,trainstation_lvl4,trainstation_platform_lvl4,Watertank_lvl1-6,,,,,,,,,,,,6,6,21600,8,Tar Bucket,4,Brick,4,Hand Drill,4,5
+,,sc/train_buildings.sc,trainstation_lvl5,trainstation_platform_lvl5,Watertank_lvl1-6,,,,,,,,,,,,7,7,21600,8,Tar Bucket,5,Brick,5,Hand Drill,5,6
+,,sc/train_buildings.sc,trainstation_lvl6,trainstation_platform_lvl6,Watertank_lvl1-6,,,,,,,,,,,,8,8,21600,8,Tar Bucket,6,Brick,6,Hand Drill,6,7
+,,sc/train_buildings.sc,trainstation_lvl7,trainstation_platform_lvl7,Watertank_lvl7-8,,,,,,,,,,,,9,9,21600,8,Tar Bucket,7,Brick,7,Hand Drill,7,8
+,,sc/train_buildings.sc,trainstation_lvl8,trainstation_platform_lvl8,Watertank_lvl7-8,,,,,,,,,,,,10,10,21600,8,Tar Bucket,8,Brick,8,Hand Drill,8,9
+,,sc/train_buildings.sc,trainstation_lvl8,trainstation_platform_lvl8,Watertank_lvl7-8,,,,,,,,,,,,11,11,21600,8,Tar Bucket,9,Brick,9,Hand Drill,9,10
+,,sc/train_buildings.sc,trainstation_lvl8,trainstation_platform_lvl8,Watertank_lvl7-8,,,,,,,,,,,,12,12,21600,8,Tar Bucket,10,Brick,10,Hand Drill,10,11
+,,sc/train_buildings.sc,trainstation_lvl8,trainstation_platform_lvl8,Watertank_lvl7-8,,,,,,,,,,,,13,13,21600,8,Tar Bucket,11,Brick,11,Hand Drill,11,12
+,,sc/train_buildings.sc,trainstation_lvl8,trainstation_platform_lvl8,Watertank_lvl7-8,,,,,,,,,,,,14,14,21600,8,,,,,,,

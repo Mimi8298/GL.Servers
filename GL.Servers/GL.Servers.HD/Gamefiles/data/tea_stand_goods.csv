@@ -1,0 +1,13 @@
+Name,ToolIconExportName,TID,RequirementAmount,Requirement,TimeMin,OrderPrice,OrderExp,ExpCollect,InstantComplete,DumbValue,OrderValue,BoatOrderValue,ProcessingBuilding,UnlockLevel,DescriptionTID,Difficulty
+String,String,String,int,String,int,int,int,int,int,int,int,int,String,int,string,int
+Green Tea,recipe_green_tea,TID_PRODUCT_GREENTEA,5,TeaLeaves,30,125,120,29,3,67,48,48,Tea_Stand,80,TID_TEA_STAND_PRODUCT_DESCRIPTION,51
+Milk Tea,recipe_milk_tea,TID_PRODUCT_MILKTEA,3,TeaLeaves,45,98,94,23,3,53,36,36,Tea_Stand,81,TID_TEA_STAND_PRODUCT_DESCRIPTION,39
+,,,1,Milk,,,,,,,,,,,,
+Honey Tea,recipe_honey_tea,TID_PRODUCT_HONEYTEA,3,TeaLeaves,40,162,155,37,3,87,38,38,Tea_Stand,83,TID_TEA_STAND_PRODUCT_DESCRIPTION,41
+,,,1,Honey,,,,,,,,,,,,
+Lemon Tea,recipe_lemon_tea,TID_PRODUCT_LEMONTEA,3,TeaLeaves,20,125,120,29,2,67,47,47,Tea_Stand,86,TID_TEA_STAND_PRODUCT_DESCRIPTION,49
+,,,1,Lemon,,,,,,,,,,,,
+Orange Tea,recipe_earlgrey_tea,TID_PRODUCT_ORANGETEA,3,TeaLeaves,40,131,126,30,3,71,48,48,Tea_Stand,89,TID_TEA_STAND_PRODUCT_DESCRIPTION,51
+,,,1,Orange,,,,,,,,,,,,
+Ice Tea,recipe_iced_tea,TID_PRODUCT_ICEDTEA,3,TeaLeaves,30,131,126,30,3,70,47,47,Tea_Stand,92,TID_TEA_STAND_PRODUCT_DESCRIPTION,50
+,,,1,Peach,,,,,,,,,,,,

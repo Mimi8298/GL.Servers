@@ -1,0 +1,41 @@
+Name,FileName,ExportName,AdjacentSpots,TileWidth,TileHeight,TID,RandomSounds,TapSound,ShapeMultiplierFat,ShapeMultiplierSlim,ShapeMultiplierNormal,Special,CollectionTool,CollectionToolAmount,CooldownMinutes,CooldownInstantCompletePrice
+String,String,String,String,int,int,String,String,String,int,int,int,String,String,int,int,int
+Spot1_shallow,sc/fishes.sc,shallow_area2,Spot2_shallow,4,4,TID_FISHING_SPOT_SHALLOW,,WaterTap,1,3,6,,,,120,5
+,,,Spot4_reed,,,,,,,,,,,,,
+Spot2_shallow,sc/fishes.sc,shallow_area1,Spot1_shallow,4,4,TID_FISHING_SPOT_SHALLOW,,WaterTap,1,3,6,,Land Deed,4,120,5
+,,,Spot3_rocky,,,,,,,,,,Mallet,4,,
+,,,Spot8_deep,,,,,,,,,,Marker Stake,4,,
+Spot3_rocky,sc/fishes.sc,rocky_area2,Spot2_shallow,4,4,TID_FISHING_SPOT_ROCKY,,WaterTap,3,6,1,Stream,Land Deed,12,150,6
+,,,Spot10_swamp,,,,,,,,,,Mallet,12,,
+,,,,,,,,,,,,,Marker Stake,12,,
+Spot4_reed,sc/fishes.sc,reed_area1,Spot1_shallow,4,4,TID_FISHING_SPOT_REED,,WaterTap,6,1,3,Flowers,,,180,6
+,,,Spot5_reed,,,,,,,,,,,,,
+Spot5_reed,sc/fishes.sc,reed_area2,Spot4_reed,4,4,TID_FISHING_SPOT_REED,,WaterTap,6,1,3,Waterfall,Land Deed,8,180,6
+,,,Spot6_rocky,,,,,,,,,,Mallet,8,,
+,,,Spot7_deep,,,,,,,,,,Marker Stake,8,,
+Spot6_rocky,sc/fishes.sc,rocky_area1,Spot5_reed,4,4,TID_FISHING_SPOT_ROCKY,,WaterTap,3,6,1,,Land Deed,14,150,6
+,,,Spot7_deep,,,,,,,,,,Mallet,14,,
+,,,Spot9_deep,,,,,,,,,,Marker Stake,14,,
+,,,Spot11_shallow,,,,,,,,,,,,,
+Spot7_deep,sc/fishes.sc,deep_area1,Spot5_reed,4,4,TID_FISHING_SPOT_DEEP,,WaterTap,3,3,3,,Land Deed,18,240,7
+,,,Spot6_rocky,,,,,,,,,,Mallet,18,,
+,,,Spot8_deep,,,,,,,,,,Marker Stake,18,,
+,,,Spot9_deep,,,,,,,,,,,,,
+,,,Spot12_rocky,,,,,,,,,,,,,
+Spot8_deep,sc/fishes.sc,deep_area2,Spot2_shallow,4,4,TID_FISHING_SPOT_DEEP,,WaterTap,3,3,3,Boat,Land Deed,16,240,7
+,,,Spot7_deep,,,,,,,,,,Mallet,16,,
+,,,Spot10_swamp,,,,,,,,,,Marker Stake,16,,
+,,,Spot12_rocky,,,,,,,,,,,,,
+Spot9_deep,sc/fishes.sc,deep_area3,Spot6_rocky,4,4,TID_FISHING_SPOT_DEEP,,WaterTap,3,3,3,Searock,Land Deed,20,240,7
+,,,Spot7_deep,,,,,,,,,,Mallet,20,,
+,,,Spot11_shallow,,,,,,,,,,Marker Stake,20,,
+,,,Spot12_rocky,,,,,,,,,,,,,
+Spot10_swamp,sc/fishes.sc,swamp_area1,Spot8_deep,4,4,TID_FISHING_SPOT_SWAMP,,WaterTap,6,1,3,Swamp,Land Deed,22,180,6
+,,,Spot3_rocky,,,,,,,,,,Mallet,22,,
+,,,,,,,,,,,,,Marker Stake,22,,
+Spot11_shallow,sc/fishes.sc,shallow_area3,Spot6_rocky,4,4,TID_FISHING_SPOT_SHALLOW,,WaterTap,1,3,6,Mosquito,Land Deed,24,120,5
+,,,Spot9_deep,,,,,,,,,,Mallet,24,,
+,,,,,,,,,,,,,Marker Stake,24,,
+Spot12_rocky,sc/fishes.sc,rocky_area3,Spot7_deep,4,4,TID_FISHING_SPOT_ROCKY,,WaterTap,3,6,1,Rockfield,Land Deed,26,150,6
+,,,Spot8_deep,,,,,,,,,,Mallet,26,,
+,,,Spot9_deep,,,,,,,,,,Marker Stake,26,,

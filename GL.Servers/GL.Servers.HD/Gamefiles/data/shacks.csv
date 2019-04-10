@@ -1,0 +1,3 @@
+"Name","ExportName","FileName","TileWidth","TileHeight","TapSound","Deprecated"
+"String","String","String","int","int","String","boolean"
+"Shack","pasture_chicken","sc/buildings_new.sc",3,3,"MenuBleep","true"

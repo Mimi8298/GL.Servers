@@ -1,0 +1,15 @@
+"Name","FileName","ExportName","TileWidth","TileHeight","Fence"
+"String","String","String","int","int","boolean"
+"Fence_Chicken01_Front","sc/buildings_new.sc","fence_chicken01_front",0,1,"true"
+"Fence_Chicken01_Back","sc/buildings_new.sc","fence_chicken01_back",1,0,"true"
+"Chicken_Coop_01","sc/buildings_new.sc","chicken_coop_01",1,1,
+"Chicken_Trough_01","sc/buildings_new.sc","chicken_trough_01",1,1,
+"Fence_Cow01","sc/buildings_new.sc","fence_cow01",0,1,"true"
+"Cow_Trough_01","sc/buildings_new.sc","cow_trough_01",1,1,
+"Fence_Pig01_Front","sc/buildings_new.sc","fence_pig01_front",0,1,"true"
+"Fence_Pig01_Back","sc/buildings_new.sc","fence_pig01_back",0,1,"true"
+"Pig_Trough_01","sc/buildings_new.sc","pig_trough_01",1,1,
+"Fence_Sheep01_Front","sc/buildings_new.sc","fence_sheep01_front",0,1,"true"
+"Fence_Sheep01_Back","sc/buildings_new.sc","fence_sheep01_back",0,1,"true"
+"Sheep_Trough_01","sc/buildings_new.sc","sheep_trough_01",1,1,
+"Fence_Goat01","sc/buildings_new.sc","fence_goat01",0,1,"true"
