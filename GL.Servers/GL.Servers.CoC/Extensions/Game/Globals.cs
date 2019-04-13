@@ -150,6 +150,10 @@
             Globals.ObstacleRespawnSeconds = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("OBSTACLE_RESPAWN_SECONDS")).NumberValue;
 
             Globals.CollectAllResourcesAtOnce    = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("COLLECT_ALL_RESOURCES_AT_ONCE")).BooleanValue;
+
+            Globals.AllianceWarNumAttacks          = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_NUM_ATTACKS")).NumberValue;
+            Globals.AllianceWarPreparationDuration = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_PREPARATION_DURATION")).NumberValue;
+            Globals.AllianceWarAttackDuration.     = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_ATTACK_DURATION")).NumberValue;
         }
     }
 }
