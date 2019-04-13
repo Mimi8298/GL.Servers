@@ -46,7 +46,8 @@ namespace GL.Servers.CoC.Files
             CSV.Gamefiles.Add(23, @"logic/achievements.csv");
             CSV.Gamefiles.Add(26, @"logic/spells.csv");
             CSV.Gamefiles.Add(27, @"csv/hints.csv");
-            CSV.Gamefiles.Add(28, @"logic/leagues.csv");
+            CSV.Gamefiles.Add(28, @"logic/heroes.csv");
+            CSV.Gamefiles.Add(29, @"logic/leagues.csv");
 
             CSV.Gamefiles.Add(34, @"logic/alliance_badge_layers.csv");
 
