@@ -18,7 +18,7 @@ namespace GL.Servers.CoC.Logic.Enums
         AllianceBadge,
         Global,
         TownHall,
-        Prototype,
+        Alliance_Portal,
         Npc,
         Deco,
         ResourcePack,
@@ -26,11 +26,17 @@ namespace GL.Servers.CoC.Logic.Enums
         Mission,
         BillingPackage,
         Achievement,
-
-        Spell = 26,
+        Credit,
+        Faq,
+        Spell,
         Hint,
+        Heroe,
         League,
+        New,
 
-        AllianceBadgeLayer = 34
+        AllianceBadgeLayer = 34,
+        Variable = 37,
+        Gem_Bundle,
+        Village_Object,
     }
 }
