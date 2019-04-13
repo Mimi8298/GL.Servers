@@ -71,6 +71,19 @@
 
         internal static ResourceData AllianceCreateResourceData;
 
+        internal static int AllianceWarNumAttacks;
+        internal static int AllianceWarPreparationDuration;
+        internal static int AllianceWarAttackDuration;
+        internal static int AllianceWarLootBonusPercentWin;
+        internal static int AllianceWarLootBonusPercentLose;
+        internal static int AllianceWarLootBonusPercentDraw;
+        internal static int AllianceWarStarsBonusPercent;
+        internal static int AllianceWarStarsBonusExp;
+        internal static int AllianceWarWinBonusExp;
+        internal static bool AllianceWarNewAttackWinExpRules;
+        internal static int AllianceWarAttackWinExpMultiplier;
+        internal static int AllianceWarAttackWinExp;
+
         internal static void Initialize()
         {
             Globals.AllianceCreateResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_CREATE_RESOURCE")).TextValue);
