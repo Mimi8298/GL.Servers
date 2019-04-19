@@ -87,7 +87,9 @@
             Factory.Commands.Add(501, typeof(Move_GameObject_Command));
             Factory.Commands.Add(502, typeof(Upgrade_Building_Command));
             Factory.Commands.Add(504, typeof(Speed_Up_Construction_Command));
+            //Factory.Commands.Add(505, typeof(Cancel_Construction_Command));
             Factory.Commands.Add(506, typeof(Collect_Resources_Command));
+            //Factory.Commands.Add(507, typeof(Remove_Obstacle_Command));
             Factory.Commands.Add(508, typeof(Train_Unit_Command));
             Factory.Commands.Add(509, typeof(Cancel_Unit_Production_Command));
             Factory.Commands.Add(518, typeof(Buy_Resources_Command));
@@ -98,7 +100,7 @@
             Factory.Commands.Add(537, typeof(Send_Alliance_Mail_Command));
             Factory.Commands.Add(539, typeof(New_Seen_Command));
             Factory.Commands.Add(577, typeof(Swap_GameObject_Command));
-            Factory.Commands.Add(600, typeof(Gear_Up_Command));
+            //Factory.Commands.Add(600, typeof(Gear_Up_Command));
 
             Factory.Commands.Add(700, typeof(Place_Attacker_Command));
 
