@@ -98,11 +98,15 @@
             //Factory.Commands.Add(513, typeof(Speed_Up_Training_Command));
             //Factory.Commands.Add(514, typeof(Speed_Up_Clearing_Command));
             //Factory.Commands.Add(515, typeof(Cancel_Upgrade_Unit_Command));
-            //Factory.Commands.Add(516, typeof(
+            //Factory.Commands.Add(516, typeof(Upgrade_Unit_Commamd));
+            //Factory.Commands.Add(517, typeof(SpeedUp_Upgrade_Unit_Command));
             Factory.Commands.Add(518, typeof(Buy_Resources_Command));
             Factory.Commands.Add(519, typeof(Mission_Progress_Command));
             Factory.Commands.Add(520, typeof(Unlock_Building_Command));
+            //Factory.Commands.Add(521, typeof(Free_Worker_Command));
+            //Factory.Commands.Add(522, typeof(Buy_Shield_Command));
             Factory.Commands.Add(523, typeof(Claim_Achievement_Reward_Command));
+            //Factory.Commands.Add(524, typeof(Change_Weapon_Mode_Command));
             Factory.Commands.Add(532, typeof(New_Shop_Seen_Command));
             Factory.Commands.Add(537, typeof(Send_Alliance_Mail_Command));
             Factory.Commands.Add(539, typeof(New_Seen_Command));
