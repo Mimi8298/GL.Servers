@@ -92,6 +92,11 @@
             //Factory.Commands.Add(507, typeof(Remove_Obstacle_Command));
             Factory.Commands.Add(508, typeof(Train_Unit_Command));
             Factory.Commands.Add(509, typeof(Cancel_Unit_Production_Command));
+            //Factory.Commands.Add(510, typeof(Buy_Trap_Command));
+            //Factory.Commands.Add(511, typeof(Request_Alliance_Troops_Command));
+            //Factory.Commands.Add(512, typeof(Buy_Deco_Command));
+            //Factory.Commands.Add(513, typeof(Speed_Up_Training_Command));
+            //Factory.Commands.Add(514, typeof(Speed_Up_Clearing_Command));
             Factory.Commands.Add(518, typeof(Buy_Resources_Command));
             Factory.Commands.Add(519, typeof(Mission_Progress_Command));
             Factory.Commands.Add(520, typeof(Unlock_Building_Command));
