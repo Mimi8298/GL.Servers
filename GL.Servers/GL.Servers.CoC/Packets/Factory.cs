@@ -97,6 +97,8 @@
             //Factory.Commands.Add(512, typeof(Buy_Deco_Command));
             //Factory.Commands.Add(513, typeof(Speed_Up_Training_Command));
             //Factory.Commands.Add(514, typeof(Speed_Up_Clearing_Command));
+            //Factory.Commands.Add(515, typeof(Cancel_Upgrade_Unit_Command));
+            //Factory.Commands.Add(516, typeof(
             Factory.Commands.Add(518, typeof(Buy_Resources_Command));
             Factory.Commands.Add(519, typeof(Mission_Progress_Command));
             Factory.Commands.Add(520, typeof(Unlock_Building_Command));
