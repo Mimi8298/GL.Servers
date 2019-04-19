@@ -78,6 +78,7 @@
         private static void LoadCommands()
         {
             Factory.Commands.Add(1, typeof(Join_Alliance_Command));
+            Factory.Commands.Add(2, typeof(Leave_Alliance_Command));
             Factory.Commands.Add(3, typeof(Change_Avatar_Name_Command));
             Factory.Commands.Add(6, typeof(Alliance_Settings_Changed_Command));
             Factory.Commands.Add(7, typeof(Diamonds_Added_Command));
