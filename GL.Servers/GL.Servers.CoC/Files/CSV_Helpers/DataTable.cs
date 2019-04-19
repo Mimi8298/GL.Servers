@@ -72,6 +72,12 @@ namespace GL.Servers.CoC.Files.CSV_Helpers
                     break;
                 }
 
+                case 6:
+                {
+                    Data = new ProjectileData(Row, this);
+                    break;
+                }
+
                 case 7:
                 {
                     Data = new BuildingClassData(Row, this);
@@ -174,6 +180,12 @@ namespace GL.Servers.CoC.Files.CSV_Helpers
                     break;
                 }
 
+                case 25:
+                {
+                    Data = new FaqData(Row, this);
+                    break;
+                }
+
                 case 26:
                 {
                     Data = new SpellData(Row, this);
@@ -183,6 +195,18 @@ namespace GL.Servers.CoC.Files.CSV_Helpers
                 case 27:
                 {
                     Data = new HintData(Row, this);
+                    break;
+                }
+
+                case 28:
+                {
+                    Data = new HeroData(Row, this);
+                    break;
+                }
+
+                case 29:
+                {
+                    Data = new LeagueData(Row, this);
                     break;
                 }
 
