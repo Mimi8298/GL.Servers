@@ -210,9 +210,33 @@ namespace GL.Servers.CoC.Files.CSV_Helpers
                     break;
                 }
 
+                case 30:
+                {
+                    Data = new NewData(Row, this);
+                    break;
+                }
+
                 case 34:
                 {
                     Data = new AllianceBadgeLayerData(Row, this);
+                    break;
+                }
+
+                case 37:
+                {
+                    Data = new VariableData(Row, this);
+                    break;
+                }
+
+                case 38:
+                {
+                    Data = new GemBundleData(Row, this);
+                    break;
+                }
+
+                case 39:
+                {
+                    Data = new VillageObjectData(Row, this);
                     break;
                 }
 
