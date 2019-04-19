@@ -98,6 +98,7 @@
             Factory.Commands.Add(537, typeof(Send_Alliance_Mail_Command));
             Factory.Commands.Add(539, typeof(New_Seen_Command));
             Factory.Commands.Add(577, typeof(Swap_GameObject_Command));
+            Factory.Commands.Add(600, typeof(Gear_Up_Command));
 
             Factory.Commands.Add(700, typeof(Place_Attacker_Command));
 
