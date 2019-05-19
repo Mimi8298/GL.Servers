@@ -41,7 +41,7 @@ namespace GL.Servers.CoC.Logic
 
         [JsonProperty] internal string Name        = string.Empty;
 
-        [JsonProperty("exp_level")] internal int ExpLevel       = 1;
+        [JsonProperty] internal int ExpLevel       = 1;
         [JsonProperty] internal int ExpPoints;
         [JsonProperty] internal int Diamonds;
         [JsonProperty] internal int FreeDiamonds;
