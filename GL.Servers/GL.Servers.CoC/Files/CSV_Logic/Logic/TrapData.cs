@@ -21,7 +21,7 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
 
         internal override void LoadingFinished()
         {
-            this.BuildResourceData = (BuildingClassData) CSV.Tables.Get(Gamefile.BuildingClass).GetData(this.BuildResource);
+            this.BuildResourceData = (ResourceData) CSV.Tables.Get(Gamefile.BuildingClass).GetData(this.BuildResource);
 
             if (this.BuildResourceData == null)
             {
