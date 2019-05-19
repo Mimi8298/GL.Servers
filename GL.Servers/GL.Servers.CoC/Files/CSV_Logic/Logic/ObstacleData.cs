@@ -1,8 +1,10 @@
+using GL.Servers.Files.CSV_Reader;
+using GL.Servers.CoC.Files.CSV_Helpers;
+using GL.Servers.CoC.Logic.Enums;
+using System.Collections.Generic;
+
 namespace GL.Servers.CoC.Files.CSV_Logic.Logic
 {
-	using GL.Servers.Files.CSV_Reader;
-	using GL.Servers.CoC.Files.CSV_Helpers;
-
     internal class ObstacleData : Data
     {
 		/// <summary>
