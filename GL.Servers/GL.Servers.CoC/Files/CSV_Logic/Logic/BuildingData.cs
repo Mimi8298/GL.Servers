@@ -11,6 +11,7 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
         internal ResourceData AltBuildResourceData;
         internal ResourceData ProducesResourceData;
         internal ResourceData AmmoResourceData;
+        internal ResourceData GearUpResourceData;
         internal BuildingClassData BuildingClassData;
 
         /// <summary>
@@ -28,6 +29,7 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
             this.BuildingClassData = (BuildingClassData) CSV.Tables.Get(Gamefile.BuildingClass).GetData(this.BuildingClass);
             this.BuildResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.BuildResource);
             this.AmmoResourceData  = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.AmmoResource);
+            this.GearUpResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.GearUpResource);
             this.AltBuildResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.AltBuildResource);
             this.ProducesResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.ProducesResource);
 
