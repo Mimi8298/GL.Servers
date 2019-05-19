@@ -224,5 +224,21 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
         {
             get; set;
         }
+
+        internal ResourceData ClearResourceData
+        {
+            get
+            {
+                return (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.ClearResource);
+            }
+        }
+
+        internal ResourceData LootResourceData
+        {
+            get
+            {
+                return (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.LootResource);
+            }
+        }
     }
 }
