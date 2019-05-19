@@ -64,7 +64,7 @@
                         ResourceDiamondCost1000000 = Globals.ResourceDiamondCost1000000;
                         ResourceDiamondCost10000000 = Globals.ResourceDiamondCost10000000;
                     }
-                    else
+                    if (VillageType == 1)
                     {
                         ResourceDiamondCost100 = Globals.Village2ResourceDiamondCost100;
                         ResourceDiamondCost1000 = Globals.Village2ResourceDiamondCost1000;
@@ -180,7 +180,7 @@
                     SpeedUpDiamondCost24Hours = Globals.SpeedUpDiamondCost24Hours;
                     SpeedUpDiamondCost1Week = Globals.SpeedUpDiamondCost1Week;
                 }
-                else
+                if (VillageType == 1)
                 {
                     SpeedUpDiamondCost1Min = Globals.Village2SpeedUpDiamondCost1Min;
                     SpeedUpDiamondCost1Hour = Globals.Village2SpeedUpDiamondCost1Hour;
