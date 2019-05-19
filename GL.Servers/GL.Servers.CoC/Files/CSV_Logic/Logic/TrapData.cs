@@ -1,10 +1,14 @@
+using system;
+using GL.Servers.Files.CSV_Reader;
+using GL.Servers.CoC.Files.CSV_Helpers;
+using GL.Servers.CoC.Logic.Enums;
+
 namespace GL.Servers.CoC.Files.CSV_Logic.Logic
 {
-	using GL.Servers.Files.CSV_Reader;
-	using GL.Servers.CoC.Files.CSV_Helpers;
-
     internal class TrapData : Data
     {
+        internal ResourceData BuildResourceData;
+
 		/// <summary>
         /// Initializes a new instance of the <see cref="TrapData"/> class.
         /// </summary>
@@ -13,6 +17,16 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
         public TrapData(Row Row, DataTable DataTable) : base(Row, DataTable)
         {
             
+        }
+
+        internal override void LoadingFinished()
+        {
+            this.BuildResourceData = (BuildingClassData) CSV.Tables.Get(Gamefile.BuildingClass).GetData(this.BuildResource);
+
+            if (this.BuildResourceData == null)
+            {
+                throw new Exception("buildings.csv: Build Resource is invalid!.");
+            }
         }
 
         public string TID
