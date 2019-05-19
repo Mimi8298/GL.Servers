@@ -144,5 +144,10 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
         {
             get; set;
         }
+
+        internal int GetBuildTime(int Level)
+        {
+            return this.BuildTimeD[Level] * 86400 + this.BuildTimeH[Level] * 3600 + this.BuildTimeM[Level] * 60 + this.BuildTimeS[Level];
+        }
     }
 }
