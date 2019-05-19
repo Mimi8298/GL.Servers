@@ -1070,6 +1070,11 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
             return this.BuildTimeD[Level] * 86400 + this.BuildTimeH[Level] * 3600 + this.BuildTimeM[Level] * 60 + this.BuildTimeS[Level];
         }
 
+        internal int GetGearUpTime(int Level)
+        {
+            return this.GearUpTime[Level] * 60;
+        }
+
         internal int[] GetResourceMaxArray(int Level)
         {
             int[] MaxArray = new int[9];
