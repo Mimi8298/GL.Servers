@@ -1,15 +1,16 @@
+using System;
+using GL.Servers.Files.CSV_Reader;
+using GL.Servers.CoC.Files.CSV_Helpers;
+using GL.Servers.CoC.Logic.Enums;
+
 namespace GL.Servers.CoC.Files.CSV_Logic.Logic
 {
-    using System;
-    using GL.Servers.Files.CSV_Reader;
-	using GL.Servers.CoC.Files.CSV_Helpers;
-    using GL.Servers.CoC.Logic.Enums;
-
     internal class BuildingData : Data
     {
         internal ResourceData BuildResourceData;
         internal ResourceData AltBuildResourceData;
         internal ResourceData ProducesResourceData;
+        internal ResourceData AmmoResourceData;
         internal BuildingClassData BuildingClassData;
 
         /// <summary>
@@ -26,6 +27,7 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
         {
             this.BuildingClassData = (BuildingClassData) CSV.Tables.Get(Gamefile.BuildingClass).GetData(this.BuildingClass);
             this.BuildResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.BuildResource);
+            this.AmmoResourceData  = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.AmmoResource);
             this.AltBuildResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.AltBuildResource);
             this.ProducesResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.ProducesResource);
 
