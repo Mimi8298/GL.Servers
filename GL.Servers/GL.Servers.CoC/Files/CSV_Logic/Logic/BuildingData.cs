@@ -13,6 +13,7 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
         internal ResourceData AmmoResourceData;
         internal ResourceData GearUpResourceData;
         internal BuildingClassData BuildingClassData;
+        internal BuildingClassData SecondaryTargetingClassData;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="BuildingData"/> class.
@@ -27,6 +28,7 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
         internal override void LoadingFinished()
         {
             this.BuildingClassData = (BuildingClassData) CSV.Tables.Get(Gamefile.BuildingClass).GetData(this.BuildingClass);
+            this.SecondaryTargetingClassData = (BuildingClassData) CSV.Tables.Get(Gamefile.BuildingClass).GetData(this.SecondaryTargetingClass);
             this.BuildResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.BuildResource);
             this.AmmoResourceData  = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.AmmoResource);
             this.GearUpResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.GearUpResource);
