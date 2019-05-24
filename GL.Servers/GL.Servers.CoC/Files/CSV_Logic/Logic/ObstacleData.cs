@@ -241,6 +241,11 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
             {
                 return (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.LootResource);
             }
+
+	internal int GetMinRespawnTimeHours
+        {
+            return this.MinRespawnTimeHours * 3600;
+        }
         }
     }
 }
