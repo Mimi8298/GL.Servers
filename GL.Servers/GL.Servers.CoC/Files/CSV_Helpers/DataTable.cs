@@ -72,6 +72,12 @@ namespace GL.Servers.CoC.Files.CSV_Helpers
                     break;
                 }
 
+                case 6:
+                {
+                    Data = new ProjectileData(Row, this);
+                    break;
+                }
+
                 case 7:
                 {
                     Data = new BuildingClassData(Row, this);
@@ -174,6 +180,12 @@ namespace GL.Servers.CoC.Files.CSV_Helpers
                     break;
                 }
 
+                case 25:
+                {
+                    Data = new FaqData(Row, this);
+                    break;
+                }
+
                 case 26:
                 {
                     Data = new SpellData(Row, this);
@@ -186,9 +198,45 @@ namespace GL.Servers.CoC.Files.CSV_Helpers
                     break;
                 }
 
+                case 28:
+                {
+                    Data = new HeroData(Row, this);
+                    break;
+                }
+
+                case 29:
+                {
+                    Data = new LeagueData(Row, this);
+                    break;
+                }
+
+                case 30:
+                {
+                    Data = new NewData(Row, this);
+                    break;
+                }
+
                 case 34:
                 {
                     Data = new AllianceBadgeLayerData(Row, this);
+                    break;
+                }
+
+                case 37:
+                {
+                    Data = new VariableData(Row, this);
+                    break;
+                }
+
+                case 38:
+                {
+                    Data = new GemBundleData(Row, this);
+                    break;
+                }
+
+                case 39:
+                {
+                    Data = new VillageObjectData(Row, this);
                     break;
                 }
 

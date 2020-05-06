@@ -1,16 +1,19 @@
+using System;
+using GL.Servers.Files.CSV_Reader;
+using GL.Servers.CoC.Files.CSV_Helpers;
+using GL.Servers.CoC.Logic.Enums;
+
 namespace GL.Servers.CoC.Files.CSV_Logic.Logic
 {
-    using System;
-    using GL.Servers.Files.CSV_Reader;
-	using GL.Servers.CoC.Files.CSV_Helpers;
-    using GL.Servers.CoC.Logic.Enums;
-
     internal class BuildingData : Data
     {
         internal ResourceData BuildResourceData;
         internal ResourceData AltBuildResourceData;
         internal ResourceData ProducesResourceData;
+        internal ResourceData AmmoResourceData;
+        internal ResourceData GearUpResourceData;
         internal BuildingClassData BuildingClassData;
+        internal BuildingClassData SecondaryTargetingClassData;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="BuildingData"/> class.
@@ -25,7 +28,10 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
         internal override void LoadingFinished()
         {
             this.BuildingClassData = (BuildingClassData) CSV.Tables.Get(Gamefile.BuildingClass).GetData(this.BuildingClass);
+            this.SecondaryTargetingClassData = (BuildingClassData) CSV.Tables.Get(Gamefile.BuildingClass).GetData(this.SecondaryTargetingClass);
             this.BuildResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.BuildResource);
+            this.AmmoResourceData  = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.AmmoResource);
+            this.GearUpResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.GearUpResource);
             this.AltBuildResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.AltBuildResource);
             this.ProducesResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.ProducesResource);
 
@@ -1062,6 +1068,11 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
         internal int GetBuildTime(int Level)
         {
             return this.BuildTimeD[Level] * 86400 + this.BuildTimeH[Level] * 3600 + this.BuildTimeM[Level] * 60 + this.BuildTimeS[Level];
+        }
+
+        internal int GetGearUpTime(int Level)
+        {
+            return this.GearUpTime[Level] * 60;
         }
 
         internal int[] GetResourceMaxArray(int Level)

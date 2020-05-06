@@ -36,6 +36,7 @@ namespace GL.Servers.CoC.Files
             CSV.Gamefiles.Add(12, @"logic/traps.csv");
             CSV.Gamefiles.Add(13, @"logic/alliance_badges.csv");
             CSV.Gamefiles.Add(14, @"logic/globals.csv");
+            CSV.Gamefiles.Add(15, @"logic/townhall_levels.csv");
             CSV.Gamefiles.Add(16, @"logic/alliance_portal.csv");
             CSV.Gamefiles.Add(17, @"logic/npcs.csv");
             CSV.Gamefiles.Add(18, @"logic/decos.csv");
@@ -44,13 +45,17 @@ namespace GL.Servers.CoC.Files
             CSV.Gamefiles.Add(21, @"logic/missions.csv");
             CSV.Gamefiles.Add(22, @"csv/billing_packages.csv");
             CSV.Gamefiles.Add(23, @"logic/achievements.csv");
+            CSV.Gamefiles.Add(25, @"csv/faq.csv");
             CSV.Gamefiles.Add(26, @"logic/spells.csv");
             CSV.Gamefiles.Add(27, @"csv/hints.csv");
-            CSV.Gamefiles.Add(28, @"logic/leagues.csv");
+            CSV.Gamefiles.Add(28, @"logic/heroes.csv");
+            CSV.Gamefiles.Add(29, @"logic/leagues.csv");
+            CSV.Gamefiles.Add(30, @"csv/news.csv");
 
             CSV.Gamefiles.Add(34, @"logic/alliance_badge_layers.csv");
-
-            CSV.Gamefiles.Add(15, @"logic/townhall_levels.csv");
+            CSV.Gamefiles.Add(37, @"logic/variables.csv");
+            CSV.Gamefiles.Add(38, @"logic/gem_bundles.csv");
+            CSV.Gamefiles.Add(39, @"logic/village_objects.csv");
 
             foreach (var File in CSV.Gamefiles)
             {

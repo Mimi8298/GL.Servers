@@ -1,8 +1,10 @@
+using GL.Servers.Files.CSV_Reader;
+using GL.Servers.CoC.Files.CSV_Helpers;
+using GL.Servers.CoC.Logic.Enums;
+using System.Collections.Generic;
+
 namespace GL.Servers.CoC.Files.CSV_Logic.Logic
 {
-	using GL.Servers.Files.CSV_Reader;
-	using GL.Servers.CoC.Files.CSV_Helpers;
-
     internal class ObstacleData : Data
     {
 		/// <summary>
@@ -223,6 +225,27 @@ namespace GL.Servers.CoC.Files.CSV_Logic.Logic
         public string HighlightExportName
         {
             get; set;
+        }
+
+        internal ResourceData ClearResourceData
+        {
+            get
+            {
+                return (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.ClearResource);
+            }
+        }
+
+        internal ResourceData LootResourceData
+        {
+            get
+            {
+                return (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(this.LootResource);
+            }
+
+	internal int GetMinRespawnTimeHours
+        {
+            return this.MinRespawnTimeHours * 3600;
+        }
         }
     }
 }

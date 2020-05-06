@@ -71,6 +71,19 @@
 
         internal static ResourceData AllianceCreateResourceData;
 
+        internal static int AllianceWarNumAttacks;
+        internal static int AllianceWarPreparationDuration;
+        internal static int AllianceWarAttackDuration;
+        internal static int AllianceWarLootBonusPercentWin;
+        internal static int AllianceWarLootBonusPercentLose;
+        internal static int AllianceWarLootBonusPercentDraw;
+        internal static int AllianceWarStarsBonusPercent;
+        internal static int AllianceWarStarsBonusExp;
+        internal static int AllianceWarWinBonusExp;
+        internal static bool AllianceWarNewAttackWinExpRules;
+        internal static int AllianceWarAttackWinExpMultiplier;
+        internal static int AllianceWarAttackWinExp;
+
         internal static void Initialize()
         {
             Globals.AllianceCreateResourceData = (ResourceData) CSV.Tables.Get(Gamefile.Resource).GetData(((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_CREATE_RESOURCE")).TextValue);
@@ -137,6 +150,19 @@
             Globals.ObstacleRespawnSeconds = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("OBSTACLE_RESPAWN_SECONDS")).NumberValue;
 
             Globals.CollectAllResourcesAtOnce    = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("COLLECT_ALL_RESOURCES_AT_ONCE")).BooleanValue;
+
+            Globals.AllianceWarNumAttacks             = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_NUM_ATTACKS")).NumberValue;
+            Globals.AllianceWarPreparationDuration    = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_PREPARATION_DURATION")).NumberValue;
+            Globals.AllianceWarAttackDuration         = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_ATTACK_DURATION")).NumberValue;
+            Globals.AllianceWarLootBonusPercentWin    = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_LOOT_BONUS_PERCENT_WIN")).NumberValue;
+            Globals.AllianceWarLootBonusPercentLose   = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_LOOT_BONUS_PERCENT_LOSE")).NumberValue;
+            Globals.AllianceWarLootBonusPercentDraw   = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_LOOT_BONUS_PERCENT_DRAW")).NumberValue;
+            Globals.AllianceWarStarsBonusPercent      = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_STARS_BONUS_PERCENT")).NumberValue;
+            Globals.AllianceWarStarsBonusExp          = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_STARS_BONUS_EXP")).NumberValue;
+            Globals.AllianceWarWinBonusExp            = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_WIN_BONUS_EXP")).NumberValue;
+            Globals.AllianceWarNewAttackWinExpRules   = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_NEW_ATTACK_WIN_EXP_RULES")).BooleanValue;
+            Globals.AllianceWarAttackWinExpMultiplier = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_ATTACK_WIN_EXP_MULTIPLIER")).NumberValue;
+            Globals.AllianceWarAttackWinExp           = ((GlobalData) CSV.Tables.Get(Gamefile.Global).GetData("ALLIANCE_WAR_ATTACK_WIN_EXP")).NumberValue;
         }
     }
 }
