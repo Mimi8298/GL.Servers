@@ -93,7 +93,7 @@
         /// <summary>
         /// Returns whether we should handle this device or nah.
         /// </summary>
-        internal bool Trusted()
+     /*   internal bool Trusted()
         {
             if (this.ValuesAreCorrect())
             {
@@ -137,10 +137,12 @@
 
         /// <summary>
         /// Processes this message.
-        /// </summary>
+        /// </summary>*/
         internal override void Process()
         {
-            if (!this.Trusted())
+        
+         new Authentification_Failed_Message(this.Device, Reason.Patch).Send();
+          /*  if (!this.Trusted())
             {
                 return;
             }
@@ -214,7 +216,7 @@
             this.Device.MessageManager.AccountLowId = Player.LowID;
 
             new Authentification_Ok_Message(this.Device, Player.PassToken).Send();
-            new Own_Home_Data_Message(this.Device, Player).Send();
+            new Own_Home_Data_Message(this.Device, Player).Send();*/
         }
     }
 }
