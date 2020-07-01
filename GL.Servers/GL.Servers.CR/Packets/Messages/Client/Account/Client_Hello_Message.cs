@@ -162,7 +162,7 @@
                                 }
                                 else
                                 {
-                                    new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
+                               //     new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
                                 }
                             }
                             else
@@ -174,7 +174,7 @@
                         {
                             new Authentification_Failed_Message(this.Device, Reason.Patch).Send();
                         }
-                    }
+                  /*  }
                     else
                     {
                         new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
@@ -188,7 +188,8 @@
             else
             {
                 new Authentification_Failed_Message(this.Device, Reason.Update).Send();
-            }
+            }*/
+            
         }
     }
 }
