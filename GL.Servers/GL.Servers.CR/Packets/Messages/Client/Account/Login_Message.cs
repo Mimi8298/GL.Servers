@@ -93,7 +93,7 @@
         /// <summary>
         /// Returns whether we should handle this device or nah.
         /// </summary>
-     /*   internal bool Trusted()
+     internal bool Trusted()
         {
             if (this.ValuesAreCorrect())
             {
@@ -114,12 +114,12 @@
                         }
                         else
                         {
-                            new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
+                          //  new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
                         }
                     }
                     else
                     {
-                        new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
+                      //  new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
                     }
                 }
                 else
@@ -137,12 +137,12 @@
 
         /// <summary>
         /// Processes this message.
-        /// </summary>*/
+        /// </summary>
         internal override void Process()
         {
         
-         new Authentification_Failed_Message(this.Device, Reason.Patch).Send();
-          /*  if (!this.Trusted())
+  
+            if (!this.Trusted())
             {
                 return;
             }
@@ -157,7 +157,7 @@
                 }
                 else
                 {
-                    new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
+               //     new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
                 }
             }
             else
@@ -216,7 +216,7 @@
             this.Device.MessageManager.AccountLowId = Player.LowID;
 
             new Authentification_Ok_Message(this.Device, Player.PassToken).Send();
-            new Own_Home_Data_Message(this.Device, Player).Send();*/
+            new Own_Home_Data_Message(this.Device, Player).Send();
         }
     }
 }
