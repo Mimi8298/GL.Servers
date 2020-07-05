@@ -84,10 +84,10 @@ namespace GL.Servers.CR.Packets.Messages.Server.Account
             this.Data.AddString("BC");
 
             this.Data.AddVInt(0);
-
-            this.Data.AddString("https://game-assets.clashroyaleapp.com");
-            this.Data.AddString("https://99faf1e355c749a9a049-2a63f4436c967aa7d355061bd0d924a1.ssl.cf1.rackcdn.com");
-            this.Data.AddString("https://event-assets.clashroyale.com");
+            
+            this.Data.AddString("https://game-assets.clashroyaleapp.com");//assents
+            this.Data.AddString("https://99faf1e355c749a9a049-2a63f4436c967aa7d355061bd0d924a1.ssl.cf1.rackcdn.com");//assents?
+            this.Data.AddString("https://event-assets.clashroyale.com");//events
         }
 
         /// <summary>
