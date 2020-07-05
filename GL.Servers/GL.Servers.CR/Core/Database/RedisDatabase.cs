@@ -47,7 +47,7 @@
 
             Configuration.EndPoints.Add("127.0 0.1", 6379);
 
-            Configuration.Password              = "";
+            Configuration.Password              = "root";
             Configuration.ClientName            = this.GetType().Assembly.FullName;
 
             Configuration.SyncTimeout           = 7000;
