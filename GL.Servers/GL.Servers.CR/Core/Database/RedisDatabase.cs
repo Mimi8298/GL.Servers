@@ -45,9 +45,9 @@
         {
             ConfigurationOptions Configuration  = new ConfigurationOptions();
 
-            Configuration.EndPoints.Add("163.172.110.110", 6379);
+            Configuration.EndPoints.Add("127.0 0.1", 6379);
 
-            Configuration.Password              = "Gobelinlal0i1gigaonl0la1llnbLand";
+            Configuration.Password              = "root";
             Configuration.ClientName            = this.GetType().Assembly.FullName;
 
             Configuration.SyncTimeout           = 7000;

@@ -13,7 +13,7 @@
     internal class Authentification_Failed_Message : Message
     {
         internal string UpdateURL = "http://tinyical.com/1GLe";
-        internal string RedirectDomain = "192.168.1.78";
+        internal string RedirectDomain = "0.0.0.0";
         internal string Message;
 
         internal Reason Reason;

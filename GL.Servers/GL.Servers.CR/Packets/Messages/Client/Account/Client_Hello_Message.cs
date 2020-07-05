@@ -26,7 +26,7 @@
 
         private string MasterHash;
 
-        internal const string ProdHost = "gcroyale.gobelinland.fr";
+        internal const string ProdHost = "0.0.0.0";
         internal const string DevHost = "";
         internal const string KunlunHost = "";
 
@@ -162,32 +162,36 @@
                                 }
                                 else
                                 {
-                                    new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
+                                    //     new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
                                 }
                             }
                             else
                             {
                                 new Authentification_Failed_Message(this.Device, Reason.Update).Send();
                             }
-                        }
-                        else
-                        {
-                            new Authentification_Failed_Message(this.Device, Reason.Patch).Send();
+                            //}
+                            // else
+                            // {
+                            //  new Authentification_Failed_Message(this.Device, Reason.Patch).Send();
+                            // }
+                            /*  }
+                              else
+                              {
+                                  new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
+                              }
+                          }
+                          else
+                          {
+                              new Authentification_Failed_Message(this.Device, Reason.Update).Send();
+                          }
+                      }
+                      else
+                      {
+                          new Authentification_Failed_Message(this.Device, Reason.Update).Send();
+                      }*/
                         }
                     }
-                    else
-                    {
-                        new Authentification_Failed_Message(this.Device, Reason.Maintenance).Send();
-                    }
                 }
-                else
-                {
-                    new Authentification_Failed_Message(this.Device, Reason.Update).Send();
-                }
-            }
-            else
-            {
-                new Authentification_Failed_Message(this.Device, Reason.Update).Send();
             }
         }
     }
