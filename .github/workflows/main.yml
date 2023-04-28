@@ -1,0 +1,23 @@
+name: Build
+
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+
+    - name: Restore NuGet packages
+      run: nuget restore .\GL.Servers.sln
+
+    - name: Build
+      run: msbuild .\GL.Servers.sln /p:Configuration=Release /p:Platform="Any CPU" /p:TargetFrameworkVersion=v4.7.2 /t:Rebuild
